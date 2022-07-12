@@ -1,0 +1,22 @@
+ATT.PrintName = "AKM/AK-74 ME4 buffer tube adapter"
+ATT.CompactName = "ME4"
+ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Description = [[An adapter for the installation of telescopic stock buffer tubes on AKs with non-folding stocks.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC-9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
+ATT.ModelBodygroups = "b"
+
+ATT.Category = {"eft_akm_stock"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Buffer Tube",
+        Category = "eft_ar15_buffertube",
+        Pos = Vector(0.85, -3.15, -0.17),
+        Ang = Angle(-90, 3, 90),
+        Icon_Offset = Vector(-0.2, 0, 0.5),
+    },
+}

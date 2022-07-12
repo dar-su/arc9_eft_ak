@@ -1,0 +1,11 @@
+ATT.PrintName = "AK-12 pistol grip"
+ATT.CompactName = "AK-12"
+ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Description = [[A standard-issue Izhmash-manufactured pistol grip for AK-12 automatic rifles and compatible weapon systems.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC-9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
+ATT.ModelBodygroups = "5"
+
+ATT.Category = {"eft_ak_grip"}

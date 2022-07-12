@@ -1,0 +1,11 @@
+ATT.PrintName = "AK Magpul MOE pistol grip (Black)"
+ATT.CompactName = "MOE"
+ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Description = [[The MOE (Magpul Original Equipment) lightweight pistol grip for AK weapon systems, manufactured by Magpul.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC-9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
+ATT.ModelBodygroups = "a"
+
+ATT.Category = {"eft_ak_grip"}

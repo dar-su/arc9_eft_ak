@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/darsu_eft/mods/glass"
+	"$translucent" "1"
+	//"$alphatest" "1"
+
+	"$phong" "1"
+	"$phongboost" "10000"
+	//"$phongalbedotint" "1"
+	//"$phongexponent" "0"
+	//"$phongfresnelranges" "[0.22 0.856 20]"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.35 0.35 0.35]"
+	"$envmapfresnel" "0.1"
+	"$normalmapalphaenvmapmask" "0"
+	"$basemapalphaenvmapmask" "1"
+}
