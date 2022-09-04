@@ -10,6 +10,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_agressor.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard"}
 
 ATT.Attachments = {

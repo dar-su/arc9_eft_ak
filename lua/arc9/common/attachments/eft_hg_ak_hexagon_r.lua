@@ -12,6 +12,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_hexagon.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
 
 ATT.ExcludeElements = {"short_barrel"}
 

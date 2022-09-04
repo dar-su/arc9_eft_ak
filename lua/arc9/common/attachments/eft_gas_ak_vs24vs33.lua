@@ -13,6 +13,7 @@ ATT.LHIK = true
 ATT.Category = {"eft_ak_gasblock"}
 
 ATT.ExcludeElements = {"short_barrel"}
+ATT.ActivateElements = {"nogp34"}
 
 
 ATT.Attachments = {

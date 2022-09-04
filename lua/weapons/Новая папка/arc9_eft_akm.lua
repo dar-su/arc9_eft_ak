@@ -57,6 +57,11 @@ SWEP.AttachmentElements = {
             {3, 0},
         }
     },
+    ["eft_gp34"] = {
+        Bodygroups = {
+            {6, 1},
+        }
+    },
 }
 
 SWEP.Attachments = {
@@ -169,6 +174,15 @@ SWEP.Attachments = {
     {
         PrintName = "Device",
         Category = "eft_ak_akmp_fs",
+        Bone = "weapon",
+        Pos = Vector(0, 33.75, 1.93),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    
+    {
+        PrintName = "UBGL",
+        Category = "eft_ak_gp34",
         Bone = "weapon",
         Pos = Vector(0, 33.75, 1.93),
         Ang = Angle(0, 0, 0),

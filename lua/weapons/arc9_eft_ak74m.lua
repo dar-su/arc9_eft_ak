@@ -52,6 +52,11 @@ SWEP.AttachmentElements = {
             {0, 0}
         }
     },
+    ["eft_gp34"] = {
+        Bodygroups = {
+            {7, 1},
+        }
+    },
 }
 
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak100.mdl"
@@ -334,6 +339,11 @@ SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = ""-- we will have own in sound tables
 
 SWEP.DryFireSound = path .. "ak74_trigger_empty.wav"
+
+SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
+SWEP.DoFireAnimationUBGL = true
+SWEP.NoShellEjectUBGL = true
+SWEP.MuzzleEffectQCAUBGL = 1
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -851,6 +861,36 @@ SWEP.Animations = {
             { s = randspin, t = 3.1 },
         }
     },
+
+    ["enter_ubgl"] = {
+        Source = "gp34_switch",
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 1, lhik = 0 },
+        },
+    },
+    ["idle_ubgl"] = {
+        Source = "gp34_idle",
+    },
+    ["reload_ubgl"] = {
+        Source = "gp34_reload",        
+        EventTable = {
+            { s = randspin, t = 0.05 },
+            { s = path .. "gp34/gp34_grenade_in.wav", t = 1 },
+            { s = randspin, t = 1.7 },
+        }
+    },
+    ["fire_ubgl"] = {
+        Source = "gp34_fire",
+    },
+    ["exit_ubgl"] = {
+        Source = "gp34_switch",
+        Reverse = true,
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
     
 }
 
@@ -973,5 +1013,15 @@ SWEP.Attachments = {
         Installed = "eft_hg_ak_6p20sb9",
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
         -- Integral = false
+    },
+
+    {
+        PrintName = "UBGL",
+        Category = "eft_ak_gp34",
+        ExcludeElements = {"nogp34"},
+        Bone = "mod_gas_block",
+        Pos = Vector(0, 0, -3),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 7, 1.1),
     },
 }

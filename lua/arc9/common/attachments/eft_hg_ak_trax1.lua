@@ -12,6 +12,7 @@ ATT.ModelBodygroups = "8"
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0.1, 0)
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
+ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom", "eft_vityaz_handguard"}
 

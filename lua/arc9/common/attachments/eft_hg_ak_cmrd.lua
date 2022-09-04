@@ -11,6 +11,7 @@ ATT.ModelBodygroups = "6"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
 ATT.ExcludeElements = {"short_barrel"}
+ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 

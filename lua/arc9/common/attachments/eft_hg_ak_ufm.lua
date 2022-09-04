@@ -7,6 +7,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"
 
 ATT.RequireElements = {"gasblock_vdmcs"}
+ATT.ActivateElements = {"nogp34"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
 ATT.ModelBodygroups = "b"
 ATT.LHIK = true

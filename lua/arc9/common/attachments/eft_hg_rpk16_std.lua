@@ -39,7 +39,7 @@ ATT.Attachments = {
         PrintName = "R Rail",
         Category = {"eft_rpk16_mount"},
         Pos = Vector(1, 7.6, -0.35),
-        Ang = Angle(180, -90, 0),
+        Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {

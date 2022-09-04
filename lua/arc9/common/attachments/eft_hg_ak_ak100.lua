@@ -11,6 +11,7 @@ ATT.ModelBodygroups = "4"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 ATT.Attachments = {

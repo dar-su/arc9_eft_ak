@@ -12,7 +12,7 @@ ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
 ATT.ExcludeElements = {"railedcover"}
-ATT.ActivateElements = {"nolongrear", "nodovetail"}
+ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 ATT.Attachments = {
     {

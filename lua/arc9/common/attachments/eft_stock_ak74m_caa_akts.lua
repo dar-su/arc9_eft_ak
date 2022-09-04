@@ -14,8 +14,8 @@ ATT.Attachments = {
     {
         PrintName = "AR Stock",
         Category = "eft_ar_stock",
-        Pos = Vector(0.6, -3.5, 0.5),
-        Ang = Angle(90, -96, -90),
+        Pos = Vector(0.6, -3.5, 0.55),
+        Ang = Angle(-5, -90, 0),
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }

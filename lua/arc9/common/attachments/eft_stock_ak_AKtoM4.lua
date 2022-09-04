@@ -7,7 +7,7 @@ ATT.MenuCategory = "ARC-9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
 ATT.ModelBodygroups = "d"
-ATT.ModelOffset = Vector(0, -0.27, -0.02)
+ATT.ModelOffset = Vector(0, -0.2, -0.02)
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -16,8 +16,8 @@ ATT.Attachments = {
     {
         PrintName = "Buffer Tube",
         Category = "eft_ar15_buffertube",
-        Pos = Vector(0.65, -0.75, -0.47),
-        Ang = Angle(0, -90, 0),
+        Pos = Vector(0.65, -0.83, -0.47),
+        Ang = Angle(-3, -90, 0),
         Icon_Offset = Vector(-0.2, 0, 0.5),
     },
 }

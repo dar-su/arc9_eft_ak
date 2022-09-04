@@ -23,6 +23,6 @@
 	"$envmap" "env_cubemap"
 	"$envmapfresnel" "0.1"
 
-	"$envmaptint" "[0.125 0.125 0.125]"
+	"$envmaptint" "[0.025 0.025 0.025]"
 	"$color2" "[0.88 0.88 0.88]"
 }
