@@ -1,6 +1,6 @@
 ATT.PrintName = "RD-704 SLR ION Lite + Railed Gas Tube handguard & gas tube combo"
 ATT.CompactName = "ION Lite 9\""
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/ionlite.png", "mips smooth")
 ATT.Description = [[A combined kit of the ION Lite 9 inch handguard with the Railed Gas Tube, can be installed on RD-704 assault rifles. Manufactured by SLR.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

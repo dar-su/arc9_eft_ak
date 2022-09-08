@@ -1,6 +1,6 @@
 ATT.PrintName = "AK AKademia Bastion dust cover"
 ATT.CompactName = "Bastion"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/dc_bastion.png", "mips smooth")
 ATT.Description = [[The Bastion dust cover with an integrated Picatinny rail is compatible with all models of Kalashnikov automatic rifles and carbines based on the AK platform. 
 Manufactured by AKademia.]]
 ATT.SortOrder = 0

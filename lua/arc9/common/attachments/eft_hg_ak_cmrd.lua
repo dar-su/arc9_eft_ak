@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Vltor CMRD KeyMod handguard"
 ATT.CompactName = "CMRD"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/cmrd.png", "mips smooth")
 ATT.Description = [[The CMRD lightweight handguard by Vltor, compatible with AK-74 and AKM series automatic rifles. 
 Includes KeyMod slots for rail installation.]]
 ATT.SortOrder = 0

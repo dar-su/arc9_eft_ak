@@ -1,6 +1,6 @@
 ATT.PrintName = "VPO-209 rear sight"
 ATT.CompactName = "VPO-209"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rs_74.png", "mips smooth")
 ATT.Description = [[Standard AKM / VPO-209 rear sight manufactured by Molot.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "RPK-16 buffer tube"
 ATT.CompactName = "RPK-16"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rpk/tube.png", "mips smooth")
 ATT.Description = [[A standard buffer tube for RPK-16 LMG, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

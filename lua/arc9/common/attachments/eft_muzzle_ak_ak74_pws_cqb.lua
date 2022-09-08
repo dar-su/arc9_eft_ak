@@ -1,6 +1,6 @@
 ATT.PrintName = "PWS CQB 74 5.45x39 muzzle brake"
 ATT.CompactName = "PWS CQB 74"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_attachments/muzzles/pwscqb.png", "mips smooth")
 ATT.Description = [[The PWS CQB 74 5.45x39mm muzzle brake is designed specifically for compact arms and use in confined spaces. This version is intended for AK series based weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

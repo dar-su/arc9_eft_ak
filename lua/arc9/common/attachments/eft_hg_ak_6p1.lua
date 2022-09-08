@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM wooden handguard (6P1 Sb.6-1)"
 ATT.CompactName = "6P1 Sb.6-1"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/akm.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced wooden AKM handguard.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

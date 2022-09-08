@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Zenit RP-1 charging handle"
 ATT.CompactName = "RP-1"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rp1.png", "mips smooth")
 ATT.Description = [[The RP-1 charging handle by Zenit is a milled detail, manufactured with D16T aluminum alloy with black coating. 
 It's compatible with all models of AK family rifles. 
 The RP-1 is larger and more convenient than the standard charging handle, which improves the weapon ergonomics and makes handling more comfortable. 

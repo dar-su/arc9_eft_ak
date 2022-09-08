@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-74M/AK-100 Zenit PT Lock"
 ATT.CompactName = "PT Lock"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/pt.png", "mips smooth")
 ATT.Description = [[The lock is designed to install the PT-1 and PT-3 stocks to the weapon. 
 This model is designed for installation on the AK-74M and AK-100-series assault rifles. 
 Manufactured by Zenit.]]

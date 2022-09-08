@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Zenit B-33 dust cover"
 ATT.CompactName = "B-33"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/dc_b33.png", "mips smooth")
 ATT.Description = [[The B-33 dust cover with an integrated Picatinny rail is compatible with all models of Kalashnikov automatic rifles and carbines based on AK system. 
 Allows installation of all Picatinny-mountable sights, ensuring the consistency of median aimpoint even after repeated removal and replacement of dust cover. 
 © Zenit

@@ -1,6 +1,6 @@
 ATT.PrintName = "AKML system 7.62x39 flash hider"
 ATT.CompactName = "AKML"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/akml.png", "mips smooth")
 ATT.Description = [[A slot-like flash suppressor designed specifically for AKML arms system to reduce the muzzle flash flare on the NRS-3 night vision scope.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Strike Industries TRAX 2 handguard extension"
 ATT.CompactName = "TRAX2 ext"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/trax2.png", "mips smooth")
 ATT.Description = [[The TRAX 2 section is the front rail that covers the gas block. Its provide additional place for mount more accessories.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

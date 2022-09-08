@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Hexagon \"Reactor\" 5.45x39 muzzle brake"
 ATT.CompactName = "Reactor"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/reactor.png", "mips smooth")
 ATT.Description = [[The "Reactor" prototype muzzle brake manufactured by Hexagon for 5.45x39 AK platforms. Features mounts required for installation of the "Wafflemaker" sound suppressor.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "VPO-209 wooden stock"
 ATT.CompactName = "VPO209"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/209.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for VPO-209 AKM carbines, manufactured by Molot Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

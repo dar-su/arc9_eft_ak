@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Hexagon tubular handguard"
 ATT.CompactName = "Hexagon"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/hexa.png", "mips smooth")
 ATT.Description = [[A tubular handguard for AK family automatic rifles, manufactured by Hexagon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

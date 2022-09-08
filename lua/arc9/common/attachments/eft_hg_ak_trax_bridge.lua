@@ -1,6 +1,6 @@
 ATT.PrintName = "Strike Industries TRAX bridge rail"
 ATT.CompactName = "TRAX Bridge"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/traxbridge.png", "mips smooth")
 ATT.Description = [[Bridge guide for keymod system allows you to install additional equipment on the handguards with the standard keymod interface.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

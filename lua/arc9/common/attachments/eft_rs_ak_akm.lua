@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM rear sight"
 ATT.CompactName = "6P1 Sb.2-1"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rs_akm.png", "mips smooth")
 ATT.Description = [[Standard AKM rear sight manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

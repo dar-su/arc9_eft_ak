@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 CAA AKTS AK buffer tube"
 ATT.CompactName = "AKTS AK"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/aktsakm.png", "mips smooth")
 ATT.Description = [[CAA Receiver Extension Buffer Tube, 6-position, Mil-Spec diameter will fit any AK-based rifles with a fixed stock.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

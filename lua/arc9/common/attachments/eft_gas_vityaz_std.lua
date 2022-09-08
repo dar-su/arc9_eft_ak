@@ -1,6 +1,6 @@
 ATT.PrintName = "PP-19-01 \"Vityaz\" gas tube"
 ATT.CompactName = "19-01 gas"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/vityaz/gas.png", "mips smooth")
 ATT.Description = [[A standard gas tube for PP-19-01 Vityaz submachine guns. Gas tubes channel the travel direction of gas piston.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

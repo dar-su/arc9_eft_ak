@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 ProMag AK-A-16 73-round drum magazine"
 ATT.CompactName = "AK-A-16"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762a16.png", "mips smooth")
 ATT.Description = [[A 73-round polymer ProMag magazine for 7.62x39 AKM and compatible systems.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

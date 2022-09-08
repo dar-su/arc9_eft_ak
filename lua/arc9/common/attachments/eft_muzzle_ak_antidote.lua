@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 Venom Tactical Antidote muzzle brake-compensator"
 ATT.CompactName = "Antidote"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/antidote.png", "mips smooth")
 ATT.Description = [[The Antidote muzzle brake & compensator by Venom Tactical and Rifle Dynamics is designed for installation on classic AK-based weapon systems. Reduces recoil and counters the barrel climb.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

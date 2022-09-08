@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 bakelite 40-round magazine"
 ATT.CompactName = "6P2 bak."
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762bak40.png", "mips smooth")
 ATT.Description = [[A standard 40-round bakelite magazine for the RPK. It fits into 7.62x39 AK and compatible weapons. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

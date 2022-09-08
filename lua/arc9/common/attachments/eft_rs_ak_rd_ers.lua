@@ -1,6 +1,6 @@
 ATT.PrintName = "AK RD Enhanced V2 Rear Sight"
 ATT.CompactName = "V2 ERS"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rs_v2ers.png", "mips smooth")
 ATT.Description = [[The V2 Enhanced rear sight for AK automatic rifles, manufactured by Rifle Dynamics.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-74 5.45x39 6L31 60-round magazine"
 ATT.CompactName = "6L31"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l31.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/5456l31.png", "mips smooth")
 ATT.Description = [[A 60-round 5.45x39 quad-stack polymer Izhmash 6L31 magazine for AK-74 and compatible systems. Produced in a small batch, never serialized.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

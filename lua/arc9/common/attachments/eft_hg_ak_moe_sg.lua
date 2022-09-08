@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Magpul MOE AKM handguard (Stealth Gray)"
 ATT.CompactName = "MOE (SG)"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/moew.png", "mips smooth")
 ATT.Description = [[The Magpul MOE AKM handguard is installed on AKM/AK-74 and compatible weapon systems. 
 It comes equipped with licensed M-LOK mounts for the installation of additional devices or rails. 
 

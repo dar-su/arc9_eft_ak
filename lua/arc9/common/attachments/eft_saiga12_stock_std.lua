@@ -1,6 +1,6 @@
 ATT.PrintName = "SOK-12 AK-style stock"
 ATT.CompactName = "SOK12 AK"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/74m.png", "mips smooth")
 ATT.Description = [[A folding polymer AK-styled stock for SOK-12, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

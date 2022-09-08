@@ -1,6 +1,6 @@
 ATT.PrintName = "AK TDI X47 tactical handguard rail system"
 ATT.CompactName = "TDI X47"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/x47.png", "mips smooth")
 ATT.Description = [[A tactical aluminum handguard for the AK family assault rifles, designed and manufactured by TDI Arms. 
 Equipped with multiple rail mounts for installation of a wide range of additional equipment.]]
 ATT.SortOrder = 0

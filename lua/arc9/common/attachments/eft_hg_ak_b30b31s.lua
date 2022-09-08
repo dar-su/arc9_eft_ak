@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Zenit B-30 handguard with B-31S upper handguard rail"
 ATT.CompactName = "B30+B31S"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/b30b31s.png", "mips smooth")
 ATT.Description = [[The all-milled B-30 handguard is made of D16T aluminum alloy with a black coating, it is intended for installing on the AK assault rifle series 103, 104, 105, 74S, 74M, AKM, AKMS in the standard place of the handguard. 
 The B-31S rail mount above the gas tube is an all-milled bracket made of D16T aluminum alloy with a black coating, mounted on the B-30 handguard. 
 © «Zenit»]]

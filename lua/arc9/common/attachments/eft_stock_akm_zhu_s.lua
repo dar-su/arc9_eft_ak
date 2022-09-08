@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 Magpul Zhukov-S stock"
 ATT.CompactName = "Zhukov-S"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/zhu.png", "mips smooth")
 ATT.Description = [[The Zhukov-S stock, designed for installation on AKM/AK-74-type non-folding assault rifles. Manufactured by Magpul.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

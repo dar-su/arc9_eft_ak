@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-74 wooden handguard (6P20 Sb.6)"
 ATT.CompactName = "6P20 Sb.6"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/74.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced wooden handguard for AK-74 assault rifles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "SOK-12 CSS rear sight rail mount"
 ATT.CompactName = "CSS RSRM"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/mount.png", "mips smooth")
 ATT.Description = [[This sight rail mount allows installation of various sights instead of the Saiga carbines standard-issue fixed rear sight.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

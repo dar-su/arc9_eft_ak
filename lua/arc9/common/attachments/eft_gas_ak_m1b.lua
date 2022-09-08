@@ -1,6 +1,6 @@
 ATT.PrintName = "AK UltiMAK M1-B gas tube & handguard"
 ATT.CompactName = "M1-B"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/m1b.png", "mips smooth")
 ATT.Description = [[The UltiMAK M1-B gas tube for AK assault rifles sets the gas piston movement direction and, at the same time, serves as a mount for installing reflex sights and tactical devices.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

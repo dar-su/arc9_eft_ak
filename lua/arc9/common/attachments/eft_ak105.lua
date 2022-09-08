@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-105"
 ATT.CompactName = "AK-105"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/102.png", "mips smooth")
 ATT.Description = [[The AK-105 5.45x39mm assault rifle is a further modernized version of AK-74M base. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
 
 ATT.SortOrder = 0

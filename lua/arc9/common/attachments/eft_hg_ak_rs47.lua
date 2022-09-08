@@ -1,6 +1,6 @@
 ATT.PrintName = "AK CAA RS47 handguard"
 ATT.CompactName = "RS47"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/rs47.png", "mips smooth")
 ATT.Description = [[The RS47 lightweight polymer handguard, fits the majority of rifles and carbines built on the base of AK-family rifles. 
 Equipped with two short and two long rail mounts for installing additional devices. 
 Manufactured by Command Arms.]]

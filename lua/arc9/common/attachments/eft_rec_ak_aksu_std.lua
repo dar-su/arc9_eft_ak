@@ -1,6 +1,6 @@
 ATT.PrintName = "AKS-74U dust cover"
 ATT.CompactName = "6P26 Sb.7"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/su/dc.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover for AKS-74U, AKS-74UN automatic rifles, manufactued by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

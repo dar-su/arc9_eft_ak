@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 aluminium 10-round magazine"
 ATT.CompactName = "AK al."
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762al10.png", "mips smooth")
 ATT.Description = [[A 10-round aluminum magazine for 7.62x39 AK and compatible weapons, made of light aluminum alloy and reinforced by additional ribs. This modification comes with a 10-round capacity limiter for the civilian market. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

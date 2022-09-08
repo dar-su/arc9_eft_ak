@@ -1,6 +1,6 @@
 ATT.PrintName = "PBS-1 7.62x39 sound suppressor"
 ATT.CompactName = "PBS-1"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/pbs1.png", "mips smooth")
 ATT.Description = [[PBS-1 (Pribór Besshúmnoy Strel'bý - "Silent Firing Device") is a sound suppressor manufactured by TsNIITochMash for noiseless and flash-free fire with 7.62x39mm AK family assault rifles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

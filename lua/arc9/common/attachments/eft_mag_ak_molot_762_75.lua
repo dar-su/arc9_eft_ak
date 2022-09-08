@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 Molot 75-round drum magazine"
 ATT.CompactName = "Molot"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762molot75.png", "mips smooth")
 ATT.Description = [[A 75-round metal drum magazine for the RPK light machine gun. It fits in 7.62x39 AK and compatible weapon systems. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

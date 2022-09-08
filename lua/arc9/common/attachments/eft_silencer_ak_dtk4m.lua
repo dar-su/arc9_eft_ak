@@ -1,6 +1,6 @@
 ATT.PrintName = "Zenit DTK-4M 7.62x39 muzzle brake-compensator"
 ATT.CompactName = "DTK-4M"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/dtk4m.png", "mips smooth")
 ATT.Description = [[The Zenit DTK-4M muzzle brake, manufactured from titanium alloy, is designed for installation on modern 7.62x39 AK assault rifles. Although positioned as a muzzle brake, it can only be purchased by the staff of particular authorities.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

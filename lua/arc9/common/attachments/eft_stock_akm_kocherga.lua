@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 Hexagon \"Kocherga\" stock (Anodized Red)"
 ATT.CompactName = "Kocherga AR"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/ko4erga.png", "mips smooth")
 ATT.Description = [[The "Kocherga" lightweight stock for AKM/AK-74-type non-folding automatic rifles, manufactured by Hexagon. 
 
 Anodized Red version.]]

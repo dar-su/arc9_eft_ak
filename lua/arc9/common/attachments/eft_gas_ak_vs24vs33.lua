@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Vezhlivyy Strelok VS-24 + VS-33c handguard & gas tube combo"
 ATT.CompactName = "VS Combo"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/vscw.png", "mips smooth")
 ATT.Description = [[A combined kit of the VS-24 handguard with the VS-33c gas tube, can be installed on 5.56x45, 5.45x39, 7.62x39 AK family assault rifles.
  Manufactured by Vezhlivyy Strelok.]]
 ATT.SortOrder = 0

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 FAB Defense Ultimag 30R 30-round magazine"
 ATT.CompactName = "Ultimag"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762ultimag.png", "mips smooth")
 ATT.Description = [[A 30-round windowed polymer magazine for 7.62x39 AKs and compatible weapons, manufactured by FAB Defense. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

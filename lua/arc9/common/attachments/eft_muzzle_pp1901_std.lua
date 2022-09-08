@@ -1,6 +1,6 @@
 ATT.PrintName = "PP-19-01 \"Vityaz\" 9x19 muzzle brake-compensator"
 ATT.CompactName = "PP-19-01"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/vityaz/muzzle.png", "mips smooth")
 ATT.Description = [[A standard muzzle brake/compensator made by Izhmash for PP-19-01 Vityaz 9x19 SMG.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

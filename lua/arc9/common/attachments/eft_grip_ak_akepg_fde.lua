@@ -1,6 +1,6 @@
-ATT.PrintName = "AK Strike Industries Enhanced Pistol Grip (Black)"
+ATT.PrintName = "AK Strike Industries Enhanced Pistol Grip (FDE)"
 ATT.CompactName = "AK-EPG (FDE)"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/grip/epgf.png", "mips smooth")
 ATT.Description = [[The AK-EPG (AK Enhanced Pistol Grip) ergonomic polymer pistol grip for AK-family automatic rifles. 
 Manufactured by Strike Industries.
 

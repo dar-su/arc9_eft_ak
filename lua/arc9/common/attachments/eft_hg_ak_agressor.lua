@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 5.45 Design Aggressor handguard"
 ATT.CompactName = "Aggressor"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/agressor.png", "mips smooth")
 ATT.Description = [[Aggressor is a railed handguard for AK series rifles manufactured by 5.45 Design. 
 Features 4 side rails for installation of tactical devices and 2 long rails for installation of various optics and foregrips.]]
 ATT.SortOrder = 0

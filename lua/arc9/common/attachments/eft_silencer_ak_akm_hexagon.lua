@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM Hexagon 7.62x39 sound suppressor"
 ATT.CompactName = "Hexagon AKM"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/hexa.png", "mips smooth")
 ATT.Description = [[A sound moderator for AKM 7.62x39 automatic rifles, manufactured by Hexagon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

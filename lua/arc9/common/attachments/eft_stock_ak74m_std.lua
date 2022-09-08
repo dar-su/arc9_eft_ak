@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-74M polymer stock (6P34 Sb.15)"
 ATT.CompactName = "6P34 Sb.15"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/74m.png", "mips smooth")
 ATT.Description = [[A polymer stock for AK-74M automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 Lantac Drakon muzzle brake-compensator"
 ATT.CompactName = "DGNAK47B"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/dgnak.png", "mips smooth")
 ATT.Description = [[The Drakon muzzle brake-compensator by Lantac is designed for installation on 7.62x39 AK-based weapon systems. Reduces recoil and counters the muzzle climb.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

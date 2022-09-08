@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 FAB Defense UAS stock"
 ATT.CompactName = "UAS AK"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/fab.png", "mips smooth")
 ATT.Description = [[The UAS stock for AKM/AK74-type non-folding assault rifles. Manufactured by FAB Defense.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK FAB Defense PDC dust cover"
 ATT.CompactName = "FABd PDC"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/dc_fab.png", "mips smooth")
 ATT.Description = [[The FAB Defense PDC dust cover with an integrated Picatinny rail is compatible with all models of automatic rifles and carbines based on the AK platform.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

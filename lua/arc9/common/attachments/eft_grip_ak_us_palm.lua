@@ -1,6 +1,6 @@
 ATT.PrintName = "AK US Palm pistol grip"
 ATT.CompactName = "US Palm"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/grip/uspalm.png", "mips smooth")
 ATT.Description = [[A light pistol grip for AK assault rifles, manufactured by US Palm.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

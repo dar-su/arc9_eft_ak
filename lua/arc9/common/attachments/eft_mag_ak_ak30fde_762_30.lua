@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 US Palm \"AK30\" 30-round magazine (FDE)"
 ATT.CompactName = "AK30 FDE"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/76230f.png", "mips smooth")
 ATT.Description = [[A 30-round polymer US Palm AK30 magazine for 7.62x39 AK and compatible weapons. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons. 
 
 Flat Dark Earth version.]]

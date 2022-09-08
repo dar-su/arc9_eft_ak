@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM 7.62x39 Kiba Arms .308 muzzle device adapter"
 ATT.CompactName = "AKM 308"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/akm308.png", "mips smooth")
 ATT.Description = [[The Kiba Arms "Samson" adapter that allows installation of various .308 (7.62x51) muzzle devices on 7.62x39 AKM-type automatic rifles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

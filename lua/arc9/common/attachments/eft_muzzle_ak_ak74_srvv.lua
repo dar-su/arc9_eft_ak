@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-74 5.45x39 SRVV muzzle brake"
 ATT.CompactName = "SRVV AK74"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/srvv.png", "mips smooth")
 ATT.Description = [[An SRVV-produced muzzle brake for AK-74 5.45x39 assault rifles and compatibles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

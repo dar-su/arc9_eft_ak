@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 30-round magazine (issued '55 or later)"
 ATT.CompactName = "AK55"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/76255.png", "mips smooth")
 ATT.Description = [[A standard 30-round metal magazine for 7.62x39 AK and compatible weapons from 1955 onward. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

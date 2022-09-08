@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Magpul Zhukov-U handguard (FDE)"
 ATT.CompactName = "Zh-U (FDE)"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/zhuf.png", "mips smooth")
 ATT.Description = [[The Magpul Zhukov-U handguard is installed on AKM/AK-74-compatible weapon systems. 
 Equipped with licensed M-LOK mounts for installation of additional devices or rails.
 

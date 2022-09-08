@@ -1,6 +1,6 @@
 ATT.PrintName = "AK TROY Full Length Rail handguard & gas tube combo"
 ATT.CompactName = "TROY FLR"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/troyflr.png", "mips smooth")
 ATT.Description = [[The Full Length Rail handguard and gas tube combo. 
 The cooling holes allow the rail to run cool, even after extended firing. 
 Machined from hardened aircraft aluminum with stainless steel components and finished in MIL-SPEC hardcoat anodizing. 

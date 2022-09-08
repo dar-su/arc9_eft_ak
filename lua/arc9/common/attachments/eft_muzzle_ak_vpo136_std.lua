@@ -1,6 +1,6 @@
 ATT.PrintName = "VPO-136 \"Vepr-KM\" 7.62x39 muzzle brake & compensator"
 ATT.CompactName = "VPO136"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/vpo136.png", "mips smooth")
 ATT.Description = [[A standard muzzle brake/compensator manufactured by Molot Arms for VPO-136 Vepr KM 7.62x39 carbines. Also fits the AK family automatic rifles of the same caliber.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

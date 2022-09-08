@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-104 7.62x39 muzzle brake-compensator"
 ATT.CompactName = "6P46 0-20"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/102.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced muzzle brake and compensator for the AK-104 7.62x39 assault rifle.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

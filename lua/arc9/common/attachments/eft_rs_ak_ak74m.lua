@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-74M rear sight (6P20 Sb.2)"
 ATT.CompactName = "6P20 Sb.2"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rs_74m.png", "mips smooth")
 ATT.Description = [[A standard rear sight for AK-74M automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

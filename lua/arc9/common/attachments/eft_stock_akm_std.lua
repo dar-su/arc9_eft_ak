@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM wooden stock (6P1 Sb.5)"
 ATT.CompactName = "6P1 Sb.5"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/akm.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for AKM automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

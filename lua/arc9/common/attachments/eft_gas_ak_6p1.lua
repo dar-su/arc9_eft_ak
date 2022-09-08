@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM gas tube (6P1 Sb.1-2)"
 ATT.CompactName = "6P1 Sb.1-2"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/gas_akm.png", "mips smooth")
 ATT.Description = [[A standard gas tube for AKM automatic rifles. Gas tubes channel the travel direction of gas piston.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

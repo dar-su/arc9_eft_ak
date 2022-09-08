@@ -1,6 +1,6 @@
 ATT.PrintName = "WASR-10/63 CAF wooden foregrip"
 ATT.CompactName = "WASR"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/wasr.png", "mips smooth")
 ATT.Description = [[A Romanian handguard/foregrip for WASR-10/63 rifles, manufactured by Cugir Arms Factory. 
 Compatible with AK-family weapon systems.]]
 ATT.SortOrder = 0

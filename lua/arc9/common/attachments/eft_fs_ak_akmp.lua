@@ -1,6 +1,6 @@
 ATT.PrintName = "AKMP system front sight device"
 ATT.CompactName = "AKMP FS"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/fs_akmp.png", "mips smooth")
 ATT.Description = [[A device intended for firing AK and AKM family assault rifles in poor visibility conditions.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

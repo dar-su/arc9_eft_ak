@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 RD AK to M4 buffer tube adapter"
 ATT.CompactName = "AKtoM4"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/ak2m4.png", "mips smooth")
 ATT.Description = [[CAA Receiver Extension Buffer Tube, 6-position, Mil-Spec diameter will fit any AK-based rifles with a fixed stock.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

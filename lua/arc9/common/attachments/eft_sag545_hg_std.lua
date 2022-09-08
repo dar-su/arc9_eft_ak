@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-545 SAG Mk.3 handguard"
 ATT.CompactName = "AK-545 HG"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/sag/hg.png", "mips smooth")
 ATT.Description = [[The Sureshot Armament Group Mk.3 handguard for AK-545, equipped with an M-LOK interface for the installation of additional devices and accessories and a picatinny rail on top for sights and tactical equipment mounting.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

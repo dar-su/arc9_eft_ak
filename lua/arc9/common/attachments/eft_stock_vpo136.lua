@@ -1,6 +1,6 @@
 ATT.PrintName = "VPO-136 \"Vepr-KM\" wooden stock"
 ATT.CompactName = "VPO136"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/136.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for VPO-136 Vepr KM carbines, manufactured by Molot Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

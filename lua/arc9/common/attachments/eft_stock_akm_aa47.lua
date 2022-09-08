@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 ProMag Archangel OPFOR AA47 buttstock"
 ATT.CompactName = "OPFOR AA47"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/aa47.png", "mips smooth")
 ATT.Description = [[The OPFOR AA47 stock from the Archangel kit for AKM/AK-74-type non-folding weapon systems. Manufactured by ProMag.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

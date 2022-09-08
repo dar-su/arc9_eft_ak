@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Strike Industries TRAX 1 handguard"
 ATT.CompactName = "TRAX 1"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/trax.png", "mips smooth")
 ATT.Description = [[The Strike Industries AK TRAX 1 rail system is a modular drop-in rail that is versatile, light-weight, and durable. 
 It will provide an adaptable platform for the user to mount their accessories. 
 Can be combined with the TRAX 2 rail for maximum amount of modularity.]]

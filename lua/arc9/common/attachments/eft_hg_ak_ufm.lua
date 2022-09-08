@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Krebs Custom UFM KeyMod handguard"
 ATT.CompactName = "UFM"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/ufm.png", "mips smooth")
 ATT.Description = [[The Krebs Custom UFM Keymod System lightweight aluminum handguard for AK family assault rifles with KeyMod slots for rail installation. 
 The Kiba Arms VDM CS gas tube is required for installation.]]
 ATT.SortOrder = 0

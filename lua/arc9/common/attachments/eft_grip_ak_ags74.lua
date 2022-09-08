@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Custom Arms AGS-74 PRO + Sniper Kit pistol grip"
 ATT.CompactName = "AGS-74"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/grip/ags.png", "mips smooth")
 ATT.Description = [[A lightweight ergonomic pistol grip for AK series weapon systems, features the "Sniper Kit" palm shelf for user comfort and hand rest. 
 Manufactured by Custom Arms.]]
 ATT.SortOrder = 0

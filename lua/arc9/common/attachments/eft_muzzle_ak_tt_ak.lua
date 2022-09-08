@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 Taktika Tula muzzle adapter"
 ATT.CompactName = "TT AK"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/ttak.png", "mips smooth")
 ATT.Description = [[The Taktika Tula muzzle device adapter. Provides the means of installing modern muzzle devices on AK and AKM.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

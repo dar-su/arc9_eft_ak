@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 X Products X-47 50-round drum magazine"
 ATT.CompactName = "X-47 7.62"
-ATT.Icon = Material("entities/eft_ak_attachments/mags/6l18.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762x47.png", "mips smooth")
 ATT.Description = [[The X-47 is a 50-round drum magazine for 7.62x39 AK family assault rifles. Manufactured by X Products. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

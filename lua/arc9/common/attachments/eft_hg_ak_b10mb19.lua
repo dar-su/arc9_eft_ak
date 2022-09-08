@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Zenit B-10M handguard with B-19 upper mount"
 ATT.CompactName = "B10M+B19"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/b10m.png", "mips smooth")
 ATT.Description = [[The integrally machined B-10M handguard is manufactured from D16T aluminum alloy with black coating and can be installed instead of the standard-issue handguard on AK series 103, 104, 105, 74S, 74M, AKM, and AKMS. 
 B-19 rail mount is basically a sight mount hovering over the gas tube. Also integrally machined from D16T aluminum alloy with black coating, it can be installed on B-10M or B-21M foregrips.
 ©Zenit]]

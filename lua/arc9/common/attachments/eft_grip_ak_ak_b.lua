@@ -1,6 +1,6 @@
 ATT.PrintName = "AK bakelite pistol grip"
 ATT.CompactName = "Bakelite"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/grip/molot.png", "mips smooth")
 ATT.Description = [[A bakelite pistol grip for AK assault rifles and compatible weapon systems, manufactured by Molot Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK bakelite pistol grip (6P1 Sb.8V)"
 ATT.CompactName = "6P1 Sb.8v"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/grip/sb8v.png", "mips smooth")
 ATT.Description = [[An Izhmash-manufactured bakelite pistol grip for the AK automatic rifle and compatible weapon systems.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

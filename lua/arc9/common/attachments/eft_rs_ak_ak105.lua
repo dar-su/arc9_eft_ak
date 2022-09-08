@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-105 rear sight (6P44 Sb.1-30)"
 ATT.CompactName = "6P44 Sb.1-30"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/rs_105.png", "mips smooth")
 ATT.Description = [[A standard rear sight for AK-105 automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

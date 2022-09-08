@@ -1,6 +1,6 @@
 ATT.PrintName = "AK-100 series polymer handguard"
 ATT.CompactName = "AK100"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/100.png", "mips smooth")
 ATT.Description = [[A polymer handguard for the 100-series AKs, manufactured by Izhmash. A further modification of the polymer AK-74M handguard. 
 Features a bottom rail for installation of tactical foregrips.]]
 ATT.SortOrder = 0

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK 7.62x39 SRVV muzzle brake-compensator"
 ATT.CompactName = "SRVV AKM"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/srvvakm.png", "mips smooth")
 ATT.Description = [[An SRVV-produced muzzle brake and compensator for AK assault rifles and compatibles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

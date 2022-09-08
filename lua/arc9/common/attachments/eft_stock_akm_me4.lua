@@ -1,6 +1,6 @@
 ATT.PrintName = "AKM/AK-74 ME4 buffer tube adapter"
 ATT.CompactName = "ME4"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/stock/me4.png", "mips smooth")
 ATT.Description = [[An adapter for the installation of telescopic stock buffer tubes on AKs with non-folding stocks.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

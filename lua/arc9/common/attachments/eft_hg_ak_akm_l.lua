@@ -1,6 +1,6 @@
 ATT.PrintName = "AK TDI AKM-L handguard"
 ATT.CompactName = "TDI AKM-L"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/akml.png", "mips smooth")
 ATT.Description = [[The TDI Arms AKM-L can be installed on AKM/AK-74 compatible weapon systems.
 Equipped with M-LOK mounts for installation of additional devices or rails.]]
 ATT.SortOrder = 0

@@ -1,6 +1,6 @@
 ATT.PrintName = "AK Zenit B-10 Handguard"
 ATT.CompactName = "B-10"
-ATT.Icon = Material("entities/eft_attachments/stocks/eft_stock_ar_magpulmoe.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/b10.png", "mips smooth")
 ATT.Description = [[The integrally machined B-10 foregrip is manufactured from aluminum alloy D16T with black coating and can be installed instead of the standard-issue foregrip on an AK.
 It's fitted with Picatinny rail mounts on two sides, allowing for the installation of additional equipment such as tactical foregrips, flashlights, and laser designators. 
 Manufactured by Zenit.]]
