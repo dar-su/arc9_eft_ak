@@ -12,12 +12,11 @@ ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
-    -- {
-    --     PrintName = "HANDGUARD",
-    --     Category = "eft_ak_handguard",
-    --     Pos = Vector(0, -1.8, 0.5),
-    --     Ang = Angle(0, 0, 0),
-    --     Icon_Offset = Vector(0, 3.8, -0.5),
-    --     Installed = "eft_hg_ak_6p20sb9"
-    -- },
+    {
+        PrintName = "Handguard",
+        Category = "eft_ak_handguard",
+        Pos = Vector(0, -1.8, 0.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 3.8, -0.5),
+    },
 }

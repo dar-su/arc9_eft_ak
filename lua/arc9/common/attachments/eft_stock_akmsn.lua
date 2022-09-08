@@ -6,3 +6,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"
 
 ATT.Category = {"eft_akms_stock"}
+
+ATT.ToggleStats = {
+    {
+        PrintName = "Unfolded",
+    },
+    {
+        PrintName = "Folded",
+        CustomizePos = Vector(23, 23, 4),
+        ActivateElements = {"eft_stock_akmsn_f"}
+    },
+}

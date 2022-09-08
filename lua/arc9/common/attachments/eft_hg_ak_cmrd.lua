@@ -10,7 +10,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
 ATT.ModelBodygroups = "6"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
-ATT.ExcludeElements = {"short_barrel"}
+ATT.ExcludeElements = {"short_barrel", "eft_gas_vityaz_std"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}

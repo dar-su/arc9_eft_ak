@@ -11,7 +11,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_x47.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
-ATT.ExcludeElements = {"railedcover"}
+ATT.ExcludeElements = {"railedcover", "eft_gas_vityaz_std"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 ATT.Attachments = {

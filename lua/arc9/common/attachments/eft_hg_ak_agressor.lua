@@ -11,6 +11,7 @@ ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
+ATT.ExcludeElements = {"eft_gas_vityaz_std"}
 ATT.Category = {"eft_ak_handguard"}
 
 ATT.Attachments = {

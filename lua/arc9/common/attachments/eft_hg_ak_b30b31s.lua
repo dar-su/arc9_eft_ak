@@ -12,6 +12,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"
 ATT.ModelBodygroups = "0"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
+ATT.ExcludeElements = {"eft_gas_vityaz_std"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
