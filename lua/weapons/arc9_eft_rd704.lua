@@ -5,6 +5,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
 SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
 
+
 SWEP.PrintName = "RD-704"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
@@ -222,10 +223,12 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = {
-    [0] = "shellport",
     [1] = "patron_in_weapon",
-    [2] = "patron_in_mag"
+    [2] = "patron_in_mag0",
+    [3] = "patron_in_mag1",
+    [4] = "patron_in_mag2",
 }
+
 
 -- SWEP.HideBones = { -- please do it later
 --     "vm_mag2",
@@ -242,15 +245,6 @@ SWEP.BulletBones = {
 --         "tag_mag2"
 --     }
 -- }
-
-
---          UBGL
-
-SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
-SWEP.DoFireAnimationUBGL = true
-SWEP.NoShellEjectUBGL = true
-SWEP.MuzzleEffectQCAUBGL = 1
-
 
 
 ------------------------- [[[           Sounds            ]]] -------------------------
@@ -289,6 +283,7 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
 
+
 ------------------------- [[[           Animations            ]]] -------------------------
 
 SWEP.Hook_TranslateAnimation = ARC9EFT.AK_AnimsHook
@@ -297,8 +292,6 @@ SWEP.Animations = ARC9EFT.AK_Anims
 
 
 ------------------------- [[[           Attachments            ]]] -------------------------
-
--- SWEP.AttachmentElements = {}
 
 SWEP.Attachments = {
     {
@@ -317,26 +310,28 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -5.5, -0.25),
+        ExcludeElements = nil,
+        RequireElements = nil,
         Installed = "eft_rec_ak_rd704"
     },
     {
         PrintName = "Stock",
         Category = "eft_akm_stock",
         Bone = "mod_stock",
-        Installed = "eft_stock_ak_AKtoM4",
-        -- ExcludeElements = {"nostock"},
+        Installed = "eft_stock_ak_aktom4",
+        ExcludeElements = {"nostock"},
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 3),        
-        -- SubAttachments = {
-        --     {
-        --         Installed = "eft_ar_buffertube_std",
-        --         SubAttachments = {
-        --             {
-        --                 Installed = "eft_ar_stock_sba3",
-        --             }
-        --         }
-        --     }
-        -- }
+        Ang = Angle(0, 0, 3),   
+        SubAttachments = {
+            {
+                Installed = "eft_ar_buffertube_std",
+                SubAttachments = {
+                    {
+                        Installed = "eft_ar_stock_sba3",
+                    }
+                }
+            }
+        }
     },
     {
         PrintName = "Dovetail",
@@ -349,12 +344,12 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Grip",
-        Category = "eft_ak_grip",
+        Category = {"eft_ak_grip", "eft_ak_cqrgrip"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
-        Installed = "eft_grip_ak_us_palm",
+        Installed = "eft_grip_ak_tangodown",
         Integral = true
     },
     {
@@ -376,7 +371,7 @@ SWEP.Attachments = {
         ExcludeElements = nil,
         RequireElements = nil,
         Installed = "eft_gas_rd704_ionlite",
-        Integral = true
+        Integral = true,
     }, 
     {
         PrintName = "Rear sight",

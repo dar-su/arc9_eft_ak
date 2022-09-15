@@ -224,10 +224,12 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = {
-    [0] = "shellport",
     [1] = "patron_in_weapon",
-    [2] = "patron_in_mag"
+    [2] = "patron_in_mag0",
+    [3] = "patron_in_mag1",
+    [4] = "patron_in_mag2",
 }
+
 
 -- SWEP.HideBones = { -- please do it later
 --     "vm_mag2",

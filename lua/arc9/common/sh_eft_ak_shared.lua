@@ -6,7 +6,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
 
     local ending = ""
 
-    local rand = math.Truncate(util.SharedRandom("hi", 0, 3.99)) -- 0, 1, 2, 3
+    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 3.99)) -- 0, 1, 2, 3      FUCK RANDOM
     -- local rand = 4
     local nomag = false
 
@@ -28,16 +28,41 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
     else nomag = true end
     
     if anim == "inspect" then
-        if rand == 3 and !nomag then -- mag
+        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        local rand = swep.EFTInspectnum
+        if rand == 4 then swep.EFTInspectnum = 0 rand = 0 end
+
+        if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
+    
+            if ARC9EFTBASE then
+                net.Start("arc9eftmagcheck")
+                net.WriteBool(false) -- accurate or not based on mag type
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetMaxClip1()), 9)
+                net.WriteUInt(swep:GetMaxClip1(), 9)
+                net.Send(swep:GetOwner())
+            end
         else
             if nomag then ending = math.max(rand, 2) end
             ending = rand
         end
     elseif anim == "firemode_1" or anim == "firemode_2" then
-        if elements["eft_hg_rpk16_std"] or elements["eft_sag545_gastube"] then
+        if elements["eft_hg_rpk16_std"] then
             ending = "_rpk"
         end
+    end
+
+
+    if anim == "fix" then
+        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
+
+        if ARC9EFTBASE then
+            net.Start("arc9eftjam")
+            net.WriteUInt(rand, 3)
+            net.Send(swep:GetOwner())
+        end
+
+        return "jam" .. rand
     end
 
     return anim .. ending
@@ -215,14 +240,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_single,
-        EventTable = rst_single
+        EventTable = rst_single,
+        MagSwapTime = 1.5,
     },
     ["reload_empty"] = {
         Source = "reload_single",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_single,
-        EventTable = rst_single
+        EventTable = rst_single,
+        MagSwapTime = 1.5,
     },
 
 
@@ -232,6 +259,7 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         IKTimeLine = rik_def,
         EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_empty545"] = {
         Source = "reload545_empty",
@@ -239,6 +267,7 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         IKTimeLine = rik_drop,
         EventTable = rst_drop,
+        MagSwapTime = 1.5,
     },
 
     ["reloadlong545"] = {
@@ -246,14 +275,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_emptylong545"] = {
         Source = "reloadlong545_empty",
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_long,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        MagSwapTime = 1.5,
     },
 
     ["reloadlong762"] = {
@@ -261,14 +292,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_emptylong762"] = {
         Source = "reloadlong762_empty",
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_long,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        MagSwapTime = 1.5,
     },
 
     ["reload762"] = {
@@ -276,14 +309,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_empty762"] = {
         Source = "reload762_empty",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_drop,
-        EventTable = rst_drop
+        EventTable = rst_drop,
+        MagSwapTime = 1.5,
     },
 
     ["reload556"] = {
@@ -291,14 +326,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_empty556"] = {
         Source = "reload556_empty",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_drop,
-        EventTable = rst_drop
+        EventTable = rst_drop,
+        MagSwapTime = 1.5,
     },
 
 
@@ -307,14 +344,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_empty10rnd"] = {
         Source = "reload10rnd_empty",
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_empty10rnd,
-        EventTable = rst_drop
+        EventTable = rst_drop,
+        MagSwapTime = 1.5,
     },
 
 
@@ -323,14 +362,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_empty60rnd"] = {
         Source = "reload60rnd_empty",
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        MagSwapTime = 1.5,
     },
 
 
@@ -340,14 +381,16 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_emptysmalldrum"] = {
         Source = "reloadsmalldrum_empty",
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        MagSwapTime = 1.5,
     },
 
 
@@ -356,20 +399,22 @@ ARC9EFT.AK_Anims = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def
+        EventTable = rst_def,
+        MagSwapTime = 1.5,
     },
     ["reload_emptybigdrum"] = {
         Source = "reloadbigdrum_empty",
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_empty,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        MagSwapTime = 1.5,
     },
 
 
     ["inspect0"] = {
         Source = "look0",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         -- IKTimeLine = rik_def,
         EventTable = rst_look
@@ -390,7 +435,7 @@ ARC9EFT.AK_Anims = {
     -- },
     ["inspect1"] = {
         Source = "look2",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -402,9 +447,9 @@ ARC9EFT.AK_Anims = {
         },
         EventTable = rst_look
     },
-    ["inspect2"] = {
+    ["inspect3"] = {
         Source = "look3",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
             { s = randspin, t = 9/28 },
@@ -417,76 +462,170 @@ ARC9EFT.AK_Anims = {
     },
     ["inspect_mag_545"] = {
         Source = "magcheck545",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_long545"] = {
         Source = "magchecklong545",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_long762"] = {
         Source = "magchecklong762",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_762"] = {
         Source = "magcheck762",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_556"] = {
         Source = "magcheck556",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_60rnd"] = {
         Source = "magcheck60rnd",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_10rnd"] = {
         Source = "magcheck10rnd",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_smalldrum"] = {
         Source = "magchecksmalldrum",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
     ["inspect_mag_bigdrum"] = {
         Source = "magcheckbigdrum",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
         EventTable = rst_magcheck
     },
 
 
+
+
+
+
+    ["jam0"] = {
+        Source = "jam_misfire", -- misfire
+        EventTable = {
+            { s = randspin, t = 0.22 },            
+            { s = path.."akms_slider_up.wav", t = 0.68},
+            { s = path.."akms_slider_down.wav", t = 0.88},
+            { s = randspin, t = 1.41 },        
+        },
+        EjectAt = 0.74
+    },
+    ["jam2"] = {
+        Source = "jam_feed", -- jam feed
+        EventTable = {
+            { s = randspin, t = 2/24 },
+            { s = randspin, t = 12/24 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 16/24 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 22/24 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 36/24 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.wav", t = 40/24 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 46/24 },
+            { s = randspin, t = 50/24 },
+            { s = path .. "ak74_slider_down.wav", t = 61/24 },
+            { s = randspin, t = 72/24 },
+        },
+    },
+    ["jam3"] = {
+        Source = "jam_hard_slide", -- jam hard
+        EventTable = {
+            { s = randspin, t = 0.2 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.89 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.99 },
+            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.5 },
+            { s = randspin, t = 1.94 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 2.25 },
+            { s = path .. "ak_jam_stuckbolt_out_hit2.wav", t = 2.62 },
+            { s = randspin, t = 3.13 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 3.35 },
+            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 3.66 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 3.97 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 4.3 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 4.45 },
+            { s = path .. "ak74_slider_down.wav", t = 4.54 },
+            { s = randspin, t = 4.85 },
+        },
+        EjectAt = 4.45
+    },
+    ["jam4"] = {
+        Source = "jam_soft_slide", -- jam soft
+        EventTable = {
+            { s = randspin, t = 0.14 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.65 },
+            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.95 },
+            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.62 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 1.89 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 2.14 },
+            { s = path .. "ak74_slider_down.wav", t = 2.38 },
+            { s = randspin, t = 2.9 },
+        }
+    },
+    ["jam1"] = {
+        Source = "jam_shell", -- jam shell
+        EventTable = {
+            { s = randspin, t = 0.07 },
+            { s = path .. "ak_jam_shell_grab.wav", t = 0.59 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 0.75 },
+            { s = path .. "ak_jam_shell_remove.wav", t = 0.91 },
+            { s = randspin, t = 1.59 },
+        },
+    },
+
+
+
+
+
+
+
     ["firemode_1"] = {
         Source = "firemode_1",
-        EventTable = { { s = path .. "ak74_fireselector_down.wav", t = 0.25 } }
+        EventTable = { 
+            -- {pp = "firemode", ppv = 0, t = 0 },
+            {s = path .. "ak74_fireselector_down.wav", t = 0.25 },
+            -- {pp = "firemode", ppv = 1, t = 0.5 },
+        },        
+        PoseParamChanges = {
+            ["firemode"] = 0
+        },
     },
     ["firemode_2"] = {
         Source = "firemode_0",
-        EventTable = { { s = path .. "ak74_fireselector_up.wav", t = 0.25 } }
+        EventTable = { 
+            -- {pp = "firemode", ppv = 1, t = 0 },
+            {s = path .. "ak74_fireselector_up.wav", t = 0.25 },
+            -- {pp = "firemode", ppv = 0, t = 0.5 },
+        },    
+        -- PoseParamChanges = {
+        --     ["firemode"] = 1 
+        -- },
     },
 
     ["firemode_1_rpk"] = {

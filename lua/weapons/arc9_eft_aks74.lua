@@ -119,8 +119,8 @@ SWEP.Firemodes = { { Mode = -1 }, { Mode = 1 } } -- auto, semi
 
 --          Speed
 
-SWEP.AimDownSightsTime = 0.33
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.75
+SWEP.SprintToFireTime = 0.75
 
 SWEP.SpeedMult = 0.95
 SWEP.SpeedMultSights = 0.75
@@ -222,9 +222,10 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = {
-    [0] = "shellport",
     [1] = "patron_in_weapon",
-    [2] = "patron_in_mag"
+    [2] = "patron_in_mag0",
+    [3] = "patron_in_mag1",
+    [4] = "patron_in_mag2",
 }
 
 -- SWEP.HideBones = { -- please do it later
@@ -309,6 +310,7 @@ SWEP.HookP_DescriptionChange = function(self, desc)
 end
 
 
+SWEP.HookP_ModifyFiremodePoseParam = function(self, pp) return pp-1 end
 
 ------------------------- [[[           Animations            ]]] -------------------------
 

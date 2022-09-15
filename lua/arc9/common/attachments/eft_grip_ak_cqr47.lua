@@ -9,4 +9,4 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
 ATT.ModelBodygroups = "j"
 ATT.ActivateElements = {"nostock"}
 
-ATT.Category = {"eft_ak_grip"}
+ATT.Category = {"eft_ak_cqrgrip"}

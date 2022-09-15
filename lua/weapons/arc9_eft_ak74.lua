@@ -222,10 +222,12 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = {
-    [0] = "shellport",
     [1] = "patron_in_weapon",
-    [2] = "patron_in_mag"
+    [2] = "patron_in_mag0",
+    [3] = "patron_in_mag1",
+    [4] = "patron_in_mag2",
 }
+
 
 -- SWEP.HideBones = { -- please do it later
 --     "vm_mag2",
@@ -354,6 +356,7 @@ SWEP.Attachments = {
         Category = "eft_akm_stock",
         Bone = "mod_stock",
         Installed = "eft_stock_ak74_std",
+        ExcludeElements = {"nostock"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 3),
     },
@@ -376,7 +379,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Grip",
-        Category = "eft_ak_grip",
+        Category = {"eft_ak_grip", "eft_ak_cqrgrip"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
