@@ -21,7 +21,7 @@ ATT.Attachments = {
         PrintName = "B2 Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0, 10.7, 1.6),
-        Ang = Angle(180, 0, 0),
+        Ang = Angle(-180, 0, 0),
         Icon_Offset = Vector(0, 1, 0),
     },
     {
@@ -35,7 +35,7 @@ ATT.Attachments = {
         PrintName = "R Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.8, 10.5, 0.65),
-        Ang = Angle(90, 0, 0),
+        Ang = Angle(-90, 0, 180),
         Icon_Offset = Vector(0, 1, 0),
     },
     {

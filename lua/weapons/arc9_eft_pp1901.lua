@@ -217,7 +217,7 @@ SWEP.CamQCA_Mult_ADS = 0.05
 SWEP.MuzzleParticle = "muzzleflash_ak47"
 
 SWEP.CaseEffectQCA = 2
-SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
@@ -321,7 +321,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     local ending = ""
 
-    local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
+    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
     local nomag = false
 
     -- 0 - look
@@ -332,14 +332,30 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     else nomag = true end
     
     if anim == "inspect" then
-        if rand == 2 and !nomag then -- mag
+        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        local rand = swep.EFTInspectnum
+        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
+
+        if rand == 1 and !nomag then -- mag
             ending = "_mag_" .. ending
         else
             if nomag then ending = math.max(rand, 1) end
             ending = rand
         end
     end
-    
+
+    if anim == "fix" then
+        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
+
+        if ARC9EFTBASE then
+            net.Start("arc9eftjam")
+            net.WriteUInt(rand, 3)
+            net.Send(swep:GetOwner())
+        end
+
+        return "jam" .. rand
+    end
+
     return anim .. ending
     -- return anim .. 3
 end
@@ -448,7 +464,7 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
         RareSource = {"tooidle0", "tooidle1", "tooidle2"},
-        RareSourceChance = 0.005,
+        RareSourceChance = 0.001,
     },
 
     ["ready"] = {
@@ -533,7 +549,7 @@ SWEP.Animations = {
         },
         EventTable = rst_look
     },
-    ["inspect1"] = {
+    ["inspect2"] = {
         Source = "look1",
         MinProgress = 0.85,
         FireASAP = true,
@@ -577,19 +593,72 @@ SWEP.Animations = {
             { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
         }
     },
-    ["fix"] = {
-        Source = {"jam0"},
+
+
+
+    ["jam0"] = {
+        Source = {"misfire_0", "misfire_1"}, -- misfire
         EventTable = {
-            { s = randspin, t = 0.05 },
-            -- { s = "eft_shared/weap_bolt_handle_out.wav", t = 0.4 },
-            -- { s = randspin, t = 0.95 },
-            { s = path .. "ak74_slider_jam.wav", t = 21/24 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 29/24 },
-            { s = randspin, t = 2.4 },
-            -- { s = path .. "ak74_slider_up.wav", t = 2.7 },
-            -- { s = path .. "ak74_slider_down.wav", t = 2.9 },
-            { s = randspin, t = 3.1 },
-        }
+            { s = randspin, t = 0.2 },            
+            { s = path.."akms_slider_up.wav", t = 0.8},
+            { s = path.."akms_slider_down.wav", t = 1.04},
+            { s = randspin, t = 1.55 },        
+        },
+        EjectAt = 0.77
+    },
+    ["jam2"] = {
+        Source = "jam_feed", -- jam feed
+        EventTable = {
+            { s = randspin, t = 0.4 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.6 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.72 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 1.18 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.wav", t = 1.4 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.53 },
+            { s = path .. "ak74_slider_down.wav", t = 1.72 },
+            { s = randspin, t = 2.05 },
+        },
+        EjectAt = 1.4
+    },
+    ["jam3"] = {
+        Source = "jam_hard", -- jam hard
+        EventTable = {
+            { s = randspin, t = 0.25 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.42 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.51 },
+            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 0.96 },
+            { s = randspin, t = 1.3 },
+            { s = randspin, t = 1.79 },
+            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 2.14 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 2.67 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 2.86 },
+            { s = path .. "ak74_slider_down.wav", t = 2.97 },
+            { s = randspin, t = 3.48 },
+        },
+        EjectAt = 2.86
+    },
+    ["jam4"] = {
+        Source = "jam_soft", -- jam soft
+        EventTable = {
+            { s = randspin, t = 0.16 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.5 },
+            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.73 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 1.26 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.44 },
+            { s = path .. "ak74_slider_down.wav", t = 1.54 },
+            { s = randspin, t = 2 },
+        },
+        EjectAt = 1.44
+    },
+    ["jam1"] = {
+        Source = "jam_shell", -- jam shell
+        EventTable = {
+            { s = randspin, t = 0.3 },
+            { s = path .. "ak_jam_shell_grab.wav", t = 0.56 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.2 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 1.44 },
+            { s = randspin, t = 1.7 },
+        },
     },
 }
 

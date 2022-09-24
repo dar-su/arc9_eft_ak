@@ -278,9 +278,9 @@ SWEP.MuzzleEffectQCAUBGL = 1
 local path = "weapons/darsu_eft/ak/"
 
 SWEP.ShootSound = { path .. "fire/saiga_outdoor_close1.wav", path .. "fire/saiga_outdoor_close2.wav" }
-SWEP.ShootSoundIndoor = path .. "fire/saiga_indoor_close1.wav"
+SWEP.ShootSoundIndoor = path .. "fire/saiga_indoor_close1.wav1"
 SWEP.DistantShootSound = { path .. "fire/saiga_outdoor_distant1.wav", path .. "fire/saiga_outdoor_distant2.wav" }
-SWEP.DistantShootSoundIndoor = path .. "fire/saiga_indoor_far1.wav"
+SWEP.DistantShootSoundIndoor = path .. "fire/saiga_indoor_far1.wav1"
 
 SWEP.ShootSoundSilenced = path .. "fire/saiga_fire_silenced_close.wav"
 SWEP.ShootSoundIndoorSilenced = path .. "fire/saiga_fire_silenced_indoor_close.wav"
@@ -309,7 +309,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     local ending = ""
 
-    local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
+    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
     -- local rand = 4
     local nomag = false
 
@@ -323,12 +323,28 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     else nomag = true end
     
     if anim == "inspect" then
-        if rand == 2 and !nomag then -- mag
+        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        local rand = swep.EFTInspectnum
+        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
+
+        if rand == 1 and !nomag then -- mag
             ending = "_mag_" .. ending
         else
             if nomag then ending = math.max(rand, 1) end
             ending = rand
         end
+    end
+
+    if anim == "fix" then
+        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
+
+        if ARC9EFTBASE then
+            net.Start("arc9eftjam")
+            net.WriteUInt(rand, 3)
+            net.Send(swep:GetOwner())
+        end
+
+        return "jam" .. rand
     end
 
     return anim .. ending
@@ -586,7 +602,7 @@ SWEP.Animations = {
         },
         EventTable = rst_look
     },
-    ["inspect1"] = {
+    ["inspect2"] = {
         Source = "look1",
         MinProgress = 0.85,
         FireASAP = true,
@@ -623,20 +639,85 @@ SWEP.Animations = {
     ["toggle"] = { Source = "mod_switch", EventTable = { { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
     ["switchsights"] = { Source = "mod_switch", EventTable = { { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
 
-    ["fix"] = {
-        Source = {"jam1"},
+
+
+
+    ["jam0"] = {
+        Source = {"misfire_0", "misfire_1"}, -- misfire
         EventTable = {
-            { s = randspin, t = 0.05 },
-            { s = "eft_shared/weap_bolt_handle_out.wav", t = 0.4 },
-            { s = randspin, t = 0.95 },
-            { s = path .. "saiga_slider_jam.wav", t = 1.8 },
-            { s = randspin, t = 2.4 },
-            { s = path .. "saiga_slider_up.wav", t = 2.7 },
-            { s = path .. "saiga_slider_down.wav", t = 2.9 },
-            { s = randspin, t = 3.1 },
+            { s = randspin, t = 0.22 },            
+            { s = path.."saiga_slider_up.wav", t = 0.79},
+            { s = path.."saiga_slider_down.wav", t = 1.04},
+            { s = randspin, t = 1.41 },        
+        },
+        EjectAt = 0.88
+    },
+    ["jam2"] = {
+        Source = "jam_feed", -- jam feed
+        EventTable = {
+            { s = randspin, t = 2/24 },
+            { s = randspin, t = 12/24 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.44 },
+            { s = path .. "saiga_slider_jam.wav", t = 0.86 },
+            { s = path .. "saiga_slider_up.wav", t = 1.14 },
+            { s = randspin, t = 1.43 },
+            { s = randspin, t = 1.66 },
+            { s = path .. "saiga_round_in_chamber.wav", t = 2.13 },
+            { s = randspin, t = 2.55 },
+            { s = path .. "saiga_slider_down.wav", t = 2.96 },
+            { s = randspin, t = 3.5 },
+        },
+    },
+    ["jam3"] = {
+        Source = "jam_hardjam", -- jam hard
+        EventTable = {
+            { s = randspin, t = 0.16 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.48 },
+            { s = randspin, t = 0.84 },
+            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.85 },
+            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.35 },
+            { s = randspin, t = 1.74 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 2.22 },
+            { s = path .. "ak_jam_stuckbolt_out_hit2.wav", t = 2.73 },
+            { s = randspin, t = 3.13 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 3.27 },
+            { s = path .. "saiga_slider_up.wav", t = 4.09 },
+            { s = path .. "saiga_round_in_chamber.wav", t = 4.21 },
+            { s = path .. "saiga_slider_down.wav", t = 4.38 },
+            { s = randspin, t = 4.84 },
+        },
+        EjectAt = 4.21
+    },
+    ["jam4"] = {
+        Source = "jam_softjam", -- jam soft
+        EventTable = {
+            { s = randspin, t = 0.18 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.53 },
+            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.85 },
+            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.23 },
+            { s = randspin, t = 1.76 },
+            { s = path .. "saiga_slider_up.wav", t = 2.13 },
+            { s = path .. "saiga_slider_down.wav", t = 2.55 },
+            { s = randspin, t = 2.8 },
         }
     },
-    
+    ["jam1"] = {
+        Source = "jam_shell", -- jam shell
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.48 },
+            { s = path .. "saiga_slider_check.wav", t = 0.73 },
+            { s = randspin, t = 0.97 },
+            { s = randspin, t = 1.2 },
+            { s = randspin, t = 1.67 },
+            { s = randspin, t = 1.59 },
+            { s = path .. "saiga_slider_down.wav", t = 1.96 },
+            { s = randspin, t = 2.35 },
+        },
+    },
+
+
+
 }
 
 

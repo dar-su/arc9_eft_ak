@@ -18,7 +18,7 @@ ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom", "eft_vityaz_handg
 ATT.Attachments = {
     {
         PrintName = "Optic",
-        Category = {"eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_tactical_top", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 4, -1.25),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 1, 0),
@@ -33,16 +33,16 @@ ATT.Attachments = {
     },
     {
         PrintName = "R Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(1.05, 4.5, 0.45),
-        Ang = Angle(90, -90, 0),
+        Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 1),
     },
     {
         PrintName = "L Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.05, 4.5, 0.45),
-        Ang = Angle(-90, -90, 0),
+        Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 1),
     },
 }

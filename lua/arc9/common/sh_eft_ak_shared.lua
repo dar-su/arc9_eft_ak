@@ -35,7 +35,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
     
-            if ARC9EFTBASE then
+            if ARC9EFTBASE and SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(false) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetMaxClip1()), 9)
@@ -56,7 +56,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
 
-        if ARC9EFTBASE then
+        if ARC9EFTBASE and SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -191,6 +191,8 @@ local rst_look = {
 ARC9EFT.AK_Anims = {
     ["idle"] = {
         Source = "idle",
+        RareSource = {"tooidle0", "tooidle1", "tooidle2"},
+        RareSourceChance = 0.001,
     },
 
     ["ready"] = {

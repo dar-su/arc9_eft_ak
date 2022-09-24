@@ -30,7 +30,7 @@ ATT.Attachments = {
     {
         PrintName = "Tactical",
         Category = {"eft_tactical_top"},
-        Pos = Vector(0, 10, -0.25),
+        Pos = Vector(0, 10.3, -0.25),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 1, 0),
         ExtraSightDistance = 8
@@ -53,7 +53,7 @@ ATT.Attachments = {
         PrintName = "QARS R",
         Category = {"eft_mount_qars"},
         Pos = Vector(1.05, 10.7, 1.15),
-        Ang = Angle(-90, 0, 0),
+        Ang = Angle(90, 0, 180),
         Icon_Offset = Vector(0, 0, -1),
     },
 }

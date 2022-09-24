@@ -21,7 +21,6 @@ ATT.Attachments = {
         Pos = Vector(0, -4.5, -1.67),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 1, 0),
-        -- ExtraSightDistance = 8
     },
     {
         PrintName = "Grip",
@@ -39,23 +38,24 @@ ATT.Attachments = {
     },
     {
         PrintName = "R Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(1, 5, 0.65),
-        Ang = Angle(90, -90, 0),
+        Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 1),
     },
     {
         PrintName = "L Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(-1, 5, 0.65),
-        Ang = Angle(-90, -90, 0),
+        Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 1),
     },
     {
         PrintName = "Top Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 7.5, -1.65),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 1),
+        ExtraSightDistance = 8
     },
 }
