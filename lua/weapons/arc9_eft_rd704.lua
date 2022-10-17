@@ -3,17 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
-
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "RD-704"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Rifle Dynamics",
-    Calibre = "7.62x39mm",
-    Action = "Gas",
-    Country = "USA",
-    Year = "2020"
+    Manufacturer1 = "Rifle Dynamics",
+    Calibre2 = "7.62x39mm",
+    Action3 = "Gas",
+    Country4 = "USA",
+    Year5 = "2020"
 }
 
 SWEP.Description = [[Rifle Dynamics 704 assault rifle 7.62x39mm, an improved version of the AK system manufactured by Rifle Dynamics. The main difference from the standard AK: the design of the front part shifts the center of gravity closer to the receiver, which significantly improves the controllability of the weapon.]]

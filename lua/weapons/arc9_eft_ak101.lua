@@ -3,16 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "AK-101/102"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Kalashnikov Concern",
-    Calibre = "5.56x45mm",
-    Action = "Gas",
-    Country = "Soviet Union",
-    Year = "1994"
+    Manufacturer1 = "Kalashnikov Concern",
+    Calibre2 = "5.56x45mm",
+    Action3 = "Gas",
+    Country4 = "Soviet Union",
+    Year5 = "1994"
 }
 
 local desc101 = [[The AK-101 5.56x45mm assault rifle is a further modernized version of AK-74M base. AK-101 is equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The rifle is chambered to fire 5.56x45mm NATO ammunition, and is designed entirely for export purposes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]

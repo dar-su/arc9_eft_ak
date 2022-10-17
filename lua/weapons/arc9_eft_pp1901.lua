@@ -3,16 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "PP-19-01 \"Vityaz\""
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    Manufacturer = "Kalashnikov Concern",
-    Calibre = "9x19mm Parabellum",
-    Action = "Blow",
-    Country = "Russia",
-    Year = "2008"
+    Manufacturer1 = "Kalashnikov Concern",
+    Calibre2 = "9x19mm Parabellum",
+    Action3 = "Blow",
+    Country4 = "Russia",
+    Year5 = "2008"
 }
 
 SWEP.Description = [[The PP-19-01, also known as "Vityaz", is a Russian submachine gun chambered in 9x19 developed in 2004 by Izhmash based on the AK platform. A standard-issue submachine gun in many law enforcement agencies and military units of the Russian Federation.]]

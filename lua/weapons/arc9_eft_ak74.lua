@@ -3,16 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "AK-74"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Kalashnikov Concern",
-    Calibre = "5.45x39mm",
-    Action = "Gas",
-    Country = "Soviet Union",
-    Year = "1974"
+    Manufacturer1 = "Kalashnikov Concern",
+    Calibre2 = "5.45x39mm",
+    Action3 = "Gas",
+    Country4 = "Soviet Union",
+    Year5 = "1974"
 }
 
 SWEP.Description = [[The AK-74 (Avtomat Kalashnikova 74 - "Kalashnikov's Automatic rifle 74") 5.45x39mm assault rifle, developed in 1970 by M. T. Kalashnikov, became a further evolution of the AKM due to adoption of the new 5.45x39 ammunition by the military. The AK-74 was equipped with a new buttstock, handguard (which retained the AKM-type finger swells), and gas cylinder. The stock has a shoulder pad different from that on the AKM, which is rubber and serrated for improved seating against the shooter. In addition, there are lightening cuts on each side of the buttstock. The buttstock, lower handguard, and upper heatguard were first manufactured from laminated wood, this later changed to a synthetic, plum or dark brown colored fiberglass.]]
@@ -165,7 +165,7 @@ SWEP.TracerColor = Color(255, 225, 200)
 --          Positions and offsets
 
 SWEP.IronSights = {
-    Pos = Vector(-4.28, -5, 1.26),
+    Pos = Vector(-4.28, -5, 1.35),
     Ang = Angle(0, 0.09, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,

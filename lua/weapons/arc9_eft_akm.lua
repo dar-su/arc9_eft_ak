@@ -3,17 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
-
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "AKM"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Kalashnikov Concern",
-    Calibre = "7.62x39mm",
-    Action = "Gas",
-    Country = "Soviet Union",
-    Year = "1959"
+    Manufacturer1 = "Kalashnikov Concern",
+    Calibre2 = "7.62x39mm",
+    Action3 = "Gas",
+    Country4 = "Soviet Union",
+    Year5 = "1959"
 }
 
 SWEP.Description = [[AKM 7.62x39mm - (Avtomát Kaláshnikova Modernizírovanny - Kalashnikovs Automatic Rifle Modernised) - was adopted in 1959 to replace AK as a standard service weapon of the Soviet Army. Main differences compared to AK: enhanced accuracy range, lower weight, new stock, trigger, hammer retarder, muzzle compensator and other design changes aimed at improving the efficiency of the rifle.]]

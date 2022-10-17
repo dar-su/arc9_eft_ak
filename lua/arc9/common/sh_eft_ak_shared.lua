@@ -1,4 +1,4 @@
-ARC9EFT = {}
+ARC9EFT = ARC9EFT or {}
 
 ARC9EFT.AK_AnimsHook = function(swep, anim)
     local elements = swep:GetElements()

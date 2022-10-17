@@ -3,16 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "AKS-74U"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Kalashnikov Concern",
-    Calibre = "5.45x39mm",
-    Action = "Gas",
-    Country = "Russia",
-    Year = "1979"
+    Manufacturer1 = "Kalashnikov Concern",
+    Calibre2 = "5.45x39mm",
+    Action3 = "Gas",
+    Country4 = "Russia",
+    Year5 = "1979"
 }
 
 SWEP.Description = [[AKS-74U (Avtomat Kalashnikova Skladnoy 74 Ukorochenny - "Kalashnikov's Shortened Automatic rifle 74 with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size.]]

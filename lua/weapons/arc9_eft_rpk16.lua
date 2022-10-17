@@ -3,16 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "RPK-16"
 SWEP.Class = "Light Machine Gun"
 SWEP.Trivia = {
-    Manufacturer = "Molot Oruzhie",
-    Calibre = "5.45x39mm",
-    Action = "Gas",
-    Country = "Russia",
-    Year = "2017"
+    Manufacturer1 = "Molot Oruzhie",
+    Calibre2 = "5.45x39mm",
+    Action3 = "Gas",
+    Country4 = "Russia",
+    Year5 = "2017"
 }
 
 SWEP.Description = [[RPK-16 (Ruchnoy Pulemyot Kalashnikova 16 - "Kalashnikov's Hand-held machine gun 16) is the newest Russian light machine gun chambered in 5.45x39mm rounds. Some key features of this new weapon are the quickly detachable barrels, enhanced ergonomics, and weaver rails on the handguard and dust cover.]]

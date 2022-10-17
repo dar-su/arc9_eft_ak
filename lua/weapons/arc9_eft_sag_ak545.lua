@@ -3,17 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
-
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "SAG AK-545"
 SWEP.Class = "Carbine Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Sureshot Armament Group",
-    Calibre = "5.45x39mm",
-    Action = "Gas",
-    Country = "USA/Europe",
-    Year = "?"
+    Manufacturer1 = "Sureshot Armament Group",
+    Calibre2 = "5.45x39mm",
+    Action3 = "Gas",
+    Country4 = "USA/Europe",
+    Year5 = "?"
 }
 
 SWEP.Description = [[The AK-545 carbine by Sureshot Armament Group, based on modern AK platforms.  

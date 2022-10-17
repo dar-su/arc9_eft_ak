@@ -3,16 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "VPO-136/209"
 SWEP.Class = "Carbine Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Molot Oruzhie",
-    Calibre = "7.62x39mm",
-    Action = "Gas",
-    Country = "Russia",
-    Year = "1960-1980"
+    Manufacturer1 = "Molot Oruzhie",
+    Calibre2 = "7.62x39mm",
+    Action3 = "Gas",
+    Country4 = "Russia",
+    Year5 = "1960-1980"
 }
 
 SWEP.Description = [[The Molot Vepr-KM/VPO-136 carbine is based on the well-known Kalashnikov AKM and has an almost identical appearance, weight, and overall dimensions. Designed for hunting of medium and big game, as well as for sporting use.]]

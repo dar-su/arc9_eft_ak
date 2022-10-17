@@ -3,18 +3,16 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - Escape From Tarkov"
-SWEP.Credits = { Author = "Darsu", Assets = "Battlestate Games LTD", General_help = "Mal0", ARC9_Base = "Arctic" }
-
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "Saiga-12ga ver.10"
 SWEP.Class = "Semi-automatic shotgun"
-
 SWEP.Trivia = {
-    Manufacturer = "Kalashnikov Concern",
-    Calibre = "12x76 Gauge",
-    Action = "Gas",
-    Country = "Russia",
-    Year = "1997"
+    Manufacturer1 = "Kalashnikov Concern",
+    Calibre2 = "12x76 Gauge",
+    Action3 = "Gas",
+    Country4 = "Russia",
+    Year5 = "1997"
 }
 
 SWEP.Description = [[A semi-automatic 12 gauge shotgun with a folding stock, equipped with a firing mechanism safety lock that only allows firing from extended stock position. Features a short 430mm barrel.]]
@@ -41,8 +39,8 @@ SWEP.PhysBulletMuzzleVelocity = 21000
 
 
 --          Spread
-SWEP.SpreadMultHipFire = 5
-SWEP.Spread = 0.004
+SWEP.SpreadMultHipFire = 1
+SWEP.Spread = 0.007
 SWEP.SpreadAddRecoil = 0.005
 
 
@@ -146,7 +144,7 @@ SWEP.SwayMultShooting = 1.2
 
 --          Generic stats
 
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "Buckshot"
 SWEP.ChamberSize = 0 -- no mag
 SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4
