@@ -165,7 +165,7 @@ SWEP.TracerColor = Color(255, 225, 200)
 --          Positions and offsets
 
 SWEP.IronSights = {
-    Pos = Vector(-4.28, -5, 1.26),
+    Pos = Vector(-4.28, -5, 1.43),
     Ang = Angle(0, 0.09, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
@@ -358,7 +358,8 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.5, -1),
-        Installed = "eft_mag_ak_ultimag_762_30"
+        -- Installed = "eft_mag_ak_ultimag_762_30"
+        Installed = "eft_mag_ak_55_762_30"
     },    
     {
         PrintName = "Gas tube",
