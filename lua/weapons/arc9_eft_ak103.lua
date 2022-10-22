@@ -19,6 +19,12 @@ local desc103 = [[The AK-103 7.62x39mm assault rifle is a further modernized ver
 local desc104 = [[The AK-104 7.62x39mm assault rifle is a further modernized version of AK-74M base, more precisely a shortened version of AK-103. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
 SWEP.Description = desc101
 
+SWEP.StandardPresets = {
+    "[AK-104]XQAAAQDIAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6I+T5FBjEpZ7hDcCWCcOwEozqinceVe1Q676wOtx494pZz9WA0jpZ0h4A7Ads4ldBWs1rf+QT+TlQm44ywA9m+XYVbHpyvYZrNZNYEZ9L4pVcLo5WW4R5PBUT90tTQNzKalzCFV+gd65IIqi6I4XwLqg8uKC1MXCA044gr0E9f8eEWAZDh3FsbjpeiRlkiL8FAA==",
+    "[AK-104 T-SAW]XQAAAQAEAwAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPfgL3vQ9tPB4Qt1gNXFwuXi85bB8nHzwFsqZsafvmDCW4hnM9NUep8CoyWke/qbDjQZxUrTHMYGRYUfZJfTYjAcO/BHGyo7+opev/eaEjA9MPOixwOcwH9qDw5lOcxdGVqSxPQow4ntPSgbw4T3DREuaWMivoHGMBwff8kxK+TkLpYMd0cSuTF2ZQKPexImz2jdCsA+epf3jOqyQOA/4tvJWNVerkZfbwvg0dftftJlpkKEEozufTHblgpXtSiWnApkTq/8HDbDksKHI1EcgYKUb3J7jF67IOQcjRxpso7eI2xffBqDHJnEdLgRnENGy2tSpTrp9m+zMe+DWDYA==",
+    "[AK-104 RPKT mod.1]XQAAAQAuAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjhSBDwbfi0IbkGmNOVakU1G0i6u8hyUFia1zrLf2AdBQbWYaAR3AwzhHvMzbGNfTUpARR2MmOdKTSaQohiRHGc6aiFaA0EsLahKCuHWII6kWXL45eiCLgK1tWAKk7VnPD7Bjcy4Nyww/fkc+4rou3NtPzuUEmCb0ZdmNPe57Ao87PYRsWUfFDX1zkZmAa8ZAc6RTKHRlz2G9furR8BaEgB54ix9GWoSFG6NonOHGpbOHHaTNpyJ+tUOlDsZmnlI5s2oHY6ZLjWzJXS66ybRGsUXC2E=",
+}
+
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak100.mdl"
@@ -406,7 +412,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.5, -1),
-        Installed = "eft_mag_ak_55_762_30"
+        Installed = "eft_mag_ak_ak103_762_30"
     },    
     {
         PrintName = "Gas tube",

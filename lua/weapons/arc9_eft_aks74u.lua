@@ -17,6 +17,9 @@ SWEP.Trivia = {
 
 SWEP.Description = [[AKS-74U (Avtomat Kalashnikova Skladnoy 74 Ukorochenny - "Kalashnikov's Shortened Automatic rifle 74 with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size.]]
 
+SWEP.StandardPresets = {
+    "[AKS-74UB]XQAAAQBgAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxD+5S+tFGYiGEebFpIRUNv83wlTkDiviQXlkj8lEaVwnQL30zdrsV5M1cBkJuRE7W0jw5FUk3C4B4XV9R+ttNK3C7zkwosisxLNEZyxMqSU+WrJ1f99TeozFLh+GnW+hLQ76qLSqq7Qau56KV6xCVvmEi009o23fmiooE3z4ymvp8cR05WMewxtaPob0W7V1Ii3imp8DOwF",
+}
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_aks74u.mdl"

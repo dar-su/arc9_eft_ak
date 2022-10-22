@@ -19,6 +19,9 @@ SWEP.Description = [[The AK-545 carbine by Sureshot Armament Group, based on mod
 
 note: prototype weapon, not exist irl]]
 
+SWEP.StandardPresets = {
+    "[Short]XQAAAQC2AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdnMoANGObKzFlW7SmrLRVlQbnSrZLsKBOQBqewDgBJksrlX23qrzsy/sMdfYrf62C1AcsmZksnd8Rd3NOaGKfKfJoBhz3I9JEJhcciwq0STuQ6+kJi5H5FFnaqfP2XHDu2Yq56B9JIBYe71gdU7lU+SmkQ2mkljRF8o1RH7FF9myO0cyvKcA/V/EEA8K1h63qIfH7qR7jWmTIeg=",
+}
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_sag_ak545.mdl"
@@ -340,7 +343,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
         ExcludeElements = {"eft_sag545_short"},
         Icon_Offset = Vector(0, 0, 0.15),
-        Installed = "eft_muzzle_ak_ak74_pws_cqb",
+        Installed = "eft_muzzle_ak_ak74m_std",
     },
     { -- 5.45 short
         PrintName = "Muzzle",
@@ -379,7 +382,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
-        Installed = "eft_grip_ak_akepg",
+        Installed = "eft_grip_ak_ak12",
         Integral = true
     },
     {

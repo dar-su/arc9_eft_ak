@@ -17,7 +17,7 @@ ATT.Category = {"eft_ak_handguard_custom"}
 ATT.Attachments = {
     {
         PrintName = "Optic",
-        Category = {"eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_medium", "eft_optic_small", "eft_backupmount"},
         Pos = Vector(0, 4, -1.12),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),

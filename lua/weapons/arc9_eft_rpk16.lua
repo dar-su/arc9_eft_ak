@@ -409,6 +409,17 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 4, 0),
         Installed = "eft_hg_rpk16_std",
+        SubAttachments = {
+            {},
+            {},
+            {},
+            {
+                Installed = "eft_mount_rpk16_side",
+            },
+            {
+                Installed = "eft_mount_rpk16_side",
+            },
+        }
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
         -- Integral = false
     },

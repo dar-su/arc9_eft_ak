@@ -17,6 +17,11 @@ SWEP.Trivia = {
 
 SWEP.Description = [[AKMS (Avtomát Kaláshnikova Modernizírovanny Skladnóy - "Kalashnikov's Automatic rifle Modernised with foldable stock") 7.62x39 assault rifle (GRAU Index — 6P4) is a variant of the AKM rifle with a folding shoulder piece (stock). Folds forward-down, under the handguard. Designed specifically for airborne troops.]]
 
+SWEP.StandardPresets = {
+    "[AKMSP]XQAAAQCfAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3yt/HL+2ZLzhGijNMhCKbiLFtgU28IwLCtBRPMvB5LStC2M/wCm1OuFK3jEsdGZFTaMWlx0AFvz4Hsz7NRpFoQXEMAZfYb0ebu9RQK6Ssub4VyIwFOWTh7JKLkdDZOCbEMm5UjgHhPgtajqelqJRnjILWOv0hJpbOy6yrhLXS2NL9VGNqyiK0A2voSki9TllFrNhw2mAwA",
+    "[AKMSB 6P4M]XQAAAQB0AQAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxD+5S+7MGBz8hFOTxHuoEbOSCcrmGDU7NStHqnHWRD5Z0dRk9YmBPKk5JVgRrKOl8fLazjinN0mMND1eWSMFJQvfxbrUEBPp4TOnGNhHmw7uNzW5yOb2VGJ5aNxbGUAG6xecjKYZJBQtqOQgeg9aaNnkDac27cfehrNGwR1M8gUkKCF/rCWSpAoEFx0KZdWQPoA",
+    "[AKMSN 6P4N2]XQAAAQDAAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3yt/HL+2ZLzhGijNMhCKbiLFtgU28IwLCtBRPMvB5LStC2M/wCm1OuFK3jEsdGZQiH5pqKAB5YO/kZLhegkJyTyfnYtyVczDPLI/lqwln5jNm2Cqjqq/YGHucccMsumeIJM8tFIDkinzqV7ScHfIiKnwjwCcb0/hdd/WvAq5mkcPRInX+AEyihpwHWRQxTCJIuNI+lt2gKo8jaBMNFUgF2yB4+27AImPngAA==",
+}
 
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"

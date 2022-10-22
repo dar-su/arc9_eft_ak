@@ -19,6 +19,11 @@ local desk74m = [[The AK-74M (Avtomat Kalashnikova 74 Modernizirovanny - "Kalash
 local desc105 = [[The AK-105 5.45x39mm assault rifle is a further modernized version of AK-74M base. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
 SWEP.Description = desk74m
 
+SWEP.StandardPresets = {
+    "[AK-105]XQAAAQDHAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6cyR+iIJxWJbj/d25Zyn7t7lEOdvOYvrh46xNmbK53TMvvnQha8Ti6LuCQA+kpW2tUIkP+3/Sg3jkc0zs9He4v1t35HFwAHPrA+aCjZpoJbxUNI34NbesJXCEsesoipFoWXlh5YecxfQKVqmcg/zCzhVEreIDwmFaeWitPQz1E47U03tSASRWXWTEAkWAZBJXm8WqEgA=",
+    "[Zenitco]XQAAAQATAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3q8NUessuKDcUAV19TGsm+fDsEwyb38OglrTgtBo7yHZg+EcFnC9Nby/nFm3Tv7BcdysauKml6LfbL1rYeUeX5bXV+IhnOiN3lQsSy5ajjdYdL+PJmQfr4Kg+bYCSA3mdsX7KWfxRepKoYwy9aDoPXWjfolAwaQrIEnFYl5qO1BSbCcZYAxKnmtHrDCOWGs3YdeECRabIDNT+JiXlFXaR0Dz3JJojcFqnglms5JqUfErOekL+I7xwYL0WiTaqG6zNoK1g="
+}
+
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak100.mdl"

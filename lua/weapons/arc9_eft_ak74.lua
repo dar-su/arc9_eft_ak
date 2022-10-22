@@ -17,6 +17,11 @@ SWEP.Trivia = {
 
 SWEP.Description = [[The AK-74 (Avtomat Kalashnikova 74 - "Kalashnikov's Automatic rifle 74") 5.45x39mm assault rifle, developed in 1970 by M. T. Kalashnikov, became a further evolution of the AKM due to adoption of the new 5.45x39 ammunition by the military. The AK-74 was equipped with a new buttstock, handguard (which retained the AKM-type finger swells), and gas cylinder. The stock has a shoulder pad different from that on the AKM, which is rubber and serrated for improved seating against the shooter. In addition, there are lightening cuts on each side of the buttstock. The buttstock, lower handguard, and upper heatguard were first manufactured from laminated wood, this later changed to a synthetic, plum or dark brown colored fiberglass.]]
 
+SWEP.StandardPresets = {
+    "[AK-74N Magpul]XQAAAQA7AgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3q8NUessuKDcUAV19TGsm+fDsGZftiZWdhpvKFu9DP/ttk4zcawAzdQClwnl5g1j+TUDsLhj/azGyhfXU2AXG9tJr2cNL+fdFcGgxVRv6S/fI1exl/bTIQW7tbc3HmMz5z0Fq2EQbjo8dxJRruBLlD4WBfDPTeTCWsg/gD3TYrcGhJtuhfVC7UiXqtG/QfsgJiJbtt7zMnmtaM+W3K4KkuwKy/6zqPH0u96fit2C4BgplqY/t0Oga6iaaJETIIpHw5WcdZMNNnaOmU/tK4kQ5WdrXykchKJ49r4A==",
+    "[AK-74 Plum]XQAAAQCYAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3yt80fkHmV01RKV8d/imALpRkwUe2CUiXcqTwF2yYE967bR31a2KBboq4Sa/93Uvt/I10A9rKkEAi0cGZHccmvBdfExFPPa2LF+MdNabU4nE7h+tVBd2r+IvS4Wa0htkS3X8ltn9GuAtB5xl9rkYyIpV2h0X8925tZ7BdjIEB/nVTQ3jL90d23dHEDwFJiA/zLDuMIG0ndScGL8ut66tETpTyYvQA=",
+}
+
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak74.mdl"

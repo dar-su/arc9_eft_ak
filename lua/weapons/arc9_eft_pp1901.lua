@@ -17,6 +17,11 @@ SWEP.Trivia = {
 
 SWEP.Description = [[The PP-19-01, also known as "Vityaz", is a Russian submachine gun chambered in 9x19 developed in 2004 by Izhmash based on the AK platform. A standard-issue submachine gun in many law enforcement agencies and military units of the Russian Federation.]]
 
+SWEP.StandardPresets = {
+    "[Saiga-9]XQAAAQCbAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSblwda3J+JQK9HaKFfx3/QTlMwigssSN1YefZ6JauA9jHjTIa4goFstxSgD8nHpInYzPY28sRlS2bR64Ro3FwRLDWBj3dLKZttrflDBP6RZRI8YXQXUG0ckZoirclgOjCxQgdvJFnl3tLzvCjH8bBVUkrQzkBHvtnvSCEgPuSTVhnnNCYbPe2Re/lnIaNoZ3KLy8JtOF2rLMQ79OwwA=",
+    "[Zenit]XQAAAQBGAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPr8+FRCoC13SPjCtJ7zKLcgDgavRNZmaBxbVjig/5ICHm4EKp+ZNZpvN2MVzZfkRFd9fGSaTlA+sjhx2tkDA/JKAjNobpQOPMIyg8YcVGr3iOK5kmcTYzaiKKxIzPYvU1YxIg7Djckc5ka46yzrLoTSQG9Ksk9goxoORDf/cJ58d6l7wEEgpwz1uivuQRYyYzMsJNE3O3rozp0zXRmFrawrlMsszWmZDGAytBGnhKnKalGyzM4vjgS75C9HAUtWbhCgfZHMUT7oUkf3WCuiuqv+6KLDLZEUnWy1bwlN",
+}
+
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_pp1901.mdl"

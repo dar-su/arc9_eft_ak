@@ -18,6 +18,13 @@ SWEP.Trivia = {
 SWEP.Description = [[AKM 7.62x39mm - (Avtomát Kaláshnikova Modernizírovanny - Kalashnikovs Automatic Rifle Modernised) - was adopted in 1959 to replace AK as a standard service weapon of the Soviet Army. Main differences compared to AK: enhanced accuracy range, lower weight, new stock, trigger, hammer retarder, muzzle compensator and other design changes aimed at improving the efficiency of the rifle.]]
 
 
+SWEP.StandardPresets = {
+    "[AKMP]XQAAAQDHAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3yt/HL+2ZLzhGijNMhCKbiLFtgU28IwLCtBRPMvB5La6dnVtx/qoJUZzsxA0sfikGP1jMrkp7sL/BXFlinnjg7GJEo/+vZpLKpoWPZHRnJ4z71RWbTpJOCA9Tswz4N7+DERtUrrPlOe/i399vGdvBfFMoU1FPbHpHlhJaAL4xV/W0MGigyi3slu3TMenEQ1USTC7E76B4=",
+    "[AKMB]XQAAAQCcAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxD+5S+7MGBz8hFOTxHuoEbOSCcrmGDU7NStHqnHWRD6Y1wsN5uFfbKWbPpOoHsVIm9j5qxW4O7JtcK9RVFpkzlmuU+vahvgiNPjl1O1GZPwXCFp04yox1RnMyofNZ1p07VWcBzfxPC9JtIGR3E6xFKseOqI3z1eFHqMkEWsYu6c3gOxbLQNdLeKayYvuNVv/h0A",
+    "[T-OPS]XQAAAQBgAwAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxu9/L5hXTg/ZNivIfO1FRgDkJ6hg0tgpAUFIZfHPUNoQfGEPLc/lrKXSosCvDtuVK8C2oJJF3he96fJtnExrJGybBqJYmXuI2FrsXJhb7uLNld/3HKS9Bqbk2xTZPHVh2+i7esxlFk6v7I3d7dqaS/c7yP1uLKmuCcee/XDlZB2Lr428nBZNypY3sQNqQlVhFOvMHicc01laNh6P1YKxtSezgWA2ZTZlFPDPnO3oVO5b4zrwWIEUXCpMjFaO4hm4G5WL3zI0qdTSksxq4SWngdiub7g7E2xAGMqscLpJBVYg5G1rdEGhep5TkYyHYeiSpnX65hnYzoqVizQgG4CNvx3mVoxa60MTGK+qC+WylzQ8vtdsR0CjnzVnAA=",
+    "[N2 6P1N2]XQAAAQDaAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3yt/HL+2ZLzhGijNMhCKbiLFtgU28IwLCtBRPMvB5La6dnVtx/qoJUZzsxA0sfikGP1Y86uJuH7Ofj/KsfXBvqH9ui00hI/+Z53aAui/j7Gx7xIe1H1qM0MAPbUcJaSAvbCfY0RBiClvzwZZ6H3g1uM6xKAmD4vxIKtidsJJNM+CLWgaEkIHBJ9aUv7WBwVLh7BHS3vQ0uD/dsE/D32qatNAucgbI1nKA=",
+}
+
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_akm.mdl"
@@ -389,7 +396,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
-        Installed = "eft_grip_ak_akm_w",
+        Installed = "eft_grip_ak_akm_b",
         Integral = true
     },
     {

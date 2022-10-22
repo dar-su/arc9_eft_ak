@@ -19,6 +19,10 @@ local desc101 = [[The AK-101 5.56x45mm assault rifle is a further modernized ver
 local desc102 = [[The AK-102 5.56x45mm assault rifle is a further modernized version of AK-74M base, more precisely a shortened version of AK-101. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The AK-102 is chambered to fire 5.56x45mm NATO ammunition, and is designed entirely for export purposes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
 SWEP.Description = desc101
 
+SWEP.StandardPresets = {
+    "[AK-102]XQAAAQDHAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz59bzgnfs3jZp5xv52L4mcs1orzafSW/1LTxp7vejsdZM1p6rIZNhldR0uzscWwRKkX9jeYTrt1UKtvdZx7SLdNr5ZNVP98/pRSAyHo0Tt0PCSTkhmp/v8w4hVND7Bwt2KOJJXfinSUydfg1FLMl+5UXJFfOsQ1Cfi4GmOHczfSTbakgV22KKPI8v31sm+5GNK0HHqs1YA",
+}
+
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak100.mdl"
