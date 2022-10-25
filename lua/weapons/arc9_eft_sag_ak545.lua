@@ -46,7 +46,7 @@ SWEP.PhysBulletMuzzleVelocity = 21000
 --          Spread
 SWEP.SpreadMultHipFire = 5
 SWEP.Spread = 0.004
-SWEP.SpreadAddRecoil = 0.005
+SWEP.SpreadAddRecoil = 0
 
 
 --          Recoil
