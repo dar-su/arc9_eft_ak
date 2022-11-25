@@ -121,7 +121,11 @@ SWEP.HeatLockout = false
 --          Firemodes
 
 SWEP.RPM = 625
-SWEP.Firemodes = { { Mode = -1 }, { Mode = 1 } } -- auto, semi
+-- SWEP.Firemodes = { { Mode = -1 }, { Mode = 1 } } -- auto, semi
+SWEP.Firemodes = {
+    { Mode = -1, PoseParam = 2},
+    { Mode = 1, PoseParam = 1 }
+}
 
 
 --          Speed
@@ -159,7 +163,10 @@ SWEP.SecondarySupplyLimit = 4
 SWEP.ReloadInSights = true
 SWEP.DropMagazineSounds = { "weapons/arc9_ud/common/rifle_magdrop_1.ogg", "weapons/arc9_ud/common/rifle_magdrop_2.ogg", "weapons/arc9_ud/common/rifle_magdrop_3.ogg", "weapons/arc9_ud/common/rifle_magdrop_4.ogg" }
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.5
+SWEP.DropMagazineQCA = 4
+SWEP.DropMagazinePos = Vector(10, 20, 0)
+SWEP.DropMagazineAng = Angle(90, -130, 0)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
 SWEP.TracerNum = 1
