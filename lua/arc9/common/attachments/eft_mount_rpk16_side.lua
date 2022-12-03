@@ -6,7 +6,7 @@ ATT.Description = [[A handguard rail for the RPK-16 LMG that allows you to insta
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/rpk16_side_mount.mdl"
 
 ATT.Category = {"eft_rpk16_mount"}
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
 

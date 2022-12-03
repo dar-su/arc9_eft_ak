@@ -3,7 +3,7 @@ ATT.CompactName = "TRAX Bridge"
 ATT.Icon = Material("entities/eft_ak_attachments/hg/traxbridge.png", "mips smooth")
 ATT.Description = [[Bridge guide for keymod system allows you to install additional equipment on the handguards with the standard keymod interface.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_bridge.mdl"
 ATT.ModelOffset = Vector(0, -3.2, 1.5)

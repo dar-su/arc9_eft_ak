@@ -6,7 +6,7 @@ Features a length adjustment mechanism and an adjustable cheek.
 A special PT lock is required for installation. 
 Manufactured by Zenit.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt.mdl"
 ATT.ModelBodygroups = "1"

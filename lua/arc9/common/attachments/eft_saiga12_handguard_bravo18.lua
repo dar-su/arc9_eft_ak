@@ -3,7 +3,7 @@ ATT.CompactName = "Bravo-18"
 ATT.Icon = Material("entities/eft_ak_attachments/saiga12/bravo.png", "mips smooth")
 ATT.Description = [[Bravo-18 is a lightweight aircraft grade aluminum handguard, designed for installation on Saiga carbines.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_handguard"}
 

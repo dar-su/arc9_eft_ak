@@ -3,7 +3,7 @@ ATT.CompactName = "RPK16 RS base"
 ATT.Icon = Material("entities/eft_ak_attachments/rpk/rsbase.png", "mips smooth")
 ATT.Description = [[A detachable base for the Izhmash-manufactured rear sight for the RPK-16 LMG.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rpk16_rsbase"}
 

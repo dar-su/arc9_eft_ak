@@ -3,7 +3,7 @@ ATT.CompactName = "Hexagon"
 ATT.Icon = Material("entities/eft_ak_attachments/hg/hexa.png", "mips smooth")
 ATT.Description = [[A tubular handguard for AK family automatic rifles, manufactured by Hexagon.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "HEXAGON"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_hexagon.mdl"

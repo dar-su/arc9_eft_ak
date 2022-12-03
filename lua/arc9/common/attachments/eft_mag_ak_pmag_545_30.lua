@@ -3,7 +3,7 @@ ATT.CompactName = "PMAG"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/545pmag.png", "mips smooth")
 ATT.Description = [[A 30-round polymer Magpul Pmag 30 AK74 GEN M3 magazine for 5.45x39 AK and compatible weapons.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"

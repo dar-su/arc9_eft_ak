@@ -6,7 +6,7 @@ ATT.Description = [[A combined kit of the VS-24 handguard with the VS-33c gas tu
  
  White version.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks_lhik.mdl"
 ATT.ModelBodygroups = "1"

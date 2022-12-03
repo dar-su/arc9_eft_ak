@@ -3,7 +3,7 @@ ATT.CompactName = "Molot"
 ATT.Icon = Material("entities/eft_ak_attachments/gas_molot.png", "mips smooth")
 ATT.Description = [[A gas tube for AKM-type automatic rifles and Vepr carbines, manufactured by Molot Arms. Gas tubes channel the travel direction of gas piston.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks.mdl"
 ATT.ModelBodygroups = "2"

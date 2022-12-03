@@ -3,7 +3,7 @@ ATT.CompactName = "AK-103"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/762103.png", "mips smooth")
 ATT.Description = [[A 30-round bakelite Izhmash magazine for 7.62x39 ammo, for AK-103 and compatible systems. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"

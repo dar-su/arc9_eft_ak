@@ -3,7 +3,7 @@ ATT.CompactName = "GP-34"
 ATT.Icon = Material("entities/eft_ak_attachments/gp34.png", "mips smooth")
 ATT.Description = [[An underbarrel grenade launcher for 40mm VOG-25 grenades, installed on AK family of assault rifles.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ak_gp34"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/gp34_lhik.mdl"

@@ -5,7 +5,7 @@ ATT.Description = [[The "Kocherga" lightweight stock for AKM/AK-74-type non-fold
 
 Anodized Red version.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
 ATT.ModelBodygroups = "5"

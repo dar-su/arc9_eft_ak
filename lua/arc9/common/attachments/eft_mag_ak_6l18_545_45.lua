@@ -3,7 +3,7 @@ ATT.CompactName = "6L18"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/5456l18.png", "mips smooth")
 ATT.Description = [[45-round bakelite Izhmash 6L26 magazine for 5.45x39 ammo, for AK-74 and compatible systems. Also a standard issue RPK-74 magazine.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l18_545x39_45.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l18_545x39_45.mdl"

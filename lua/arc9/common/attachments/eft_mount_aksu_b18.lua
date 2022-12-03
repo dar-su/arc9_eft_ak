@@ -3,7 +3,7 @@ ATT.CompactName = "B-18"
 ATT.Icon = Material("entities/eft_ak_attachments/su/mount.png", "mips smooth")
 ATT.Description = [[The B-18 rail mount is installed on the standard rear sight of AKS-74U and forms a sight support hovering over the rifle dust cover. Manufactured by Zenit.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_b18"}
 ATT.ActivateElements = {"railedcover"}

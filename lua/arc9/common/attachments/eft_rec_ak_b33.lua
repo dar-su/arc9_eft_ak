@@ -7,7 +7,7 @@ Allows installation of all Picatinny-mountable sights, ensuring the consistency 
 
 Can only be installed in combination with AK Zenit B-10M handguard with B-19 upper mount or AK Zenit B-30 handguard with B-31S upper handguard rail]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dustcovers.mdl"
 ATT.ModelBodygroups = "5"

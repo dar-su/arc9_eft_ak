@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/agressor.png", "mips smooth"
 ATT.Description = [[Aggressor is a railed handguard for AK series rifles manufactured by 5.45 Design. 
 Features 4 side rails for installation of tactical devices and 2 long rails for installation of various optics and foregrips.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_agressor.mdl"
 ATT.LHIK = true

@@ -3,7 +3,7 @@ ATT.CompactName = "6L29"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/5456l20.png", "mips smooth")
 ATT.Description = [[A 30-round 5.56x45 Izhmash 6L29 polymer magazine for AK-101 and compatible systems.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_6l29_556x45_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_6l29_556x45_30.mdl"

@@ -3,7 +3,7 @@ ATT.CompactName = "AKTS AK"
 ATT.Icon = Material("entities/eft_ak_attachments/stock/aktsakm.png", "mips smooth")
 ATT.Description = [[CAA Receiver Extension Buffer Tube, 6-position, Mil-Spec diameter will fit any AK-based rifles with a fixed stock.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
 ATT.ModelBodygroups = "3"

@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/cmrd.png", "mips smooth")
 ATT.Description = [[The CMRD lightweight handguard by Vltor, compatible with AK-74 and AKM series automatic rifles. 
 Includes KeyMod slots for rail installation.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
 ATT.ModelBodygroups = "6"

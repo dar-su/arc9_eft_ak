@@ -5,7 +5,7 @@ ATT.Description = [[The lock is designed to install the PT-1 and PT-3 stocks to 
 This model is designed for installation on the AK-74M and AK-100-series assault rifles. 
 Manufactured by Zenit.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
 ATT.ModelBodygroups = "2"

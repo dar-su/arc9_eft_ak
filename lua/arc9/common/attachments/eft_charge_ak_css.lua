@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/css.png", "mips smooth")
 ATT.Description = [[The CSS knurled charging handle gives the user an enhanced oversized knob to operate the weapon more easily. 
 This handle works on all Vepr Rifles and Shotguns, Saiga Rifles and Shotguns, and most AK platform weapons.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_zenit_rp1_lod0_0.mdl"
 ATT.ModelBodygroups = "1"

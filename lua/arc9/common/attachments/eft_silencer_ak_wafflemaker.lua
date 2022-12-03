@@ -3,7 +3,7 @@ ATT.CompactName = "Wafflemaker"
 ATT.Icon = Material("entities/eft_ak_attachments/muzzle/waffle.png", "mips smooth")
 ATT.Description = [[The "Wafflemaker" prototype sound suppressor manufactured by Hexagon, designed for installation on the Hexagon "Reactor" muzzle brake.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_hex_hexagon_wafflemaker_suppressor_545x39.mdl"
 

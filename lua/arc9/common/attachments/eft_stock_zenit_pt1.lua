@@ -5,7 +5,7 @@ ATT.Description = [[The telescopic PT-1 stock is mounted on the standard place o
 A special lock is required for installation. 
 Manufactured by Zenit.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt.mdl"
 ATT.ModelBodygroups = "0"

@@ -5,7 +5,7 @@ ATT.Description = [[A 30-round polymer Magpul Pmag 30 AK/AKM GEN M3 magazine 7.6
 
 The magazine is painted in a tactical banana yellow color.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"

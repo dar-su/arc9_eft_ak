@@ -3,7 +3,7 @@ ATT.CompactName = "6P1 Sb.5"
 ATT.Icon = Material("entities/eft_ak_attachments/stock/akm.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for AKM automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
 ATT.ModelBodygroups = "6"

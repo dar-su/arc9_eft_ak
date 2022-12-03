@@ -3,7 +3,7 @@ ATT.CompactName = "AK12"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/545ak12.png", "mips smooth")
 ATT.Description = [[A 30-round 5.45x39 windowed, polymer Izhmash magazine for the AK-12 and compatible systems.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"

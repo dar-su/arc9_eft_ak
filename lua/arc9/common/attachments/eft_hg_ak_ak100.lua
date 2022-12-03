@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/100.png", "mips smooth")
 ATT.Description = [[A polymer handguard for the 100-series AKs, manufactured by Izhmash. A further modification of the polymer AK-74M handguard. 
 Features a bottom rail for installation of tactical foregrips.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
 ATT.ModelBodygroups = "4"

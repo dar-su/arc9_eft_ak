@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/mag/5456l23p.png", "mips smooth
 ATT.Description = [[A 30-round polymer Izhmash 6L23 magazine for 5.45x39 ammo, for AK-74 and compatible systems.
 Made out of plum-colored polymer, for which has earned the nickname "Sliva" ("Plum").]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"

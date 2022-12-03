@@ -3,7 +3,7 @@ ATT.CompactName = "6P26 Sb.1-2"
 ATT.Icon = Material("entities/eft_ak_attachments/su/gas.png", "mips smooth")
 ATT.Description = [[A standard gas tube for AKS-74U automatic rifles. Gas tubes channel the travel direction of gas piston.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aksu_gasblock"}
 ATT.ActivateElements = {"gasblock"}

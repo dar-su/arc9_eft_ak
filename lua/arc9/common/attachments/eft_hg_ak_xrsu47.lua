@@ -3,7 +3,7 @@ ATT.CompactName = "XRSU47SU"
 ATT.Icon = Material("entities/eft_ak_attachments/su/xsu.png", "mips smooth")
 ATT.Description = [[A tactical aluminum handguard for AKS-74U, AKS-74UN, and AKS-74UB, designed and manufactured by CAA. Equipped with multiple rail mounts for installation of a wide range of additional equipment.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_xrsu.mdl"
 ATT.LHIK = true

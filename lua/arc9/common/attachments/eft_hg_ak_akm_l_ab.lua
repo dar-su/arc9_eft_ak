@@ -6,7 +6,7 @@ Equipped with M-LOK mounts for installation of additional devices or rails.
 
 Anodized Bronze version.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"

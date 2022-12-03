@@ -6,7 +6,7 @@ Equipped with licensed M-LOK mounts for installation of additional devices or ra
 
 Black version.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"

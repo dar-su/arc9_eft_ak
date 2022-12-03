@@ -5,7 +5,7 @@ ATT.Description = [[The integrally machined B-10M handguard is manufactured from
 B-19 rail mount is basically a sight mount hovering over the gas tube. Also integrally machined from D16T aluminum alloy with black coating, it can be installed on B-10M or B-21M foregrips.
 ©Zenit]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "ZENIT"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"

@@ -6,7 +6,7 @@ Manufactured by Strike Industries.
 
 Flat Dark Earth version.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
 ATT.ModelBodygroups = "f"

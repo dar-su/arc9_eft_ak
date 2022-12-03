@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/ufm.png", "mips smooth")
 ATT.Description = [[The Krebs Custom UFM Keymod System lightweight aluminum handguard for AK family assault rifles with KeyMod slots for rail installation. 
 The Kiba Arms VDM CS gas tube is required for installation.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.RequireElements = {"gasblock_vdmcs"}
 ATT.ActivateElements = {"nogp34"}

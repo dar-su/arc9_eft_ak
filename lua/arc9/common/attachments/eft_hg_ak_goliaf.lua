@@ -3,7 +3,7 @@ ATT.CompactName = "Goliaf"
 ATT.Icon = Material("entities/eft_ak_attachments/su/goliaf.png", "mips smooth")
 ATT.Description = [[This integrally machined handguard is manufactured from aluminum alloy D16T with coyote brown coating and can be installed instead of the standard-issue foregrip on the AKS-74U. It comes fitted with Picatinny rail mounts on three sides, allowing for the installation of additional equipment such as tactical foregrips, flashlights, and laser designators.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf.mdl"
 ATT.LHIK = true

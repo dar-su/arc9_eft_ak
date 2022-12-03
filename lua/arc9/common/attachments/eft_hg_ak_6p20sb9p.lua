@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/74p.png", "mips smooth")
 ATT.Description = [[A polymer handguard for AK-74 automatic rifles, manufactured by Izhmash. 
 Made out of plum-colored polymer, for which has earned the nickname "Sliva" ("Plum").]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
 ATT.ModelBodygroups = "2"

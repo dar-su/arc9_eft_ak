@@ -3,7 +3,7 @@ ATT.CompactName = "AK-101"
 ATT.Icon = Material("entities/eft_ak_attachments/muzzle/74m.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced muzzle brake and compensator for the AK-101 and weapon systems based on it.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_545x39.mdl"
 

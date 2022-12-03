@@ -3,7 +3,7 @@ ATT.CompactName = "RPK-16"
 ATT.Icon = Material("entities/eft_ak_attachments/rpk/dc.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover with an integrated Picatinny rail for RPK-16 LMGs, manufactued by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rpk16_dustcover"}
 

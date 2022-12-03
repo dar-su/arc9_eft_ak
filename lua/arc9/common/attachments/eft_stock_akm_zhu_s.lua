@@ -3,7 +3,7 @@ ATT.CompactName = "Zhukov-S"
 ATT.Icon = Material("entities/eft_ak_attachments/stock/zhu.png", "mips smooth")
 ATT.Description = [[The Zhukov-S stock, designed for installation on AKM/AK-74-type non-folding assault rifles. Manufactured by Magpul.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
 ATT.ModelBodygroups = "7"

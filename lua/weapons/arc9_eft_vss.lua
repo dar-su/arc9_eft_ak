@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC-9 Escape From Tarkob"
+SWEP.Category = "ARC9 Escape From Tarkob"
 
 SWEP.PrintName = "vss"
 SWEP.TrueName = "VSS Vintorez"

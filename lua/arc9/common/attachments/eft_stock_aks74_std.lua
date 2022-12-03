@@ -3,7 +3,7 @@ ATT.CompactName = "6P21 Sb.5"
 ATT.Icon = Material("entities/eft_ak_attachments/stock/aks.png", "mips smooth")
 ATT.Description = [[A standard-issue metal skeleton stock for AKS-74U, AKS-74UN, and AKS-74UB, manufactured by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
 ATT.ModelBodygroups = "3"

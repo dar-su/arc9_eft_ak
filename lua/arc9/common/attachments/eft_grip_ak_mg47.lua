@@ -5,7 +5,7 @@ ATT.Description = [[A machined aluminum grip with styling queues taken from tria
 Compatible with all AK family weapon systems. 
 Manufactured by Kraft Gun Builders.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
 ATT.ModelBodygroups = "2"

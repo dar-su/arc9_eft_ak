@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_ak_attachments/vscw.png", "mips smooth")
 ATT.Description = [[A combined kit of the VS-24 handguard with the VS-33c gas tube, can be installed on 5.56x45, 5.45x39, 7.62x39 AK family assault rifles.
  Manufactured by Vezhlivyy Strelok.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks_lhik.mdl"
 ATT.ModelBodygroups = "1"

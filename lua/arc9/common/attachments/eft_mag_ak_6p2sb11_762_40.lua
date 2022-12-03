@@ -3,7 +3,7 @@ ATT.CompactName = "6P2.Sb-11"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/762molot40.png", "mips smooth")
 ATT.Description = [[The 6P2 Sb-11 standard-issue 40-round 7.62x39 magazine for the RPK LMG from 1961 and onward, fits any AK-compatible weapon. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_61_sector_762x39_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_61_sector_762x39_40.mdl"

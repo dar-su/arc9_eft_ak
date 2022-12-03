@@ -5,7 +5,7 @@ ATT.Description = [[The integrally machined B-10 foregrip is manufactured from a
 It's fitted with Picatinny rail mounts on two sides, allowing for the installation of additional equipment such as tactical foregrips, flashlights, and laser designators. 
 Manufactured by Zenit.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "ZENIT"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"

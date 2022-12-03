@@ -3,7 +3,7 @@ ATT.CompactName = "TRAX2 ext"
 ATT.Icon = Material("entities/eft_ak_attachments/hg/trax2.png", "mips smooth")
 ATT.Description = [[The TRAX 2 section is the front rail that covers the gas block. Its provide additional place for mount more accessories.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_trax_2.mdl"
 

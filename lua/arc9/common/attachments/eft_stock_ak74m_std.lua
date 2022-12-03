@@ -3,7 +3,7 @@ ATT.CompactName = "6P34 Sb.15"
 ATT.Icon = Material("entities/eft_ak_attachments/stock/74m.png", "mips smooth")
 ATT.Description = [[A polymer stock for AK-74M automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
 ATT.ModelBodygroups = "0"

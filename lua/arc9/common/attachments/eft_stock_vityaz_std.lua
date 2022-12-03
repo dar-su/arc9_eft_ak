@@ -3,7 +3,7 @@ ATT.CompactName = "PP-19-01"
 ATT.Icon = Material("entities/eft_ak_attachments/vityaz/stock.png", "mips smooth")
 ATT.Description = [[A skeletonized metal stock for PP-19-01 Vityaz SMGs and Saiga-9 carbines, manufactured by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
 ATT.ModelBodygroups = "6"

@@ -3,7 +3,7 @@ ATT.CompactName = "RPK-16"
 ATT.Icon = Material("entities/eft_ak_attachments/rpk/hg.png", "mips smooth")
 ATT.Description = [[A regular handguard for the RPK-16 LMG. Manufactured by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/rpk16_hg.mdl"
 ATT.LHIK = true 

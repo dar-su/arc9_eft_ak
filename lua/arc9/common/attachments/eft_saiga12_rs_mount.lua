@@ -3,7 +3,7 @@ ATT.CompactName = "CSS RSRM"
 ATT.Icon = Material("entities/eft_ak_attachments/saiga12/mount.png", "mips smooth")
 ATT.Description = [[This sight rail mount allows installation of various sights instead of the Saiga carbines standard-issue fixed rear sight.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_rs"}
 

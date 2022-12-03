@@ -5,7 +5,7 @@ ATT.Description = [[The all-milled B-30 handguard is made of D16T aluminum alloy
 The B-31S rail mount above the gas tube is an all-milled bracket made of D16T aluminum alloy with a black coating, mounted on the B-30 handguard. 
 © «Zenit»]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "ZENIT"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"

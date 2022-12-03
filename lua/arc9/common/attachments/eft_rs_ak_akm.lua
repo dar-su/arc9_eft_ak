@@ -3,7 +3,7 @@ ATT.CompactName = "6P1 Sb.2-1"
 ATT.Icon = Material("entities/eft_ak_attachments/rs_akm.png", "mips smooth")
 ATT.Description = [[Standard AKM rear sight manufactured by Izhmash.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
 ATT.ModelBodygroups = "4"

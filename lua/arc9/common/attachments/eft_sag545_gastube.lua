@@ -3,7 +3,7 @@ ATT.CompactName = "SAG Mk.2.1"
 ATT.Icon = Material("entities/eft_ak_attachments/sag/gas.png", "mips smooth")
 ATT.Description = [[The Mk. 2.1 gas tube for AK-545 carbines manufactured by Sureshot Armament Group.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sag545_gasblock"}
 -- ATT.ActivateElements = {"gasblock"}

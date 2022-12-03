@@ -3,7 +3,7 @@ ATT.CompactName = "Type-340"
 ATT.Icon = Material("entities/eft_ak_attachments/saiga12/340.png", "mips smooth")
 ATT.Description = [[Type-340 is a lightweight aircraft grade aluminium handguard, designed for installation on Saiga carbines. Manufactured by Custom Guns.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_handguard"}
 

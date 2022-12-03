@@ -3,7 +3,7 @@ ATT.CompactName = "AKMP RS"
 ATT.Icon = Material("entities/eft_ak_attachments/rs_akmpp.png", "mips smooth")
 ATT.Description = [[A device intended for firing AK and AKM family assault rifles in poor visibility conditions.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_akmp.mdl"
 

@@ -5,7 +5,7 @@ ATT.Description = [[A 30-round polymer US Palm AK30 magazine for 7.62x39 AK and 
 
 Black version.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"

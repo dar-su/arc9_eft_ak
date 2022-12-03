@@ -3,7 +3,7 @@ ATT.CompactName = "6L20"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/5456l20.png", "mips smooth")
 ATT.Description = [[A 30-round 5.45x39 6L20 Izhmash bakelite magazine, for AK-74 and compatible systems.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"

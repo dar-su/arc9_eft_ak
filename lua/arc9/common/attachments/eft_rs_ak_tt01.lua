@@ -3,7 +3,7 @@ ATT.CompactName = "TT01"
 ATT.Icon = Material("entities/eft_ak_attachments/rs_tt01.png", "mips smooth")
 ATT.Description = [[The TT01 rear sight adapter, designed by Taktika Tula for AK family assault rifles. Installed in place of a standard rear sight and can be used as an iron sight if no reflex sight is installed.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
 ATT.ModelBodygroups = "1"

@@ -3,7 +3,7 @@ ATT.CompactName = "SAG tube"
 ATT.Icon = Material("entities/eft_ak_attachments/sag/tube.png", "mips smooth")
 ATT.Description = [[Sureshot Armament Group Receiver Extension Buffer Tube, 6-position, Mil-Spec diameter, designed specifically for AK-545.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sag545_stock"}
 

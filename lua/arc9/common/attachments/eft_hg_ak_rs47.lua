@@ -5,7 +5,7 @@ ATT.Description = [[The RS47 lightweight polymer handguard, fits the majority of
 Equipped with two short and two long rail mounts for installing additional devices. 
 Manufactured by Command Arms.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_rs47.mdl"
 ATT.LHIK = true

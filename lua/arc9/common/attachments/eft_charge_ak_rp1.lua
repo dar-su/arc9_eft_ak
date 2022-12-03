@@ -7,7 +7,7 @@ The RP-1 is larger and more convenient than the standard charging handle, which 
 The RP-1 is installed above the base handle through kit-enclosed bolts. 
 © Zenit]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_zenit_rp1_lod0_0.mdl"
 ATT.Category = {

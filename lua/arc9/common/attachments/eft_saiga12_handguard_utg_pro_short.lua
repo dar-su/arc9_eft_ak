@@ -3,7 +3,7 @@ ATT.CompactName = "MTU002 S"
 ATT.Icon = Material("entities/eft_ak_attachments/saiga12/utgs.png", "mips smooth")
 ATT.Description = [[The UTG PRO MTU002 Tactical Quad Rail Short Top is a lightweight aircraft grade aluminum handguard with sling swivel, designed for installation on Saiga carbines. Manufactured by Leapers Inc.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_handguard"}
 

@@ -5,7 +5,7 @@ ATT.Description = [[The Strike Industries AK TRAX 1 rail system is a modular dro
 It will provide an adaptable platform for the user to mount their accessories. 
 Can be combined with the TRAX 2 rail for maximum amount of modularity.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
 ATT.ModelBodygroups = "8"
