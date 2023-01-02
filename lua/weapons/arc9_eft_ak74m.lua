@@ -3,6 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
+SWEP.SubCategory = "Assault Rifles"
 SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.PrintName = "AK-74M/105"
