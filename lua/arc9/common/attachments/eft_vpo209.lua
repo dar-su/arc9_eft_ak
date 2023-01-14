@@ -14,7 +14,7 @@ ATT.DistantShootSoundIndoor = path .. "fire/vpo209_fire_indoor_distant.wav"
 
 ATT.ShootSoundSilenced = path .. "fire/vpo209_fire_close_silenced.wav"
 ATT.DistantShootSoundSilenced = path .. "fire/vpo209_fire_distant_silenced.wav"
-ATT.ShootSoundIndoorSilenced = path .. "fire/vpo209_fire_indoor_close_silenced.wav"
-ATT.DistantShootSoundIndoorSilenced = path .. "fire/vpo209_fire_indoor_distant_silenced.wav"
+ATT.ShootSoundSilencedIndoor = path .. "fire/vpo209_fire_indoor_close_silenced.wav"
+ATT.DistantShootSoundSilencedIndoor = path .. "fire/vpo209_fire_indoor_distant_silenced.wav"
 
 ATT.Category = {"eft_vepr_conv"}

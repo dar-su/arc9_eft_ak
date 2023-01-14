@@ -282,9 +282,9 @@ SWEP.DistantShootSound = { path .. "fire/saiga_outdoor_distant1.wav", path .. "f
 SWEP.DistantShootSoundIndoor = path .. "fire/saiga_indoor_far1.wav1"
 
 SWEP.ShootSoundSilenced = path .. "fire/saiga_fire_silenced_close.wav"
-SWEP.ShootSoundIndoorSilenced = path .. "fire/saiga_fire_silenced_indoor_close.wav"
+SWEP.ShootSoundSilencedIndoor = path .. "fire/saiga_fire_silenced_indoor_close.wav"
 SWEP.DistantShootSoundSilenced = path .. "fire/saiga_fire_silenced_distant.wav"
-SWEP.DistantShootSoundIndoorSilenced = path .. "fire/saiga_fire_silenced_indoor_distant.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire/saiga_fire_silenced_indoor_distant.wav"
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = "" -- we will have own in sound tables

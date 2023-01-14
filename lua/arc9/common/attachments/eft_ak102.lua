@@ -15,9 +15,9 @@ ATT.DistantShootSound = { path .. "fire/ak102_distant1.wav", path .. "fire/ak102
 ATT.DistantShootSoundIndoor = { path .. "fire/ak102_indoor_distant1.wav", path .. "fire/ak102_indoor_distant2.wav" }
 
 ATT.ShootSoundSilenced = { path .. "fire/ak102_silenced1.wav", path .. "fire/ak102_silenced2.wav" }
-ATT.ShootSoundIndoorSilenced = { path .. "fire/ak102_indoor_silenced1.wav", path .. "fire/ak102_indoor_silenced2.wav" }
+ATT.ShootSoundSilencedIndoor = { path .. "fire/ak102_indoor_silenced1.wav", path .. "fire/ak102_indoor_silenced2.wav" }
 ATT.DistantShootSoundSilenced = { path .. "fire/ak102_distant_silenced1.wav", path .. "fire/ak102_distant_silenced2.wav" }
-ATT.DistantShootSoundIndoorSilenced = { path .. "fire/ak102_indoor_distant_silenced1.wav", path .. "fire/ak102_indoor_distant_silenced2.wav" }
+ATT.DistantShootSoundSilencedIndoor = { path .. "fire/ak102_indoor_distant_silenced1.wav", path .. "fire/ak102_indoor_distant_silenced2.wav" }
 
 ATT.Category = {"eft_ak102_conv"}
 
