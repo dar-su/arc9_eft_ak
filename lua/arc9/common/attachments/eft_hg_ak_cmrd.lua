@@ -6,8 +6,7 @@ Includes KeyMod slots for rail installation.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "6"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vltor_cmrd.mdl"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
 ATT.ExcludeElements = {"short_barrel", "eft_gas_vityaz_std"}
@@ -21,27 +20,27 @@ ATT.Attachments = {
         PrintName = "B2 Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0, 10.7, 1.6),
-        Ang = Angle(-180, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "L Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(-0.8, 10.5, 0.65),
-        Ang = Angle(-90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "R Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.8, 10.5, 0.65),
-        Ang = Angle(-90, 0, 180),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "B Keymod",
         Category = {"eft_mount_keymod6", "eft_grip_keymod"},
         Pos = Vector(0, 3, 1.6),
-        Ang = Angle(180, 0, 0),
+        Ang = Angle(0, -90, -90),   
     },
 }

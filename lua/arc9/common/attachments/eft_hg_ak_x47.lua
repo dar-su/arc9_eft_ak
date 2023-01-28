@@ -5,7 +5,7 @@ ATT.Description = [[A tactical aluminum handguard for the AK family assault rifl
 Equipped with multiple rail mounts for installation of a wide range of additional equipment.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "TDI"
+-- ATT.Folder = "TDI"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_x47.mdl"
 ATT.LHIK = true

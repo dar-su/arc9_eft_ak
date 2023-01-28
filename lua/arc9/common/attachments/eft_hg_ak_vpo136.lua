@@ -5,8 +5,7 @@ ATT.Description = [[A standard wooden handguard for VPO-136 Vepr KM carbines, ma
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "9"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_136.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}

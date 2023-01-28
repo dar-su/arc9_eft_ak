@@ -162,9 +162,13 @@ SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4
 SWEP.SecondarySupplyLimit = 4
 SWEP.ReloadInSights = true
-SWEP.DropMagazineSounds = { "weapons/arc9_ud/common/rifle_magdrop_1.ogg", "weapons/arc9_ud/common/rifle_magdrop_2.ogg", "weapons/arc9_ud/common/rifle_magdrop_3.ogg", "weapons/arc9_ud/common/rifle_magdrop_4.ogg" }
+SWEP.DropMagazineSounds = {}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.7
+SWEP.DropMagazineQCA = 4
+SWEP.DropMagazinePos = Vector(0, 0, 0)
+SWEP.DropMagazineAng = Angle(-180, 90, 90)
+SWEP.DropMagazineVelocity = Vector(-100, 0, 0)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
 SWEP.TracerNum = 1
@@ -195,6 +199,7 @@ SWEP.CrouchAng = Angle(0, 0, -1)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(19, 30, 4)
 SWEP.CustomizeSnapshotFOV = 95
+SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
 
 
 --          Third person stuff
@@ -325,6 +330,15 @@ end
 
 
 ------------------------- [[[           Animations            ]]] -------------------------
+
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mod_magazine",
+        "patron_in_mag0",
+        "patron_in_mag1",
+        "patron_in_mag2"
+    },
+}
 
 SWEP.Hook_TranslateAnimation = ARC9EFT.AK_AnimsHook
 SWEP.Animations = ARC9EFT.AK_Anims

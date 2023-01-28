@@ -7,22 +7,24 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_bridge.mdl"
 ATT.ModelOffset = Vector(0, -3.2, 1.5)
-ATT.ModelAngleOffset = Angle(180, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 90)
 
 ATT.Category = {"eft_mount_trax1"}
 ATT.Attachments = {
     {
         PrintName = "Extension",
         Category = {"eft_mount_trax_bridge"},
-        Pos = Vector(0, -3.1, 1.5),
-        Ang = Angle(180, 0, 0),
-        Icon_Offset = Vector(0, 8.6, 0),
+        -- Pos = Vector(0, 3.1, -1.5),
+        Pos = Vector(3.1, 1.5, 0),
+        Ang = Angle(0, 90, 90),
+        Icon_Offset = Vector(0, 7, 0),
     },
     {
         PrintName = "Grip",
         Category = {"eft_foregrip_small"},
-        Pos = Vector(0, 6-3.1, -0.35),
-        Ang = Angle(180, -90, 0),
+        -- Pos = Vector(0, 6-3.1, -0.35),
+        Pos = Vector(-6+3.1, -0.35, 0),
+        Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
 }

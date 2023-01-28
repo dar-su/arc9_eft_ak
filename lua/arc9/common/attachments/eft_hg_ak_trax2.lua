@@ -16,14 +16,14 @@ ATT.Attachments = {
         PrintName = "L Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(-0.62, 8.1, 0.6),
-        Ang = Angle(-90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.1, 0),
     },
     {
         PrintName = "R Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.62, 8.1, 0.6),
-        Ang = Angle(90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.1, 0),
     },
 }

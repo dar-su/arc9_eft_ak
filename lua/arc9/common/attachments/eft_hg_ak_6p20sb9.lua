@@ -6,8 +6,7 @@ Manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "3"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vityaz_std_plastic.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}

@@ -6,10 +6,9 @@ It's fitted with Picatinny rail mounts on two sides, allowing for the installati
 Manufactured by Zenit.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "ZENIT"
+-- ATT.Folder = "ZENIT"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "5"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_zenit_b10.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}

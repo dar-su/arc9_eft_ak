@@ -159,9 +159,13 @@ SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4
 SWEP.SecondarySupplyLimit = 4
 SWEP.ReloadInSights = true
-SWEP.DropMagazineSounds = { "weapons/arc9_ud/common/rifle_magdrop_1.ogg", "weapons/arc9_ud/common/rifle_magdrop_2.ogg", "weapons/arc9_ud/common/rifle_magdrop_3.ogg", "weapons/arc9_ud/common/rifle_magdrop_4.ogg" }
-SWEP.DropMagazineAmount = 0
-SWEP.DropMagazineTime = 0.6
+SWEP.DropMagazineSounds = {}
+SWEP.DropMagazineAmount = 1
+SWEP.DropMagazineTime = 0.57
+SWEP.DropMagazineQCA = 4
+SWEP.DropMagazinePos = Vector(0, -3.5, 0.95)
+SWEP.DropMagazineAng = Angle(-180, 90, 0)
+SWEP.DropMagazineVelocity = Vector(0, -50, 20)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
 SWEP.TracerNum = 1
@@ -194,6 +198,7 @@ SWEP.CrouchAng = Angle(0, 0, -1)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(15, 23, 4)
 SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
 
 --          Third person stuff
 
@@ -223,10 +228,10 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 SWEP.CamQCA_Mult = 0.3
 SWEP.CamQCA_Mult_ADS = 0.05
 
-SWEP.MuzzleParticle = "muzzleflash_ak47"
+SWEP.MuzzleParticle = "muzzleflash_pistol"
 
 SWEP.CaseEffectQCA = 2
-SWEP.ShellModel = "models/shells/shell_9mm.mdl"
+SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/9x19.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
@@ -321,6 +326,13 @@ end
 
 
 ------------------------- [[[           Animations            ]]] -------------------------
+
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mod_magazine",
+        "patron_in_mag"
+    },
+}
 
 local path = "weapons/darsu_eft/ak/"
 
@@ -438,7 +450,10 @@ local rst_empty = {
     { s = randspin, t = 65/28 },
     { s = path .. "ak74_slider_up.wav", t = 83/28 },
     { s = path .. "ak74_slider_down.wav", t = 89/28 },
-    { s = randspin, t = 97/28 }
+    { s = randspin, t = 97/28 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.57},
+    {hide = 0, t = 1.02}
 
     -- { s = path .. "ak74_magrelease_button.wav", t = 0.35 },
     -- { s = path .. "ak74_magout_plastic.wav", t = 0.5 },
@@ -473,7 +488,7 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
         RareSource = {"tooidle0", "tooidle1", "tooidle2"},
-        RareSourceChance = 0.001,
+        RareSourceChance = 0.0001,
     },
 
     ["ready"] = {

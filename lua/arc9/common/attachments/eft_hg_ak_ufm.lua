@@ -8,8 +8,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.RequireElements = {"gasblock_vdmcs"}
 ATT.ActivateElements = {"nogp34"}
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "b"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ufm_akm_long.mdl"
 ATT.LHIK = true
 
 ATT.Category = {"eft_ak_handguard_custom"}
@@ -20,7 +19,7 @@ ATT.Attachments = {
         Category = {"eft_optic_medium", "eft_optic_small", "eft_backupmount"},
         Pos = Vector(0, 4, -1.12),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(0, 0, 0),
         ExtraSightDistance = 8
     },
     {
@@ -35,27 +34,27 @@ ATT.Attachments = {
         PrintName = "B2 Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0, 9.5, 1.7),
-        Ang = Angle(180, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(0, -90, -90),   
+        Icon_Offset = Vector(0, 0.1, 0),
     },
     {
         PrintName = "L Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(-0.75, 9.5, 0.5),
-        Ang = Angle(-90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.1, 0),
     },
     {
         PrintName = "R Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.75, 9.5, 0.5),
-        Ang = Angle(90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.1, 0),
     },
     {
         PrintName = "B Keymod",
         Category = {"eft_mount_keymod6", "eft_grip_keymod"},
         Pos = Vector(0, 3, 1.7),
-        Ang = Angle(180, 0, 0),
+        Ang = Angle(0, -90, -90),   
     },
 }

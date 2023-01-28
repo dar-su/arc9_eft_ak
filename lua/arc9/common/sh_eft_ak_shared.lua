@@ -155,7 +155,10 @@ local rst_drop = {
     { s = randspin, t = 2.4 },
     { s = path .. "ak74_slider_up.wav", t = 2.75 },
     { s = path .. "ak74_slider_down.wav", t = 3.05 },
-    { s = randspin, t = 3.25 }
+    { s = randspin, t = 3.25 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.7},
+    {hide = 0, t = 1.02}
 }
 
 local rst_empty = {
@@ -168,7 +171,7 @@ local rst_empty = {
     { s = randspin, t = 2.7 },
     { s = path .. "ak74_slider_up.wav", t = 3.4 },
     { s = path .. "ak74_slider_down.wav", t = 3.65 },
-    { s = randspin, t = 3.9 }
+    { s = randspin, t = 3.9 },
 }
 
 local rst_magcheck = {

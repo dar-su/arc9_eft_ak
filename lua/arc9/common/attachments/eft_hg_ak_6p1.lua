@@ -5,8 +5,7 @@ ATT.Description = [[A standard Izhmash-produced wooden AKM handguard.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "0"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_akm_std_wood.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}

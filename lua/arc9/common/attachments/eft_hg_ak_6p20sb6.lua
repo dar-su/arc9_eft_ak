@@ -5,8 +5,7 @@ ATT.Description = [[A standard Izhmash-produced wooden handguard for AK-74 assau
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "1"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak74_std_wood.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}

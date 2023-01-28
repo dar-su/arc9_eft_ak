@@ -6,10 +6,9 @@ B-19 rail mount is basically a sight mount hovering over the gas tube. Also inte
 ©Zenit]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "ZENIT"
+-- ATT.Folder = "ZENIT"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"
-ATT.ModelBodygroups = "1"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b10mb19.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
@@ -19,6 +18,7 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         Category = {"eft_tactical_top", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 4, -1.25),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 1, 0),
@@ -34,6 +34,7 @@ ATT.Attachments = {
     {
         PrintName = "R Tactical",
         Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(1.05, 4.5, 0.45),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 1),
@@ -41,6 +42,7 @@ ATT.Attachments = {
     {
         PrintName = "L Tactical",
         Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(-1.05, 4.5, 0.45),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 1),

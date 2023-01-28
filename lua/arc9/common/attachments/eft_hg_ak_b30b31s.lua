@@ -6,7 +6,7 @@ The B-31S rail mount above the gas tube is an all-milled bracket made of D16T al
 © «Zenit»]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.Folder = "ZENIT"
+-- ATT.Folder = "ZENIT"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"
 ATT.ModelBodygroups = "0"
@@ -20,6 +20,7 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 4, -1.32),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 1, 0),
@@ -35,6 +36,7 @@ ATT.Attachments = {
     {
         PrintName = "R Tactical",
         Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(1.15, 9, 0.45),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 1),
@@ -42,6 +44,7 @@ ATT.Attachments = {
     {
         PrintName = "L Tactical",
         Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(-1.15, 9, 0.45),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 1),
@@ -49,6 +52,7 @@ ATT.Attachments = {
     {
         PrintName = "B Tactical",
         Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 9, 1.65),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 1),

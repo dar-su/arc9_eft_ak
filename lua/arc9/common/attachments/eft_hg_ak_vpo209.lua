@@ -5,8 +5,7 @@ ATT.Description = [[A standard wooden handguard for VPO-209 AKM carbines, manufa
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "a"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_209.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}

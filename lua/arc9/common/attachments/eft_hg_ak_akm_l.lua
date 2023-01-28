@@ -7,8 +7,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "7"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "0"
 ATT.LHIK = true
 

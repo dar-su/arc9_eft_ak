@@ -7,8 +7,7 @@ Can be combined with the TRAX 2 rail for maximum amount of modularity.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "8"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_strike_industries_trax_1.mdl"
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0.1, 0)
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
@@ -29,21 +28,21 @@ ATT.Attachments = {
         PrintName = "L Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(-0.62, 4.2, 0.6),
-        Ang = Angle(-90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.1, 0),
     },
     {
         PrintName = "R Keymod",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.62, 4.2, 0.6),
-        Ang = Angle(90, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.1, 0),
     },
     {
         PrintName = "B Keymod",
         Category = {"eft_mount_trax1", "eft_mount_keymod6"},
         Pos = Vector(0, 3.2, 1.5),
-        Ang = Angle(180, 0, 0),
+        Ang = Angle(0, -90, -90),
         -- Icon_Offset = Vector(0, 3, -1.5),
     },
 }

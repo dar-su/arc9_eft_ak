@@ -6,8 +6,7 @@ Features a bottom rail for installation of tactical foregrips.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_default.mdl"
-ATT.ModelBodygroups = "4"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak100_rail_plastic.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
@@ -25,6 +24,7 @@ ATT.Attachments = {
     {
         PrintName = "Tactical",
         Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(1.05, 5.5, 0.65),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 1),
