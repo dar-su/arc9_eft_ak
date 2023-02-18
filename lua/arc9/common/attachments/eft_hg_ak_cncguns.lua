@@ -1,6 +1,6 @@
 ATT.PrintName = "AK CNC Guns OV GP handguard"
 ATT.CompactName = "OV GP"
-ATT.Icon = Material("entities/eft_ak_attachments/hg/cncguns.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/hg/cnc.png", "mips smooth")
 ATT.Description = [[The OV GP handguard for AK series assault rifles, equipped with a KeyMod interface for the installation of additional devices and accessories. Manufactured by CNC Guns.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

@@ -2,7 +2,7 @@ ARC9EFT = ARC9EFT or {}
 
 ARC9EFT.AK_AnimsHook = function(swep, anim)
     local elements = swep:GetElements()
-    if !IsFirstTimePredicted() then return end
+    -- if !IsFirstTimePredicted() then return end
 
     local ending = ""
 
@@ -28,7 +28,10 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
     else nomag = true end
     
     if anim == "inspect" then
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        swep.EFTInspectnum = swep.EFTInspectnum or 0
+        if IsFirstTimePredicted() then
+            swep.EFTInspectnum = swep.EFTInspectnum + 1
+        end
         local rand = swep.EFTInspectnum
         if rand == 4 then swep.EFTInspectnum = 0 rand = 0 end
 

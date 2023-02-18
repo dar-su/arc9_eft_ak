@@ -19,7 +19,7 @@ ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 ATT.Attachments = {
     {
         PrintName = "M-LOK B",
-        Category = {"eft_mount_mlok41"},
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
         Pos = Vector(0, 3.5, 1.56),
         Ang = Angle(180, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
