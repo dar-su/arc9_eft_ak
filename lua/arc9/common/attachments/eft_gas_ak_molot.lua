@@ -5,8 +5,7 @@ ATT.Description = [[A gas tube for AKM-type automatic rifles and Vepr carbines, 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks.mdl"
-ATT.ModelBodygroups = "2"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_vpo136.mdl"
 
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock"}

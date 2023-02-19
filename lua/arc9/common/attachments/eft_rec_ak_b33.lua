@@ -9,8 +9,7 @@ Can only be installed in combination with AK Zenit B-10M handguard with B-19 upp
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dustcovers.mdl"
-ATT.ModelBodygroups = "5"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_zenit_b33.mdl"
 
 ATT.ActivateElements = {"railedcover"}
 ATT.RequireElements = {"eft_hg_ak_b10mb19", "eft_hg_ak_b30b31s"}

@@ -5,7 +5,6 @@ ATT.Description = [[Special rear sight leaf for use with PBS-1 and the "US" cart
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
-ATT.ModelBodygroups = "5"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_akmb.mdl"
 
 ATT.Category = {"eft_akm_rearsight"}

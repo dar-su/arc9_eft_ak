@@ -5,7 +5,6 @@ ATT.Description = [[The V2 Enhanced rear sight for AK automatic rifles, manufact
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
-ATT.ModelBodygroups = "8"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_rifle_dynamics.mdl"
 
 ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight"}

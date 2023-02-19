@@ -5,8 +5,7 @@ ATT.Description = [[A skeletonized metal stock for PP-19-01 Vityaz SMGs and Saig
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
-ATT.ModelBodygroups = "6"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vityaz.mdl"
 
 ATT.Category = {"eft_vityaz_stock"}
 

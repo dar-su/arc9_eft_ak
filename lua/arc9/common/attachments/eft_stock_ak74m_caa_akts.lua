@@ -5,8 +5,7 @@ ATT.Description = [[CAA Receiver Extension Buffer Tube, 6-position, Mil-Spec dia
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
-ATT.ModelBodygroups = "1"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_caa_akts_ak74.mdl"
 
 ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
 

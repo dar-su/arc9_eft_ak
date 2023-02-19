@@ -9,8 +9,7 @@ Manufactured by TROY Industries.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks_lhik.mdl"
-ATT.ModelBodygroups = "0"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_troy.mdl"
 ATT.LHIK = true
 
 ATT.Category = {"eft_ak_gasblock"}

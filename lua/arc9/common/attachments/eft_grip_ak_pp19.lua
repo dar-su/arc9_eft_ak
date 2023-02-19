@@ -5,7 +5,6 @@ ATT.Description = [[An Izhmash-manufactured pistol grip for PP-19-01 Vityaz SMGs
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
-ATT.ModelBodygroups = "g"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_vityaz.mdl"
 
 ATT.Category = {"eft_ak_grip"}

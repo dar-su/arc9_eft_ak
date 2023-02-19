@@ -5,8 +5,7 @@ ATT.Description = [[Standard AKM / VPO-209 rear sight manufactured by Molot.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
-ATT.ModelBodygroups = "6"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_vpo_209.mdl"
 
 ATT.Category = {"eft_vpo209_rearsight"}
 ATT.Attachments = {

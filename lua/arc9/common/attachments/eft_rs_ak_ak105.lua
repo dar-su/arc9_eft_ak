@@ -5,8 +5,7 @@ ATT.Description = [[A standard rear sight for AK-105 automatic rifles, manufactu
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
-ATT.ModelBodygroups = "3"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_ak105_std.mdl"
 
 ATT.Category = {"eft_ak74_rearsight", "eft_rpk16_rearsight"}
 ATT.Attachments = {

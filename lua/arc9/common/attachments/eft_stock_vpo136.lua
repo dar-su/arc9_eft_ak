@@ -5,8 +5,7 @@ ATT.Description = [[A standard-issue wooden stock for VPO-136 Vepr KM carbines, 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
-ATT.ModelBodygroups = "8"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_136.mdl"
 
 ATT.Category = {"eft_akm_stock"}
 

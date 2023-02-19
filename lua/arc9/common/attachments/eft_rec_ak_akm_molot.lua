@@ -5,7 +5,6 @@ ATT.Description = [[Standard АKM type top dust cover by Molot.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dustcovers.mdl"
-ATT.ModelBodygroups = "1"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_molot_akm.mdl"
 
 ATT.Category = {"eft_ak_dustcover"}

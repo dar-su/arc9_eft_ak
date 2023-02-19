@@ -5,8 +5,7 @@ ATT.Description = [[A standard gas tube for PP-19-01 Vityaz submachine guns. Gas
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks.mdl"
-ATT.ModelBodygroups = "1"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_pp1901.mdl"
 
 ATT.Category = {"eft_vityaz_gasblock"}
 ATT.ActivateElements = {"gasblock"}

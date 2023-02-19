@@ -5,8 +5,7 @@ ATT.Description = [[A standard buffer tube for RPK-16 LMG, manufactured by Izhma
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
-ATT.ModelBodygroups = "4"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_rpk_stock_tube.mdl"
 
 ATT.Category = {"eft_ak74m_stock", "eft_rpk16_stock"}
 

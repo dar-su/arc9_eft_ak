@@ -5,7 +5,6 @@ ATT.Description = [[An Izhmash polymer pistol grip for AK and compatibles, desig
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
-ATT.ModelBodygroups = "0"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak74_plastic.mdl"
 
 ATT.Category = {"eft_ak_grip"}

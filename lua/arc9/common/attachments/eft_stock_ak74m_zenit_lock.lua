@@ -7,8 +7,7 @@ Manufactured by Zenit.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
-ATT.ModelBodygroups = "2"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_zenit_pt3_lock.mdl"
 
 ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
 

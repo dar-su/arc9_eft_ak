@@ -5,8 +5,7 @@ ATT.Description = [[A standard-issue metal skeleton stock for AKS-74U, AKS-74UN,
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
-ATT.ModelBodygroups = "3"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
 
 ATT.Category = {"eft_aks_stock"}
 

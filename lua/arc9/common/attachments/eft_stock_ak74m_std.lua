@@ -5,8 +5,7 @@ ATT.Description = [[A polymer stock for AK-74M automatic rifles, manufactured by
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_fold.mdl"
-ATT.ModelBodygroups = "0"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74m_std.mdl"
 
 ATT.Category = {"eft_ak74m_stock"}
 

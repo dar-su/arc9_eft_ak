@@ -5,7 +5,6 @@ ATT.Description = [[Standard АKM top dust cover by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dustcovers.mdl"
-ATT.ModelBodygroups = "0"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_akm_std.mdl"
 
 ATT.Category = {"eft_ak_dustcover"}

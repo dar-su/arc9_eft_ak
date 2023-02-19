@@ -5,8 +5,7 @@ ATT.Description = [[The UltiMAK M1-B gas tube for AK assault rifles sets the gas
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblock_m1b.mdl"
--- ATT.ModelBodygroups = "8"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_m1b.mdl"
 ATT.LHIK = true
 ATT.Category = {"eft_ak_gasblock"}
 

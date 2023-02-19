@@ -5,8 +5,7 @@ ATT.Description = [[A custom gas tube for specific AK family handguards.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gasblocks.mdl"
-ATT.ModelBodygroups = "3"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_pp1901_std.mdl"
 
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock_vdmcs"}

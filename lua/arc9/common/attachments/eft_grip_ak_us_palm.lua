@@ -5,7 +5,6 @@ ATT.Description = [[A light pistol grip for AK assault rifles, manufactured by U
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
-ATT.ModelBodygroups = "i"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_us_palm.mdl"
 
 ATT.Category = {"eft_ak_grip"}

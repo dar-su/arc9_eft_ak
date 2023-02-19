@@ -5,8 +5,7 @@ ATT.Description = [[Standard AKM rear sight manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
-ATT.ModelBodygroups = "4"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_akm_std.mdl"
 
 ATT.Category = {"eft_akm_rearsight"}
 ATT.Attachments = {

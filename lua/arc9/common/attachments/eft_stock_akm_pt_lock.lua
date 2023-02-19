@@ -5,8 +5,7 @@ ATT.Description = [[The lock is designed to install the PT-1 and PT-3 stocks to 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
-ATT.ModelBodygroups = "c"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_zenit_pt1_lock.mdl"
 
 ATT.Category = {"eft_akm_stock"}
 

@@ -5,8 +5,7 @@ ATT.Description = [[The FAB Defense PDC dust cover with an integrated Picatinny 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dustcovers.mdl"
-ATT.ModelBodygroups = "3"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_fab_defence_pdc.mdl"
 
 ATT.ActivateElements = {"railedcover"}
 ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}

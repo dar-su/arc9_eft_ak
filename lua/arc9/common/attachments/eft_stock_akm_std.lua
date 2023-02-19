@@ -5,8 +5,7 @@ ATT.Description = [[A standard-issue wooden stock for AKM automatic rifles, manu
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
-ATT.ModelBodygroups = "6"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_akm_std_wood.mdl"
 
 ATT.Category = {"eft_akm_stock"}
 

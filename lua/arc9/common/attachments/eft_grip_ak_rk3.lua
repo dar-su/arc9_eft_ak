@@ -6,7 +6,6 @@ ATT.Description = [[The RK-3 Klassika anatomic pistol grip features a built-in h
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
-ATT.ModelBodygroups = "1"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_zenit_rk3.mdl"
 
 ATT.Category = {"eft_ak_grip"}

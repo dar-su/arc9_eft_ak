@@ -5,7 +5,6 @@ ATT.Description = [[An Izhmash-manufactured bakelite pistol grip for the AK auto
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
-ATT.ModelBodygroups = "6"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak74_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}

@@ -5,8 +5,7 @@ ATT.Description = [[An adapter for the installation of telescopic stock buffer t
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stocks_nonfold.mdl"
-ATT.ModelBodygroups = "b"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_utg_sfs.mdl"
 
 ATT.Category = {"eft_akm_stock"}
 

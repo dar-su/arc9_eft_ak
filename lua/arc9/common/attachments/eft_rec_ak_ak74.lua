@@ -5,7 +5,6 @@ ATT.Description = [[A standard-issue dust cover for AK-74 automatic rifles, manu
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dustcovers.mdl"
-ATT.ModelBodygroups = "7"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_ak74_std.mdl"
 
 ATT.Category = {"eft_ak74_dustcover"}

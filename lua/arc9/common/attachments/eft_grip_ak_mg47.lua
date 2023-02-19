@@ -7,7 +7,6 @@ Manufactured by Kraft Gun Builders.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pistolgrips.mdl"
-ATT.ModelBodygroups = "2"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47.mdl"
 
 ATT.Category = {"eft_ak_grip"}
