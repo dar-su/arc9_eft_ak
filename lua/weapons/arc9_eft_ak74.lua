@@ -261,10 +261,10 @@ SWEP.BulletBones = {
 
 --          UBGL
 
-SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
-SWEP.DoFireAnimationUBGL = true
-SWEP.NoShellEjectUBGL = true
-SWEP.MuzzleEffectQCAUBGL = 1
+-- SWEP.UBGLIntegralReload = false -- The UBGL uses reload animations that are baked into the gun.
+-- SWEP.DoFireAnimationUBGL = true
+-- SWEP.NoShellEjectUBGL = true
+-- SWEP.MuzzleEffectQCAUBGL = 1
 
 
 
@@ -466,9 +466,9 @@ SWEP.Attachments = {
         PrintName = "UBGL",
         Category = "eft_ak_gp34",
         ExcludeElements = {"nogp34"},
-        Bone = "mod_gas_block",
-        Pos = Vector(0, 0, -3),
-        Ang = Angle(0, 0, 0),
+        Bone = "weapon",
+        Pos = Vector(0, 23, -1),
+        Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(0, 7, 1.1),
     },
 }

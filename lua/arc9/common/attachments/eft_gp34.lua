@@ -8,11 +8,15 @@ ATT.Category = {"eft_ak_gp34"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/gp34_lhik.mdl"
 ATT.ModelOffset = Vector(-20, -6.2, -57)
-ATT.ModelAngleOffset = Angle(0, -90, 0)
+ATT.ModelAngleOffset = Angle(0, 180, 0)
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
 
 ATT.UBGL = true
+ATT.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
+ATT.DoFireAnimationUBGL = true
+ATT.NoShellEjectUBGL = true
+ATT.MuzzleEffectQCAUBGL = 1
 ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
