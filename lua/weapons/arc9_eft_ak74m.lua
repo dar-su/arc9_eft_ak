@@ -488,10 +488,10 @@ SWEP.Attachments = {
     {
         PrintName = "UBGL",
         Category = "eft_ak_gp34",
-        ExcludeElements = {"nogp34", "eft_ak105"},
+        ExcludeElements = {"nogp34"},
         Bone = "weapon",
         Pos = Vector(0, 23, -1),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 7, 1.1),
+        Ang = Angle(0, 90, 0),
+        Icon_Offset = Vector(-5, 0, -1),
     },
 }

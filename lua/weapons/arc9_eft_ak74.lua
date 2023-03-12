@@ -467,8 +467,8 @@ SWEP.Attachments = {
         Category = "eft_ak_gp34",
         ExcludeElements = {"nogp34"},
         Bone = "weapon",
-        Pos = Vector(0, 23, -1),
+        Pos = Vector(0, 23.5, -0.8),
         Ang = Angle(0, 90, 0),
-        Icon_Offset = Vector(0, 7, 1.1),
+        Icon_Offset = Vector(-5, 0, -1),
     },
 }

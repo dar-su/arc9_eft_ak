@@ -6,6 +6,10 @@ ENT.PrintName 			= "VOG-25 Projectile"
 ENT.Spawnable 			= false
 
 ENT.IsProjectile = true
+ENT.SmokeTrail = true
+ENT.SmokeTrailMat = "effects/fas_smoke_beam"
+ENT.SmokeTrailSize = 5
+ENT.SmokeTrailTime = 0.5
 
 if CLIENT then    
     function ENT:Draw()
@@ -25,13 +29,17 @@ else
         if phys:IsValid() then
             phys:Wake()
             phys:SetMass(1)
-            phys:SetDamping(0,10)
+            phys:SetDamping(-0.06, 10)
         end
 
         self.radius = 512
         self.damage = 200
 
         self.DestroyTime = CurTime() + 20
+
+        if self.SmokeTrail then
+            util.SpriteTrail(self, 0, Color( 255 , 255 , 255 ), false, self.SmokeTrailSize, 0, self.SmokeTrailTime, 1 / self.SmokeTrailSize * 0.5, self.SmokeTrailMat)
+        end
     end
 
     function ENT:Think()
@@ -56,6 +64,8 @@ else
             return
         end
 
+        SafeRemoveEntityDelayed(self, self.SmokeTrailTime)
+        
         util.ScreenShake(self:GetPos(), 10, 1, 2, 1000)
         util.BlastDamage(self, self:GetOwner(), self:GetPos(), self.radius, self.damage)
 

@@ -53,6 +53,18 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
         if elements["eft_hg_rpk16_std"] then
             ending = "_rpk"
         end
+    elseif anim == "inspect_ubgl" then -- gp25 lhik
+        swep.EFTInspectBool = swep.EFTInspectBool or false
+        if IsFirstTimePredicted() then
+            swep.EFTInspectBool = !swep.EFTInspectBool
+        end
+        local inspect = swep.EFTInspectBool
+
+        if !inspect and swep:Clip2() > 0 then
+            return "inspect_check_ubgl"
+        else
+            return "inspect_ubgl"
+        end
     end
 
 
