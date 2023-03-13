@@ -21,7 +21,7 @@ ATT.Attachments = {
         Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 4.6, -1.25),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Icon_Offset = Vector(0, 0, 0),
         ExtraSightDistance = 8
     },
     {
@@ -40,7 +40,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B Keymod",
-        Category = {"eft_mount_trax1", "eft_mount_keymod6"},
+        Category = {"eft_mount_trax1", "eft_mount_keymod6", "eft_grip_keymod"},
         Pos = Vector(0, 3.2, 1.5),
         Ang = Angle(0, -90, -90),
         -- Icon_Offset = Vector(0, 3, -1.5),

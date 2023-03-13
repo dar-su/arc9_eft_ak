@@ -18,6 +18,7 @@ SWEP.Trivia = {
 
 SWEP.Description = [[The AKS-74 (Avtomat Kalashnikova Skladnoy 74 - "Kalashnikov's Automatic rifle 74 with a foldable stock") 5.45x39mm assault rifle is a variant of AK-74 equipped with a side-folding metal shoulder stock, designed primarily for use with air assault infantry and developed alongside the basic AK-74. The AKS-74 stock is fabricated from stamped sheet metal struts, machine pressed into a "U" shape and assembled by punch fit and welding.]]
 
+SWEP.BarrelLength = 38
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak74.mdl"
@@ -163,7 +164,7 @@ SWEP.DropMagazineAng = Angle(-180, 90, 90)
 SWEP.DropMagazineVelocity = Vector(-100, 0, 0)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
-SWEP.TracerNum = 1
+SWEP.TracerNum = 0
 SWEP.TracerColor = Color(255, 225, 200)
 
 
@@ -184,6 +185,9 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
 SWEP.SprintPos = Vector(4, -5, 0)
+
+SWEP.NearWallAng = Angle(0, 55, 0)
+SWEP.NearWallPos = Vector(0, 0, -15)
 
 SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
@@ -219,7 +223,7 @@ SWEP.AnimDraw = false
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
-SWEP.CamQCA_Mult = 0.3
+SWEP.CamQCA_Mult = 0.36
 SWEP.CamQCA_Mult_ADS = 0.05
 
 SWEP.MuzzleParticle = "muzzleflash_ak47"
@@ -252,16 +256,6 @@ SWEP.BulletBones = {
 --         "tag_mag2"
 --     }
 -- }
-
-
---          UBGL
-
-SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
-SWEP.DoFireAnimationUBGL = true
-SWEP.NoShellEjectUBGL = true
-SWEP.MuzzleEffectQCAUBGL = 1
-
-
 
 ------------------------- [[[           Sounds            ]]] -------------------------
 
@@ -380,13 +374,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 3),
     },
     {
-        PrintName = "Conversion",
-        Category = "eft_ak74_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -6, -5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
         PrintName = "Dovetail",
         Category = "eft_mount_dovetail",
         Bone = "mod_mount_000",
@@ -394,7 +381,6 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
         ExcludeElements = {"railedcover", "nodovetail"},
         RequireElements = {"nmount"},
-        Integral = false
     },
     {
         PrintName = "Grip",
@@ -404,7 +390,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_6p1sb8v",
-        Integral = true
     },
     {
         PrintName = "Mag",
@@ -423,7 +408,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 2.5, 0.25),
         Installed = "eft_gas_ak_6p20",
-        Integral = true,
         SubAttachments = {
             {
                 Installed = "eft_hg_ak_6p20sb6",
@@ -448,17 +432,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.25),
     },
-    -- {
-    --     PrintName = "Handguard",
-    --     Category = {"eft_ak_handguard", "eft_ak_handguard_custom"},
-    --     Bone = "mod_handguard",
-    --     Pos = Vector(0, 0, 0),
-    --     Ang = Angle(0, 0, 0),
-    --     Icon_Offset = Vector(0, 3.8, -0.5),
-    --     Installed = "eft_hg_ak_6p20sb6",
-    --     -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
-    --     -- Integral = false
-    -- },
     {
         PrintName = "UBGL",
         Category = "eft_ak_gp34",
@@ -468,4 +441,25 @@ SWEP.Attachments = {
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(-5, 0, -1),
     },
+    {
+        PrintName = "Conversion",
+        Category = "eft_ak74_conv",
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -5, -5),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Custom slot",
+        Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_ak74"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -8, -5),
+        Ang = Angle(0, 0, 0),
+    },
 }
+
+SWEP.EFTErgo = 31
+if ARC9EFTBASE then
+    SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+else
+    print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
+end

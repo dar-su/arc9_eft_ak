@@ -18,6 +18,7 @@ SWEP.Trivia = {
 
 SWEP.Description = [[RPK-16 (Ruchnoy Pulemyot Kalashnikova 16 - "Kalashnikov's Hand-held machine gun 16) is the newest Russian light machine gun chambered in 5.45x39mm rounds. Some key features of this new weapon are the quickly detachable barrels, enhanced ergonomics, and weaver rails on the handguard and dust cover.]]
 
+SWEP.BarrelLength = 40
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_rpk16.mdl"
@@ -163,7 +164,7 @@ SWEP.DropMagazineAng = Angle(-180, 90, 90)
 SWEP.DropMagazineVelocity = Vector(-100, 0, 0)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
-SWEP.TracerNum = 1
+SWEP.TracerNum = 0
 SWEP.TracerColor = Color(255, 225, 200)
 
 
@@ -184,6 +185,9 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
 SWEP.SprintPos = Vector(4, -5, 0)
+
+SWEP.NearWallAng = Angle(0, 55, 0)
+SWEP.NearWallPos = Vector(0, 0, -15)
 
 SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
@@ -218,7 +222,7 @@ SWEP.AnimDraw = false
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
-SWEP.CamQCA_Mult = 0.3
+SWEP.CamQCA_Mult = 0.36
 SWEP.CamQCA_Mult_ADS = 0.05
 
 SWEP.MuzzleParticle = "muzzleflash_ak47"
@@ -251,15 +255,6 @@ SWEP.BulletBones = {
 --         "tag_mag2"
 --     }
 -- }
-
-
---          UBGL
-
-SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
-SWEP.DoFireAnimationUBGL = true
-SWEP.NoShellEjectUBGL = true
-SWEP.MuzzleEffectQCAUBGL = 1
-
 
 
 ------------------------- [[[           Sounds            ]]] -------------------------
@@ -388,7 +383,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_ak12",
-        Integral = true
     },
     {
         PrintName = "Mag",
@@ -416,7 +410,6 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 3, 0),
         Installed = "eft_barrel_rpk16_370",
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
-        -- Integral = false
     },
     {
         PrintName = "Handguard",
@@ -438,6 +431,19 @@ SWEP.Attachments = {
             },
         }
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
-        -- Integral = false
+    },
+    {
+        PrintName = "Custom slot",
+        Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_rpk16"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -8, -5),
+        Ang = Angle(0, 0, 0),
     },
 }
+
+SWEP.EFTErgo = 45
+if ARC9EFTBASE then
+SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+else
+print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
+end

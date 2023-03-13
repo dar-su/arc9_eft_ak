@@ -7,7 +7,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk16_drum_545x39_95.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk16_drum_545x39_95.mdl"
-ATT.DropMagazineAmount = 0
 
 ATT.Category = {
     "eft_ak_545_mag",

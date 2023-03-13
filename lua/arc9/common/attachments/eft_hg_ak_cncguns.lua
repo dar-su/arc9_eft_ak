@@ -28,7 +28,7 @@ ATT.Attachments = {
         PrintName = "Grip",
         Category = {"eft_grip_keymod"},
         Pos = Vector(0, 4, 1.7),
-        Ang = Angle(0, -90, 0),
+        Ang = Angle(0, -90, -90),   
     },
     {
         PrintName = "Tactical",

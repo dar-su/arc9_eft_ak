@@ -26,6 +26,7 @@ SWEP.StandardPresets = {
     "[AK-104 RPKT mod.1]XQAAAQAuAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjhSBDwbfi0IbkGmNOVakU1G0i6u8hyUFia1zrLf2AdBQbWYaAR3AwzhHvMzbGNfTUpARR2MmOdKTSaQohiRHGc6aiFaA0EsLahKCuHWII6kWXL45eiCLgK1tWAKk7VnPD7Bjcy4Nyww/fkc+4rou3NtPzuUEmCb0ZdmNPe57Ao87PYRsWUfFDX1zkZmAa8ZAc6RTKHRlz2G9furR8BaEgB54ix9GWoSFG6NonOHGpbOHHaTNpyJ+tUOlDsZmnlI5s2oHY6ZLjWzJXS66ybRGsUXC2E=",
 }
 
+SWEP.BarrelLength = 38
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak100.mdl"
@@ -171,7 +172,7 @@ SWEP.DropMagazineAng = Angle(-180, 90, 90)
 SWEP.DropMagazineVelocity = Vector(-100, 0, 0)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
-SWEP.TracerNum = 1
+SWEP.TracerNum = 0
 SWEP.TracerColor = Color(255, 225, 200)
 
 
@@ -192,6 +193,9 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
 SWEP.SprintPos = Vector(4, -5, 0)
+
+SWEP.NearWallAng = Angle(0, 55, 0)
+SWEP.NearWallPos = Vector(0, 0, -15)
 
 SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
@@ -261,14 +265,6 @@ SWEP.BulletBones = {
 --         "tag_mag2"
 --     }
 -- }
-
-
---          UBGL
-
-SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
-SWEP.DoFireAnimationUBGL = true
-SWEP.NoShellEjectUBGL = true
-SWEP.MuzzleEffectQCAUBGL = 1
 
 
 
@@ -414,15 +410,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_6p1sb8",
-        Integral = true
-    },
-    {
-        PrintName = "Conversion",
-        Category = "eft_ak104_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -6, -5),
-        Ang = Angle(0, 0, 0),
-    },     
+    },  
     {
         PrintName = "Magazine",
         Category = "eft_ak_762_mag",
@@ -440,7 +428,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 2.5, 0.25),
         Installed = "eft_gas_ak_6p20",
-        Integral = true,
         SubAttachments = {
             {
                 Installed = "eft_hg_ak_ak100",
@@ -465,17 +452,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.25),
     },
-    -- {
-    --     PrintName = "Handguard",
-    --     Category = {"eft_ak_handguard", "eft_ak_handguard_custom"},
-    --     Bone = "mod_handguard",
-    --     Pos = Vector(0, 0, 0),
-    --     Ang = Angle(0, 0, 0),
-    --     Icon_Offset = Vector(0, 3.8, -0.5),
-    --     Installed = "eft_hg_ak_ak100",
-    --     -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
-    --     -- Integral = false
-    -- },
     {
         PrintName = "UBGL",
         Category = "eft_ak_gp34",
@@ -485,4 +461,25 @@ SWEP.Attachments = {
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(-5, 0, -1),
     },
+    {
+        PrintName = "Conversion",
+        Category = "eft_ak104_conv",
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -5, -5),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Custom slot",
+        Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_ak103"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -8, -5),
+        Ang = Angle(0, 0, 0),
+    },
 }
+
+SWEP.EFTErgo = 35
+if ARC9EFTBASE then
+    SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+else
+    print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
+end

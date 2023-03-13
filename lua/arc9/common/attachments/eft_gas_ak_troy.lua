@@ -23,7 +23,7 @@ ATT.Attachments = {
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.8, -0.54),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(1, 0, 0),
         ExtraSightDistance = 8
     },
     {
@@ -31,7 +31,7 @@ ATT.Attachments = {
         Category = {"eft_tactical_top"},
         Pos = Vector(0, 10.3, -0.25),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Icon_Offset = Vector(0, 0, 0),
         ExtraSightDistance = 8
     },
     {
@@ -39,20 +39,20 @@ ATT.Attachments = {
         Category = {"eft_mount_qars4"},
         Pos = Vector(0, 1.5, 2.1),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 1, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "QARS L",
         Category = {"eft_mount_qars"},
         Pos = Vector(-1.05, 10.7, 1.15),
         Ang = Angle(90, 0, 0),
-        Icon_Offset = Vector(0, 0, -1),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "QARS R",
         Category = {"eft_mount_qars"},
         Pos = Vector(1.05, 10.7, 1.15),
         Ang = Angle(90, 0, 180),
-        Icon_Offset = Vector(0, 0, -1),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }

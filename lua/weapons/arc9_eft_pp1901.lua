@@ -23,6 +23,7 @@ SWEP.StandardPresets = {
     "[Zenit]XQAAAQBGAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPr8+FRCoC13SPjCtJ7zKLcgDgavRNZmaBxbVjig/5ICHm4EKp+ZNZpvN2MVzZfkRFd9fGSaTlA+sjhx2tkDA/JKAjNobpQOPMIyg8YcVGr3iOK5kmcTYzaiKKxIzPYvU1YxIg7Djckc5ka46yzrLoTSQG9Ksk9goxoORDf/cJ58d6l7wEEgpwz1uivuQRYyYzMsJNE3O3rozp0zXRmFrawrlMsszWmZDGAytBGnhKnKalGyzM4vjgS75C9HAUtWbhCgfZHMUT7oUkf3WCuiuqv+6KLDLZEUnWy1bwlN",
 }
 
+SWEP.BarrelLength = 26
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_pp1901.mdl"
@@ -168,7 +169,7 @@ SWEP.DropMagazineAng = Angle(-180, 90, 0)
 SWEP.DropMagazineVelocity = Vector(0, -50, 20)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
-SWEP.TracerNum = 1
+SWEP.TracerNum = 0
 SWEP.TracerColor = Color(255, 225, 200)
 
 
@@ -191,6 +192,9 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
 SWEP.SprintPos = Vector(4, -5, 0)
+
+SWEP.NearWallAng = Angle(0, 55, 0)
+SWEP.NearWallPos = Vector(0, 0, -15)
 
 SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
@@ -225,7 +229,7 @@ SWEP.AnimDraw = false
 
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
-SWEP.CamQCA_Mult = 0.3
+SWEP.CamQCA_Mult = 0.36
 SWEP.CamQCA_Mult_ADS = 0.05
 
 SWEP.MuzzleParticle = "muzzleflash_pistol"
@@ -257,16 +261,6 @@ SWEP.BulletBones = {
 --         "tag_mag2"
 --     }
 -- }
-
-
---          UBGL
-
-SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
-SWEP.DoFireAnimationUBGL = true
-SWEP.NoShellEjectUBGL = true
-SWEP.MuzzleEffectQCAUBGL = 1
-
-
 
 ------------------------- [[[           Sounds            ]]] -------------------------
 
@@ -740,13 +734,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 3),
     },
-        {
-        PrintName = "Conversion",
-        Category = "eft_vityaz_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -6, -5),
-        Ang = Angle(0, 0, 0),
-    },
     {
         PrintName = "Dovetail",
         Category = {"eft_mount_dovetail_pp19"},
@@ -755,7 +742,6 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
         ExcludeElements = {"railedcover", "nodovetail", "eft_saiga9"},
         -- RequireElements = {"nmount"},
-        Integral = false
     },
     {
         PrintName = "Grip",
@@ -765,7 +751,6 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_pp19",
-        Integral = true
     },
     {
         PrintName = "Mag",
@@ -786,7 +771,6 @@ SWEP.Attachments = {
         ExcludeElements = nil,
         RequireElements = nil,
         Installed = "eft_gas_vityaz_std",
-        Integral = true,
         SubAttachments = {
             {
                 Installed = "eft_hg_ak_6p20sb9",
@@ -811,15 +795,25 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.25),
     },
-    -- {
-    --     PrintName = "Handguard",
-    --     Category = {"eft_vityaz_handguard"},
-    --     Bone = "mod_gas_block",
-    --     Pos = Vector(0, -1.73, -0.5),
-    --     Ang = Angle(0, 0, 0),
-    --     Icon_Offset = Vector(0, 3.8, -0.5),
-    --     Installed = "eft_hg_ak_6p20sb9",
-    --     -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
-    --     -- Integral = false
-    -- },
+    {
+        PrintName = "Conversion",
+        Category = "eft_vityaz_conv",
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -5, -5),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Custom slot",
+        Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_pp1901"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, -8, -5),
+        Ang = Angle(0, 0, 0),
+    },
 }
+
+SWEP.EFTErgo = 35
+if ARC9EFTBASE then
+SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+else
+print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
+end
