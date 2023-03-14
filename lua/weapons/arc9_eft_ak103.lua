@@ -6,7 +6,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = "Assault Rifles"
 SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
-SWEP.PrintName = "AK-103/104"
+SWEP.PrintName = "AK-103"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     Manufacturer1 = "Kalashnikov Concern",
@@ -16,14 +16,13 @@ SWEP.Trivia = {
     Year5 = "1994"
 }
 
-local desc103 = [[The AK-103 7.62x39mm assault rifle is a further modernized version of AK-74M base. AK-103 is equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
-local desc104 = [[The AK-104 7.62x39mm assault rifle is a further modernized version of AK-74M base, more precisely a shortened version of AK-103. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
-SWEP.Description = desc101
+SWEP.Description = [[The AK-103 7.62x39mm assault rifle is a further modernized version of AK-74M base. AK-103 is equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
+
 
 SWEP.StandardPresets = {
-    "[AK-104]XQAAAQDIAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6I+T5FBjEpZ7hDcCWCcOwEozqinceVe1Q676wOtx494pZz9WA0jpZ0h4A7Ads4ldBWs1rf+QT+TlQm44ywA9m+XYVbHpyvYZrNZNYEZ9L4pVcLo5WW4R5PBUT90tTQNzKalzCFV+gd65IIqi6I4XwLqg8uKC1MXCA044gr0E9f8eEWAZDh3FsbjpeiRlkiL8FAA==",
-    "[AK-104 T-SAW]XQAAAQAEAwAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPfgL3vQ9tPB4Qt1gNXFwuXi85bB8nHzwFsqZsafvmDCW4hnM9NUep8CoyWke/qbDjQZxUrTHMYGRYUfZJfTYjAcO/BHGyo7+opev/eaEjA9MPOixwOcwH9qDw5lOcxdGVqSxPQow4ntPSgbw4T3DREuaWMivoHGMBwff8kxK+TkLpYMd0cSuTF2ZQKPexImz2jdCsA+epf3jOqyQOA/4tvJWNVerkZfbwvg0dftftJlpkKEEozufTHblgpXtSiWnApkTq/8HDbDksKHI1EcgYKUb3J7jF67IOQcjRxpso7eI2xffBqDHJnEdLgRnENGy2tSpTrp9m+zMe+DWDYA==",
-    "[AK-104 RPKT mod.1]XQAAAQAuAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjhSBDwbfi0IbkGmNOVakU1G0i6u8hyUFia1zrLf2AdBQbWYaAR3AwzhHvMzbGNfTUpARR2MmOdKTSaQohiRHGc6aiFaA0EsLahKCuHWII6kWXL45eiCLgK1tWAKk7VnPD7Bjcy4Nyww/fkc+4rou3NtPzuUEmCb0ZdmNPe57Ao87PYRsWUfFDX1zkZmAa8ZAc6RTKHRlz2G9furR8BaEgB54ix9GWoSFG6NonOHGpbOHHaTNpyJ+tUOlDsZmnlI5s2oHY6ZLjWzJXS66ybRGsUXC2E=",
+    -- "[AK-104]XQAAAQDIAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6I+T5FBjEpZ7hDcCWCcOwEozqinceVe1Q676wOtx494pZz9WA0jpZ0h4A7Ads4ldBWs1rf+QT+TlQm44ywA9m+XYVbHpyvYZrNZNYEZ9L4pVcLo5WW4R5PBUT90tTQNzKalzCFV+gd65IIqi6I4XwLqg8uKC1MXCA044gr0E9f8eEWAZDh3FsbjpeiRlkiL8FAA==",
+    -- "[AK-104 T-SAW]XQAAAQAEAwAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPfgL3vQ9tPB4Qt1gNXFwuXi85bB8nHzwFsqZsafvmDCW4hnM9NUep8CoyWke/qbDjQZxUrTHMYGRYUfZJfTYjAcO/BHGyo7+opev/eaEjA9MPOixwOcwH9qDw5lOcxdGVqSxPQow4ntPSgbw4T3DREuaWMivoHGMBwff8kxK+TkLpYMd0cSuTF2ZQKPexImz2jdCsA+epf3jOqyQOA/4tvJWNVerkZfbwvg0dftftJlpkKEEozufTHblgpXtSiWnApkTq/8HDbDksKHI1EcgYKUb3J7jF67IOQcjRxpso7eI2xffBqDHJnEdLgRnENGy2tSpTrp9m+zMe+DWDYA==",
+    -- "[AK-104 RPKT mod.1]XQAAAQAuAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjhSBDwbfi0IbkGmNOVakU1G0i6u8hyUFia1zrLf2AdBQbWYaAR3AwzhHvMzbGNfTUpARR2MmOdKTSaQohiRHGc6aiFaA0EsLahKCuHWII6kWXL45eiCLgK1tWAKk7VnPD7Bjcy4Nyww/fkc+4rou3NtPzuUEmCb0ZdmNPe57Ao87PYRsWUfFDX1zkZmAa8ZAc6RTKHRlz2G9furR8BaEgB54ix9GWoSFG6NonOHGpbOHHaTNpyJ+tUOlDsZmnlI5s2oHY6ZLjWzJXS66ybRGsUXC2E=",
 }
 
 SWEP.BarrelLength = 38
@@ -315,25 +314,6 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
-SWEP.HookP_NameChange = function(self, name)
-    local elements = self:GetElements()
-
-    if elements["eft_ak104"] then
-        return "AK-104"
-    else
-        return "AK-103"
-    end
-end
-
-SWEP.HookP_DescriptionChange = function(self, desc)
-    local elements = self:GetElements()
-
-    if elements["eft_ak104"] then
-        return desc104
-    else
-        return desc103
-    end
-end
 
 
 
@@ -356,11 +336,6 @@ SWEP.Animations = ARC9EFT.AK_Anims
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_ak104"] = {
-        Bodygroups = {
-            {1, 1},
-        }
-    },
     ["eft_gp34"] = {
         Bodygroups = {
             {7, 1},
@@ -375,18 +350,8 @@ SWEP.Attachments = {
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
         Ang = Angle(0, -90, 0),
-        ExcludeElements = {"eft_ak104"},
         Icon_Offset = Vector(0, 0, 0.15),
         Installed = "eft_muzzle_ak_ak103_std",
-    },
-    { -- 7.62 short
-        PrintName = "Muzzle",
-        Category = "eft_ak103_muzzle",
-        Bone = "mod_muzzle",
-        Pos = Vector(0, -4.1, 0),
-        Ang = Angle(0, -90, 0),
-        RequireElements = {"eft_ak104"},
-        Icon_Offset = Vector(0, 0, 0.15),
     },
     {
         PrintName = "Cover",

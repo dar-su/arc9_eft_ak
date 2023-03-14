@@ -24,7 +24,7 @@ SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ak74.mdl"
 SWEP.ViewModelFOVBase = 62
 SWEP.MirrorVMWM = true
-SWEP.DefaultBodygroups = "10010000000000"
+SWEP.DefaultBodygroups = "10010001000000"
 
 
 ------------------------- [[[           STATS            ]]] -------------------------

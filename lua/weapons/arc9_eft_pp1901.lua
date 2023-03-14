@@ -19,7 +19,7 @@ SWEP.Trivia = {
 SWEP.Description = [[The PP-19-01, also known as "Vityaz", is a Russian submachine gun chambered in 9x19 developed in 2004 by Izhmash based on the AK platform. A standard-issue submachine gun in many law enforcement agencies and military units of the Russian Federation.]]
 
 SWEP.StandardPresets = {
-    "[Saiga-9]XQAAAQCbAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSblwda3J+JQK9HaKFfx3/QTlMwigssSN1YefZ6JauA9jHjTIa4goFstxSgD8nHpInYzPY28sRlS2bR64Ro3FwRLDWBj3dLKZttrflDBP6RZRI8YXQXUG0ckZoirclgOjCxQgdvJFnl3tLzvCjH8bBVUkrQzkBHvtnvSCEgPuSTVhnnNCYbPe2Re/lnIaNoZ3KLy8JtOF2rLMQ79OwwA=",
+    -- "[Saiga-9]XQAAAQCbAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSblwda3J+JQK9HaKFfx3/QTlMwigssSN1YefZ6JauA9jHjTIa4goFstxSgD8nHpInYzPY28sRlS2bR64Ro3FwRLDWBj3dLKZttrflDBP6RZRI8YXQXUG0ckZoirclgOjCxQgdvJFnl3tLzvCjH8bBVUkrQzkBHvtnvSCEgPuSTVhnnNCYbPe2Re/lnIaNoZ3KLy8JtOF2rLMQ79OwwA=",
     "[Zenit]XQAAAQBGAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPr8+FRCoC13SPjCtJ7zKLcgDgavRNZmaBxbVjig/5ICHm4EKp+ZNZpvN2MVzZfkRFd9fGSaTlA+sjhx2tkDA/JKAjNobpQOPMIyg8YcVGr3iOK5kmcTYzaiKKxIzPYvU1YxIg7Djckc5ka46yzrLoTSQG9Ksk9goxoORDf/cJ58d6l7wEEgpwz1uivuQRYyYzMsJNE3O3rozp0zXRmFrawrlMsszWmZDGAytBGnhKnKalGyzM4vjgS75C9HAUtWbhCgfZHMUT7oUkf3WCuiuqv+6KLDLZEUnWy1bwlN",
 }
 
@@ -307,26 +307,6 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
-SWEP.HookP_NameChange = function(self, name)
-    local elements = self:GetElements()
-
-    if elements["eft_saiga9"] then
-        return "Saiga-9"
-    else
-        return "PP-19-01 \"Vityaz\""
-    end
-end
-
-SWEP.HookP_DescriptionChange = function(self, desc)
-    local elements = self:GetElements()
-
-    if elements["eft_saiga9"] then
-        return [[The Saiga-9 carbine was developed as a semi-automatic variant of the PP-19-01 Vityaz SMG for civilian market and designed for purposes of shooting sports and plinking.]]
-    else
-        return [[The PP-19-01, also known as "Vityaz", is a Russian submachine gun chambered in 9x19 developed in 2004 by Izhmash based on the AK platform. A standard-issue submachine gun in many law enforcement agencies and military units of the Russian Federation.]]
-    end
-end
-
 
 
 ------------------------- [[[           Animations            ]]] -------------------------
@@ -338,364 +318,16 @@ SWEP.ReloadHideBoneTables = {
     },
 }
 
-local path = "weapons/darsu_eft/ak/"
 
-SWEP.Hook_TranslateAnimation = function(swep, anim)
-    local elements = swep:GetElements()
-    if !IsFirstTimePredicted() then return end
+SWEP.Hook_TranslateAnimation = ARC9EFT.VITYAZ_AnimsHook
 
-    local ending = ""
-
-    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
-    local nomag = false
-
-    -- 0 - look
-    -- 1 - chamber
-    -- 2 - mag
-
-    if elements["9mmmag"] then ending = "9mmmag"
-    else nomag = true end
-    
-    if anim == "inspect" then
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
-        local rand = swep.EFTInspectnum
-        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
-
-        if rand == 1 and !nomag then -- mag
-            ending = "_mag_" .. ending
-        else
-            if nomag then ending = math.max(rand, 1) end
-            ending = rand
-        end
-    end
-
-    if anim == "fix" then
-        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
-
-        if SERVER and ARC9EFTBASE then
-            net.Start("arc9eftjam")
-            net.WriteUInt(rand, 3)
-            net.Send(swep:GetOwner())
-        end
-
-        return "jam" .. rand
-    end
-
-    return anim .. ending
-    -- return anim .. 3
-end
-
-
-local rik_single = {
-    { t = 0, lhik = 1 },
-    { t = 0.3, lhik = 1 },
-    { t = 0.5, lhik = 0 },
-    { t = 0.6, lhik = 0 },
-    { t = 0.9, lhik = 1 },
-    { t = 1, lhik = 1 },
-}
-
-local rik_def = {
-    { t = 0, lhik = 1 },
-    { t = 0.2, lhik = 0 },
-    { t = 0.91, lhik = 0 },
-    { t = 1, lhik = 1 },
-}
-
-local rik_empty = {
-    { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.85, lhik = 0 },
-    { t = 1, lhik = 1 },
-}
-
-local rik_magcheck = {
-    { t = 0, lhik = 1 },
-    { t = 0.05, lhik = 1 },
-    { t = 0.22, lhik = 0 },
-    { t = 0.81, lhik = 0 },
-    { t = 0.95, lhik = 1 },
-    { t = 1, lhik = 1 },
-}
-
-local randspin = {"eft_shared/weapon_generic_rifle_spin1.wav","eft_shared/weapon_generic_rifle_spin2.wav","eft_shared/weapon_generic_rifle_spin3.wav","eft_shared/weapon_generic_rifle_spin4.wav","eft_shared/weapon_generic_rifle_spin5.wav","eft_shared/weapon_generic_rifle_spin6.wav","eft_shared/weapon_generic_rifle_spin7.wav","eft_shared/weapon_generic_rifle_spin8.wav","eft_shared/weapon_generic_rifle_spin9.wav","eft_shared/weapon_generic_rifle_spin10.wav"}
-
-local rst_single = {
-    { s = randspin, t = 7/26 },
-    { s = path .. "ak74_slider_up.wav", t = 19/26 },
-    { s = randspin, t = 33/26 },
-    { s = "eft_shared/weap_round_pullout.wav", t = 35/26 },
-    { s = path .. "ak74_round_in_chamber.wav", t = 53/26 },
-    { s = randspin, t = 60/26 },
-    { s = randspin, t = 68/26 },
-    { s = path .. "ak74_slider_down.wav", t = 73/26 },
-    { s = randspin, t = 83/26 },
-}
-
-local rst_def = {
-    { s = randspin, t = 6/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
-    { s = path .. "ak74_magout_plastic.wav", t = 12/28 },
-    { s = "eft_shared/weap_magin_sbrosnik.wav", t = 22/28 },
-    { s = "eft_shared/weap_mag_pullout.wav", t = 30/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 62/28 },
-    { s = path .. "ak74_magin_plastic.wav", t = 64/28 },
-    { s = randspin, t = 75/28 }
-}
-
-local rst_empty = {
-    { s = randspin, t = 6/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
-    { s = path .. "ak74_magout_plastic.wav", t = 12/28 },
-    -- { s = "eft_shared/weap_magin_sbrosnik.wav", t = 2/28 },
-    { s = "eft_shared/weap_mag_pullout.wav", t = 25/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 51/28 },
-    { s = path .. "ak74_magin_plastic.wav", t = 53/28 },
-    { s = randspin, t = 65/28 },
-    { s = path .. "ak74_slider_up.wav", t = 83/28 },
-    { s = path .. "ak74_slider_down.wav", t = 89/28 },
-    { s = randspin, t = 97/28 },
-    {hide = 0, t = 0},
-    {hide = 1, t = 0.57},
-    {hide = 0, t = 1.02}
-
-    -- { s = path .. "ak74_magrelease_button.wav", t = 0.35 },
-    -- { s = path .. "ak74_magout_plastic.wav", t = 0.5 },
-    -- { s = "eft_shared/weap_magin_sbrosnik.wav", t = 0.75 },
-    -- { s = "eft_shared/weap_mag_pullout.wav", t = 1.4 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 2 },
-    -- { s = path .. "ak74_magin_plastic.wav", t = 2.1 },
-    -- { s = randspin, t = 2.7 },
-    -- { s = path .. "ak74_slider_up.wav", t = 3.4 },
-    -- { s = path .. "ak74_slider_down.wav", t = 3.65 },
-    -- { s = randspin, t = 3.9 }
-}
-
-local rst_magcheck = {
-    { s = randspin, t = 5/24 },
-    { s = path .. "ak74_magrelease_button.wav", t = 21/24 },
-    { s = path .. "ak74_magout_plastic.wav", t = 25/24 },
-    { s = randspin, t = 35/24 },
-    { s = randspin, t = 55/24 },
-    { s = path .. "ak74_magin_plastic.wav", t = 80/24 },
-    { s = path .. "ak74_magrelease_button.wav", t = 85/24 },
-    { s = randspin, t = 90/24 },
-}
-
-local rst_look = {
-    { s = randspin, t = 9/24 },
-    { s = randspin, t = 38/24 },
-    { s = randspin, t = 73/24 },
-}
-
-SWEP.Animations = {
-    ["idle"] = {
-        Source = "idle",
-        RareSource = {"tooidle0", "tooidle1", "tooidle2"},
-        RareSourceChance = 0.0001,
-    },
-
-    ["ready"] = {
-        Source = {"ready0", "ready1", "ready2"},
-        IKTimeLine = {
-            { t = 0, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-        EventTable = {
-            { s = "eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "ak74_slider_up.wav", t = 18/24 },
-            { s = path .. "ak74_slider_down.wav", t = 24/24 },
-        },
-    },
-
-    ["draw"] = {
-        Source = "draw",
-        EventTable = {
-            { s = "eft_shared/weap_in.wav", t = 0 },
-        }
-    },
-
-    ["holster"] = {
-        Source = "holster",
-        EventTable = {
-            { s = "eft_shared/weap_out.wav", t = 0 },
-        }
-    },
-
-    ["fire"] = {
-        Source = "fire",
-    },
-
-    ["fire_dry"] = {
-        Source = "fire_dry",
-    },
-
-    ["reload"] = {
-        Source = "reload_single",
-        MinProgress = 0.85,
-        FireASAP = true,
-        IKTimeLine = rik_single,
-        EventTable = rst_single
-    },
-    ["reload_empty"] = {
-        Source = "reload_single",
-        MinProgress = 0.85,
-        FireASAP = true,
-        IKTimeLine = rik_single,
-        EventTable = rst_single
-    },
-
-
-    ["reload9mmmag"] = {
-        Source = "reload0",
-        MinProgress = 0.85,
-        FireASAP = true,
-        IKTimeLine = rik_def,
-        EventTable = rst_def,
-    },
-    ["reload_empty9mmmag"] = {
-        Source = "reload0_empty",
-        MinProgress = 0.9,
-        FireASAP = true,
-        IKTimeLine = rik_empty,
-        EventTable = rst_empty,
-    },
-
-
-    ["inspect0"] = {
-        Source = "look0",
-        MinProgress = 0.85,
-        FireASAP = true,
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.4, lhik = 1 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.8, lhik = 0 },
-            { t = 0.95, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-        EventTable = rst_look
-    },
-    ["inspect2"] = {
-        Source = "look1",
-        MinProgress = 0.85,
-        FireASAP = true,
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-        EventTable = {
-            { s = randspin, t = 9/28 },
-            { s = path.."akms_slider_up.wav", t = 21/28},
-            { s = path.."akms_slider_down.wav", t = 37/28},
-            { s = randspin, t = 53/28 },
-        },
-    },
-    ["inspect_mag_9mmmag"] = {
-        Source = "look2",
-        MinProgress = 0.85,
-        FireASAP = true,
-        IKTimeLine = rik_magcheck,
-        EventTable = rst_magcheck
-    },
-
-    ["firemode_1"] = {
-        Source = "firemode_1",
-        EventTable = { { s = path .. "ak74_fireselector_down.wav", t = 0.25 } }
-    },
-    ["firemode_2"] = {
-        Source = "firemode_0",
-        EventTable = { { s = path .. "ak74_fireselector_up.wav", t = 0.25 } }
-    },
-
-    ["toggle"] = {
-        Source = "mod_switch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
-    },
-    ["switchsights"] = {
-        Source = "mod_switch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
-    },
-
-
-
-    ["jam0"] = {
-        Source = {"misfire_0", "misfire_1"}, -- misfire
-        EventTable = {
-            { s = randspin, t = 0.2 },            
-            { s = path.."akms_slider_up.wav", t = 0.8},
-            { s = path.."akms_slider_down.wav", t = 1.04},
-            { s = randspin, t = 1.55 },        
-        },
-        EjectAt = 0.77
-    },
-    ["jam2"] = {
-        Source = "jam_feed", -- jam feed
-        EventTable = {
-            { s = randspin, t = 0.4 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.6 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.72 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 1.18 },
-            { s = path .. "ak_jam_feedfault_roundaftercharge.wav", t = 1.4 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.53 },
-            { s = path .. "ak74_slider_down.wav", t = 1.72 },
-            { s = randspin, t = 2.05 },
-        },
-        EjectAt = 1.4
-    },
-    ["jam3"] = {
-        Source = "jam_hard", -- jam hard
-        EventTable = {
-            { s = randspin, t = 0.25 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.42 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.51 },
-            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 0.96 },
-            { s = randspin, t = 1.3 },
-            { s = randspin, t = 1.79 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 2.14 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 2.67 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 2.86 },
-            { s = path .. "ak74_slider_down.wav", t = 2.97 },
-            { s = randspin, t = 3.48 },
-        },
-        EjectAt = 2.86
-    },
-    ["jam4"] = {
-        Source = "jam_soft", -- jam soft
-        EventTable = {
-            { s = randspin, t = 0.16 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.5 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.73 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 1.26 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.44 },
-            { s = path .. "ak74_slider_down.wav", t = 1.54 },
-            { s = randspin, t = 2 },
-        },
-        EjectAt = 1.44
-    },
-    ["jam1"] = {
-        Source = "jam_shell", -- jam shell
-        EventTable = {
-            { s = randspin, t = 0.3 },
-            { s = path .. "ak_jam_shell_grab.wav", t = 0.56 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.2 },
-            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 1.44 },
-            { s = randspin, t = 1.7 },
-        },
-    },
-}
+SWEP.Animations = ARC9EFT.VITYAZ_Anims
 
 
 
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_saiga9"] = { Bodygroups = { {1, 1}, {6, 1} } },
     ["eft_rs_vityaz_std"] = { Bodygroups = { {4, 1} } },
     ["eft_rec_vityaz_std"] = { Bodygroups = { {2, 1} } },
     ["eft_rec_vityaz_sn"] = { Bodygroups = { {2, 2} } },
@@ -706,21 +338,12 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Attachments = {
-    { -- Long barrel
-        PrintName = "Muzzle",
-        Category = "eft_pp1901_muzzle",
-        Bone = "mod_muzzle",
-        Pos = Vector(0, 4.35, 0),
-        Ang = Angle(0, -90, 0),
-        RequireElements = {"eft_saiga9"},
-        Icon_Offset = Vector(0, 0, 0.15),
-    },
     { -- Short default barrel
         PrintName = "Muzzle",
         Category = "eft_pp1901_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
-        ExcludeElements = {"eft_saiga9", "eft_hg_ak_zhu", "eft_hg_ak_zhu_plm", "eft_hg_ak_zhu_fde" },
+        ExcludeElements = {"eft_hg_ak_zhu", "eft_hg_ak_zhu_plm", "eft_hg_ak_zhu_fde" },
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
         Installed = "eft_muzzle_pp1901_std"
@@ -750,7 +373,7 @@ SWEP.Attachments = {
         Bone = "mod_scope",
         Pos = Vector(0.05, 1.05, 0.49),
         Ang = Angle(0, -90, 0),
-        ExcludeElements = {"railedcover", "nodovetail", "eft_saiga9"},
+        ExcludeElements = {"railedcover", "nodovetail"},
         -- RequireElements = {"nmount"},
     },
     {
@@ -804,13 +427,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.25),
-    },
-    {
-        PrintName = "Conversion",
-        Category = "eft_vityaz_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
-        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Custom slot",

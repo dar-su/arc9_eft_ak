@@ -6,7 +6,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = "Assault Carbines"
 SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
-SWEP.PrintName = "VPO-136/209"
+SWEP.PrintName = "VPO-136 \"Vepr-KM\""
 SWEP.Class = "Carbine Rifle"
 SWEP.Trivia = {
     Manufacturer1 = "Molot Oruzhie",
@@ -275,36 +275,22 @@ SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
  --  vpo 136
--- SWEP.ShootSound = { path .. "fire_new/akm_close_loop_1.wav", path .. "fire_new/akm_close_loop_2.wav", path .. "fire_new/akm_close_loop_3.wav", path .. "fire_new/akm_close_loop_4.wav" }
--- SWEP.LayerSound = path .. "fire_new/akm_close_loop_tail.wav"
+SWEP.ShootSound = { path .. "fire_new/akm_close_loop_1.wav", path .. "fire_new/akm_close_loop_2.wav", path .. "fire_new/akm_close_loop_3.wav", path .. "fire_new/akm_close_loop_4.wav" }
+SWEP.LayerSound = path .. "fire_new/akm_close_loop_tail.wav"
 
--- SWEP.ShootSoundSilenced = { path .. "fire_new/akm_close_loop_silenced_1.wav", path .. "fire_new/akm_close_loop_silenced_2.wav", path .. "fire_new/akm_close_loop_silenced_3.wav", path .. "fire_new/akm_close_loop_silenced_4.wav" }
--- SWEP.LayerSoundSilenced = path .. "fire_new/akm_close_loop_silenced_tail.wav"
+SWEP.ShootSoundSilenced = { path .. "fire_new/akm_close_loop_silenced_1.wav", path .. "fire_new/akm_close_loop_silenced_2.wav", path .. "fire_new/akm_close_loop_silenced_3.wav", path .. "fire_new/akm_close_loop_silenced_4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/akm_close_loop_silenced_tail.wav"
 
--- SWEP.ShootSoundIndoor = { path .. "fire_new/akm_close_indoor_loop_1.wav", path .. "fire_new/akm_close_indoor_loop_2.wav", path .. "fire_new/akm_close_indoor_loop_3.wav", path .. "fire_new/akm_close_indoor_loop_4.wav" }
--- SWEP.LayerSoundIndoor = path .. "fire_new/akm_close_indoor_loop_tail.wav"
+SWEP.ShootSoundIndoor = { path .. "fire_new/akm_close_indoor_loop_1.wav", path .. "fire_new/akm_close_indoor_loop_2.wav", path .. "fire_new/akm_close_indoor_loop_3.wav", path .. "fire_new/akm_close_indoor_loop_4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/akm_close_indoor_loop_tail.wav"
 
--- SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/akm_close_indoor_loop_silenced_1.wav", path .. "fire_new/akm_close_indoor_loop_silenced_2.wav", path .. "fire_new/akm_close_indoor_loop_silenced_3.wav", path .. "fire_new/akm_close_indoor_loop_silenced_4.wav" }
--- SWEP.LayerSoundSilencedIndoor = path .. "fire_new/akm_close_indoor_loop_silenced_tail.wav"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/akm_close_indoor_loop_silenced_1.wav", path .. "fire_new/akm_close_indoor_loop_silenced_2.wav", path .. "fire_new/akm_close_indoor_loop_silenced_3.wav", path .. "fire_new/akm_close_indoor_loop_silenced_4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/akm_close_indoor_loop_silenced_tail.wav"
 
--- SWEP.DistantShootSound = { path .. "fire_new/akm_distant_loop_1.wav", path .. "fire_new/akm_distant_loop_2.wav" }
--- SWEP.DistantShootSoundSilenced = { path .. "fire_new/akm_distant_loop_silenced_1.wav", path .. "fire_new/akm_distant_loop_silenced_2.wav" }
--- SWEP.DistantShootSoundIndoor = { path .. "fire_new/akm_distant_indoor_loop_1.wav", path .. "fire_new/akm_distant_indoor_loop_2.wav" }
--- SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/akm_distant_indoor_loop_silenced_1.wav", path .. "fire_new/akm_distant_indoor_loop_silenced_2.wav" }
-
-
- -- vpo 209 seperate pls
- 
-SWEP.ShootSound = path .. "fire_new/vpo209_fire_close.wav"
-SWEP.ShootSoundSilenced = path .. "fire_new/vpo209_fire_close_silenced.wav"
-
-SWEP.ShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_close.wav"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_close_silenced.wav"
-
-SWEP.DistantShootSound = path .. "fire_new/vpo209_fire_distant.wav"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/vpo209_fire_distant_silenced.wav"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_distant.wav"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_distant_silenced.wav"
+SWEP.DistantShootSound = { path .. "fire_new/akm_distant_loop_1.wav", path .. "fire_new/akm_distant_loop_2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/akm_distant_loop_silenced_1.wav", path .. "fire_new/akm_distant_loop_silenced_2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/akm_distant_indoor_loop_1.wav", path .. "fire_new/akm_distant_indoor_loop_2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/akm_distant_indoor_loop_silenced_1.wav", path .. "fire_new/akm_distant_indoor_loop_silenced_2.wav" }
 
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
@@ -316,26 +302,6 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
-
-SWEP.HookP_NameChange = function(self, name)
-    local elements = self:GetElements()
-
-    if elements["eft_vpo209"] then
-        return "VPO-209"
-    else
-        return "VPO-136 \"Vepr-KM\""
-    end
-end
-
-SWEP.HookP_DescriptionChange = function(self, desc)
-    local elements = self:GetElements()
-
-    if elements["eft_vpo209"] then
-        return [[The Molot VPO-209 carbine is based on the well-known Kalashnikov AKM and has an almost identical appearance, weight, and overall dimensions. It has a smooth bore barrel with the last 120 mm of the barrel being rifled (a so called "paradox"-bore). VPO-209 is chambered in .366 TKM, that together with the "paradox" rifling classifies the weapon as a shotgun under Russian law.]]
-    else
-        return [[The Molot Vepr-KM/VPO-136 carbine is based on the well-known Kalashnikov AKM and has an almost identical appearance, weight, and overall dimensions. Designed for hunting of medium and big game, as well as for sporting use.]]
-    end
-end
 
 ------------------------- [[[           Animations            ]]] -------------------------
 
@@ -356,11 +322,6 @@ SWEP.Animations = ARC9EFT.AK_Anims
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_vpo209"] = {
-        Bodygroups = {
-            {0, 2},
-        }
-    },
     ["eft_gp34"] = {
         Bodygroups = {
             {6, 1},
@@ -475,13 +436,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 23, -1),
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(-5, 0, -1),
-    },
-    {
-        PrintName = "Conversion",
-        Category = "eft_vepr_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
-        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Custom slot",

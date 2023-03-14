@@ -6,7 +6,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = "Assault Rifles"
 SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
-SWEP.PrintName = "AK-101/102"
+SWEP.PrintName = "AK-101"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     Manufacturer1 = "Kalashnikov Concern",
@@ -16,12 +16,11 @@ SWEP.Trivia = {
     Year5 = "1994"
 }
 
-local desc101 = [[The AK-101 5.56x45mm assault rifle is a further modernized version of AK-74M base. AK-101 is equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The rifle is chambered to fire 5.56x45mm NATO ammunition, and is designed entirely for export purposes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
-local desc102 = [[The AK-102 5.56x45mm assault rifle is a further modernized version of AK-74M base, more precisely a shortened version of AK-101. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The AK-102 is chambered to fire 5.56x45mm NATO ammunition, and is designed entirely for export purposes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
-SWEP.Description = desc101
+SWEP.Description = [[The AK-101 5.56x45mm assault rifle is a further modernized version of AK-74M base. AK-101 is equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The rifle is chambered to fire 5.56x45mm NATO ammunition, and is designed entirely for export purposes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
+
 
 SWEP.StandardPresets = {
-    "[AK-102]XQAAAQDHAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz59bzgnfs3jZp5xv52L4mcs1orzafSW/1LTxp7vejsdZM1p6rIZNhldR0uzscWwRKkX9jeYTrt1UKtvdZx7SLdNr5ZNVP98/pRSAyHo0Tt0PCSTkhmp/v8w4hVND7Bwt2KOJJXfinSUydfg1FLMl+5UXJFfOsQ1Cfi4GmOHczfSTbakgV22KKPI8v31sm+5GNK0HHqs1YA",
+    -- "[AK-102]XQAAAQDHAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz59bzgnfs3jZp5xv52L4mcs1orzafSW/1LTxp7vejsdZM1p6rIZNhldR0uzscWwRKkX9jeYTrt1UKtvdZx7SLdNr5ZNVP98/pRSAyHo0Tt0PCSTkhmp/v8w4hVND7Bwt2KOJJXfinSUydfg1FLMl+5UXJFfOsQ1Cfi4GmOHczfSTbakgV22KKPI8v31sm+5GNK0HHqs1YA",
 }
 
 SWEP.BarrelLength = 38
@@ -312,26 +311,6 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
-SWEP.HookP_NameChange = function(self, name)
-    local elements = self:GetElements()
-
-    if elements["eft_ak102"] then
-        return "AK-102"
-    else
-        return "AK-101"
-    end
-end
-
-SWEP.HookP_DescriptionChange = function(self, desc)
-    local elements = self:GetElements()
-
-    if elements["eft_ak102"] then
-        return desc102
-    else
-        return desc101
-    end
-end
-
 
 
 ------------------------- [[[           Animations            ]]] -------------------------
@@ -353,11 +332,6 @@ SWEP.Animations = ARC9EFT.AK_Anims
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_ak102"] = {
-        Bodygroups = {
-            {1, 1},
-        }
-    },
     ["eft_gp34"] = {
         Bodygroups = {
             {7, 1},
@@ -372,18 +346,8 @@ SWEP.Attachments = {
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
         Ang = Angle(0, -90, 0),
-        ExcludeElements = {"eft_ak102"},
         Icon_Offset = Vector(0, 0, 0.15),
         Installed = "eft_muzzle_ak_ak101_std",
-    },
-    { -- 5.56 short
-        PrintName = "Muzzle",
-        Category = "eft_ak101_muzzle",
-        Bone = "mod_muzzle",
-        Pos = Vector(0, -4.1, 0),
-        Ang = Angle(0, -90, 0),
-        RequireElements = {"eft_ak102"},
-        Icon_Offset = Vector(0, 0, 0.15),
     },
     {
         PrintName = "Cover",
@@ -469,14 +433,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 23, -1),
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(-5, 0, -1),
-    },
-
-    {
-        PrintName = "Conversion",
-        Category = "eft_ak74_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
-        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Custom slot",

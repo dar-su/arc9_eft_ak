@@ -6,7 +6,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = "Assault Rifles"
 SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
-SWEP.PrintName = "AK-74M/105"
+SWEP.PrintName = "AK-74M"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     Manufacturer1 = "Kalashnikov Concern",
@@ -16,12 +16,11 @@ SWEP.Trivia = {
     Year5 = "1991"
 }
 
-local desk74m = [[The AK-74M (Avtomat Kalashnikova 74 Modernizirovanny - "Kalashnikov's Automatic rifle 74 Modernized") 5.45x39mm assault rifle is a full-scale produced modernized version of the AK-74 that offers more versatility compared with its predecessor. Apart from several minor improvements, such as a lightened bolt and carrier assembly to reduce the impulse of the gas piston and bolt carrier during firing, the rifle features a new glass-filled polyamide stock that retains the shape of the original AK-74 fixed laminated wood stock, but side-folds to the left like the skeletonised AKS-74 buttstock, and also a dovetail side mount for installing various scopes. The AK-74M is a main service rifle of the Russian Federation.]]
-local desc105 = [[The AK-105 5.45x39mm assault rifle is a further modernized version of AK-74M base. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
-SWEP.Description = desk74m
+SWEP.Description = [[The AK-74M (Avtomat Kalashnikova 74 Modernizirovanny - "Kalashnikov's Automatic rifle 74 Modernized") 5.45x39mm assault rifle is a full-scale produced modernized version of the AK-74 that offers more versatility compared with its predecessor. Apart from several minor improvements, such as a lightened bolt and carrier assembly to reduce the impulse of the gas piston and bolt carrier during firing, the rifle features a new glass-filled polyamide stock that retains the shape of the original AK-74 fixed laminated wood stock, but side-folds to the left like the skeletonised AKS-74 buttstock, and also a dovetail side mount for installing various scopes. The AK-74M is a main service rifle of the Russian Federation.]]
+
 
 SWEP.StandardPresets = {
-    "[AK-105]XQAAAQDHAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6cyR+iIJxWJbj/d25Zyn7t7lEOdvOYvrh46xNmbK53TMvvnQha8Ti6LuCQA+kpW2tUIkP+3/Sg3jkc0zs9He4v1t35HFwAHPrA+aCjZpoJbxUNI34NbesJXCEsesoipFoWXlh5YecxfQKVqmcg/zCzhVEreIDwmFaeWitPQz1E47U03tSASRWXWTEAkWAZBJXm8WqEgA=",
+    -- "[AK-105]XQAAAQDHAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6cyR+iIJxWJbj/d25Zyn7t7lEOdvOYvrh46xNmbK53TMvvnQha8Ti6LuCQA+kpW2tUIkP+3/Sg3jkc0zs9He4v1t35HFwAHPrA+aCjZpoJbxUNI34NbesJXCEsesoipFoWXlh5YecxfQKVqmcg/zCzhVEreIDwmFaeWitPQz1E47U03tSASRWXWTEAkWAZBJXm8WqEgA=",
     "[Zenitco]XQAAAQATAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3q8NUessuKDcUAV19TGsm+fDsEwyb38OglrTgtBo7yHZg+EcFnC9Nby/nFm3Tv7BcdysauKml6LfbL1rYeUeX5bXV+IhnOiN3lQsSy5ajjdYdL+PJmQfr4Kg+bYCSA3mdsX7KWfxRepKoYwy9aDoPXWjfolAwaQrIEnFYl5qO1BSbCcZYAxKnmtHrDCOWGs3YdeECRabIDNT+JiXlFXaR0Dz3JJojcFqnglms5JqUfErOekL+I7xwYL0WiTaqG6zNoK1g="
 }
 
@@ -314,27 +313,6 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
-SWEP.HookP_NameChange = function(self, name)
-    local elements = self:GetElements()
-
-    if elements["eft_ak105"] then
-        return "AK-105"
-    else
-        return "AK-74M"
-    end
-end
-
-SWEP.HookP_DescriptionChange = function(self, desc)
-    local elements = self:GetElements()
-
-    if elements["eft_ak105"] then
-        return desc105
-    else
-        return desk74m
-    end
-end
-
-
 
 ------------------------- [[[           Animations            ]]] -------------------------
 
@@ -355,12 +333,6 @@ SWEP.Animations = ARC9EFT.AK_Anims
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_ak105"] = {
-        Bodygroups = {
-            {1, 1}, 
-            {0, 0}
-        }
-    },
     ["eft_gp34"] = {
         Bodygroups = {
             {7, 1},
@@ -375,18 +347,8 @@ SWEP.Attachments = {
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
         Ang = Angle(0, -90, 0),
-        ExcludeElements = {"eft_ak105"},
         Icon_Offset = Vector(0, 0, 0.15),
         Installed = "eft_muzzle_ak_ak74m_std",
-    },
-    { -- 5.45 short
-        PrintName = "Muzzle",
-        Category = "eft_ak74_muzzle",
-        Bone = "mod_muzzle",
-        Pos = Vector(0, -4.1, 0),
-        Ang = Angle(0, -90, 0),
-        RequireElements = {"eft_ak105"},
-        Icon_Offset = Vector(0, 0, 0.15),
     },
     {
         PrintName = "Cover",
@@ -472,14 +434,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 23, -1),
         Ang = Angle(0, 90, 0),
         Icon_Offset = Vector(-5, 0, -1),
-    },
-
-    {
-        PrintName = "Conversion",
-        Category = "eft_ak105_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
-        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Custom slot",

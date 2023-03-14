@@ -20,9 +20,9 @@ SWEP.Description = [[The AK-545 carbine by Sureshot Armament Group, based on mod
 
 note: prototype weapon, not exist irl]]
 
-SWEP.StandardPresets = {
-    "[Short]XQAAAQC2AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdnMoANGObKzFlW7SmrLRVlQbnSrZLsKBOQBqewDgBJksrlX23qrzsy/sMdfYrf62C1AcsmZksnd8Rd3NOaGKfKfJoBhz3I9JEJhcciwq0STuQ6+kJi5H5FFnaqfP2XHDu2Yq56B9JIBYe71gdU7lU+SmkQ2mkljRF8o1RH7FF9myO0cyvKcA/V/EEA8K1h63qIfH7qR7jWmTIeg=",
-}
+-- SWEP.StandardPresets = {
+    -- "[Short]XQAAAQC2AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdnMoANGObKzFlW7SmrLRVlQbnSrZLsKBOQBqewDgBJksrlX23qrzsy/sMdfYrf62C1AcsmZksnd8Rd3NOaGKfKfJoBhz3I9JEJhcciwq0STuQ6+kJi5H5FFnaqfP2XHDu2Yq56B9JIBYe71gdU7lU+SmkQ2mkljRF8o1RH7FF9myO0cyvKcA/V/EEA8K1h63qIfH7qR7jWmTIeg=",
+-- }
 
 SWEP.BarrelLength = 38
 SWEP.Slot = 2
@@ -301,26 +301,6 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
-SWEP.HookP_NameChange = function(self, name)
-    local elements = self:GetElements()
-
-    if elements["eft_sag545_short"] then
-        return "SAG AK-545 Short"
-    else
-        return "SAG AK-545"
-    end
-end
-
-SWEP.HookP_DescriptionChange = function(self, desc)
-    local elements = self:GetElements()
-
-    if elements["eft_sag545_short"] then
-        return [[A shortened version of the Sureshot Armament Group AK-545 carbine based on modern AK platforms.]]
-    else
-        return [[The AK-545 carbine by Sureshot Armament Group, based on modern AK platforms.]]
-    end
-end
-
 
 ------------------------- [[[           Animations            ]]] -------------------------
 
@@ -342,7 +322,6 @@ SWEP.Animations = ARC9EFT.AK_Anims
 
 
 SWEP.AttachmentElements = {
-    ["eft_sag545_short"] = { Bodygroups = { {1, 1} } },
     ["eft_sag545_gastube"] = { Bodygroups = { {2, 1} } },
     ["eft_sag545_cover"] = { Bodygroups = { {3, 1} } },
     ["eft_sag545_rs"] = { Bodygroups = { {4, 1} } },
@@ -356,18 +335,8 @@ SWEP.Attachments = {
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
         Ang = Angle(0, -90, 0),
-        ExcludeElements = {"eft_sag545_short"},
         Icon_Offset = Vector(0, 0, 0.15),
         Installed = "eft_muzzle_ak_ak74m_std",
-    },
-    { -- 5.45 short
-        PrintName = "Muzzle",
-        Category = "eft_ak74_muzzle",
-        Bone = "mod_muzzle",
-        Pos = Vector(0, -4.1, 0),
-        Ang = Angle(0, -90, 0),
-        RequireElements = {"eft_sag545_short"},
-        Icon_Offset = Vector(0, 0, 0.15),
     },
     {
         PrintName = "Stock",
@@ -397,7 +366,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
-        Installed = "eft_grip_ak_ak12",
+        Installed = "eft_grip_ak_akepg",
     },
     {
         PrintName = "Mag",
