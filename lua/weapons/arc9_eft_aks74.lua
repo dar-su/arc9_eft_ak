@@ -47,62 +47,72 @@ SWEP.SpreadAddRecoil = 0
 
 
 --          Recoil
-
-SWEP.Recoil = 0.13
+SWEP.Recoil = 0.13*5
 
 SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.RecoilUp = 1
+SWEP.RecoilUp = 3
 SWEP.RecoilSide = 0.7
 SWEP.RecoilRandomUp = 0.9
 SWEP.RecoilRandomSide = 0.8
 
-SWEP.ViewRecoil = true
-SWEP.ViewRecoilUpMult = -25
+SWEP.ViewRecoil = false 
+-- SWEP.ViewRecoil = false 
+SWEP.ViewRecoilUpMult = 3
 SWEP.ViewRecoilUpMultMultHipFire = 2
 SWEP.ViewRecoilSideMult = -4
 SWEP.ViewRecoilSideMultMultHipFire = -2
 
 SWEP.RecoilDissipationRate = 11
-SWEP.RecoilAutoControl = 1.1
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilPatternDrift = 90
-SWEP.RecoilLookupTable = {
-    0,
-    0,
-    160,
-    45,
-}
-SWEP.RecoilLookupTableOverrun = { -- Repeatedly take values from this table if we run out in the main table
-    -87,
-    87,
-    -87,
-    87,
-    87,
-}
+SWEP.RecoilAutoControl = 10
+SWEP.RecoilResetTime = 0.03
+SWEP.RecoilFullResetTime = 0.15
 
 SWEP.UseVisualRecoil = true 
-SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultHipFire = 0.25
+SWEP.VisualRecoil = 0.4
+SWEP.VisualRecoilMultHipFire = 0.3
 SWEP.VisualRecoilMultSights = 0.3
 
-SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 1.1 -- Vertical tilt
-SWEP.VisualRecoilSide = 0.5 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 2 -- Roll tilt
+SWEP.VisualRecoilCenter = Vector(2, 14, 2)
+SWEP.VisualRecoilUp = 75 -- Vertical tilt
+SWEP.VisualRecoilSide = 1 -- Horizontal tilt
+SWEP.VisualRecoilRoll = 25 -- Roll tilt
 
-SWEP.VisualRecoilPunch = 3 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilPunchMultSights = 1
-SWEP.VisualRecoilPositionBump = 3
+SWEP.VisualRecoilPunch = 2 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunchMultHipFire = 3 -- How far back visual recoil moves the gun
 
-SWEP.VisualRecoilDampingConst = 10
-SWEP.VisualRecoilSpringMagnitude = .2
+
+SWEP.VisualRecoilSpringPunchDamping = 20 / 2.67
+SWEP.VisualRecoilDampingConst = 150 * 1.67
+SWEP.VisualRecoilSpringMagnitude = 2 / 1.67
+SWEP.VisualRecoilPositionBumpUp = -0.02
+SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
+
+
+SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
+    if recamount > 3 then
+        recamount = math.Clamp((recamount - 3) / 33, 0, 1)
+        return springconstant * math.max(1, 10 * recamount), VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 0.8
+    end
+    return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
+end
+
+
+SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount)
+    if recamount > 2 then
+        recamount = 1.65 - math.Clamp((recamount - 2) / 2, 0, 1)
+        
+        return up * recamount, side * 1.6, roll, punch * 0.9
+    end
+    return up, side, roll, punch
+end
+
 
 SWEP.RecoilKick = 0.05
 SWEP.RecoilKickDamping = 10
+
 
 
 --          Heating
@@ -265,22 +275,23 @@ SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
-SWEP.ShootSound = { path .. "fire_new/akm1.wav", path .. "fire_new/akm2.wav", path .. "fire_new/akm3.wav" }
-SWEP.LayerSound = path .. "fire_new/akm_tail.wav"
+SWEP.ShootSound = { path .. "fire_new/ak74_outdoor_close_loop_1.wav", path .. "fire_new/ak74_outdoor_close_loop_2.wav", path .. "fire_new/ak74_outdoor_close_loop_3.wav", path .. "fire_new/ak74_outdoor_close_loop_4.wav" }
+SWEP.LayerSound = path .. "fire_new/ak74_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/akm_silenced1.wav", path .. "fire_new/akm_silenced2.wav" }
-SWEP.LayerSoundSilenced = path .. "fire_new/akm_silenced_tail.wav"
+SWEP.ShootSoundSilenced = { path .. "fire_new/ak74_loop_outdoor_close_silenced_1.wav", path .. "fire_new/ak74_loop_outdoor_close_silenced_2.wav", path .. "fire_new/ak74_loop_outdoor_close_silenced_3.wav", path .. "fire_new/ak74_loop_outdoor_close_silenced_4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/ak74_loop_outdoor_close_silenced_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/akm_indoor1.wav", path .. "fire_new/akm_indoor2.wav", path .. "fire_new/akm_indoor3.wav" }
-SWEP.LayerSoundIndoor = path .. "fire_new/akm_indoor_tail.wav"
+SWEP.ShootSoundIndoor = { path .. "fire_new/ak74_loop_indoor_close_1.wav", path .. "fire_new/ak74_loop_indoor_close_2.wav", path .. "fire_new/ak74_loop_indoor_close_3.wav", path .. "fire_new/ak74_loop_indoor_close_4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/ak74_loop_indoor_close_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/akm_indoor_silenced1.wav", path .. "fire_new/akm_indoor_silenced2.wav" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/akm_indoor_silenced_tail.wav"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/ak74_loop_indoor_close_silenced_1.wav", path .. "fire_new/ak74_loop_indoor_close_silenced_2.wav", path .. "fire_new/ak74_loop_indoor_close_silenced_3.wav", path .. "fire_new/ak74_loop_indoor_close_silenced_4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/ak74_loop_indoor_close_silenced_tail.wav"
 
-SWEP.DistantShootSound = path .. "fire_new/akm_distant.wav"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/akm_distant_silenced.wav"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/akm_distant_indoor.wav"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/akm_distant_indoor_silenced.wav"
+SWEP.DistantShootSound = { path .. "fire_new/ak74_outdoor_distant_loop_1.wav", path .. "fire_new/ak74_outdoor_distant_loop_2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/ak74_loop_outdoor_distant_silenced_1.wav", path .. "fire_new/ak74_loop_outdoor_distant_silenced_2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/ak74_loop_indoor_distant_1.wav", path .. "fire_new/ak74_loop_indoor_distant_2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak74_loop_indoor_distant_silenced_1.wav", path .. "fire_new/ak74_loop_indoor_distant_silenced_2.wav" }
+
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = "" -- we will have own in sound tables

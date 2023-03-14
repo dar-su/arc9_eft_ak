@@ -13,7 +13,7 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         Category = {"eft_optic_medium", "eft_optic_small"},
-        Pos = Vector(0, -2, -0.1),
+        Pos = Vector(0, -3, -0.1),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),
         ExtraSightDistance = 8
