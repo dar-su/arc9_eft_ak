@@ -350,6 +350,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -4.1, 0),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
+        Installed = "eft_muzzle_ak_ak104_std"
     },
     {
         PrintName = "Cover",
