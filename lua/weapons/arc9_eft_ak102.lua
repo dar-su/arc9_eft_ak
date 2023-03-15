@@ -245,7 +245,7 @@ SWEP.CamQCA_Mult_ADS = 0.05
 SWEP.MuzzleParticle = "muzzleflash_ak47"
 
 SWEP.CaseEffectQCA = 2
-SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/weapons/arc9_eft_shared/shells/eft_shell_556_m855.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
