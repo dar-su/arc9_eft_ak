@@ -6,6 +6,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_rs"}
+ATT.ExcludeElements = {"nolongrear"}
 
 ATT.Attachments = {
     {

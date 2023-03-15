@@ -404,7 +404,7 @@ SWEP.Attachments = {
     }, 
     {
         PrintName = "Rear sight",
-        Category = "eft_akm_rearsight",
+        Category = "eft_ak74_rearsight",
         Bone = "mod_sight_rear",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),

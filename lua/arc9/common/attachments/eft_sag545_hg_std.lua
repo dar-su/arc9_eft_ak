@@ -18,4 +18,43 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
+    
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 1.5, -1.24),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 1),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, -4.5, -1.24),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 1),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, -2.9, 1.25),
+        Ang = Angle(180, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(0.72, 1.4, 0.15),
+        Ang = Angle(90, -0, 0),
+        Icon_Offset = Vector(0, 0, -0.2),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok"},
+        Pos = Vector(-0.72, 1.4, 0.15),
+        Ang = Angle(90, -0, 180),
+        Icon_Offset = Vector(0, 0, -0.2),
+    },
+
 }

@@ -352,13 +352,6 @@ SWEP.Attachments = {
             }
         }
     },
-        {
-        PrintName = "Conversion",
-        Category = "eft_rd704_conv",
-        Bone = "mod_pistol_grip",
-        Pos = Vector(0, -6, -5),
-        Ang = Angle(0, 0, 0),
-    },
     {
         PrintName = "Grip",
         Category = "eft_ak_grip",
@@ -392,6 +385,7 @@ SWEP.Attachments = {
                     {
                         Installed = "eft_sag545_cover",
                         SubAttachments = {
+                            {},
                             {
                                 Installed = "eft_sag545_rs",
                             }

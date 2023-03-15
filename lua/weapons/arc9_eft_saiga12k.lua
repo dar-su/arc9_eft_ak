@@ -167,9 +167,9 @@ SWEP.DropMagazineSounds = {}
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.7
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(-180, 90, 90)
-SWEP.DropMagazineVelocity = Vector(-100, 0, 0)
+SWEP.DropMagazinePos = Vector(0, -7, 0)
+SWEP.DropMagazineAng = Angle(-180, 90, 0)
+SWEP.DropMagazineVelocity = Vector(0, 0, -100)
 SWEP.Bash = false
 SWEP.PrimaryBash = false
 SWEP.TracerNum = 0
@@ -382,42 +382,6 @@ local rik_single = {
     { t = 1, lhik = 1 },
 }
 
-local rik_def = {
-    { t = 0, lhik = 1 },
-    { t = 0.2, lhik = 0 },
-    { t = 0.91, lhik = 0 },
-    { t = 1, lhik = 1 },
-}
-
-local rik_drop = {
-    { t = 0, lhik = 1 },
-    { t = 0.12, lhik = 1 },
-    { t = 0.25, lhik = 0 },
-    { t = 0.61, lhik = 0 },
-    { t = 0.75, lhik = 1 },
-}
-
-local rik_long = {
-    { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.61, lhik = 0 },
-    { t = 0.75, lhik = 1 },
-}
-
-local rik_empty = {
-    { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.61, lhik = 0 },
-    { t = 0.75, lhik = 1 },
-}
-
-local rik_empty10rnd = {
-    { t = 0, lhik = 1 },
-    { t = 0.1, lhik = 1 },
-    { t = 0.25, lhik = 0 },
-    { t = 0.9, lhik = 0 },
-    { t = 1, lhik = 1 },
-}
 
 local rik_magcheck = {
     { t = 0, lhik = 1 },
@@ -531,7 +495,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.2, lhik = 0 },
-            { t = 0.92, lhik = 0 },
+            { t = 0.89, lhik = 0 },
             { t = 1, lhik = 1 },
         },
         EventTable = rst_def,
@@ -543,8 +507,9 @@ SWEP.Animations = {
         MagSwapTime = 1.5,
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.2, lhik = 0 },
-            { t = 0.93, lhik = 0 },
+            { t = 0.12, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.89, lhik = 0 },
             { t = 1, lhik = 1 },
         },
         EventTable = rst_drop,
@@ -557,7 +522,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.2, lhik = 0 },
-            { t = 0.92, lhik = 0 },
+            { t = 0.89, lhik = 0 },
             { t = 1, lhik = 1 },
         },
         EventTable = rst_def,
@@ -567,7 +532,13 @@ SWEP.Animations = {
         MinProgress = 0.9,
         FireASAP = true,
         MagSwapTime = 1.5,
-        IKTimeLine = rik_drop,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.12, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.59, lhik = 0 },
+            { t = 0.73, lhik = 1 },
+        },
         EventTable = rst_drop,
     },
     ["reload2"] = {
@@ -597,9 +568,9 @@ SWEP.Animations = {
         MagSwapTime = 1.8,
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.05, lhik = 0 },
-            { t = 0.73, lhik = 0 },
-            { t = 0.79, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.67, lhik = 0 },
+            { t = 0.8, lhik = 1 },
         },
         EventTable = {
             { s = path .. "saiga_magrelease_button.wav", t = 0.48 },
@@ -822,6 +793,14 @@ SWEP.Attachments = {
         Installed = "eft_saiga12_dustcover_std",
         Pos = Vector(0, -6, -0.2),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Dovetail",
+        Category = "eft_mount_dovetail",
+        Bone = "mod_mount_000",
+        Pos = Vector(0.05, 1.05, 0.49),
+        Ang = Angle(0, -90, 0),
+        ExcludeElements = {"railedcover", "nodovetail"},
     },
     {
         PrintName = "Grip",
