@@ -327,14 +327,15 @@ SWEP.Animations = ARC9EFT.VITYAZ_Anims
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_rs_vityaz_std"] = { Bodygroups = { {4, 1} } },
-    ["eft_rec_vityaz_std"] = { Bodygroups = { {2, 1} } },
-    ["eft_rec_vityaz_sn"] = { Bodygroups = { {2, 2} } },
-    ["eft_mag_vityaz_sb7"] = { Bodygroups = { {3, 2} } },
-    ["eft_mag_vityaz_sg919_30"] = { Bodygroups = { {3, 4} } },
-    ["eft_mag_vityaz_std"] = { Bodygroups = { {3, 1} } },
-    ["eft_mag_vityaz_sg919_20"] = { Bodygroups = { {3, 3} } },
+    ["eft_vityaz_rs_std"] = { Bodygroups = { {4, 1} } },
+    ["eft_vityaz_rec_std"] = { Bodygroups = { {2, 1} } },
+    ["eft_vityaz_rec_sn"] = { Bodygroups = { {2, 2} } },
+    ["eft_vityaz_mag_sb7"] = { Bodygroups = { {3, 2} } },
+    ["eft_vityaz_mag_sg919_30"] = { Bodygroups = { {3, 4} } },
+    ["eft_vityaz_mag_std"] = { Bodygroups = { {3, 1} } },
+    ["eft_vityaz_mag_sg919_20"] = { Bodygroups = { {3, 3} } },
 }
+
 
 SWEP.Attachments = {
     { -- Long barrel
@@ -344,7 +345,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 4.35, 0),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
-        Installed = "eft_muzzle_pp1901_saiga9"
+        Installed = "eft_vityaz_muzzle_saiga9"
     },
     {
         PrintName = "Cover",
@@ -355,13 +356,13 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, -5.5, -0.25),
         ExcludeElements = nil,
         RequireElements = nil,
-        Installed = "eft_rec_vityaz_std"
+        Installed = "eft_vityaz_rec_std"
     },
     {
         PrintName = "Stock",
         Category = "eft_vityaz_stock",
         Bone = "mod_stock",
-        Installed = "eft_stock_vityaz_std",
+        Installed = "eft_vityaz_stock_std",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 3),
     },
@@ -381,7 +382,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.5, -1),
-        Installed = "eft_mag_vityaz_std"
+        Installed = "eft_vityaz_mag_std"
     },    
     {
         PrintName = "Gas tube",
@@ -392,7 +393,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 2.5, 0.25),
         ExcludeElements = nil,
         RequireElements = nil,
-        Installed = "eft_gas_vityaz_std",
+        Installed = "eft_vityaz_gas_std",
         SubAttachments = {
             {
                 Installed = "eft_hg_ak_6p20sb9",
@@ -407,7 +408,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.1, 0.1),
         ExcludeElements = {"norearsight"},
-        Installed = "eft_rs_vityaz_std"
+        Installed = "eft_vityaz_rs_std"
     },
     {
         PrintName = "Charge",

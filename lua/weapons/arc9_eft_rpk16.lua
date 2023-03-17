@@ -324,10 +324,10 @@ SWEP.Animations = ARC9EFT.AK_Anims
 ------------------------- [[[           Attachments            ]]] -------------------------
 
 SWEP.AttachmentElements = {
-    ["eft_barrel_rpk16_370"] = { Bodygroups = { {1, 2} } },
-    ["eft_barrel_rpk16_550"] = { Bodygroups = { {1, 1} } },
-    ["eft_rec_rpk16"] = { Bodygroups = { {2, 1} } },
-    ["eft_rs_base_rpk16"] = { Bodygroups = { {3, 1} } },
+    ["eft_rpk16_barrel_370"] = { Bodygroups = { {1, 2} } },
+    ["eft_rpk16_barrel_550"] = { Bodygroups = { {1, 1} } },
+    ["eft_rpk16_rec"] = { Bodygroups = { {2, 1} } },
+    ["eft_rpk16_rs_base"] = { Bodygroups = { {3, 1} } },
 }
 
 SWEP.Attachments = {
@@ -338,8 +338,8 @@ SWEP.Attachments = {
         Pos = Vector(0, 14.15, 0),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
-        Installed = "eft_muzzle_rpk16_std",
-        RequireElements = {"eft_barrel_rpk16_370"},
+        Installed = "eft_rpk16_muzzle_std",
+        RequireElements = {"eft_rpk16_barrel_370"},
     },
     { -- long
         PrintName = "Muzzle",
@@ -349,7 +349,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
         -- Installed = "eft_muzzle_rpk16_std",
-        RequireElements = {"eft_barrel_rpk16_550"},
+        RequireElements = {"eft_rpk16_barrel_550"},
     },
     {
         PrintName = "Cover",
@@ -360,14 +360,14 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, -3.5, -0.25),
         ExcludeElements = nil,
         RequireElements = nil,
-        Installed = "eft_rec_rpk16",
+        Installed = "eft_rpk16_rec",
         
         SubAttachments = {
             {
-                Installed = "eft_rs_base_rpk16",
+                Installed = "eft_rpk16_rs_base",
                 SubAttachments = {
                     {
-                        Installed = "eft_rs_rpk16",
+                        Installed = "eft_rpk16_rs",
                     }
                 }
             }
@@ -377,7 +377,7 @@ SWEP.Attachments = {
         PrintName = "Stock",
         Category = "eft_rpk16_stock",
         Bone = "weapon_stock_lock_16",
-        Installed = "eft_stock_rpk16_tube",
+        Installed = "eft_rpk16_stock_tube",
         Pos = Vector(0.06, -0.03, 0.12),
         Ang = Angle(0, 0, 1),
         
@@ -420,7 +420,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 3, 0),
-        Installed = "eft_barrel_rpk16_370",
+        Installed = "eft_rpk16_barrel_370",
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
     },
     {
@@ -430,16 +430,16 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 4, 0),
-        Installed = "eft_hg_rpk16_std",
+        Installed = "eft_rpk16_hg_std",
         SubAttachments = {
             {},
             {},
             {},
             {
-                Installed = "eft_mount_rpk16_side",
+                Installed = "eft_rpk16_mount_side",
             },
             {
-                Installed = "eft_mount_rpk16_side",
+                Installed = "eft_rpk16_mount_side",
             },
         }
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},

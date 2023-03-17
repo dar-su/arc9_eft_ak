@@ -357,10 +357,10 @@ SWEP.Animations = ARC9EFT.AK_Anims
 
 SWEP.AttachmentElements = {
     ["eft_akn"] = { Bodygroups = { {1, 1} } },
-    ["eft_gas_ak_aksu"] = { Bodygroups = { {2, 1} } },
-    ["eft_rec_ak_aksu_std"] = { Bodygroups = { {3, 1} } },
-    ["eft_rec_ak_aksu_b"] = { Bodygroups = { {3, 2} } },
-    ["eft_mount_aksu_b18"] = { Bodygroups = { {5, 1} } },
+    ["eft_aksu_gas_ak"] = { Bodygroups = { {2, 1} } },
+    ["eft_aksu_rec_ak_std"] = { Bodygroups = { {3, 1} } },
+    ["eft_aksu_rec_ak_b"] = { Bodygroups = { {3, 2} } },
+    ["eft_aksu_mount_b18"] = { Bodygroups = { {5, 1} } },
 }
 
 SWEP.Attachments = {
@@ -371,7 +371,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0.1, 0),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.15),
-        Installed = "eft_muzzle_ak_aks74u_std"
+        Installed = "eft_aksu_muzzle_ak_std"
     },
     {
         PrintName = "Cover",
@@ -382,13 +382,13 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, -5.5, -0.25),
         ExcludeElements = nil,
         RequireElements = nil,
-        Installed = "eft_rec_ak_aksu_std"
+        Installed = "eft_aksu_rec_ak_std"
     },
     {
         PrintName = "Stock",
         Category = "eft_aks_stock",
         Bone = "mod_stock",
-        Installed = "eft_stock_aks74u_std",
+        Installed = "eft_aksu_stock_std",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 3),
     },
@@ -428,7 +428,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 2.5, 0.25),
         ExcludeElements = nil,
         RequireElements = nil,
-        Installed = "eft_gas_ak_aksu",
+        Installed = "eft_aksu_gas_ak",
     }, 
     {
         PrintName = "Charge",
@@ -445,7 +445,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.5, -0.44),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 3.8, -0.5),
-        Installed = "eft_hg_ak_aksu_std",
+        Installed = "eft_aksu_hg_ak_std",
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
     },
     {
