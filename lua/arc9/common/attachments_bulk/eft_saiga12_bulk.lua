@@ -431,3 +431,34 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_saiga12_stock_std")
 
+-- ///////////////////////////////////////      eft_ammo_12x70_mixed_50bmg_p3
+
+
+ATT = {}
+
+ATT.PrintName = "12/70 makeshift .50 BMG slug + 12/70 \"Poleva-3\" slug"
+ATT.CompactName = ".50 BMG + Poleva-3"
+ATT.Icon = Material("entities/eft_attachments/ammo/12x70/bmg_p3.png", "mips smooth")
+ATT.Description = [[A custom-made 12/70 slug shell with a shortened .50 BMG tracer bullet for 12 gauge shotguns. No one knows who and why is producing these strange slugs in Tarkov, but they just work... somehow.
++
+A "Poleva-3" 12/70 expanding slug shell for 12 gauge shotguns.
+]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ShellModelEvenShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_poleva_3_shell.mdl"
+ATT.ShellModelOddShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_50_bmg_m17_traccer_shell.mdl"
+
+ATT.DamageOverrideEvenShot = 140
+ATT.NumEvenShot = 1
+
+ATT.DamageOverrideOddShot = 197
+ATT.NumOddShot = 1
+
+-- ATT.Category = {"eft_ammo_12x70"}
+ATT.Category = {"eft_ammo_12x70_saiga12only"}
+-- ATT.Folder = "Mixed loads"
+
+
+ARC9.LoadAttachment(ATT, "eft_ammo_12x70_mixed_50bmg_p3")
+

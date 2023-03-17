@@ -266,6 +266,9 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_pp-19-01_izhmash_vityaz
 ATT.Category = {"eft_pp1901_muzzle"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
 
 
 ARC9.LoadAttachment(ATT, "eft_vityaz_silencer_std")

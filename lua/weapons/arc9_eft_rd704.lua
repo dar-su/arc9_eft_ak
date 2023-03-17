@@ -241,7 +241,7 @@ SWEP.MuzzleParticle = "muzzleflash_ak47"
 SWEP.CaseEffectQCA = 2
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/762x39.mdl"
 SWEP.ShellScale = 1
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
+SWEP.ShellCorrectAng = Angle(0, 180, 180)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = {
@@ -327,7 +327,7 @@ SWEP.Animations = ARC9EFT.AK_Anims
 SWEP.Attachments = {
     {
         PrintName = "Muzzle",
-        Category = {"eft_akm_muzzle", "eft_ar10_muzzle"},
+        Category = {"eft_akm_muzzle", "eft_ar10_muzzle"}, -- should be only ar10 but im too lazy, maybe in future
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
         Ang = Angle(0, -90, 0),

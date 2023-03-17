@@ -238,7 +238,7 @@ SWEP.MuzzleParticle = "muzzleflash_ak47"
 SWEP.CaseEffectQCA = 2
 SWEP.ShellModel = "models/weapons/arccw/eft_shells/patron_12x70_shell.mdl"
 SWEP.ShellScale = 1.5
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
+SWEP.ShellCorrectAng = Angle(0, 180, 180)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
@@ -392,13 +392,13 @@ local rik_magcheck = {
     { t = 1, lhik = 1 },
 }
 
-local randspin = {"eft_shared/weapon_generic_rifle_spin1.wav","eft_shared/weapon_generic_rifle_spin2.wav","eft_shared/weapon_generic_rifle_spin3.wav","eft_shared/weapon_generic_rifle_spin4.wav","eft_shared/weapon_generic_rifle_spin5.wav","eft_shared/weapon_generic_rifle_spin6.wav","eft_shared/weapon_generic_rifle_spin7.wav","eft_shared/weapon_generic_rifle_spin8.wav","eft_shared/weapon_generic_rifle_spin9.wav","eft_shared/weapon_generic_rifle_spin10.wav"}
+local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.wav","arc9_eft_shared/weapon_generic_rifle_spin2.wav","arc9_eft_shared/weapon_generic_rifle_spin3.wav","arc9_eft_shared/weapon_generic_rifle_spin4.wav","arc9_eft_shared/weapon_generic_rifle_spin5.wav","arc9_eft_shared/weapon_generic_rifle_spin6.wav","arc9_eft_shared/weapon_generic_rifle_spin7.wav","arc9_eft_shared/weapon_generic_rifle_spin8.wav","arc9_eft_shared/weapon_generic_rifle_spin9.wav","arc9_eft_shared/weapon_generic_rifle_spin10.wav"}
 
 local rst_single = {
     { s = randspin, t = 0.2 },
     { s = path .. "saiga_slider_up.wav", t = 0.77 },
-    { s = "eft_shared/weap_handoff.wav", t = 0.7 },
-    { s = "eft_shared/weap_round_pullout.wav", t = 0.9 },
+    { s = "arc9_eft_shared/weap_handoff.wav", t = 0.7 },
+    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 0.9 },
     { s = path .. "saiga_round_in_chamber.wav", t = 2 },
     { s = path .. "saiga_slider_down.wav", t = 2.6 },
     { s = randspin, t = 3.12 },
@@ -407,8 +407,8 @@ local rst_single = {
 local rst_def = {
     { s = path .. "saiga_magrelease_button.wav", t = 0.43 },
     { s = path .. "saiga_magout_plastic.wav", t = 0.62 },
-    { s = "eft_shared/weap_magin_sbrosnik.wav", t = 1.11 },
-    { s = "eft_shared/weap_mag_pullout.wav", t = 1.66 },
+    { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.11 },
+    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 1.66 },
     { s = path .. "saiga_magin_plastic.wav", t = 2.2 },
     -- { s = path .. "ak74_magrelease_button.wav", t = 2.52 },
     { s = randspin, t = 3 }
@@ -417,7 +417,7 @@ local rst_def = {
 local rst_drop = {
     { s = randspin, t = 0.1 },
     { s = path .. "saiga_magrelease_button.wav", t = 0.3 },
-    { s = "eft_shared/weap_mag_pullout.wav", t = 0.9 },
+    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 0.9 },
     { s = path .. "saiga_magin_plastic.wav", t = 1.66 },
     -- { s = path .. "ak74_magrelease_button_hit.wav", t = 1.91 },
     { s = randspin, t = 2.4 },
@@ -456,14 +456,14 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = "eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "ak74_slider_up.wav", t = 12/24 },
-            { s = path .. "ak74_slider_down.wav", t = 18/24 },
+            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
+            { s = path .. "saiga_slider_up.wav", t = 12/24 },
+            { s = path .. "saiga_slider_down.wav", t = 18/24 },
         },
     },
 
-    ["draw"] = { Source = "draw", EventTable = { { s = "eft_shared/weap_in.wav", t = 0 } } },
-    ["holster"] = { Source = "holster", EventTable = { { s = "eft_shared/weap_out.wav", t = 0 } } },
+    ["draw"] = { Source = "draw", EventTable = { { s = "arc9_eft_shared/weap_in.wav", t = 0 } } },
+    ["holster"] = { Source = "holster", EventTable = { { s = "arc9_eft_shared/weap_out.wav", t = 0 } } },
 
 
     ["fire"] = { Source = "fire" },
@@ -555,8 +555,8 @@ SWEP.Animations = {
         EventTable = {
             { s = path .. "saiga_magrelease_button.wav", t = 0.48 },
             { s = path .. "saiga_magout_plastic.wav", t = 0.67 },
-            { s = "eft_shared/weap_magin_sbrosnik.wav", t = 1.2 },
-            { s = "eft_shared/weap_mag_pullout.wav", t = 1.8 },
+            { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.2 },
+            { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 1.8 },
             { s = path .. "saiga_magin_plastic.wav", t = 2.48 },
             { s = randspin, t = 2.9 },
         },
@@ -575,8 +575,8 @@ SWEP.Animations = {
         EventTable = {
             { s = path .. "saiga_magrelease_button.wav", t = 0.48 },
             { s = path .. "saiga_magout_plastic.wav", t = 0.67 },
-            { s = "eft_shared/weap_magin_sbrosnik.wav", t = 1.2 },
-            { s = "eft_shared/weap_mag_pullout.wav", t = 1.8 },
+            { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.2 },
+            { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 1.8 },
             { s = path .. "saiga_magin_plastic.wav", t = 2.48 },
             { s = randspin, t = 3.25 },
             { s = path .. "saiga_slider_up.wav", t = 3.82 },
@@ -634,8 +634,8 @@ SWEP.Animations = {
         EventTable = rst_magcheck
     },
 
-    ["toggle"] = { Source = "mod_switch", EventTable = { { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
-    ["switchsights"] = { Source = "mod_switch", EventTable = { { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
+    ["toggle"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
+    ["switchsights"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
 
 
 
@@ -754,6 +754,7 @@ SWEP.AttachmentElements = {
     ["eft_ammo_12x70_poleva6u"] = { Bodygroups = { {7, 11} } },
     ["eft_ammo_12x70_superformance"] = { Bodygroups = { {7, 12} } },
     ["eft_ammo_12x70_slug"] = { Bodygroups = { {7, 13} } },
+    ["eft_ammo_12x70_mixed_50bmg_p3"] = { Bodygroups = { {7, 14} } },
 }
 
 
@@ -840,7 +841,7 @@ SWEP.Attachments = {
 
     {
         PrintName = "Ammo type",
-        Category = "eft_ammo_12x70",
+        Category = {"eft_ammo_12x70", "eft_ammo_12x70_saiga12only"},
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -5),
         Ang = Angle(0, 0, 0),

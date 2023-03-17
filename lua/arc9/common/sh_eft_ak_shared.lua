@@ -873,7 +873,7 @@ local rst_single = {
     { s = randspin, t = 7/26 },
     { s = path .. "ak74_slider_up.wav", t = 19/26 },
     { s = randspin, t = 33/26 },
-    { s = "eft_shared/weap_round_pullout.wav", t = 35/26 },
+    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 35/26 },
     { s = path .. "ak74_round_in_chamber.wav", t = 53/26 },
     { s = randspin, t = 60/26 },
     { s = randspin, t = 68/26 },
@@ -885,8 +885,8 @@ local rst_def = {
     { s = randspin, t = 6/28 },
     { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
     { s = path .. "ak74_magout_plastic.wav", t = 12/28 },
-    { s = "eft_shared/weap_magin_sbrosnik.wav", t = 22/28 },
-    { s = "eft_shared/weap_mag_pullout.wav", t = 30/28 },
+    { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 22/28 },
+    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 30/28 },
     { s = path .. "ak74_magrelease_button.wav", t = 62/28 },
     { s = path .. "ak74_magin_plastic.wav", t = 64/28 },
     { s = randspin, t = 75/28 }
@@ -896,8 +896,8 @@ local rst_empty = {
     { s = randspin, t = 6/28 },
     { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
     { s = path .. "ak74_magout_plastic.wav", t = 12/28 },
-    -- { s = "eft_shared/weap_magin_sbrosnik.wav", t = 2/28 },
-    { s = "eft_shared/weap_mag_pullout.wav", t = 25/28 },
+    -- { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 2/28 },
+    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 25/28 },
     { s = path .. "ak74_magrelease_button.wav", t = 51/28 },
     { s = path .. "ak74_magin_plastic.wav", t = 53/28 },
     { s = randspin, t = 65/28 },
@@ -941,7 +941,7 @@ ARC9EFT.VITYAZ_Anims = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = "eft_shared/weap_in.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
             { s = path .. "ak74_slider_up.wav", t = 18/24 },
             { s = path .. "ak74_slider_down.wav", t = 24/24 },
         },
@@ -950,14 +950,14 @@ ARC9EFT.VITYAZ_Anims = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = "eft_shared/weap_in.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
         }
     },
 
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = "eft_shared/weap_out.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_out.wav", t = 0 },
         }
     },
 
@@ -1050,13 +1050,13 @@ ARC9EFT.VITYAZ_Anims = {
     ["toggle"] = {
         Source = "mod_switch",
         EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
         }
     },
     ["switchsights"] = {
         Source = "mod_switch",
         EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
         }
     },
 
