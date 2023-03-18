@@ -35,22 +35,20 @@ SWEP.DefaultBodygroups = "00010000000000"
 ------------------------- [[[           STATS            ]]] -------------------------
 
 --          Damage
+-- default ps
+SWEP.DamageMax = 40/2
+SWEP.DamageMin = 25.74/2
+SWEP.PhysBulletMuzzleVelocity = 830 /0.0254
 
-ATT.DamageMax = 40/2
-ATT.DamageMin = 25.74/2
-ATT.PhysBulletMuzzleVelocity = 830 /0.0254
-ATT.SpreadMult = 1.03
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254
+SWEP.RangeMin = 10
+SWEP.RangeMax = 1000 /0.0254
 
-ATT.Penetration =      51 *2.54/100/0.0254
-ATT.PenetrationDelta = 57/100
-ATT.ArmorPiercing =    57/100
-ATT.RicochetChance =   38/100
+SWEP.Penetration =      51 *2.54/100/0.0254
+SWEP.PenetrationDelta = 57/100
+SWEP.ArmorPiercing =    57/100
+SWEP.RicochetChance =   38/100
 
-ATT.DamageLookupTable = {
+SWEP.DamageLookupTable = {
     {   10/0.0254, 
     40/2     },
 
@@ -273,7 +271,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
-SWEP.AnimDraw = false
+SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
 
 --          Effects

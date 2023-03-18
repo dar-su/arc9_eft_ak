@@ -36,13 +36,54 @@ SWEP.DefaultBodygroups = "00000000000000"
 
 --          Damage
 
-SWEP.DamageMax = 33
-SWEP.DamageMin = 24
-SWEP.DamageRand = 0.01
-SWEP.RangeMin = 600
-SWEP.RangeMax = 11000
-SWEP.Penetration = 5
-SWEP.PhysBulletMuzzleVelocity = 21000
+-- default pst ghz
+
+SWEP.DamageMax = 54/2
+SWEP.DamageMin = 30/2
+SWEP.PhysBulletMuzzleVelocity = 457 /0.0254
+SWEP.RangeMin = 10
+SWEP.RangeMax = 1000 /0.0254
+
+SWEP.Penetration =      20 *2.54/100/0.0254
+SWEP.PenetrationDelta = 33/100
+SWEP.ArmorPiercing =    33/100
+SWEP.RicochetChance =   5/100
+
+
+SWEP.DamageLookupTable = {
+    {   10/0.0254, 
+    54/2     },
+
+    {   100 /0.0254, 
+    43.77/2     },
+
+    {   200 /0.0254, 
+    40.34/2     },
+
+    {   300 /0.0254, 
+    37.92/2     },
+
+    {   400 /0.0254, 
+    35.98/2     },
+
+    {   500 /0.0254, 
+    34.32/2     },
+
+    {   600 /0.0254, 
+    32.96/2     },
+
+    {   700 /0.0254, 
+    31.9/2     },
+
+    {   800 /0.0254, 
+    31.12/2     },
+
+    {   900 /0.0254, 
+    30.65/2     },
+
+    {   1000 /0.0254, 
+    30.51/2     },
+}
 
 
 --          Spread
@@ -164,7 +205,7 @@ SWEP.SwayMultShooting = 1.2
 
 --          Generic stats
 
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "pistol"
 SWEP.ChamberSize = 0 -- no mag
 SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4
@@ -232,7 +273,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
-SWEP.AnimDraw = false
+SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
 
 --          Effects
@@ -384,6 +425,15 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_pp19",
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_9x19",
+        Bone = "mod_magazine",
+        Integral = true,
+        Installed = "eft_ammo_9x19_pst_gzh",
+        Pos = Vector(0, 0, -4),
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Mag",

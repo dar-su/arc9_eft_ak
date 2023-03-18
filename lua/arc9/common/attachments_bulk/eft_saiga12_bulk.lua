@@ -115,12 +115,63 @@ ATT.Category = {"eft_saiga12_handguard"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_340_lhik.mdl"
 ATT.LHIK = true
 
--- ATT.Attachments = {
-
--- }
+ATT.Attachments = {
+    {
+        PrintName = "R Rail",
+        Category = {"eft_cg340_mount"},
+        Pos = Vector(1.05, 12.95, 0.5),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "L Rail",
+        Category = {"eft_cg340_mount"},
+        Pos = Vector(-1.05, 12.95, 0.5),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "B Rail",
+        Category = {"eft_cg340_mount"},
+        Pos = Vector(0, 12.95, 1.6),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
 
 
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_custom340")
+
+
+///////////////////////////////////////      eft_saiga12_handguard_custom340_mount
+
+
+ATT = {}
+
+ATT.PrintName = "Custom Guns handguard rail"
+ATT.CompactName = "CG"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/cgrail.png", "mips smooth")
+ATT.Description = [[Custom Guns rail guide allows you to install additional equipment on the proprietary handguards.]]
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_340_mount.mdl"
+
+ATT.Category = {"eft_cg340_mount"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = "eft_tactical",
+        Pos = Vector(-1.3, -0.3, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_custom340_mount")
 
 
 ///////////////////////////////////////      eft_saiga12_handguard_std
@@ -176,7 +227,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "Top Tactical",
-        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Category = {"eft_tactical_top"},
         Pos = Vector(0, 5.5, -1.55),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
@@ -184,7 +235,7 @@ ATT.Attachments = {
     {
         PrintName = "Grip",
         Category = {"eft_foregrip_small"},
-        Pos = Vector(0, 4.5, 1.7),
+        Pos = Vector(0, 3, 1.7),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
@@ -238,7 +289,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "Top Tactical",
-        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Category = {"eft_tactical_top"},
         Pos = Vector(0, 5.5, -1.55),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
@@ -246,7 +297,7 @@ ATT.Attachments = {
     {
         PrintName = "Grip",
         Category = {"eft_foregrip_small"},
-        Pos = Vector(0, 4.5, 1.7),
+        Pos = Vector(0, 3, 1.7),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
@@ -449,11 +500,35 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.ShellModelEvenShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_poleva_3_shell.mdl"
 ATT.ShellModelOddShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_50_bmg_m17_traccer_shell.mdl"
 
-ATT.DamageOverrideEvenShot = 140
-ATT.NumEvenShot = 1
 
-ATT.DamageOverrideOddShot = 197
-ATT.NumOddShot = 1
+ATT.EFTRoundName = "12/70 makeshift .50 BMG / \"Poleva-3\" slug"
+
+ATT.DamageMaxEvenShot = 140/2
+ATT.DamageMinEvenShot = 88/2
+ATT.PenetrationEvenShot =      17 *2.54/100/0.0254
+ATT.PenetrationDeltaEvenShot = 40/100
+ATT.ArmorPiercingEvenShot =    40/100
+ATT.RecoilMultEvenShot = 0.85
+ATT.VisualRecoilMultEvenShot = 0.85
+ATT.SpreadMultEvenShot = 0.09
+ATT.HeatPerShotMultEvenShot = 1.5
+
+ATT.DamageMaxOddShot = 197/2
+ATT.DamageMinOddShot = 163/2
+ATT.PenetrationOddShot =      26 *2.54/100/0.0254
+ATT.PenetrationDeltaOddShot = 57/100
+ATT.ArmorPiercingOddShot =    57/100
+ATT.RecoilMultOddShot = 1.25
+ATT.VisualRecoilMultOddShot = 1.25
+ATT.SpreadMultOddShot = 0.1
+ATT.HeatPerShotMultOddShot = 2
+
+ATT.RangeMin = 10
+ATT.RangeMax = 1000 /0.0254
+ATT.PhysBulletMuzzleVelocity = 410 /0.0254
+ATT.RicochetChance =   10/100
+ATT.Num = 1
+
 
 -- ATT.Category = {"eft_ammo_12x70"}
 ATT.Category = {"eft_ammo_12x70_saiga12only"}

@@ -37,13 +37,56 @@ SWEP.DefaultBodygroups = "12000000000000" -- 74m base + 74m barrel
 
 --          Damage
 
-SWEP.DamageMax = 33
-SWEP.DamageMin = 24
-SWEP.DamageRand = 0.01
-SWEP.RangeMin = 600
-SWEP.RangeMax = 11000
-SWEP.Penetration = 5
-SWEP.PhysBulletMuzzleVelocity = 21000
+
+--          Damage
+-- default ps
+SWEP.DamageMax = 40/2
+SWEP.DamageMin = 25.74/2
+SWEP.PhysBulletMuzzleVelocity = 830 /0.0254
+
+SWEP.RangeMin = 10
+SWEP.RangeMax = 1000 /0.0254
+
+SWEP.Penetration =      51 *2.54/100/0.0254
+SWEP.PenetrationDelta = 57/100
+SWEP.ArmorPiercing =    57/100
+SWEP.RicochetChance =   38/100
+
+SWEP.DamageLookupTable = {
+    {   10/0.0254, 
+    40/2     },
+
+    {   100 /0.0254, 
+    37.24/2     },
+
+    {   200 /0.0254, 
+    34.44/2     },
+
+    {   300 /0.0254, 
+    31.65/2     },
+
+    {   400 /0.0254, 
+    29.37/2     },
+
+    {   500 /0.0254, 
+    28.18/2     },
+
+    {   600 /0.0254, 
+    27.45/2     },
+
+    {   700 /0.0254, 
+    26.9/2     },
+
+    {   800 /0.0254, 
+    26.4/2     },
+
+    {   900 /0.0254, 
+    26/2     },
+
+    {   1000 /0.0254, 
+    25.74/2     },
+}
+
 
 
 --          Spread
@@ -234,7 +277,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
-SWEP.AnimDraw = false
+SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
 
 --          Effects
@@ -383,6 +426,15 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_6p1sb8",
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_545",
+        Bone = "mod_magazine",
+        Integral = true,
+        Installed = "eft_ammo_545_ps",
+        Pos = Vector(0, 0, -4),
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Magazine",

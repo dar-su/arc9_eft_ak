@@ -965,9 +965,8 @@ ARC9EFT.VITYAZ_Anims = {
         Source = "fire",
     },
 
-    ["fire_dry"] = {
-        Source = "fire_dry",
-    },
+
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",

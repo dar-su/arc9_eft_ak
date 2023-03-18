@@ -232,7 +232,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
-SWEP.AnimDraw = false
+SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
 
 --          Effects
@@ -383,6 +383,15 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
         Installed = "eft_grip_ak_6p1sb8",
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_556",
+        Bone = "mod_magazine",
+        Integral = true,
+        Installed = "eft_ammo_556_fmj",
+        Pos = Vector(0, 0, -4),
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Magazine",

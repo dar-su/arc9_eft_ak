@@ -182,6 +182,8 @@ ATT.PhysBulletMuzzleVelocity = 303 /0.0254
 -- ATT.SpreadMult = 1.04
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
+ATT.HeatPerShotMult = 0.8
+
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
 
@@ -259,6 +261,8 @@ ATT.PhysBulletMuzzleVelocity = 866 /0.0254
 -- ATT.SpreadMult = 1.04
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
+ATT.HeatPerShotMult = 1.14
+
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
 
@@ -337,6 +341,8 @@ ATT.TracerColor = Color(255, 16, 16)
 ATT.SpreadMult = 1.05
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
+ATT.HeatPerShotMult = 1.14
+
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
 
@@ -489,6 +495,8 @@ ATT.PhysBulletMuzzleVelocity = 915 /0.0254
 ATT.SpreadMult = 0.5
 ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
+ATT.HeatPerShotMult = 1.35
+
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
 
@@ -564,6 +572,8 @@ ATT.PhysBulletMuzzleVelocity = 890 /0.0254
 -- ATT.TracerNum = 1
 -- ATT.TracerColor = Color(255, 16, 16)
 -- ATT.SpreadMult = 1.04
+ATT.HeatPerShotMult = 1.1
+
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
 
@@ -641,6 +651,7 @@ ATT.PhysBulletMuzzleVelocity = 890 /0.0254
 -- ATT.SpreadMult = 1.04
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
+ATT.HeatPerShotMult = 1.35
 
 ATT.Penetration =      37 *2.54/100/0.0254
 ATT.PenetrationDelta = 41/100
@@ -717,6 +728,7 @@ ATT.PhysBulletMuzzleVelocity = 886 /0.0254
 -- ATT.SpreadMult = 1.04
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
+ATT.HeatPerShotMult = 1.2
 
 ATT.Penetration =      36 *2.54/100/0.0254
 ATT.PenetrationDelta = 38/100
@@ -795,6 +807,7 @@ ATT.RecoilMult = 1.03
 ATT.VisualRecoilMult = 1.03
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
+ATT.HeatPerShotMult = 1.5
 
 ATT.Penetration =      40 *2.54/100/0.0254
 ATT.PenetrationDelta = 35/100
@@ -870,6 +883,7 @@ ATT.RecoilMult = 1.1
 ATT.VisualRecoilMult = 1.1
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
+ATT.HeatPerShotMult = 1.45
 
 ATT.Penetration =      51 *2.54/100/0.0254
 ATT.PenetrationDelta = 57/100
@@ -948,6 +962,7 @@ ATT.RecoilMult = 1.15
 ATT.VisualRecoilMult = 1.15
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254
+ATT.HeatPerShotMult = 1.7
 
 ATT.Penetration =      62 *2.54/100/0.0254
 ATT.PenetrationDelta = 55/100

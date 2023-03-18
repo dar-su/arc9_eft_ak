@@ -31,20 +31,28 @@ SWEP.DefaultBodygroups = "000000010"
 
 --          Damage
 
-SWEP.Damage = 39
+-- default 7mm
+SWEP.DamageMax = 39/2
+SWEP.DamageMin = 24.57/2
+SWEP.PhysBulletMuzzleVelocity = 415 /0.0254
+
+SWEP.RangeMin = 10
+SWEP.RangeMax = 100 /0.0254
+
+SWEP.Penetration =      3 *2.54/100/0.0254
+SWEP.PenetrationDelta = 26/100
+SWEP.ArmorPiercing =    26/100
+SWEP.RicochetChance =   0
+
 SWEP.Num = 8
-SWEP.DamageRand = 0.01
-SWEP.RangeMin = 600
-SWEP.RangeMax = 11000
-SWEP.Penetration = 5
-SWEP.PhysBulletMuzzleVelocity = 21000
 
 
 --          Spread
-SWEP.SpreadMultHipFire = 1
-SWEP.Spread = 0.007
-SWEP.SpreadAddRecoil = 0
-
+SWEP.Spread = 20.626 * ARC9.MOAToAcc
+SWEP.UseDispersion = true
+SWEP.DispersionSpread = 0.005
+SWEP.DispersionSpreadMultMove = 3
+SWEP.DispersionSpreadAddHipFire = 0.02
 
 --          Recoil
 
@@ -329,17 +337,14 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
-    if !IsFirstTimePredicted() then return end
+    -- if !IsFirstTimePredicted() then return end
 
     local ending = ""
 
-    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
+    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 3.99)) -- 0, 1, 2, 3      FUCK RANDOM
     -- local rand = 4
     local nomag = false
 
-    -- 0 - ak74
-    -- 1 - chamber
-    -- 2 - mag
 
     if elements["eft_saiga12_magazine_std"] then ending = "0"
     elseif elements["eft_saiga12_magazine_promag"] then ending = "1"
@@ -347,22 +352,50 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     else nomag = true end
     
     if anim == "inspect" then
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        swep.EFTInspectnum = swep.EFTInspectnum or 0
+        if IsFirstTimePredicted() then
+            swep.EFTInspectnum = swep.EFTInspectnum + 1
+        end
         local rand = swep.EFTInspectnum
-        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
+        if rand == 4 then swep.EFTInspectnum = 0 rand = 0 end
 
-        if rand == 1 and !nomag then -- mag
+        if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
+    
+            if ARC9EFTBASE and SERVER then
+                net.Start("arc9eftmagcheck")
+                net.WriteBool(false) -- accurate or not based on mag type
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetMaxClip1()), 9)
+                net.WriteUInt(swep:GetMaxClip1(), 9)
+                net.Send(swep:GetOwner())
+            end
         else
-            if nomag then ending = math.max(rand, 1) end
+            if nomag then ending = math.max(rand, 2) end
             ending = rand
         end
+    elseif anim == "firemode_1" or anim == "firemode_2" then
+        if elements["eft_hg_rpk16_std"] then
+            ending = "_rpk"
+        end
+    elseif anim == "inspect_ubgl" then -- gp25 lhik
+        swep.EFTInspectBool = swep.EFTInspectBool or false
+        if IsFirstTimePredicted() then
+            swep.EFTInspectBool = !swep.EFTInspectBool
+        end
+        local inspect = swep.EFTInspectBool
+
+        if !inspect and swep:Clip2() > 0 then
+            return "inspect_check_ubgl"
+        else
+            return "inspect_ubgl"
+        end
     end
+
 
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
 
-        if SERVER and ARC9EFTBASE then
+        if ARC9EFTBASE and SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -370,8 +403,11 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return "jam" .. rand
     end
+    
+    if anim == "ready" then return anim end -- fcudfjhgfioudhmfiojm
 
     return anim .. ending
+    -- return anim .. 3
 end
 
 local rik_single = {
@@ -446,7 +482,12 @@ local rst_look = {
 }
 
 SWEP.Animations = {
-    ["idle"] = { Source = "idle" },
+    -- ["idle"] = { Source = "idle" },
+    ["idle"] = {
+        Source = "idle",
+        RareSource = {"tooidle0", "tooidle1", "tooidle2"},
+        RareSourceChance = 0.0001,
+    },
 
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
@@ -457,8 +498,8 @@ SWEP.Animations = {
         },
         EventTable = {
             { s = "arc9_eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "saiga_slider_up.wav", t = 12/24 },
-            { s = path .. "saiga_slider_down.wav", t = 18/24 },
+            { s = path .. "saiga_slider_up.wav", t = 18/28 },
+            { s = path .. "saiga_slider_down.wav", t = 24/28 },
         },
     },
 
@@ -467,7 +508,7 @@ SWEP.Animations = {
 
 
     ["fire"] = { Source = "fire" },
-    ["fire_dry"] = { Source = "fire_dry" },
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",
