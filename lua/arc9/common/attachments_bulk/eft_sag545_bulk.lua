@@ -49,6 +49,7 @@ ATT.Description = [[The Mk. 2.1 gas tube for AK-545 carbines manufactured by Sur
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.Category = {"eft_sag545_gasblock"}
 -- ATT.ActivateElements = {"gasblock"}
 
@@ -78,6 +79,7 @@ ATT.Description = [[The Sureshot Armament Group Mk.3 handguard for AK-545, equip
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_sag_mk3.mdl"
 ATT.LHIK = true
 

@@ -13,6 +13,7 @@ ATT.Description = [[An Izhmash polymer pistol grip for AK and compatibles, desig
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak74_plastic.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -33,6 +34,7 @@ ATT.Description = [[An Izhmash-manufactured bakelite pistol grip for the AK auto
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak74_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -53,6 +55,7 @@ ATT.Description = [[A bakelite Izhmash-manufatured pistol grip for the AK automa
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_aks74_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -73,6 +76,7 @@ ATT.Description = [[A lightweight ergonomic pistol grip for AK-family automatic 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_aeroknox_scorpius.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -93,6 +97,7 @@ ATT.Description = [[The AGR-47 pistol grip for AK-family automatic rifles and co
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_agr_47.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -114,6 +119,7 @@ Manufactured by Custom Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ags74_pro.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -134,6 +140,7 @@ ATT.Description = [[A standard-issue Izhmash-manufactured pistol grip for AK-12 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak12_std.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -155,6 +162,7 @@ Manufactured by Strike Industries.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_strike_indsustries.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -178,6 +186,7 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_strike_indsustries_fde.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -198,6 +207,7 @@ ATT.Description = [[A bakelite Izhmash-manufactured pistol grip for AKM automati
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_akm_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -218,6 +228,7 @@ ATT.Description = [[A wooden Izhmash-manufactured pistol grip for AK-compatible 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_akm_wood.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -238,6 +249,7 @@ ATT.Description = [[A bakelite pistol grip for AK assault rifles and compatible 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_molot_bakelit.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -258,6 +270,7 @@ ATT.Description = [[Designed for both the civilian market and military use. The 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_cqr47.mdl"
 ATT.ActivateElements = {"nostock"}
 
@@ -281,6 +294,7 @@ Manufactured by Kraft Gun Builders.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -305,6 +319,7 @@ Anodized Red version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_kgb_mg47_red.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -325,6 +340,7 @@ ATT.Description = [[The MOE (Magpul Original Equipment) lightweight pistol grip 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_magpul_moe.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -345,6 +361,7 @@ ATT.Description = [[An Izhmash-manufactured pistol grip for PP-19-01 Vityaz SMGs
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_vityaz.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -366,6 +383,7 @@ ATT.Description = [[The RK-3 Klassika anatomic pistol grip features a built-in h
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_zenit_rk3.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -386,6 +404,7 @@ ATT.Description = [[A lightweight pistol grip for AK assault rifles, manufacture
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tango_down.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -408,6 +427,7 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tango_down_fde.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -429,6 +449,7 @@ Black version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tapco_saw.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -450,6 +471,7 @@ Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_tapco_saw_fde.mdl"
 
 ATT.Category = {"eft_ak_grip"}
@@ -470,6 +492,7 @@ ATT.Description = [[A light pistol grip for AK assault rifles, manufactured by U
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_us_palm.mdl"
 
 ATT.Category = {"eft_ak_grip"}

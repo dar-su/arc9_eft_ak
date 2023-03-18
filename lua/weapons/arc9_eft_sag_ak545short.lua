@@ -372,6 +372,11 @@ SWEP.AttachmentElements = {
     ["eft_sag545_buffertube"] = { Bodygroups = { {5, 1} } },
 }
 
+SWEP.missingpartsnotifsent = 0
+function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
+
+
+
 SWEP.Attachments = {
     { -- 5.45 short
         PrintName = "Muzzle",

@@ -373,22 +373,6 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             if nomag then ending = math.max(rand, 2) end
             ending = rand
         end
-    elseif anim == "firemode_1" or anim == "firemode_2" then
-        if elements["eft_hg_rpk16_std"] then
-            ending = "_rpk"
-        end
-    elseif anim == "inspect_ubgl" then -- gp25 lhik
-        swep.EFTInspectBool = swep.EFTInspectBool or false
-        if IsFirstTimePredicted() then
-            swep.EFTInspectBool = !swep.EFTInspectBool
-        end
-        local inspect = swep.EFTInspectBool
-
-        if !inspect and swep:Clip2() > 0 then
-            return "inspect_check_ubgl"
-        else
-            return "inspect_ubgl"
-        end
     end
 
 
@@ -797,6 +781,12 @@ SWEP.AttachmentElements = {
     ["eft_ammo_12x70_slug"] = { Bodygroups = { {7, 13} } },
     ["eft_ammo_12x70_mixed_50bmg_p3"] = { Bodygroups = { {7, 14} } },
 }
+
+
+
+SWEP.missingpartsnotifsent = 0
+SWEP.HasGas = true
+function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
 
 
 SWEP.Attachments = {

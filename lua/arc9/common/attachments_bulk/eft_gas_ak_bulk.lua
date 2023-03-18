@@ -13,6 +13,7 @@ ATT.Description = [[A standard gas tube for AKM automatic rifles. Gas tubes chan
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_akm_std.mdl"
 
 ATT.Category = {"eft_ak_gasblock"}
@@ -44,6 +45,7 @@ ATT.Description = [[A standard gas tube for AK-74 automatic rifles. Gas tubes ch
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_akm_std.mdl"
 
 ATT.Category = {"eft_ak_gasblock"}
@@ -75,6 +77,8 @@ ATT.Description = [[The UltiMAK M1-B gas tube for AK assault rifles sets the gas
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_m1b.mdl"
 ATT.LHIK = true
 ATT.Category = {"eft_ak_gasblock"}
@@ -114,6 +118,7 @@ ATT.Description = [[A gas tube for AKM-type automatic rifles and Vepr carbines, 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_vpo136.mdl"
 
 ATT.Category = {"eft_ak_gasblock"}
@@ -149,6 +154,8 @@ Manufactured by TROY Industries.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_troy.mdl"
 ATT.LHIK = true
 
@@ -215,6 +222,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_pp1901_std.mdl"
 
+ATT.HasGas = true
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock_vdmcs"}
 
@@ -247,6 +255,8 @@ ATT.Description = [[A combined kit of the VS-24 handguard with the VS-33c gas tu
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_vs24.mdl"
 ATT.LHIK = true
 
@@ -311,6 +321,8 @@ ATT.Description = [[A combined kit of the VS-24 handguard with the VS-33c gas tu
  
  White version.]]
 ATT.SortOrder = 0
+ATT.HasGas = true
+ATT.HasHG = true
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_vs24.mdl"

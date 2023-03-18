@@ -5,6 +5,9 @@ ATT.Description = [[A combined kit of the ION Lite 9 inch handguard with the Rai
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true 
+ATT.HasHG = true 
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_rd704_ionlite.mdl"
 ATT.LHIK = true
 

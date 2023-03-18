@@ -13,6 +13,7 @@ ATT.Description = [[A 15 inch (370mm) long barrel for RPK-16 light machine gun, 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.Category = {"eft_rpk16_barrel"}
 
 
@@ -31,6 +32,7 @@ ATT.Description = [[A 22 inch (550mm) long barrel for RPK-16 light machine gun, 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.MuzzleEffectQCA = 3
 ATT.CustomizePos = Vector(23, 32, 4)
 ATT.CustomizeSnapshotFOV = 97
@@ -56,6 +58,7 @@ ATT.Description = [[A regular handguard for the RPK-16 LMG. Manufactured by Izhm
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/rpk16_hg.mdl"
 ATT.LHIK = true 
 

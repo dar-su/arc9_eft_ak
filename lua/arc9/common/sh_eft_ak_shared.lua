@@ -1126,3 +1126,20 @@ ARC9EFT.VITYAZ_Anims = {
         },
     },
 }
+
+-- SWEP.missingpartsnotifsent = 0
+
+ARC9EFT.AK_MissingParts = function(swep)
+    if  !swep:GetValue("HasGas") or 
+        !swep:GetValue("HasAmmoooooooo") or 
+        !swep:GetValue("HasGrip") or 
+        !swep:GetValue("HasHG") then
+            
+            if swep.missingpartsnotifsent < CurTime() then
+                swep.missingpartsnotifsent = CurTime() + 3
+                net.Start("arc9eftmissingparts")
+                net.Send(swep:GetOwner())
+            end
+            return true 
+    end
+end

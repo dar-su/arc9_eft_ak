@@ -13,6 +13,7 @@ ATT.Description = [[A standard Izhmash-produced wooden AKM handguard.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_akm_std_wood.mdl"
 ATT.LHIK = true
 
@@ -35,6 +36,7 @@ ATT.Description = [[A standard Izhmash-produced wooden handguard for AK-74 assau
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak74_std_wood.mdl"
 ATT.LHIK = true
 
@@ -58,6 +60,7 @@ Manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vityaz_std_plastic.mdl"
 ATT.LHIK = true
 
@@ -81,6 +84,7 @@ Made out of plum-colored polymer, for which has earned the nickname "Sliva" ("Pl
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak74_std_plum.mdl"
 ATT.LHIK = true
 
@@ -104,6 +108,7 @@ Features 4 side rails for installation of tactical devices and 2 long rails for 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_agressor.mdl"
 ATT.LHIK = true
 
@@ -175,6 +180,7 @@ Features a bottom rail for installation of tactical foregrips.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak100_rail_plastic.mdl"
 ATT.LHIK = true
 
@@ -218,6 +224,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "0"
 ATT.LHIK = true
@@ -270,6 +277,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true
@@ -322,6 +330,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "2"
 ATT.LHIK = true
@@ -373,6 +382,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_zenit_b10.mdl"
 ATT.LHIK = true
 
@@ -415,6 +425,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b10mb19.mdl"
 ATT.LHIK = true
 
@@ -472,6 +483,7 @@ ATT.Description = [[The integrally machined B-11 foregrip is manufactured from a
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_b11.mdl"
 ATT.LHIK = true
 
@@ -520,6 +532,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"
 ATT.ModelBodygroups = "0"
 ATT.LHIK = true
@@ -588,6 +601,7 @@ Includes KeyMod slots for rail installation.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vltor_cmrd.mdl"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
@@ -643,9 +657,7 @@ ATT.Description = [[The OV GP handguard for AK series assault rifles, equipped w
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
-ATT.ExcludeElements = {"eft_gas_vityaz_std"}
-ATT.ActivateElements = {"nogp34"}
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_cncguns.mdl"
 ATT.LHIK = true
 
@@ -701,52 +713,6 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
 }
--- ATT.Attachments = {
---     {
---         PrintName = "Optic",
---         Category = {"eft_optic_medium", "eft_optic_small", "eft_backupmount"},
---         Pos = Vector(0, 4, -1.12),
---         Ang = Angle(0, -90, 0),
---         Icon_Offset = Vector(0, 0, 0.5),
---         ExtraSightDistance = 8
---     },
---     {
---         PrintName = "Tactical",
---         Category = {"eft_tactical_top"},
---         Pos = Vector(0, 10.5, -1.1),
---         Ang = Angle(0, -90, 0),
---         Icon_Offset = Vector(0, 1, 0),
---         ExtraSightDistance = 8
---     },
---     {
---         PrintName = "B2 Keymod",
---         Category = {"eft_mount_keymod"},
---         Pos = Vector(0, 9.5, 1.7),
---         Ang = Angle(180, 0, 0),
---         Icon_Offset = Vector(0, 1, 0),
---     },
---     {
---         PrintName = "L Keymod",
---         Category = {"eft_mount_keymod"},
---         Pos = Vector(-0.75, 9.5, 0.5),
---         Ang = Angle(-90, 0, 0),
---         Icon_Offset = Vector(0, 1, 0),
---     },
---     {
---         PrintName = "R Keymod",
---         Category = {"eft_mount_keymod"},
---         Pos = Vector(0.75, 9.5, 0.5),
---         Ang = Angle(90, 0, 0),
---         Icon_Offset = Vector(0, 1, 0),
---     },
---     {
---         PrintName = "B Keymod",
---         Category = {"eft_mount_keymod6", "eft_grip_keymod"},
---         Pos = Vector(0, 3, 1.7),
---         Ang = Angle(180, 0, 0),
---     },
--- }
-
 
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cncguns")
 
@@ -763,6 +729,7 @@ ATT.Description = [[This integrally machined handguard is manufactured from alum
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf.mdl"
 ATT.LHIK = true
 
@@ -833,6 +800,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_hexagon.mdl"
 ATT.ModelSkin = "0"
 ATT.LHIK = true
@@ -891,6 +859,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_hexagon.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true
@@ -950,6 +919,8 @@ Black version.
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
+
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "0"
 ATT.LHIK = true 
@@ -994,6 +965,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true 
@@ -1038,6 +1010,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "2"
 ATT.LHIK = true 
@@ -1082,6 +1055,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "3"
 ATT.LHIK = true 
@@ -1123,9 +1097,11 @@ It comes equipped with licensed M-LOK mounts for the installation of additional 
 
 Stealth Gray version.]]
 ATT.SortOrder = 0
+
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "4"
 ATT.LHIK = true 
@@ -1168,6 +1144,7 @@ Manufactured by Command Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_rs47.mdl"
 ATT.LHIK = true
 
@@ -1225,6 +1202,7 @@ Can be combined with the TRAX 2 rail for maximum amount of modularity.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_strike_industries_trax_1.mdl"
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0.1, 0)
@@ -1281,6 +1259,7 @@ ATT.Description = [[The TRAX 2 section is the front rail that covers the gas blo
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_trax_2.mdl"
 
 ATT.Category = {"eft_mount_trax_bridge"}
@@ -1320,6 +1299,7 @@ ATT.Description = [[Bridge guide for keymod system allows you to install additio
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_bridge.mdl"
 ATT.ModelOffset = Vector(0, -3.2, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 90)
@@ -1363,6 +1343,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.RequireElements = {"gasblock_vdmcs"}
 ATT.ActivateElements = {"nogp34"}
+
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ufm_akm_long.mdl"
 ATT.LHIK = true
 
@@ -1430,6 +1412,7 @@ ATT.Description = [[A standard wooden handguard for VPO-136 Vepr KM carbines, ma
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_136.mdl"
 ATT.LHIK = true
 
@@ -1453,6 +1436,7 @@ ATT.Description = [[A standard wooden handguard for VPO-209 AKM carbines, manufa
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_209.mdl"
 ATT.LHIK = true
 
@@ -1476,6 +1460,7 @@ Compatible with AK-family weapon systems.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_wasr.mdl"
 ATT.LHIK = true
 
@@ -1501,6 +1486,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "TDI"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_x47.mdl"
 ATT.LHIK = true
 
@@ -1570,6 +1556,7 @@ ATT.Description = [[A tactical aluminum handguard for AKS-74U, AKS-74UN, and AKS
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_xrsu.mdl"
 ATT.LHIK = true
 
@@ -1637,6 +1624,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"
 ATT.ModelSkin = 0
 ATT.LHIK = true
@@ -1688,6 +1676,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"
 ATT.ModelSkin = 1
 ATT.LHIK = true
@@ -1739,6 +1728,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"
 ATT.ModelSkin = 2
 ATT.LHIK = true

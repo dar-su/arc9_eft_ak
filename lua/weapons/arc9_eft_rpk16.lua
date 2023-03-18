@@ -373,6 +373,11 @@ SWEP.AttachmentElements = {
     ["eft_rpk16_rs_base"] = { Bodygroups = { {3, 1} } },
 }
 
+SWEP.missingpartsnotifsent = 0
+function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
+
+
+
 SWEP.Attachments = {
     { -- short
         PrintName = "Muzzle",

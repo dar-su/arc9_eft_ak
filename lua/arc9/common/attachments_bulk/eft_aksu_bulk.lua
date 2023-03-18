@@ -13,6 +13,7 @@ ATT.Description = [[A standard gas tube for AKS-74U automatic rifles. Gas tubes 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasGas = true
 ATT.Category = {"eft_aksu_gasblock"}
 ATT.ActivateElements = {"gasblock"}
 
@@ -43,6 +44,7 @@ ATT.Description = [[A standard-issue wooden handguard for AKS-74U, AKS-74UN, and
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_hg_std.mdl"
 ATT.LHIK = true
 

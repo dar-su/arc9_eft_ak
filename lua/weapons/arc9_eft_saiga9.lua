@@ -380,6 +380,11 @@ SWEP.AttachmentElements = {
     ["eft_vityaz_mag_sg919_20"] = { Bodygroups = { {3, 3} } },
 }
 
+SWEP.missingpartsnotifsent = 0
+function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
+
+
+
 
 SWEP.Attachments = {
     { -- Long barrel

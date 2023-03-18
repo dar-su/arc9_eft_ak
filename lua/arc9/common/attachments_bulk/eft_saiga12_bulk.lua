@@ -32,6 +32,8 @@ ATT.Description = [[Bravo-18 is a lightweight aircraft grade aluminum handguard,
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true 
+
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nodovetail"}
 
@@ -110,6 +112,7 @@ ATT.Description = [[Type-340 is a lightweight aircraft grade aluminium handguard
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true 
 ATT.Category = {"eft_saiga12_handguard"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_340_lhik.mdl"
@@ -186,11 +189,10 @@ ATT.Description = [[BSb.7-1 is a standard polymer handguard with a sling swivel,
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HasHG = true 
+
 ATT.Category = {"eft_saiga12_handguard"}
 
--- ATT.Attachments = {
-
--- }
 
 
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_std")
@@ -207,6 +209,8 @@ ATT.Icon = Material("entities/eft_ak_attachments/saiga12/utg.png", "mips smooth"
 ATT.Description = [[The UTG PRO MTU002 Long Top Tactical Quad Rail is a lightweight aircraft grade aluminum handguard with a sling swivel, designed for installation on Saiga carbines. Manufactured by Leapers Inc.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasHG = true 
 
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nodovetail"}
@@ -270,6 +274,8 @@ ATT.Icon = Material("entities/eft_ak_attachments/saiga12/utgs.png", "mips smooth
 ATT.Description = [[The UTG PRO MTU002 Tactical Quad Rail Short Top is a lightweight aircraft grade aluminum handguard with sling swivel, designed for installation on Saiga carbines. Manufactured by Leapers Inc.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasHG = true 
 
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nodovetail"}
@@ -501,6 +507,7 @@ ATT.ShellModelEvenShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug
 ATT.ShellModelOddShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_50_bmg_m17_traccer_shell.mdl"
 
 
+ATT.HasAmmoooooooo = true 
 ATT.EFTRoundName = "12/70 makeshift .50 BMG / \"Poleva-3\" slug"
 
 ATT.DamageMaxEvenShot = 140/2

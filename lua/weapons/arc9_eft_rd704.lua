@@ -365,6 +365,11 @@ SWEP.Animations = ARC9EFT.AK_Anims
 
 ------------------------- [[[           Attachments            ]]] -------------------------
 
+
+SWEP.missingpartsnotifsent = 0
+function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
+
+
 SWEP.Attachments = {
     {
         PrintName = "Muzzle",
