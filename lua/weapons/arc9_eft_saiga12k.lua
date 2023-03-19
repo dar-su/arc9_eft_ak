@@ -55,8 +55,9 @@ SWEP.Num = 8
 SWEP.Spread = 20.626 * ARC9.MOAToAcc
 SWEP.UseDispersion = true
 SWEP.DispersionSpread = 0.005
-SWEP.DispersionSpreadMultMove = 3
 SWEP.DispersionSpreadAddHipFire = 0.02
+SWEP.DispersionSpreadMultMove = 1.5
+SWEP.DispersionSpreadAddMove = 0.015
 
 --          Recoil
 
@@ -130,9 +131,14 @@ SWEP.RecoilKickDamping = 10
 
 --          Heating
 
+SWEP.Malfunction = true 
+SWEP.MalfunctionNeverLastShoot = true 
+SWEP.MalfunctionMeanShotsToFail = 166
+SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
-SWEP.HeatCapacity = 90
-SWEP.HeatDissipation = 6
+SWEP.HeatCapacity = 70
+SWEP.HeatDissipation = 1.75
+SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 
 
@@ -159,12 +165,13 @@ SWEP.SpeedMultBlindFire = 1
 
 SWEP.FreeAimRadius = 2
 SWEP.FreeAimRadiusSights = 0
-SWEP.Sway = 1.5
-SWEP.SwayMultSights = 0.3
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
+
+SWEP.Sway = 1
+SWEP.SwayMove = 0.5
+SWEP.SwayMidAir = 10
+SWEP.SwayMultCrouch = 0.75
+SWEP.SwayMultHipFire = 0.01
+SWEP.SwayMultSights = 0.15
 
 
 --          Generic stats
@@ -361,7 +368,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             swep.EFTInspectnum = swep.EFTInspectnum + 1
         end
         local rand = swep.EFTInspectnum
-        if rand == 4 then swep.EFTInspectnum = 0 rand = 0 end
+        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
 
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
@@ -615,7 +622,12 @@ SWEP.Animations = {
     },
 
 
-    ["inspect0"] = {
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
+
+    ["inspect1"] = {
         Source = "look0",
         MinProgress = 0.85,
         FireASAP = true,
@@ -629,7 +641,7 @@ SWEP.Animations = {
         },
         EventTable = rst_look
     },
-    ["inspect2"] = {
+    ["inspect0"] = {
         Source = "look1",
         MinProgress = 0.85,
         FireASAP = true,

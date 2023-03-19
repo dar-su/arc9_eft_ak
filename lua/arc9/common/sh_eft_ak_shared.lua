@@ -518,7 +518,11 @@ ARC9EFT.AK_Anims = {
         MagSwapTime = 1.5,
     },
 
-
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
+    
     ["inspect1"] = { -- 74
         Source = "look0",
         MinProgress = 0.95,
@@ -833,7 +837,7 @@ ARC9EFT.VITYAZ_AnimsHook = function(swep, anim)
         local rand = swep.EFTInspectnum
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
 
-        if rand == 1 and !nomag then -- mag
+        if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
         else
             if nomag then ending = math.max(rand, 1) end
@@ -1018,8 +1022,12 @@ ARC9EFT.VITYAZ_Anims = {
         EventTable = rst_empty,
     },
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
 
-    ["inspect0"] = {
+    ["inspect1"] = {
         Source = "look0",
         MinProgress = 0.85,
         FireASAP = true,
@@ -1033,7 +1041,7 @@ ARC9EFT.VITYAZ_Anims = {
         },
         EventTable = rst_look
     },
-    ["inspect2"] = {
+    ["inspect0"] = {
         Source = "look1",
         MinProgress = 0.85,
         FireASAP = true,

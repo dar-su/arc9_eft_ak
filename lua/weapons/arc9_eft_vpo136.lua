@@ -82,9 +82,10 @@ SWEP.DamageLookupTable = {
 
 
 --          Spread
-SWEP.SpreadMultHipFire = 5
-SWEP.Spread = 0.004
-SWEP.SpreadAddRecoil = 0
+SWEP.Spread = 2.372 * ARC9.MOAToAcc
+SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadMultMove = 1.5
+SWEP.SpreadAddMove = 0.015
 
 
 --          Recoil
@@ -158,9 +159,14 @@ SWEP.RecoilKickDamping = 10
 
 --          Heating
 
+SWEP.Malfunction = true 
+SWEP.MalfunctionNeverLastShoot = true 
+SWEP.MalfunctionMeanShotsToFail = 300
+SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
-SWEP.HeatCapacity = 90
-SWEP.HeatDissipation = 6
+SWEP.HeatCapacity = 240
+SWEP.HeatDissipation = 2.5
+SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 
 
@@ -187,12 +193,13 @@ SWEP.SpeedMultBlindFire = 1
 
 SWEP.FreeAimRadius = 2
 SWEP.FreeAimRadiusSights = 0
-SWEP.Sway = 1.5
-SWEP.SwayMultSights = 0.3
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
+
+SWEP.Sway = 1
+SWEP.SwayMove = 0.5
+SWEP.SwayMidAir = 10
+SWEP.SwayMultCrouch = 0.75
+SWEP.SwayMultHipFire = 0.01
+SWEP.SwayMultSights = 0.15
 
 
 --          Generic stats
