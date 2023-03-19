@@ -210,7 +210,7 @@ SWEP.SwayMultSights = 0.15
 
 --          Generic stats
 
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "smg1"
 SWEP.ChamberSize = 0 -- no mag
 SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4

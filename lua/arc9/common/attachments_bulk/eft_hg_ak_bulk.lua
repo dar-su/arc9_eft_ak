@@ -136,7 +136,7 @@ ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
-ATT.ExcludeElements = {"eft_gas_vityaz_std"}
+ATT.ExcludeElements = {"eft_vityaz_gas_std"}
 ATT.Category = {"eft_ak_handguard"}
 
 ATT.Attachments = {
@@ -599,7 +599,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"
 ATT.ModelBodygroups = "0"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
-ATT.ExcludeElements = {"eft_gas_vityaz_std"}
+ATT.ExcludeElements = {"eft_vityaz_gas_std"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
@@ -673,7 +673,7 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vltor_cmrd.mdl"
 ATT.LHIK = true
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
-ATT.ExcludeElements = {"short_barrel", "eft_gas_vityaz_std"}
+ATT.ExcludeElements = {"short_barrel", "eft_vityaz_gas_std"}
 ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
@@ -737,7 +737,7 @@ ATT.HeatCapacityMult = 0.966
 
 
 ATT.RequireElements = {"gasblock"}
-ATT.ExcludeElements = {"railedcover", "eft_gas_vityaz_std"}
+ATT.ExcludeElements = {"railedcover", "eft_vityaz_gas_std"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 ATT.Attachments = {
@@ -1404,7 +1404,7 @@ ATT.HeatCapacityMult = 0.966
 
 ATT.Category = {"eft_mount_trax_bridge"}
 
-ATT.ExcludeElements = {"eft_gas_vityaz_std", "short_barrel"}
+ATT.ExcludeElements = {"eft_vityaz_gas_std", "short_barrel"}
 
 ATT.Attachments = {
     {
@@ -1443,6 +1443,8 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_bridge.mdl"
 ATT.ModelOffset = Vector(0, -3.2, 1.5)
 ATT.ModelAngleOffset = Angle(0, 90, 90)
+
+ATT.ExcludeElements = {"eft_vityaz_gas_std"}
 
 ATT.Category = {"eft_mount_trax1"}
 ATT.Attachments = {
@@ -1657,7 +1659,7 @@ ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.96
 
 ATT.RequireElements = {"gasblock"}
-ATT.ExcludeElements = {"railedcover", "eft_gas_vityaz_std"}
+ATT.ExcludeElements = {"railedcover", "eft_vityaz_gas_std"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 ATT.Attachments = {

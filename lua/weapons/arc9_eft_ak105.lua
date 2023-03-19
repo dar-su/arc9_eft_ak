@@ -217,7 +217,7 @@ SWEP.SwayMultSights = 0.15
 
 --          Generic stats
 
-SWEP.Ammo = "ar2"
+SWEP.Ammo = "smg1"
 SWEP.ChamberSize = 0 -- no mag
 SWEP.ClipSize = 1 -- actual chamber (no mag)
 SWEP.SupplyLimit = 4
@@ -392,6 +392,7 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.DefaultElements = {"short_barrel"}
 SWEP.missingpartsnotifsent = 0
 function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
 
