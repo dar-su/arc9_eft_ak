@@ -13,6 +13,9 @@ ATT.Description = [[A standard-issue dust cover for AK-545 carbines, manufacture
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+
 ATT.Category = {"eft_sag545_coverr"}
 
 ATT.Attachments = {
@@ -53,6 +56,8 @@ ATT.HasGas = true
 ATT.Category = {"eft_sag545_gasblock"}
 -- ATT.ActivateElements = {"gasblock"}
 
+ATT.HeatCapacityMult = 0.95
+
 ATT.Attachments = {
     {
         PrintName = "Handguard",
@@ -78,6 +83,13 @@ ATT.Icon = Material("entities/eft_ak_attachments/sag/hg.png", "mips smooth")
 ATT.Description = [[The Sureshot Armament Group Mk.3 handguard for AK-545, equipped with an M-LOK interface for the installation of additional devices and accessories and a picatinny rail on top for sights and tactical equipment mounting.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 16
+ATT.CustomPros = { Ergonomics = "+16" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.SpreadMult = 0.98
+ATT.HeatCapacityMult = 1.08
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_sag_mk3.mdl"
@@ -172,6 +184,9 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sag545_stock"}
+
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
 
 ATT.Attachments = {
     {

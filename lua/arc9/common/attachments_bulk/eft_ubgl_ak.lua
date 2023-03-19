@@ -8,6 +8,20 @@ ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
 
+ATT.EFTErgoAdd = -35
+ATT.CustomCons = { Ergonomics = "-35" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+
+ATT.ReloadInSightsUBGL = false 
+
+ATT.VisualRecoilUBGL = 0.5
+ATT.VisualRecoilDampingConstUBGL = 125
+ATT.VisualRecoilSpringMagnitudeUBGL = 2
+ATT.VisualRecoilUpUBGL = 120 -- Vertical tilt
+ATT.VisualRecoilSideUBGL = 0 -- Horizontal tilt
+ATT.VisualRecoilRollUBGL = 0 -- Roll tilt
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/gp25.mdl"
 -- ATT.ModelBodygroups = "01"
 ATT.LHIK = true
@@ -239,6 +253,19 @@ An underbarrel grenade launcher for 40mm VOG-25 grenades, installed on AK family
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ak_gp34"}
+
+ATT.EFTErgoAdd = -35
+ATT.CustomCons = { Ergonomics = "-35" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+
+ATT.ReloadInSightsUBGL = false 
+ATT.VisualRecoilUBGL = 0.5
+ATT.VisualRecoilDampingConstUBGL = 125
+ATT.VisualRecoilSpringMagnitudeUBGL = 2
+ATT.VisualRecoilUpUBGL = 120 -- Vertical tilt
+ATT.VisualRecoilSideUBGL = 0 -- Horizontal tilt
+ATT.VisualRecoilRollUBGL = 0 -- Roll tilt
 
 ATT.Model = "models/weapons/arc9/darsu_eft/gp34_lhik.mdl"
 ATT.ModelOffset = Vector(-20, -6.2, -57)

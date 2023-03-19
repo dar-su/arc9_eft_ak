@@ -18,6 +18,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 ATT.Category = {"eft_ak101_muzzle"}
 
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak101_std")
 
 
@@ -36,6 +42,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_556x45.mdl"
 
 ATT.Category = {"eft_ak101_muzzle"}
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak102_std")
@@ -57,6 +69,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak103_std")
 
@@ -77,6 +95,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_55
 
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak104_std")
 
@@ -94,6 +118,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak102_std_556x45.mdl"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
@@ -117,6 +147,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_ak74m_std_54
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak74m_std")
 
@@ -137,6 +173,13 @@ ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/muzzle_ar15_pws_cqb_556x
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
+ATT.RecoilMult = 0.84
+ATT.VisualRecoilMult = 0.84
+ATT.HeatCapacityMult = 0.989
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak74_pws_cqb")
 
@@ -146,7 +189,7 @@ ARC9.LoadAttachment(ATT, "eft_muzzle_ak_ak74_pws_cqb")
 
 ATT = {}
 
-ATT.PrintName = "AK-74 5.45x39 SRVV muzzle brake"
+ATT.PrintName = "AK-74 SRVV MBR Jet 5.45x39 muzzle brake"
 ATT.CompactName = "SRVV AK74"
 ATT.Icon = Material("entities/eft_ak_attachments/muzzle/srvv.png", "mips smooth")
 ATT.Description = [[An SRVV-produced muzzle brake for AK-74 5.45x39 assault rifles and compatibles.]]
@@ -154,6 +197,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_srvv_mbr_jet_545_545x39.mdl"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.HeatCapacityMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_ak74_muzzle", "eft_ak101_muzzle", "eft_rpk16_muzzle"}
 
@@ -175,6 +225,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_izhmash_std_545x39.mdl"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 
@@ -195,6 +251,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akml_762x39.mdl"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+ATT.PhysBulletMuzzleVelocityMult = 1.015
+
 ATT.Category = {"eft_akm_muzzle"}
 
 
@@ -206,12 +268,19 @@ ARC9.LoadAttachment(ATT, "eft_muzzle_ak_akml")
 
 ATT = {}
 
-ATT.PrintName = "AK 7.62x39 SRVV muzzle brake-compensator"
+ATT.PrintName = "AK SRVV 7.62x39 muzzle brake-compensator"
 ATT.CompactName = "SRVV AKM"
 ATT.Icon = Material("entities/eft_ak_attachments/muzzle/srvvakm.png", "mips smooth")
 ATT.Description = [[An SRVV-produced muzzle brake and compensator for AK assault rifles and compatibles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.84
+ATT.VisualRecoilMult = 0.84
+ATT.HeatCapacityMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_srvv_mbrfhmb_762_762x39.mdl"
 
@@ -235,6 +304,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akm_std_762x39.mdl"
 
+ATT.RecoilMult = 0.93
+ATT.VisualRecoilMult = 0.93
+
 ATT.Category = {"eft_akm_muzzle"}
 
 
@@ -254,6 +326,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_venom_antidote_muzzle_brake_multi.mdl"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.83
+ATT.VisualRecoilMult = 0.83
+ATT.SpreadMult = 0.98
+ATT.HeatCapacityMult = 0.987
 
 ATT.Category = {"eft_akm_muzzle"}
 
@@ -303,6 +382,13 @@ ATT.Description = [[The Drakon muzzle brake-compensator by Lantac is designed fo
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.HeatCapacityMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 0.99
+
 ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/muzzle_ar10_lantac_dgn762b_muzzle_brake_762x51.mdl"
 
 ATT.Category = {"eft_akm_muzzle"}
@@ -327,6 +413,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_zenit_dtk1_762x39_545x
 
 ATT.Category = {"eft_ak74_muzzle", "eft_ak103_muzzle", "eft_ak_ttak", "eft_rpk16_muzzle"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.87
+ATT.VisualRecoilMult = 0.87
+ATT.HeatCapacityMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 1.004
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_dtk1")
 
@@ -347,6 +440,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_spike_tactical_ak_dyna
 
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
 
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.RecoilMult = 0.89
+ATT.VisualRecoilMult = 0.89
+ATT.HeatCapacityMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 1.004
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_dynacomp")
 
@@ -364,6 +464,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_samson_thread_adapter_9x19.mdl"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
 
 ATT.Category = {"eft_akm_muzzle"}
 
@@ -397,6 +502,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_hexagon_reactor_muzzle
 
 ATT.Category = {"eft_ak74_muzzle"}
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.83
+ATT.VisualRecoilMult = 0.83
+ATT.HeatCapacityMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 ATT.Attachments = {
     {
         PrintName = "Suppressor",
@@ -427,6 +539,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_jmac_rrd_4c_762x39.mdl
 
 ATT.Category = {"eft_akm_muzzle"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.8
+ATT.HeatCapacityMult = 0.984
+ATT.PhysBulletMuzzleVelocityMult = 1.0045
+
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_rrd4c")
 
@@ -444,6 +563,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak74_jmac_rrd_4c_multi.mdl"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.81
+ATT.VisualRecoilMult = 0.81
+ATT.HeatCapacityMult = 0.987
+ATT.PhysBulletMuzzleVelocityMult = 1.0045
 
 ATT.Category = {"eft_ak74_muzzle", "eft_ak101_muzzle", "eft_ak103_muzzle", "eft_ak_ttak"}
 
@@ -496,6 +622,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_izhmash_akm_std_762x39.mdl"
 ATT.ModelSkin = 1
 
+ATT.RecoilMult = 0.94
+ATT.VisualRecoilMult = 0.94
+
 ATT.Category = {"eft_akm_muzzle"}
 
 
@@ -513,6 +642,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/muzzle/209thr.png", "mips smoot
 ATT.Description = [[A thread protector for muzzle brake/compensator for VPO-209 AKM carbines. Also fits the AKM 7.62x39 series automatic rifles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_molot_vpo_209_366TKM.mdl"
 

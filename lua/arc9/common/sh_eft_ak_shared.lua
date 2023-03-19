@@ -2,6 +2,7 @@ ARC9EFT = ARC9EFT or {}
 
 ARC9EFT.AK_AnimsHook = function(swep, anim)
     local elements = swep:GetElements()
+    local class = swep:GetClass()
     -- if !IsFirstTimePredicted() then return end
 
     local ending = ""
@@ -33,8 +34,16 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
             swep.EFTInspectnum = swep.EFTInspectnum + 1
         end
         local rand = swep.EFTInspectnum
-        if rand == 4 then swep.EFTInspectnum = 0 rand = 0 end
-
+        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
+        if rand == 1 then
+            if class == "arc9_eft_rpk16" then
+                return "look_rpk"
+            elseif class == "arc9_eft_akm" or class == "arc9_eft_akms" or class == "arc9_eft_vpo136" or class == "arc9_eft_vpo209" then
+                return "look_akm"
+            elseif class == "arc9_eft_aks74u" then
+                return "look_aksu"
+            end
+        end
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
     
@@ -79,7 +88,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
 
         return "jam" .. rand
     end
-
+    
     return anim .. ending
     -- return anim .. 3
 end
@@ -121,7 +130,8 @@ local rik_long = {
 
 local rik_empty = {
     { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
+    { t = 0.1, lhik = 1 },
+    { t = 0.25, lhik = 0 },
     { t = 0.61, lhik = 0 },
     { t = 0.75, lhik = 1 },
 }
@@ -509,28 +519,28 @@ ARC9EFT.AK_Anims = {
     },
 
 
-    ["inspect0"] = {
+    ["inspect1"] = { -- 74
         Source = "look0",
         MinProgress = 0.95,
         FireASAP = true,
         -- IKTimeLine = rik_def,
         EventTable = rst_look
     },
-    -- ["inspect1"] = {
-    --     Source = "look1",
-    --     MinProgress = 0.85,
-    --     FireASAP = true,
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.35, lhik = 1 },
-    --         { t = 0.6, lhik = 0 },
-    --         { t = 0.8, lhik = 0 },
-    --         { t = 0.95, lhik = 1 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    --     EventTable = rst_look
-    -- },
-    ["inspect1"] = {
+    ["look_akm"] = { -- akm
+        Source = "look1",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.35, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = rst_look
+    },
+    ["look_rpk"] = { -- rpk
         Source = "look2",
         MinProgress = 0.95,
         FireASAP = true,
@@ -544,8 +554,17 @@ ARC9EFT.AK_Anims = {
         },
         EventTable = rst_look
     },
-    ["inspect3"] = {
+
+    ["look_aksu"] = { -- aksu
         Source = "look3",
+        MinProgress = 0.95,
+        FireASAP = true,
+        -- IKTimeLine = rik_def,
+        EventTable = rst_look
+    },
+
+    ["inspect0"] = {
+        Source = "checkchamber",
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {

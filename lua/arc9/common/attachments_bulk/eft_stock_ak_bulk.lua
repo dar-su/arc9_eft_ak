@@ -17,6 +17,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_caa_akts_ak74.mdl"
 
 ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+
 ATT.Attachments = {
     {
         PrintName = "AR Stock",
@@ -44,6 +49,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74m_std.mdl"
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.68
+ATT.VisualRecoilMult = 0.68
 
 ATT.Category = {"eft_ak74m_stock"}
 
@@ -107,6 +117,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_plastic.mdl"
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.68
+ATT.VisualRecoilMult = 0.68
+
 ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
@@ -134,6 +149,11 @@ ATT.Icon = Material("entities/eft_ak_attachments/stock/74plum.png", "mips smooth
 ATT.Description = [[A polymer stock for AK-74 automatic rifles, manufactured by Izhmash. Made out of plum-colored polymer, for which has earned the nickname "Sliva" ("Plum").]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.68
+ATT.VisualRecoilMult = 0.68
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_plum.mdl"
 
@@ -164,6 +184,11 @@ ATT.Icon = Material("entities/eft_ak_attachments/stock/74.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for AK-74 automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.67
+ATT.VisualRecoilMult = 0.67
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_wood.mdl"
 
@@ -197,6 +222,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_akms_stock"}
 
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.7
+ATT.VisualRecoilMult = 0.7
+
 ATT.ToggleStats = {
     {
         PrintName = "Unfolded",
@@ -225,6 +255,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_akms_stock"}
+
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.7
+ATT.VisualRecoilMult = 0.7
 
 ATT.ToggleStats = {
     {
@@ -258,6 +293,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_opfor_aa47.mdl"
 ATT.Category = {"eft_akm_stock"}
 
 
+ATT.EFTErgoAdd = 17
+ATT.CustomPros = { Ergonomics = "+17" }
+ATT.RecoilMult = 0.61
+ATT.VisualRecoilMult = 0.61
+
 
 ARC9.LoadAttachment(ATT, "eft_stock_akm_aa47")
 
@@ -275,6 +315,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_caa_akts.mdl"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -307,6 +352,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_uas_ak_p.mdl"
 
+ATT.EFTErgoAdd = 16
+ATT.CustomPros = { Ergonomics = "+16" }
+ATT.RecoilMult = 0.62
+ATT.VisualRecoilMult = 0.62
+
 ATT.Category = {"eft_akm_stock"}
 
 
@@ -330,6 +380,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_hexagon_kocherga.mdl"
 
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.66
+
 ATT.Category = {"eft_akm_stock"}
 
 
@@ -349,6 +404,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_utg_sfs.mdl"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -412,6 +472,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_akm_std_wood.mdl"
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.67
+ATT.VisualRecoilMult = 0.67
+
 ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
@@ -442,6 +507,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_zhukov_s.mdl"
 
+ATT.EFTErgoAdd = 15
+ATT.CustomPros = { Ergonomics = "+15" }
+ATT.RecoilMult = 0.6
+ATT.VisualRecoilMult = 0.6
+
 ATT.Category = {"eft_akm_stock"}
 
 
@@ -462,6 +532,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.7
+ATT.VisualRecoilMult = 0.7
 
 ATT.Category = {"eft_aks_stock"}
 
@@ -523,6 +598,9 @@ ATT.Description = [[CAA Receiver Extension Buffer Tube, 6-position, Mil-Spec dia
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak_to_m4.mdl"
 ATT.ModelOffset = Vector(0, -0.2, -0.02)
 
@@ -558,6 +636,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_izhmash_6g15u_butt_pad.mdl"
 
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+
 ATT.Category = {"eft_stock_ak_pad"}
 
 
@@ -575,6 +658,11 @@ ATT.Icon = Material("entities/eft_ak_attachments/stock/136.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for VPO-136 Vepr KM carbines, manufactured by Molot Arms.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.67
+ATT.VisualRecoilMult = 0.67
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_136.mdl"
 
@@ -608,6 +696,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_209.mdl"
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.67
+ATT.VisualRecoilMult = 0.67
+
 ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
@@ -638,6 +731,11 @@ Manufactured by Zenit.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.63
+ATT.VisualRecoilMult = 0.63
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt1.mdl"
 
 ATT.Category = {"eft_stock_zenit_lock"}
@@ -660,6 +758,11 @@ A special PT lock is required for installation.
 Manufactured by Zenit.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 11
+ATT.CustomPros = { Ergonomics = "+11" }
+ATT.RecoilMult = 0.62
+ATT.VisualRecoilMult = 0.62
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt3.mdl"
 

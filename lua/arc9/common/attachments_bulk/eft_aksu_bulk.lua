@@ -17,16 +17,18 @@ ATT.HasGas = true
 ATT.Category = {"eft_aksu_gasblock"}
 ATT.ActivateElements = {"gasblock"}
 
+ATT.HeatCapacityMult = 0.995
+
 ATT.Attachments = {
-    -- {
-    --     PrintName = "HANDGUARD",
-    --     Category = "eft_ak_handguard",
-    --     Pos = Vector(0, -1.8, 0.5),
-    --     Ang = Angle(0, 0, 0),
-    --     Icon_Offset = Vector(0, 3.8, -0.5),
-    --     Installed = "eft_hg_ak_6p20sb9"
-    -- },
+    {
+        PrintName = "Handguard",
+        Category = "eft_aksu_handguard",
+        Pos = Vector(0, -0.475, 0.45),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 3.8, -0.5),
+    },
 }
+
 
 
 ARC9.LoadAttachment(ATT, "eft_aksu_gas_ak")
@@ -47,6 +49,10 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_hg_std.mdl"
 ATT.LHIK = true
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.052
 
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_aksu_handguard"}
@@ -69,6 +75,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_b18"}
 ATT.ActivateElements = {"railedcover"}
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -98,6 +107,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_aks74u_izhmash_std_545x39.mdl"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 ATT.Category = {"eft_ak74_muzzle"}
 
 
@@ -118,6 +133,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"nolongrear", "eft_mount_dovetail_b13v", "eft_mount_dovetail_b13", "eft_scope_dovetail_pso1", "eft_scope_dovetail_pso1m2", "eft_scope_dovetail_okp7"}
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
 ATT.Category = {"eft_aksu_dustcover"}
 
 
@@ -137,6 +155,9 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"nolongrear", "eft_mount_dovetail_b13v", "eft_mount_dovetail_b13", "eft_scope_dovetail_pso1", "eft_scope_dovetail_pso1m2", "eft_scope_dovetail_okp7"}
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_aksu_dustcover"}
 
@@ -167,6 +188,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74u_std.mdl"
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.7
+ATT.VisualRecoilMult = 0.7
 
 ATT.Category = {"eft_aks_stock"}
 

@@ -13,6 +13,10 @@ ATT.Description = [[A standard Izhmash-produced wooden AKM handguard.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.054
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_akm_std_wood.mdl"
 ATT.LHIK = true
@@ -35,6 +39,10 @@ ATT.Icon = Material("entities/eft_ak_attachments/hg/74.png", "mips smooth")
 ATT.Description = [[A standard Izhmash-produced wooden handguard for AK-74 assault rifles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.054
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak74_std_wood.mdl"
@@ -60,6 +68,10 @@ Manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.HeatCapacityMult = 1.045
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vityaz_std_plastic.mdl"
 ATT.LHIK = true
@@ -84,6 +96,10 @@ Made out of plum-colored polymer, for which has earned the nickname "Sliva" ("Pl
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.HeatCapacityMult = 1.045
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak74_std_plum.mdl"
 ATT.LHIK = true
@@ -107,6 +123,12 @@ ATT.Description = [[Aggressor is a railed handguard for AK series rifles manufac
 Features 4 side rails for installation of tactical devices and 2 long rails for installation of various optics and foregrips.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.92
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_agressor.mdl"
@@ -180,6 +202,10 @@ Features a bottom rail for installation of tactical foregrips.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.HeatCapacityMult = 1.045
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak100_rail_plastic.mdl"
 ATT.LHIK = true
@@ -228,6 +254,10 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "0"
 ATT.LHIK = true
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
@@ -282,6 +312,10 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true
 
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.HeatCapacityMult = 0.986
+
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
@@ -329,6 +363,10 @@ Anodized Red version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "TDI"
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.HeatCapacityMult = 0.986
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_tdi_akm_l.mdl"
@@ -386,6 +424,12 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_zenit_b10.mdl"
 ATT.LHIK = true
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.023
+
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
@@ -424,6 +468,12 @@ B-19 rail mount is basically a sight mount hovering over the gas tube. Also inte
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
+
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 0.968
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b10mb19.mdl"
@@ -487,6 +537,12 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_b11.mdl"
 ATT.LHIK = true
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 0.994
+
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_aksu_handguard"}
 ATT.Attachments = {
@@ -531,6 +587,12 @@ The B-31S rail mount above the gas tube is an all-milled bracket made of D16T al
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "ZENIT"
+
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.906
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b31c.mdl"
@@ -601,6 +663,12 @@ Includes KeyMod slots for rail installation.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
+ATT.HeatCapacityMult = 0.93
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vltor_cmrd.mdl"
 ATT.LHIK = true
@@ -660,6 +728,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_cncguns.mdl"
 ATT.LHIK = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.975
+ATT.VisualRecoilMult = 0.975
+ATT.HeatCapacityMult = 0.966
 
 
 ATT.RequireElements = {"gasblock"}
@@ -733,6 +807,12 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf.mdl"
 ATT.LHIK = true
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.01
+
 ATT.ExcludeElements = {"eft_muzzle_ak_ak105_std", "eft_muzzle_ak_ak74m_std", "eft_muzzle_ak_ak74_std", "eft_muzzle_ak_rrd4c74", "eft_muzzle_ak_ak74_pws_cqb", "eft_muzzle_ak_ak74_srvv", "eft_muzzle_ak_reactor", "eft_muzzle_ak_dtk1", "eft_silencer_ak_ak74_hexagon", "eft_silencer_ak_pbs4", "eft_silencer_ak_wafflemaker" }
 ATT.RequireElements = {"gasblock"}
 
@@ -800,6 +880,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
 
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.952
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_hexagon.mdl"
 ATT.ModelSkin = "0"
@@ -858,6 +944,12 @@ DA RED GOEZ FASTA!]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.Folder = "HEXAGON"
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.952
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_hexagon.mdl"
@@ -920,6 +1012,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.053
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "0"
@@ -970,6 +1068,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "1"
 ATT.LHIK = true 
 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.053
+
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
@@ -1009,6 +1113,12 @@ Olive Drab version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.053
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
@@ -1055,6 +1165,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.053
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_moe.mdl"
 ATT.ModelSkin = "3"
@@ -1097,6 +1213,12 @@ It comes equipped with licensed M-LOK mounts for the installation of additional 
 
 Stealth Gray version.]]
 ATT.SortOrder = 0
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.053
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
@@ -1152,6 +1274,12 @@ ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.032
+
 ATT.Attachments = {
     {
         PrintName = "Optic",
@@ -1201,6 +1329,12 @@ It will provide an adaptable platform for the user to mount their accessories.
 Can be combined with the TRAX 2 rail for maximum amount of modularity.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 0.966
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_strike_industries_trax_1.mdl"
@@ -1261,6 +1395,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_strike_industries_trax_2.mdl"
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 0.966
 
 ATT.Category = {"eft_mount_trax_bridge"}
 
@@ -1344,6 +1484,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.RequireElements = {"gasblock_vdmcs"}
 ATT.ActivateElements = {"nogp34"}
 
+ATT.EFTErgoAdd = 11
+ATT.CustomPros = { Ergonomics = "+11" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.943
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ufm_akm_long.mdl"
 ATT.LHIK = true
@@ -1412,6 +1558,10 @@ ATT.Description = [[A standard wooden handguard for VPO-136 Vepr KM carbines, ma
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.054
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_136.mdl"
 ATT.LHIK = true
@@ -1440,6 +1590,10 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_vepr_km_vpo_209.mdl"
 ATT.LHIK = true
 
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+ATT.HeatCapacityMult = 1.054
+
 ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
@@ -1463,6 +1617,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_wasr.mdl"
 ATT.LHIK = true
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.05
 
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nogp34"}
@@ -1489,6 +1649,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_x47.mdl"
 ATT.LHIK = true
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.96
 
 ATT.RequireElements = {"gasblock"}
 ATT.ExcludeElements = {"railedcover", "eft_gas_vityaz_std"}
@@ -1560,6 +1726,12 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_xrsu.mdl"
 ATT.LHIK = true
 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.931
+
 ATT.RequireElements = {"gasblock"}
 ATT.ActivateElements = {"nodovetail"}
 
@@ -1583,14 +1755,14 @@ ATT.Attachments = {
     },
     {
         PrintName = "R Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical"},
         Pos = Vector(1.23, 3, 0.5),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 1),
     },
     {
         PrintName = "L Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical"},
         Pos = Vector(-1.23, 3, 0.5),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 1),
@@ -1623,6 +1795,12 @@ Black version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.072
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"
@@ -1676,6 +1854,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
 
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.072
+
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"
 ATT.ModelSkin = 1
@@ -1727,6 +1911,12 @@ Plum-colored polymer version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Folder = "MAGPUL"
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.072
 
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_magpul_zhukov_u.mdl"

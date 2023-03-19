@@ -20,9 +20,8 @@ SWEP.Description = [[The AK-104 7.62x39mm assault rifle is a further modernized 
 
 
 SWEP.StandardPresets = {
-    -- "[AK-104]XQAAAQDIAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPdZz6I+T5FBjEpZ7hDcCWCcOwEozqinceVe1Q676wOtx494pZz9WA0jpZ0h4A7Ads4ldBWs1rf+QT+TlQm44ywA9m+XYVbHpyvYZrNZNYEZ9L4pVcLo5WW4R5PBUT90tTQNzKalzCFV+gd65IIqi6I4XwLqg8uKC1MXCA044gr0E9f8eEWAZDh3FsbjpeiRlkiL8FAA==",
-    "[T-SAW]XQAAAQAEAwAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjnPfgL3vQ9tPB4Qt1gNXFwuXi85bB8nHzwFsqZsafvmDCW4hnM9NUep8CoyWke/qbDjQZxUrTHMYGRYUfZJfTYjAcO/BHGyo7+opev/eaEjA9MPOixwOcwH9qDw5lOcxdGVqSxPQow4ntPSgbw4T3DREuaWMivoHGMBwff8kxK+TkLpYMd0cSuTF2ZQKPexImz2jdCsA+epf3jOqyQOA/4tvJWNVerkZfbwvg0dftftJlpkKEEozufTHblgpXtSiWnApkTq/8HDbDksKHI1EcgYKUb3J7jF67IOQcjRxpso7eI2xffBqDHJnEdLgRnENGy2tSpTrp9m+zMe+DWDYA==",
-    "[RPKT mod.1]XQAAAQAuAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPoMO8XlQdGBUjhSBDwbfi0IbkGmNOVakU1G0i6u8hyUFia1zrLf2AdBQbWYaAR3AwzhHvMzbGNfTUpARR2MmOdKTSaQohiRHGc6aiFaA0EsLahKCuHWII6kWXL45eiCLgK1tWAKk7VnPD7Bjcy4Nyww/fkc+4rou3NtPzuUEmCb0ZdmNPe57Ao87PYRsWUfFDX1zkZmAa8ZAc6RTKHRlz2G9furR8BaEgB54ix9GWoSFG6NonOHGpbOHHaTNpyJ+tUOlDsZmnlI5s2oHY6ZLjWzJXS66ybRGsUXC2E=",
+    "[T-SAW]XQAAAQDVAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3yt/HL+2WrKrxdbEHdBAB52cI8PeNuZxWLdyZAUvA9D0UI7S3t8i2u5G2FgHRwkA3cDfpzv8auYRXjT0wM98KMh2PYmmaYTYa+u/Z34J8u6eRk+YsjdvNh/iHmZaA7AhmqDHHmrvX11+PsqHPbfNCU1OEMUzA+7bTt2TCj4QexubDAZGlFSfBjgPMwG21zQHqEWBFbTcT5y3tbIb4sv6kUT2P1tx4q1d9LPqMyCm4laS8pHoYA7KSsvPg6tZWgsEokWbE0v1di4ktrUjSfpwdfAMVsYo4gZ3f0g5bo1mL+MnZ5HyjmYSYhKlWFx1tsG7nItwHqZi4FOMx6JUZnTfruDfE=",
+    "[RPKT mod.1]XQAAAQAzAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3q8av8sfr4joy8TBpyQqlfhuos/pVSiI+AOqIUaIIt/RGh2iCnaQ0eozWEIVn9+1at3nWsJDgubdA4CmNgM1GfWeYvSanxyPiE5KvdDhEKKa7jfkZGY9qKue0DCGqVEpZiYUiCmKa20sZO3+aQAVQVEpoIVkRkYa7lisgKgsMKE96iQiyzW0E9Nu6okTgFuAyfbvurEWqD3nEXjDpB4lbLvVu9EvIbjaoTWjS/XA9PFRODv/qANyBkrcYI/8e+ba5HGnVi1VPHRmQMleSawusvwWJBV4BiIA==",
 }
 
 SWEP.BarrelLength = 38
@@ -474,7 +473,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.1, 0.1),
         ExcludeElements = {"norearsight"},
-        Installed = "eft_rs_ak_ak74m"
+        Installed = "eft_rs_ak_ak105"
     },
     {
         PrintName = "Charge",

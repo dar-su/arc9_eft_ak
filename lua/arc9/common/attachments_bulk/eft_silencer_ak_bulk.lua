@@ -18,7 +18,18 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_akm_hexagon_akm_762x39.
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
 
+ATT.EFTErgoAdd = -22
+ATT.CustomCons = { Ergonomics = "-22" }
+ATT.RecoilMult = 0.91
+ATT.VisualRecoilMult = 0.91
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.145
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_ak74_hexagon")
 
@@ -40,7 +51,19 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_akm_hexagon_akm_762x39.
 ATT.Category = {"eft_akm_muzzle"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
 
+
+ATT.EFTErgoAdd = -23
+ATT.CustomCons = { Ergonomics = "-23" }
+ATT.RecoilMult = 0.91
+ATT.VisualRecoilMult = 0.91
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_akm_hexagon")
 
@@ -62,7 +85,21 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_akm_zenit_dtk-4m_762x39
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
 
+ATT.EFTErgoAdd = -21
+ATT.CustomCons = { Ergonomics = "-21" }
+ATT.RecoilMult = 0.915
+ATT.VisualRecoilMult = 0.915
+ATT.SpreadMult = 1.02
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_dtk4m")
 
@@ -84,6 +121,18 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_ak_hexagon_dtkp_762x39.
 ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
+
+ATT.EFTErgoAdd = -21
+ATT.CustomCons = { Ergonomics = "-21" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_hexagon_dtkp")
@@ -101,11 +150,23 @@ ATT.Description = [[PBS-1 (Pribór Besshúmnoy Strel'bý - "Silent Firing Device
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -25
+ATT.CustomCons = { Ergonomics = "-25" }
+ATT.RecoilMult = 0.88
+ATT.VisualRecoilMult = 0.88
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_akm_tochmash_pbs-1_762x39.mdl"
 
 ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
 
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_pbs1")
@@ -123,11 +184,22 @@ ATT.Description = [[The PBS-4 (Pribór Besshúmnoy Strel'bý - "Silent Firing De
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -25
+ATT.CustomCons = { Ergonomics = "-25" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_aks74u_tochmash_pbs-4_545x39.mdl"
 
 ATT.Category = {"eft_ak74_muzzle"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
 
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_pbs4")
@@ -145,11 +217,23 @@ ATT.Description = [[The TGP-A tactical muzzle device/suppressor, manufactured by
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -25
+ATT.CustomCons = { Ergonomics = "-25" }
+ATT.RecoilMult = 0.895
+ATT.VisualRecoilMult = 0.895
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_ak74_spectehnika_tgpa_545x39.mdl"
 
 ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 6
 
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_tgpa")
@@ -167,11 +251,22 @@ ATT.Description = [[The "Wafflemaker" prototype sound suppressor manufactured by
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -19
+ATT.CustomCons = { Ergonomics = "-19" }
+ATT.RecoilMult = 0.93
+ATT.VisualRecoilMult = 0.93
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.015
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_hex_hexagon_wafflemaker_suppressor_545x39.mdl"
 
 ATT.Category = {"eft_ak_wafflemaker"}
 
 ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
 
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_wafflemaker")

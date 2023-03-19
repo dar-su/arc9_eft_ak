@@ -19,7 +19,9 @@ SWEP.Trivia = {
 SWEP.Description = [[AKS-74U (Avtomat Kalashnikova Skladnoy 74 Ukorochenny - "Kalashnikov's Shortened Automatic rifle 74 with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size.]]
 
 SWEP.StandardPresets = {
-    "[AKS-74UB]XQAAAQBgAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxD+5S+tFGYiGEebFpIRUNv83wlTkDiviQXlkj8lEaVwnQL30zdrsV5M1cBkJuRE7W0jw5FUk3C4B4XV9R+ttNK3C7zkwosisxLNEZyxMqSU+WrJ1f99TeozFLh+GnW+hLQ76qLSqq7Qau56KV6xCVvmEi009o23fmiooE3z4ymvp8cR05WMewxtaPob0W7V1Ii3imp8DOwF",
+    "[AKS-74UN Zenit]XQAAAQB2AgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSC3q8NUessuKDcUAV19TGsm+fDsGZf0p6bPtFSi24kmm9K9xXQ+y35YOfWux0Ids2XAmpUdqe7VRvmxXUGaZWT03ih/NKjQxGLKrZg5aKFe2Sxeq6jNoZkeJ6OqMIf88P4trFSZm3Me16PXX0qs251c744kaEsoEqCZ7rIZ7sS0M3AV3jdIn8pk8CXORxk/Cgp5Jm7TPhWYgUYTnvQqRkswnXVqPse8+L177nlis9de/TRmfRK+iOcAvdqRx/XC5S9zffg7nMgVTJbwyfCMO98QUhF8DYOvHSsjq1UCnmpP+QmBXd1ZKMkD4bA==",
+    "[AKS-74UN Recon]XQAAAQDkAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxD+5S+tFGYiGEebFpIRUNv83wrOkIbDgvqXxf+p/s3o/A6y3OGCDwm5WCQvuUuTI5gtaWsK5+Kih+nLaK860af+L8A/tbsFEls+HJxQ8jJ3Zci398egw0VWV25xZeQMkY1/6V3nhIW+QFVGCElPSBqJz9vO+NYRdP/DV1fV0I7dH85yncbCZP8h5UuPC5gXdO95GEwkEVYYQE+MPS4CMsIUMHpbi0Tvicwf1vqg",
+    "[AKS-74UB]XQAAAQCiAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD84p1Xqnp4vLjHIxD+5S+tFGYiGEebFpIRUNv83wrOkIbDgvqXxf+p/kqiMmvIvYVD5WD84Hedl+MQR2nxl152NedJ1SN8SBHDaq5Ui8YhYq1mdhrxESDkYv6TUw6gor/ei9oktZps4yG6EWUIXU8FHV6Y5BEPF6izLrgpclTs8A74UxORdaa2oaB6PNzSsSUUK0Xi6tAbNAB7meBtky+4JMKK7WXRAA==",
 }
 
 SWEP.BarrelLength = 26
@@ -486,6 +488,11 @@ SWEP.Attachments = {
         ExcludeElements = nil,
         RequireElements = nil,
         Installed = "eft_aksu_gas_ak",
+        SubAttachments = {
+            {
+                Installed = "eft_aksu_hg_ak_std",
+            }
+        }
     }, 
     {
         PrintName = "Charge",
@@ -494,16 +501,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0.25),
-    },
-    {
-        PrintName = "Handguard",
-        Category = {"eft_aksu_handguard"},
-        Bone = "mod_gas_block",
-        Pos = Vector(0, -0.5, -0.44),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 3.8, -0.5),
-        Installed = "eft_aksu_hg_ak_std",
-        -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
     },
     {
         PrintName = "Conversion",

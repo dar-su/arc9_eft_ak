@@ -16,6 +16,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_akm_std.mdl"
 
+ATT.HeatCapacityMult = 0.995
+
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock"}
 
@@ -47,6 +49,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_akm_std.mdl"
+
+ATT.HeatCapacityMult = 0.995
 
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock"}
@@ -84,6 +88,12 @@ ATT.LHIK = true
 ATT.Category = {"eft_ak_gasblock"}
 
 
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.03
+
 ATT.Attachments = {
     {
         PrintName = "Optic",
@@ -120,6 +130,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_vpo136.mdl"
+
+ATT.HeatCapacityMult = 0.995
 
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock"}
@@ -163,6 +175,12 @@ ATT.Category = {"eft_ak_gasblock"}
 
 ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.955
+ATT.VisualRecoilMult = 0.955
+ATT.HeatCapacityMult = 0.93
 
 ATT.Attachments = {
     {
@@ -222,6 +240,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_pp1901_std.mdl"
 
+ATT.HeatCapacityMult = 0.995
+
 ATT.HasGas = true
 ATT.Category = {"eft_ak_gasblock"}
 ATT.ActivateElements = {"gasblock_vdmcs"}
@@ -264,6 +284,12 @@ ATT.Category = {"eft_ak_gasblock"}
 
 ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
+ATT.HeatCapacityMult = 0.956
 
 
 ATT.Attachments = {
@@ -333,6 +359,12 @@ ATT.Category = {"eft_ak_gasblock"}
 
 ATT.ExcludeElements = {"short_barrel"}
 ATT.ActivateElements = {"nogp34"}
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
+ATT.HeatCapacityMult = 0.956
 
 ATT.Attachments = {
     {

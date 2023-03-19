@@ -34,6 +34,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nodovetail"}
 
@@ -115,6 +118,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 ATT.Category = {"eft_saiga12_handguard"}
 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.021
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_340_lhik.mdl"
 ATT.LHIK = true
 
@@ -191,6 +200,10 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.HeatCapacityMult = 1.026
+
 ATT.Category = {"eft_saiga12_handguard"}
 
 
@@ -214,6 +227,12 @@ ATT.HasHG = true
 
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nodovetail"}
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 1.036
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_utgpro_lhik.mdl"
 ATT.LHIK = true
@@ -274,6 +293,12 @@ ATT.Icon = Material("entities/eft_ak_attachments/saiga12/utgs.png", "mips smooth
 ATT.Description = [[The UTG PRO MTU002 Tactical Quad Rail Short Top is a lightweight aircraft grade aluminum handguard with sling swivel, designed for installation on Saiga carbines. Manufactured by Leapers Inc.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 1.017
 
 ATT.HasHG = true 
 
@@ -341,6 +366,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
 
+ATT.EFTErgoAdd = -26
+ATT.CustomCons = { Ergonomics = "-26" }
+
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
@@ -361,6 +389,9 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
+
+ATT.EFTErgoAdd = -7
+ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
@@ -386,6 +417,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
 ATT.ChamberSize = 1
 ATT.ClipSize = 5
 
@@ -407,6 +441,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/saiga12/thr.png", "mips smooth"
 ATT.Description = [[A standard-issue threading protection tube for SOK-12.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Category = {"eft_saiga12_muzzle"}
 
@@ -472,6 +509,11 @@ ATT.Icon = Material("entities/eft_ak_attachments/stock/74m.png", "mips smooth")
 ATT.Description = [[A folding polymer AK-styled stock for SOK-12, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.66
 
 ATT.Category = {"eft_saiga12_stock"}
 

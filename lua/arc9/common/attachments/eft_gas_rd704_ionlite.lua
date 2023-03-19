@@ -8,6 +8,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true 
 ATT.HasHG = true 
 
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+ATT.HeatCapacityMult = 0.945
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_rd704_ionlite.mdl"
 ATT.LHIK = true
 

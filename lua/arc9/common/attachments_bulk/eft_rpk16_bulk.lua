@@ -16,6 +16,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasGas = true
 ATT.Category = {"eft_rpk16_barrel"}
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 1.02
+ATT.PhysBulletMuzzleVelocityMult = 0.92
+
 
 ARC9.LoadAttachment(ATT, "eft_rpk16_barrel_370")
 
@@ -40,6 +47,15 @@ ATT.CustomizeSnapshotFOV = 97
 ATT.MuzzleEffectQCA = 5
 ATT.BarrelLengthAdd = 7
 
+
+ATT.EFTErgoAdd = -11
+ATT.CustomCons = { Ergonomics = "-11" }
+ATT.RecoilMult = 0.93
+ATT.VisualRecoilMult = 0.93
+ATT.HeatCapacityMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
+
 ATT.Category = {"eft_rpk16_barrel"}
 
 
@@ -61,6 +77,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/rpk16_hg.mdl"
 ATT.LHIK = true 
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.038
 
 -- ATT.RequireElements = {"gasblock"}
 ATT.Category = {"eft_rpk16_handguard"}
@@ -156,6 +178,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_rpk16_izhmash_rpk16_std_5
 
 ATT.Category = {"eft_rpk16_muzzle"}
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.92
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 
 ARC9.LoadAttachment(ATT, "eft_rpk16_muzzle_std")
 
@@ -173,6 +201,9 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rpk16_dustcover"}
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Attachments = {
     {
@@ -260,6 +291,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_rpk_stock_tube.mdl"
 
 ATT.Category = {"eft_ak74m_stock", "eft_rpk16_stock"}
+
+ATT.RecoilMult = 0.96
+ATT.VisualRecoilMult = 0.96
 
 
 ATT.Attachments = {

@@ -5,7 +5,8 @@ ATT.Description = [[The key design difference from the standard AK is a side mou
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
--- ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rear_sights.mdl"
--- ATT.ModelBodygroups = "2"
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
+
 ATT.ActivateElements = {"nmount"}
 ATT.Category = {"eft_ak74_conv"}

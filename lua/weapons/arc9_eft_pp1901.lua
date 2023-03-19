@@ -19,8 +19,8 @@ SWEP.Trivia = {
 SWEP.Description = [[The PP-19-01, also known as "Vityaz", is a Russian submachine gun chambered in 9x19 developed in 2004 by Izhmash based on the AK platform. A standard-issue submachine gun in many law enforcement agencies and military units of the Russian Federation.]]
 
 SWEP.StandardPresets = {
-    -- "[Saiga-9]XQAAAQCbAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kSblwda3J+JQK9HaKFfx3/QTlMwigssSN1YefZ6JauA9jHjTIa4goFstxSgD8nHpInYzPY28sRlS2bR64Ro3FwRLDWBj3dLKZttrflDBP6RZRI8YXQXUG0ckZoirclgOjCxQgdvJFnl3tLzvCjH8bBVUkrQzkBHvtnvSCEgPuSTVhnnNCYbPe2Re/lnIaNoZ3KLy8JtOF2rLMQ79OwwA=",
-    "[Zenit]XQAAAQBGAgAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAkJiOqPr8+FRCoC13SPjCtJ7zKLcgDgavRNZmaBxbVjig/5ICHm4EKp+ZNZpvN2MVzZfkRFd9fGSaTlA+sjhx2tkDA/JKAjNobpQOPMIyg8YcVGr3iOK5kmcTYzaiKKxIzPYvU1YxIg7Djckc5ka46yzrLoTSQG9Ksk9goxoORDf/cJ58d6l7wEEgpwz1uivuQRYyYzMsJNE3O3rozp0zXRmFrawrlMsszWmZDGAytBGnhKnKalGyzM4vjgS75C9HAUtWbhCgfZHMUT7oUkf3WCuiuqv+6KLDLZEUnWy1bwlN",
+    "[Zenit]XQAAAQBbAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD/pgeCp/dfvjZqbCOeMYAVob4OX9OiW0UTIn4YeChQgKdZ19uSRBCCP0ZgJb7fIexd8dQ7yGEiY387+00bk2oxkRox3rtVuEtk8k+VMusTMotMr1nisk2agEkPJ8SBxBYxIyZ3GmV69N4WcDe9+RWQMSXDuRYmu9A7uBii+ML/ZJ7M+g68BATzpo5I62+sSGNhuGsS+I1f+5q3pR5adqbMYyzC9KbXumNyXdh+RBIoZZLnXhzJMKqbOBlCc5iA5q4NhJ/Hs4v0/ESoWfsGIoT1HD0C8CYtBMjMfUUPoCUpN7xZf71VcMjbZ1tu",
+    "[FSB]XQAAAQBoAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD/pgeCp/dfvjZqbCOeMYAVob4OX9OiW0UTIn4YeChQgKdZ19uSRBCCP0ZgJb7W7FuZWvYNPbwyqBe9cKZ8DalV6G/B5bXPhnMoj1LJW6S7pBD4r3OoIYvZyouA2A4lcc/uNwTDX5/tCvZ4d9yxhxxlvZdOZXysgPlgtuVyGtEJDsV5z+qTjqUOcpAg6g2QonzY+VqjwdqTQ11M+ZMd4raccHBdJan4riUyTpLRSvSFU029FLYaanZxQmIwlU4a2MFlf3GbbpB4yjVKONmeioWEU8dcYItKG/4hzg72drAq31MA",
 }
 
 SWEP.BarrelLength = 26

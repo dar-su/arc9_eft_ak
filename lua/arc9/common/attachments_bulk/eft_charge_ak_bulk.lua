@@ -14,6 +14,9 @@ This handle works on all Vepr Rifles and Shotguns, Saiga Rifles and Shotguns, an
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_css.mdl"
 ATT.Category = {"eft_ak_charge"}
 
@@ -36,6 +39,9 @@ The RP-1 is installed above the base handle through kit-enclosed bolts.
 © Zenit]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ak_zenit_rp1.mdl"
 ATT.Category = {"eft_ak_charge"}

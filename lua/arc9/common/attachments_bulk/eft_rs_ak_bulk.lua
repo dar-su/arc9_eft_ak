@@ -182,6 +182,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_rifle_dynamics.mdl"
 
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
+
 ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight"}
 
 
@@ -202,6 +205,9 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_tula_tt01.mdl"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.ExcludeElements = {"railedcover", "nolongrear"}
 ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight"}

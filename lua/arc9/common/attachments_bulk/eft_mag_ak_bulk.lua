@@ -20,6 +20,9 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
+
 ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
@@ -48,6 +51,9 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+
 ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
@@ -71,6 +77,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l18_545x39_45.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l18_545x39_45.mdl"
+
+ATT.EFTErgoAdd = -7
+ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -100,6 +109,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l20_545x39_30.mdl"
 
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+
 ATT.Category = {
     "eft_ak_545_mag",
 }
@@ -118,7 +130,7 @@ ARC9.LoadAttachment(ATT, "eft_mag_ak_6l20_545_30")
 
 ATT = {}
 
-ATT.PrintName = "AK-74 5.45x39 6L23 30-round magazine"
+ATT.PrintName = "AK-74 5.45x39 6L23 \"Plum\" 30-round magazine"
 ATT.CompactName = "6L23"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/5456l23p.png", "mips smooth")
 ATT.Description = [[A 30-round polymer Izhmash 6L23 magazine for 5.45x39 ammo, for AK-74 and compatible systems.
@@ -128,6 +140,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_plum_545x39_30.mdl"
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -156,6 +171,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l23_545x39_30.mdl"
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -191,6 +209,9 @@ ATT.Category = {
 
 ATT.ActivateElements = {"long545"}
 
+ATT.EFTErgoAdd = -8
+ATT.CustomCons = { Ergonomics = "-8" }
+
 ATT.ChamberSize = 1
 ATT.ClipSize = 45
 
@@ -217,6 +238,9 @@ ATT.Category = {
     "eft_ak_556_mag",
 }
 
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+
 ATT.ActivateElements = {"556"}
 
 ATT.ChamberSize = 1
@@ -240,6 +264,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l31_545x39_60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l31_545x39_60.mdl"
+
+ATT.EFTErgoAdd = -16
+ATT.CustomCons = { Ergonomics = "-16" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -269,6 +296,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_bakelite_762x39_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_bakelite_762x39_40.mdl"
 
+ATT.EFTErgoAdd = -7
+ATT.CustomCons = { Ergonomics = "-7" }
+
 ATT.Category = {
     "eft_ak_762_mag",
 }
@@ -294,6 +324,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/mag/762molot40.png", "mips smoo
 ATT.Description = [[The 6P2 Sb-11 standard-issue 40-round 7.62x39 magazine for the RPK LMG from 1961 and onward, fits any AK-compatible weapon. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -7
+ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_61_sector_762x39_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_61_sector_762x39_40.mdl"
@@ -327,6 +360,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak103_std_762x39_30.mdl"
 
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+
 ATT.Category = {
     "eft_ak_762_mag",
 }
@@ -355,6 +391,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
 ATT.Category = {
     "eft_ak_545_mag",
 }
@@ -381,6 +420,9 @@ ATT.Description = [[A 30-round polymer US Palm AK30 magazine for 7.62x39 AK and 
 Flat Dark Earth version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
@@ -414,6 +456,9 @@ Black version.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 
@@ -445,6 +490,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_762x39_30.mdl"
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
 ATT.Category = {
     "eft_ak_762_mag",
 }
@@ -474,6 +522,9 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_76
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_akms_aluminium_762x39_30.mdl"
 ATT.ModelSkin = 1
 
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+
 ATT.Category = {
     "eft_ak_762_mag",
 }
@@ -501,6 +552,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_rpk_drum_762x39_75.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_rpk_drum_762x39_75.mdl"
+
+ATT.EFTErgoAdd = -26
+ATT.CustomCons = { Ergonomics = "-26" }
 
 ATT.Category = {
     "eft_ak_762_mag",
@@ -530,6 +584,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_magpul_pmag_30_ak74_gen_m3_545x39_30.mdl"
 
+ATT.EFTErgoAdd = -1.5
+ATT.CustomCons = { Ergonomics = "-1.5" }
+
 ATT.Category = {
     "eft_ak_545_mag",
 }
@@ -554,6 +611,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/mag/762pmag.png", "mips smooth"
 ATT.Description = [[A 30-round polymer Magpul Pmag 30 AK/AKM GEN M3 magazine for 7.62x39 AK and compatible weapons. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1.5
+ATT.CustomCons = { Ergonomics = "-1.5" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
@@ -584,6 +644,9 @@ ATT.Description = [[A 30-round polymer Magpul Pmag 30 AK/AKM GEN M3 magazine 7.6
 The magazine is painted in a tactical banana yellow color.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1.5
+ATT.CustomCons = { Ergonomics = "-1.5" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30.mdl"
@@ -618,6 +681,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_promag_ak_a_16_drum_762x39_73.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_promag_ak_a_16_drum_762x39_73.mdl"
 
+ATT.EFTErgoAdd = -18
+ATT.CustomCons = { Ergonomics = "-18" }
+
 ATT.Category = {
     "eft_ak_762_mag",
 }
@@ -650,6 +716,9 @@ ATT.Category = {
     "eft_ak_762_mag",
 }
 
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
 ATT.ActivateElements = {"10rnd"}
 
 ATT.ChamberSize = 1
@@ -673,6 +742,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk16_drum_545x39_95.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk16_drum_545x39_95.mdl"
+
+ATT.EFTErgoAdd = -24
+ATT.CustomCons = { Ergonomics = "-24" }
 
 ATT.Category = {
     "eft_ak_545_mag",
@@ -702,6 +774,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_arsenal_cwp_mag_556x45_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_arsenal_cwp_mag_556x45_30.mdl"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
 ATT.Category = {
     "eft_ak_556_mag",
 }
@@ -730,6 +805,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_10.mdl"
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
 ATT.Category = {
     "eft_ak_545_mag",
 }
@@ -754,6 +832,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/mag/762ultimag.png", "mips smoo
 ATT.Description = [[A 30-round windowed polymer magazine for 7.62x39 AKs and compatible weapons, manufactured by FAB Defense. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_ultimag.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_ultimag.mdl"
@@ -782,6 +863,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/mag/762x47.png", "mips smooth")
 ATT.Description = [[The X-47 is a 50-round drum magazine for 7.62x39 AK family assault rifles. Manufactured by X Products. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -15
+ATT.CustomCons = { Ergonomics = "-15" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_x_products_x_47_drum_762x39_50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_x_products_x_47_drum_762x39_50.mdl"

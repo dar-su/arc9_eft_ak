@@ -13,6 +13,8 @@ ATT.Description = [[A standard gas tube for PP-19-01 Vityaz submachine guns. Gas
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.HeatCapacityMult = 0.985
+
 ATT.HasGas = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_gb_pp1901.mdl"
 
@@ -45,6 +47,9 @@ ATT.Description = [[The Izh.9x19 Sb.7 magazine for Saiga-9 carbines with a 10-ro
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
 ATT.DropMagazineAmount = 1
 
@@ -73,6 +78,9 @@ ATT.Description = [[The PUFGUN SG-919 20 magazine for PP-19-01 Vityaz 9x19 with 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_20.mdl"
 ATT.DropMagazineAmount = 1
 
@@ -100,6 +108,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/vityaz/puf.png", "mips smooth")
 ATT.Description = [[The PUFGUN SG-919 30 magazine for PP-19-01 Vityaz 9x19 with a 30-round ammo capacity. Tactical banana yellow camouflage.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_30.mdl"
 ATT.DropMagazineAmount = 1
@@ -159,6 +170,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_saiga_9_izhmash_saiga_9_std_9x19.mdl"
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.93
+ATT.VisualRecoilMult = 0.93
+ATT.PhysBulletMuzzleVelocityMult = 1.005
+
 ATT.Category = {"eft_pp1901_muzzle"}
 
 
@@ -176,6 +193,12 @@ ATT.Icon = Material("entities/eft_ak_attachments/vityaz/muzzle.png", "mips smoot
 ATT.Description = [[A standard muzzle brake/compensator made by Izhmash for PP-19-01 Vityaz 9x19 SMG.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.RecoilMult = 0.94
+ATT.VisualRecoilMult = 0.94
+ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_pp-19-01_izhmash_vityaz_std_9x19.mdl"
 
@@ -199,6 +222,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vityaz_dustcover"}
 ATT.ActivateElements = {"railedcover"}
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
@@ -225,6 +251,9 @@ ATT.Icon = Material("entities/eft_ak_attachments/vityaz/dc.png", "mips smooth")
 ATT.Description = [[A standard-issue dust cover for PP-19-01 Vityaz SMGs, manufactued by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.Category = {"eft_vityaz_dustcover"}
 
@@ -271,6 +300,14 @@ ATT.MuzzleDevice = true
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
+ATT.EFTErgoAdd = -16
+ATT.CustomCons = { Ergonomics = "-16" }
+ATT.RecoilMult = 0.91
+ATT.VisualRecoilMult = 0.91
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
 
 ARC9.LoadAttachment(ATT, "eft_vityaz_silencer_std")
 
@@ -290,6 +327,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vityaz.mdl"
 
 ATT.Category = {"eft_vityaz_stock"}
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.66
 
 ATT.Attachments = {
     {

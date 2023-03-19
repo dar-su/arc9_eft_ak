@@ -6,7 +6,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SubCategory = "Shotguns"
 SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
-SWEP.PrintName = "Saiga-12ga ver.10"
+SWEP.PrintName = "Saiga 12ga ver.10"
 SWEP.Class = "Semi-automatic shotgun"
 SWEP.Trivia = {
     Manufacturer1 = "Kalashnikov Concern",
@@ -17,6 +17,10 @@ SWEP.Trivia = {
 }
 
 SWEP.Description = [[A semi-automatic 12 gauge shotgun with a folding stock, equipped with a firing mechanism safety lock that only allows firing from extended stock position. Features a short 430mm barrel.]]
+
+SWEP.StandardPresets = {
+    "[NERFGUN]XQAAAQC+AgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kQ7VsP9jgOqWWHs4/ZUT3WGZX3+aTyGCpo3QvMrcYGcTK2dLQmhHYNgfR5MXviV71NEUNuFB4n0mJ8FynN6qWTJjKAihTvYPKBxO2aposWEeGklTtKw54DEIYIV3CEjT0Q1avTwL+Kt+W8F2iLVYZmSzWtekmvtwgbxYAjQGD4Ndr2bKiZpZ5TokTza6I5b1sL1ghCTgoM6KftUvIZ4549rTJgwDMGH7kGcZnbl7tK27vwXiCHJovY2xpUm5VcV4K8nK1Gg92Zy8UOoTC8RBbxdVLdWsFAUMY6THf+CFY8EviJD2oN9rCTPxDxVESeNMWE72D96kILVq4+hCuiW2wRyUOivpBeZSCw4sj//H2AKxz3PiOswLOhSrptrbdWKm7RPpXUxBDAA=="
+}
 
 SWEP.BarrelLength = 39
 SWEP.Slot = 2
