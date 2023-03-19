@@ -389,18 +389,16 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
-
         if ARC9EFTBASE and SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
         end
 
-        return "jam" .. rand
+        return "jam_" .. rand
     end
     
     if anim == "ready" then return anim end -- fcudfjhgfioudhmfiojm
-
     return anim .. ending
     -- return anim .. 3
 end
@@ -681,7 +679,7 @@ SWEP.Animations = {
 
 
 
-    ["jam0"] = {
+    ["jam_0"] = {
         Source = {"misfire_0", "misfire_1"}, -- misfire
         EventTable = {
             { s = randspin, t = 0.22 },            
@@ -691,7 +689,7 @@ SWEP.Animations = {
         },
         EjectAt = 0.88
     },
-    ["jam2"] = {
+    ["jam_2"] = {
         Source = "jam_feed", -- jam feed
         EventTable = {
             { s = randspin, t = 2/24 },
@@ -707,7 +705,7 @@ SWEP.Animations = {
             { s = randspin, t = 3.5 },
         },
     },
-    ["jam3"] = {
+    ["jam_3"] = {
         Source = "jam_hardjam", -- jam hard
         EventTable = {
             { s = randspin, t = 0.16 },
@@ -727,7 +725,7 @@ SWEP.Animations = {
         },
         EjectAt = 4.21
     },
-    ["jam4"] = {
+    ["jam_4"] = {
         Source = "jam_softjam", -- jam soft
         EventTable = {
             { s = randspin, t = 0.18 },
@@ -740,7 +738,7 @@ SWEP.Animations = {
             { s = randspin, t = 2.8 },
         }
     },
-    ["jam1"] = {
+    ["jam_1"] = {
         Source = "jam_shell", -- jam shell
         EventTable = {
             { s = randspin, t = 0.1 },
