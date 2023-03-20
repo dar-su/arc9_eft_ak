@@ -28,7 +28,7 @@ SWEP.BarrelLength = 37
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_akms.mdl"
-SWEP.ViewModelFOVBase = 62
+SWEP.ViewModelFOVBase = 65
 SWEP.MirrorVMWM = true
 SWEP.DefaultBodygroups = "00000000000000"
 
@@ -167,7 +167,7 @@ SWEP.RecoilKickDamping = 10
 --          Heating
 
 SWEP.Malfunction = true 
-SWEP.MalfunctionNeverLastShoot = true 
+SWEP.MalfunctionNeverLastShoot = false 
 SWEP.MalfunctionMeanShotsToFail = 450
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
@@ -243,9 +243,10 @@ SWEP.IronSights = {
     Ang = Angle(0, 0.09, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
+    ViewModelFOV = 54
 }
 
-SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
+SWEP.ActivePos = Vector(-0.7, -4.5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
@@ -561,3 +562,4 @@ if ARC9EFTBASE then
 else
     print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
+SWEP.AimDownSightsTimeMultShooting = 4

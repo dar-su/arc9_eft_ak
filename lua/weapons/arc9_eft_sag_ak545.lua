@@ -28,7 +28,7 @@ SWEP.BarrelLength = 38
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_sag_ak545.mdl"
-SWEP.ViewModelFOVBase = 62
+SWEP.ViewModelFOVBase = 65
 SWEP.MirrorVMWM = true
 SWEP.DefaultBodygroups = "0000000000"
 
@@ -169,7 +169,7 @@ SWEP.RecoilKickDamping = 10
 --          Heating
 
 SWEP.Malfunction = true 
-SWEP.MalfunctionNeverLastShoot = true 
+SWEP.MalfunctionNeverLastShoot = false 
 SWEP.MalfunctionMeanShotsToFail = 450
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
@@ -242,9 +242,10 @@ SWEP.IronSights = {
     Ang = Angle(0, 0, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
+    ViewModelFOV = 54
 }
 
-SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
+SWEP.ActivePos = Vector(-0.7, -4.5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
@@ -289,7 +290,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 SWEP.CamQCA_Mult = 0.36
 SWEP.CamQCA_Mult_ADS = 0.05
 
-SWEP.MuzzleParticle = "muzzleflash_ak47"
+SWEP.MuzzleParticle = "muzzleflash_ak74"
 
 SWEP.CaseEffectQCA = 2
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/545x39.mdl"
@@ -482,3 +483,4 @@ SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
 else
 print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
+SWEP.AimDownSightsTimeMultShooting = 4

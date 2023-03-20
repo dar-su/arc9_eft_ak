@@ -26,7 +26,7 @@ SWEP.BarrelLength = 39
 SWEP.Slot = 2
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_saiga12k.mdl"
-SWEP.ViewModelFOVBase = 62
+SWEP.ViewModelFOVBase = 65
 SWEP.MirrorVMWM = true
 SWEP.DefaultBodygroups = "000000010"
 
@@ -61,16 +61,16 @@ SWEP.DispersionSpreadAddMove = 0.015
 
 --          Recoil
 
-SWEP.Recoil = 0.13*7
+SWEP.Recoil = 3
 
 SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.RecoilUp = 3
-SWEP.RecoilSide = 0.7
-SWEP.RecoilRandomUp = 0.9
-SWEP.RecoilRandomSide = 0.8
+SWEP.RecoilSide = 0.4
+SWEP.RecoilRandomUp = 1.8
+SWEP.RecoilRandomSide = 0.96
 
 SWEP.ViewRecoil = false 
 -- SWEP.ViewRecoil = false 
@@ -84,47 +84,59 @@ SWEP.RecoilAutoControl = 10
 SWEP.RecoilResetTime = 0.03
 SWEP.RecoilFullResetTime = 0.15
 
+
+
 SWEP.UseVisualRecoil = true 
-SWEP.VisualRecoil = 0.9
+SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultHipFire = 0.3
 SWEP.VisualRecoilMultSights = 0.3
+SWEP.VisualRecoilMultCrouch = 0.5
 
-SWEP.VisualRecoilCenter = Vector(2, 14, 2)
-SWEP.VisualRecoilUp = 75 -- Vertical tilt
-SWEP.VisualRecoilSide = 1 -- Horizontal tilt
+SWEP.VisualRecoilCenter = Vector(2, 24, 2)
+SWEP.VisualRecoilUp = 110 -- Vertical tilt
+SWEP.VisualRecoilSide = 1.4 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 25 -- Roll tilt
 
-SWEP.VisualRecoilPunch = 2 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilPunchMultHipFire = 3 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 5 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunchSights = -20 -- How far back visual recoil moves the gun
 
 
-SWEP.VisualRecoilSpringPunchDamping = 20 / 2.67
-SWEP.VisualRecoilDampingConst = 150 * 1.67
+SWEP.VisualRecoilSpringPunchDamping = 11
+SWEP.VisualRecoilDampingConst = 250
 SWEP.VisualRecoilSpringMagnitude = 2 / 1.67
-SWEP.VisualRecoilPositionBumpUp = -0.02
-SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
+SWEP.VisualRecoilPositionBumpUp = -0.12
+SWEP.VisualRecoilPositionBumpUpRTScope = -0.09
+SWEP.VisualRecoilPositionBumpUpHipFire = -0.07
 
 
-SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
-    if recamount > 3 then
-        recamount = math.Clamp((recamount - 3) / 33, 0, 1)
-        return springconstant * math.max(1, 10 * recamount), VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 0.8
-    end
-    return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
-end
+-- SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
+--     if recamount > 2 then
+--         recamount = math.Clamp((recamount - 2) / 6, 0, 1)
+--         return springconstant * math.max(1, 10 * recamount) * 15, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 0.75
+--     elseif recamount == 1 then
+--         return springconstant * 50, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 1
+--     end
+
+--     return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
+-- end
 
 
-SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount)
-    if recamount > 2 then
-        recamount = 1.65 - math.Clamp((recamount - 2) / 2, 0, 1)
+-- SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount)
+--     if recamount > 2 then
+--         recamount = 1.6 - math.Clamp((recamount - 2) / 3.5, 0, 1)
         
-        return up * recamount, side * 1.6, roll, punch * 0.9
-    end
-    return up, side, roll, punch
-end
+--         local fakerandom = 1 + (((69+recamount%5*CurTime()%3)*2420)%6)/10 
+        
+--         return up * recamount * fakerandom, side * 0.8, roll, punch * 0.5
+--     elseif recamount == 1 then
+--         return up * 2, side * 2, roll, punch
+--     end
+
+--     return up, side, roll, punch
+-- end
 
 
-SWEP.RecoilKick = 0.05
+SWEP.RecoilKick = 0
 SWEP.RecoilKickDamping = 10
 
 
@@ -132,7 +144,7 @@ SWEP.RecoilKickDamping = 10
 --          Heating
 
 SWEP.Malfunction = true 
-SWEP.MalfunctionNeverLastShoot = true 
+SWEP.MalfunctionNeverLastShoot = false 
 SWEP.MalfunctionMeanShotsToFail = 166
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
@@ -205,9 +217,10 @@ SWEP.IronSights = {
     Ang = Angle(0, 0.06, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
+    ViewModelFOV = 54
 }
 
-SWEP.ActivePos = Vector(-0.7, -3.1, -.35)
+SWEP.ActivePos = Vector(-0.7, -4.5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(50, 10, -45)
@@ -907,3 +920,4 @@ SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
 else
 print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
+SWEP.AimDownSightsTimeMultShooting = 4
