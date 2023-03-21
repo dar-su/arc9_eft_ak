@@ -132,7 +132,7 @@ SWEP.VisualRecoilSide = 9 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 25 -- Roll tilt
 
 SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilPunchSights = -70 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunchSights = -30 -- How far back visual recoil moves the gun
 
 
 SWEP.VisualRecoilSpringPunchDamping = 11
@@ -218,8 +218,13 @@ SWEP.Sway = 1
 SWEP.SwayMove = 0.5
 SWEP.SwayMidAir = 10
 SWEP.SwayMultCrouch = 0.75
-SWEP.SwayMultHipFire = 0.01
-SWEP.SwayMultSights = 0.15
+SWEP.SwayMultHipFire = 0.2
+SWEP.SwayMultSights = 0.25
+SWEP.HoldBreathTime = 40
+SWEP.RestoreBreathTime = 30
+SWEP.BreathInSound = false 
+SWEP.BreathOutSound = false
+SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.wav"
 
 
 --          Generic stats
@@ -515,6 +520,7 @@ SWEP.Attachments = {
 SWEP.EFTErgo = 35
 if ARC9EFTBASE then
 SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+    SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook
 else
 print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end

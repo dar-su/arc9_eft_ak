@@ -28,6 +28,14 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.wav"
+    elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.wav"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_55_762_30")
 
@@ -340,7 +348,14 @@ ATT.ActivateElements = {"long762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 40
 
-
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.wav"
+    elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.wav"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_6p2sb11_762_40")
 
@@ -502,6 +517,14 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 45
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.wav"
+    elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.wav"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_akms_762_30")
 
@@ -534,6 +557,14 @@ ATT.ActivateElements = {"762"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.wav"
+    elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.wav"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_alum_762_10")
 
@@ -565,6 +596,14 @@ ATT.ActivateElements = {"bigdrum"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 75
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.wav"
+    elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.wav"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_molot_762_75")
 
@@ -724,6 +763,14 @@ ATT.ActivateElements = {"10rnd"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magin_metal.wav"
+    elseif data.sound == "weapons/darsu_eft/ak/ak74_magout_plastic.wav" then
+        data.sound = "weapons/darsu_eft/ak/akm_magout_metal.wav"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ribbed_762_10")
 

@@ -182,7 +182,8 @@ local rst_10 = {
 
 local rst_10e = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button_hit.wav", t = 6/27 },
+    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
     { s = pouchout, t = 28/27 },
     { s = path .. "ak74_magin_plastic.wav", t = 44/27 },
     -- { s = path .. "ak74_magrelease_button.wav", t = 53/27 },
@@ -209,7 +210,8 @@ local rst_545 = {
 
 local rst_545e = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button_hit.wav", t = 6/27 },
+    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
     { s = pouchout, t = 28/27 },
     { s = path .. "ak74_magin_plastic.wav", t = 46/27 },
     -- { s = path .. "ak74_magrelease_button.wav", t = 53/27 },
@@ -236,7 +238,8 @@ local rst_60 = {
 
 local rst_60e = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button_hit.wav", t = 6/27 },
+    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
     { s = pouchout, t = 29/27 },
     { s = path .. "ak74_magin_plastic.wav", t = 47/27 },
     -- { s = path .. "ak74_magrelease_button.wav", t = 53/27 },
@@ -263,7 +266,8 @@ local rst_drum = {
 
 local rst_drume = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button_hit.wav", t = 6/27 },
+    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
     { s = pouchout, t = 32/27 },
     { s = path .. "ak74_magin_plastic.wav", t = 49/27 },
     -- { s = path .. "ak74_magrelease_button.wav", t = 56/27 },
@@ -281,7 +285,7 @@ local rst_magcheck = {
     { s = path .. "ak74_magrelease_button.wav", t = 17/27 },
     { s = path .. "ak74_magout_plastic.wav", t = 24/27 },
     { s = randspin, t = 36/27 },
-    { s = randspin, t = 65/27 },
+    -- { s = randspin, t = 65/27 },
     { s = path .. "ak74_magin_plastic.wav", t = 77/27 },
     { s = path .. "ak74_magrelease_button.wav", t = 83/27 },
     { s = randspin, t = 95/27 },
@@ -651,8 +655,8 @@ ARC9EFT.AK_Anims = {
         Source = "jam_misfire", -- misfire
         EventTable = {
             { s = randspin, t = 0.22 },            
-            { s = path.."akms_slider_up.wav", t = 0.68},
-            { s = path.."akms_slider_down.wav", t = 0.88},
+            { s = path.."ak74_slider_up.wav", t = 0.68},
+            { s = path.."ak74_slider_down.wav", t = 0.88},
             { s = randspin, t = 1.41 },        
         },
         EjectAt = 0.74
@@ -1051,8 +1055,8 @@ ARC9EFT.VITYAZ_Anims = {
         },
         EventTable = {
             { s = randspin, t = 9/28 },
-            { s = path.."akms_slider_up.wav", t = 21/28},
-            { s = path.."akms_slider_down.wav", t = 37/28},
+            { s = path.."ak74_slider_up.wav", t = 21/28},
+            { s = path.."ak74_slider_down.wav", t = 37/28},
             { s = randspin, t = 53/28 },
         },
     },
@@ -1092,8 +1096,8 @@ ARC9EFT.VITYAZ_Anims = {
         Source = {"misfire_0", "misfire_1"}, -- misfire
         EventTable = {
             { s = randspin, t = 0.2 },            
-            { s = path.."akms_slider_up.wav", t = 0.8},
-            { s = path.."akms_slider_down.wav", t = 1.04},
+            { s = path.."ak74_slider_up.wav", t = 0.8},
+            { s = path.."ak74_slider_down.wav", t = 1.04},
             { s = randspin, t = 1.55 },        
         },
         EjectAt = 0.77
