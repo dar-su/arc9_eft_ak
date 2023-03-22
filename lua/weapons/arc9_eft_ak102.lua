@@ -309,22 +309,22 @@ SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
-SWEP.ShootSound = { path .. "fire_new/ak101_outdoor_close_loop_1.wav", path .. "fire_new/ak101_outdoor_close_loop_2.wav", path .. "fire_new/ak101_outdoor_close_loop_3.wav", path .. "fire_new/ak101_outdoor_close_loop_4.wav" }
-SWEP.LayerSound = path .. "fire_new/ak101_outdoor_close_loop_tail.wav"
+SWEP.ShootSound = { path .. "fire_new/ak102_outdoor_close_loop_1.wav", path .. "fire_new/ak102_outdoor_close_loop_2.wav", path .. "fire_new/ak102_outdoor_close_loop_3.wav", path .. "fire_new/ak102_outdoor_close_loop_4.wav" }
+SWEP.LayerSound = path .. "fire_new/ak102_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/ak101_outdoor_silenced_close_loop_1.wav", path .. "fire_new/ak101_outdoor_silenced_close_loop_2.wav", path .. "fire_new/ak101_outdoor_silenced_close_loop_3.wav", path .. "fire_new/ak101_outdoor_silenced_close_loop_4.wav" }
-SWEP.LayerSoundSilenced = path .. "fire_new/ak101_outdoor_silenced_close_loop_tail.wav"
+SWEP.ShootSoundSilenced = { path .. "fire_new/ak102_outdoor_silenced_close_loop_1.wav", path .. "fire_new/ak102_outdoor_silenced_close_loop_2.wav", path .. "fire_new/ak102_outdoor_silenced_close_loop_3.wav", path .. "fire_new/ak102_outdoor_silenced_close_loop_4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/ak102_outdoor_silenced_close_loop_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/ak101_indoor_close_loop_1.wav", path .. "fire_new/ak101_indoor_close_loop_2.wav", path .. "fire_new/ak101_indoor_close_loop_3.wav", path .. "fire_new/ak101_indoor_close_loop_4.wav" }
-SWEP.LayerSoundIndoor = path .. "fire_new/ak101_indoor_close_loop_tail.wav"
+SWEP.ShootSoundIndoor = { path .. "fire_new/ak102_indoor_close_loop_1.wav", path .. "fire_new/ak102_indoor_close_loop_2.wav", path .. "fire_new/ak102_indoor_close_loop_3.wav", path .. "fire_new/ak102_indoor_close_loop_4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/ak102_indoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/ak101_indoor_silenced_close_loop_1.wav", path .. "fire_new/ak101_indoor_silenced_close_loop_2.wav", path .. "fire_new/ak101_indoor_silenced_close_loop_3.wav", path .. "fire_new/ak101_indoor_silenced_close_loop_4.wav" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/ak101_indoor_silenced_close_loop_tail.wav"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/ak102_indoor_silenced_close_loop_1.wav", path .. "fire_new/ak102_indoor_silenced_close_loop_2.wav", path .. "fire_new/ak102_indoor_silenced_close_loop_3.wav", path .. "fire_new/ak102_indoor_silenced_close_loop_4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/ak102_indoor_silenced_close_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/ak101_outdoor_distant_loop_1.wav", path .. "fire_new/ak101_outdoor_distant_loop_2.wav" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/ak101_outdoor_silenced_distant_loop_1.wav", path .. "fire_new/ak101_outdoor_silenced_distant_loop_2.wav" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/ak101_indoor_distant_loop_1.wav", path .. "fire_new/ak101_indoor_distant_loop_2.wav" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak101_indoor_silenced_distant_loop_1.wav", path .. "fire_new/ak101_indoor_silenced_distant_loop_2.wav" }
+SWEP.DistantShootSound = { path .. "fire_new/ak102_outdoor_distant_loop_1.wav", path .. "fire_new/ak102_outdoor_distant_loop_2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/ak102_outdoor_silenced_distant_loop_1.wav", path .. "fire_new/ak102_outdoor_silenced_distant_loop_2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/ak102_indoor_distant_loop_1.wav", path .. "fire_new/ak102_indoor_distant_loop_2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak102_indoor_silenced_distant_loop_1.wav", path .. "fire_new/ak102_indoor_silenced_distant_loop_2.wav" }
 
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
