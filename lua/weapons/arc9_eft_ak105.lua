@@ -149,7 +149,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
     if recamount > 2 then
         recamount = math.Clamp((recamount - 2) / 16, 0, 1)
-        return springconstant * math.max(1, 10 * recamount) * 105, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 0.75
+        return springconstant * math.max(1, 10 * recamount) * 105, VisualRecoilSpringMagnitude * 0.72, PUNCH_DAMPING * 0.75
     elseif recamount == 1 then
         return springconstant * 50, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 1
     end
@@ -354,8 +354,8 @@ SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
-SWEP.ShootSound = { path .. "fire_new/ak74m_outdoor_close_loop_1.wav", path .. "fire_new/ak74m_outdoor_close_loop_2.wav", path .. "fire_new/ak74m_outdoor_close_loop_3.wav", path .. "fire_new/ak74m_outdoor_close_loop_4.wav" }
-SWEP.LayerSound = path .. "fire_new/ak74m_outdoor_close_loop_tail.wav"
+SWEP.ShootSound = { path .. "fire_new/ak105_close_loop_1.wav", path .. "fire_new/ak105_close_loop_2.wav", path .. "fire_new/ak105_close_loop_3.wav", path .. "fire_new/ak105_close_loop_4.wav" }
+SWEP.LayerSound = path .. "fire_new/ak105_close_loop_tail.wav"
 
 SWEP.ShootSoundSilenced = { path .. "fire_new/ak74m_outdoor_silenced_close_loop_1.wav", path .. "fire_new/ak74m_outdoor_silenced_close_loop_2.wav", path .. "fire_new/ak74m_outdoor_silenced_close_loop_3.wav", path .. "fire_new/ak74m_outdoor_silenced_close_loop_4.wav" }
 SWEP.LayerSoundSilenced = path .. "fire_new/ak74_loop_outdoor_close_silenced_tail.wav"
@@ -366,7 +366,7 @@ SWEP.LayerSoundIndoor = path .. "fire_new/ak74m_indoor_close_loop_tail.wav"
 SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/ak74m_indoor_silenced_close_loop_1.wav", path .. "fire_new/ak74m_indoor_silenced_close_loop_2.wav", path .. "fire_new/ak74m_indoor_silenced_close_loop_3.wav", path .. "fire_new/ak74m_indoor_silenced_close_loop_4.wav" }
 SWEP.LayerSoundSilencedIndoor = path .. "fire_new/ak74m_indoor_silenced_close_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/ak74m_outdoor_distant_loop_1.wav", path .. "fire_new/ak74m_outdoor_distant_loop_2.wav" }
+SWEP.DistantShootSound = { path .. "fire_new/ak105_distant_loop_1.wav", path .. "fire_new/ak105_distant_loop_2.wav" }
 SWEP.DistantShootSoundSilenced = { path .. "fire_new/ak74m_outdoor_silenced_distant_loop_1.wav", path .. "fire_new/ak74m_outdoor_silenced_distant_loop_2.wav" }
 SWEP.DistantShootSoundIndoor = { path .. "fire_new/ak74m_indoor_distant_loop_1.wav", path .. "fire_new/ak74m_indoor_distant_loop_2.wav" }
 SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak74m_indoor_silenced_distant_loop_1.wav", path .. "fire_new/ak74m_indoor_silenced_distant_loop_2.wav" }

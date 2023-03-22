@@ -49,7 +49,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
     
             if ARC9EFTBASE and SERVER then
                 net.Start("arc9eftmagcheck")
-                net.WriteBool(false) -- accurate or not based on mag type
+                net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetMaxClip1()), 9)
                 net.WriteUInt(swep:GetMaxClip1(), 9)
                 net.Send(swep:GetOwner())
@@ -911,24 +911,21 @@ local rst_single = {
 local rst_def = {
     { s = randspin, t = 6/28 },
     { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
-    { s = path .. "ak74_magout_plastic.wav", t = 12/28 },
-    { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 22/28 },
-    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 30/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 62/28 },
-    { s = path .. "ak74_magin_plastic.wav", t = 64/28 },
+    { s = path .. "mpx_weap_magout_plastic.wav", t = 11/28 },
+    { s = pouchin, t = 22/28 },
+    { s = pouchout, t = 30/28 },
+    { s = path .. "mpx_weap_magin_plastic.wav", t = 62/28 },
     { s = randspin, t = 75/28 }
 }
 
 local rst_empty = {
     { s = randspin, t = 6/28 },
     { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
-    { s = path .. "ak74_magout_plastic.wav", t = 12/28 },
-    -- { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 2/28 },
-    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 25/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 51/28 },
-    { s = path .. "ak74_magin_plastic.wav", t = 53/28 },
+    { s = path .. "mpx_weap_magout_plastic.wav", t = 11/28 },
+    { s = pouchout, t = 25/28 },
+    { s = path .. "mpx_weap_magin_plastic.wav", t = 52/28 },
     { s = randspin, t = 65/28 },
-    { s = path .. "ak74_slider_up.wav", t = 83/28 },
+    { s = path .. "ak74_slider_up.wav", t = 82/28 },
     { s = path .. "ak74_slider_down.wav", t = 89/28 },
     { s = randspin, t = 97/28 },
     {hide = 0, t = 0},
@@ -938,12 +935,11 @@ local rst_empty = {
 
 local rst_magcheck = {
     { s = randspin, t = 5/24 },
-    { s = path .. "ak74_magrelease_button.wav", t = 21/24 },
-    { s = path .. "ak74_magout_plastic.wav", t = 25/24 },
+    { s = path .. "ak74_magrelease_button.wav", t = 20/24 },
+    { s = path .. "mpx_weap_magout_plastic.wav", t = 24/24 },
     { s = randspin, t = 35/24 },
     { s = randspin, t = 55/24 },
-    { s = path .. "ak74_magin_plastic.wav", t = 80/24 },
-    { s = path .. "ak74_magrelease_button.wav", t = 85/24 },
+    { s = path .. "mpx_weap_magin_plastic.wav", t = 78/24 },
     { s = randspin, t = 90/24 },
 }
 
@@ -1054,10 +1050,10 @@ ARC9EFT.VITYAZ_Anims = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = randspin, t = 9/28 },
-            { s = path.."ak74_slider_up.wav", t = 21/28},
-            { s = path.."ak74_slider_down.wav", t = 37/28},
-            { s = randspin, t = 53/28 },
+            { s = randspin, t = 9/27 },
+            { s = path.."akms_slider_up.wav", t = 21/27},
+            { s = path.."akms_slider_down.wav", t = 37/27},
+            { s = randspin, t = 53/27 },
         },
     },
     ["inspect_mag_9mmmag"] = {

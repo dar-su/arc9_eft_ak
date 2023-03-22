@@ -54,7 +54,7 @@ SWEP.SpreadAddMove = 0.015
 
 --          Recoil
 
-SWEP.Recoil = 0.9*0.8
+SWEP.Recoil = 0.9*0.85
 
 SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
@@ -80,7 +80,7 @@ SWEP.RecoilFullResetTime = 0.15
 
 
 SWEP.UseVisualRecoil = true 
-SWEP.VisualRecoil = 0.4*0.75
+SWEP.VisualRecoil = 0.4*0.85
 SWEP.VisualRecoilMultHipFire = 0.3
 SWEP.VisualRecoilMultSights = 0.3
 SWEP.VisualRecoilMultCrouch = 0.5
@@ -105,7 +105,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
     if recamount > 2 then
         recamount = math.Clamp((recamount - 2) / 16, 0, 1)
-        return springconstant * math.max(1, 10 * recamount) * 105, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 0.75
+        return springconstant * math.max(1, 10 * recamount) * 105, VisualRecoilSpringMagnitude * 0.75, PUNCH_DAMPING * 0.75
     elseif recamount == 1 then
         return springconstant * 50, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 1
     end

@@ -406,7 +406,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30.mdl"
 
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTErgoAdd = -2
+ATT.EFTImprovedMagCheck = true
 ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Category = {
@@ -882,6 +884,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
+ATT.EFTImprovedMagCheck = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_ultimag.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_ultimag.mdl"

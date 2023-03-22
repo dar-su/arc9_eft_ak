@@ -308,7 +308,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 SWEP.CamQCA_Mult = 0.36
 SWEP.CamQCA_Mult_ADS = 0.05
 
-SWEP.MuzzleParticle = "muzzleflash_pistol"
+SWEP.MuzzleParticle = "muzzleflash_mp5"
 
 SWEP.CaseEffectQCA = 2
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/9x19.mdl"
