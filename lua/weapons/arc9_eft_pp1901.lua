@@ -178,7 +178,7 @@ SWEP.RecoilKickDamping = 10
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = false 
-SWEP.MalfunctionMeanShotsToFail = 350
+SWEP.MalfunctionMeanShotsToFail = 1.5 * 350
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
 SWEP.HeatCapacity = 300

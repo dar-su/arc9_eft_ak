@@ -368,6 +368,8 @@ ATT.Category = {"eft_saiga12_mag"}
 
 ATT.EFTErgoAdd = -26
 ATT.CustomCons = { Ergonomics = "-26" }
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
+ATT.EFTImprovedMagCheck = true
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20

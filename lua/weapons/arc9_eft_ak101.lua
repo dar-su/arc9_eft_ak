@@ -36,13 +36,51 @@ SWEP.DefaultBodygroups = "00000010000000"
 
 --          Damage
 
-SWEP.DamageMax = 33
-SWEP.DamageMin = 24
-SWEP.DamageRand = 0.01
-SWEP.RangeMin = 600
-SWEP.RangeMax = 11000
-SWEP.Penetration = 5
-SWEP.PhysBulletMuzzleVelocity = 21000
+SWEP.DamageMax = 54/2
+SWEP.DamageMin = 34.1/2
+SWEP.PhysBulletMuzzleVelocity = 957 /0.0254
+SWEP.RangeMin = 10
+SWEP.RangeMax = 1000 /0.0254
+
+SWEP.Penetration =      23 *2.54/100/0.0254
+SWEP.PenetrationDelta = 33/100
+SWEP.ArmorPiercing =    33/100
+SWEP.RicochetChance =   26/100
+
+SWEP.DamageLookupTable = {
+    {   10/0.0254, 
+    54/2     },
+
+    {   100 /0.0254, 
+    50.2/2     },
+
+    {   200 /0.0254, 
+    47/2     },
+
+    {   300 /0.0254, 
+    44/2     },
+
+    {   400 /0.0254, 
+    40.65/2     },
+
+    {   500 /0.0254, 
+    38/2     },
+
+    {   600 /0.0254, 
+    36.5/2     },
+
+    {   700 /0.0254, 
+    35.7/2     },
+
+    {   800 /0.0254, 
+    35/2     },
+
+    {   900 /0.0254, 
+    34.5/2     },
+
+    {   1000 /0.0254, 
+    34.1/2     },
+}
 
 
 --          Spread
@@ -54,7 +92,7 @@ SWEP.SpreadAddMove = 0.015
 
 --          Recoil
 
-SWEP.Recoil = 0.9*0.85
+SWEP.Recoil = 0.9*0.85*1.1
 
 SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
@@ -80,7 +118,7 @@ SWEP.RecoilFullResetTime = 0.15
 
 
 SWEP.UseVisualRecoil = true 
-SWEP.VisualRecoil = 0.4*0.85
+SWEP.VisualRecoil = 0.4*0.85*1.1
 SWEP.VisualRecoilMultHipFire = 0.3
 SWEP.VisualRecoilMultSights = 0.3
 SWEP.VisualRecoilMultCrouch = 0.5
@@ -138,7 +176,7 @@ SWEP.RecoilKickDamping = 10
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = false 
-SWEP.MalfunctionMeanShotsToFail = 450
+SWEP.MalfunctionMeanShotsToFail = 1.5 * 450
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
 SWEP.HeatCapacity = 240

@@ -145,7 +145,7 @@ SWEP.RecoilKickDamping = 10
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = false 
-SWEP.MalfunctionMeanShotsToFail = 166
+SWEP.MalfunctionMeanShotsToFail = 1.5 * 166
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
 SWEP.HeatCapacity = 70
@@ -393,7 +393,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
             if ARC9EFTBASE and SERVER then
                 net.Start("arc9eftmagcheck")
-                net.WriteBool(false) -- accurate or not based on mag type
+                net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetMaxClip1()), 9)
                 net.WriteUInt(swep:GetMaxClip1(), 9)
                 net.Send(swep:GetOwner())

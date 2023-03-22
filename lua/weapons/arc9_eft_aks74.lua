@@ -34,51 +34,52 @@ SWEP.DefaultBodygroups = "10010001000000"
 
 --          Damage
 -- default ps
-SWEP.DamageMax = 40/2
-SWEP.DamageMin = 25.74/2
-SWEP.PhysBulletMuzzleVelocity = 830 /0.0254
+SWEP.DamageMax = 48/2
+SWEP.DamageMin = 30.3/2
+SWEP.PhysBulletMuzzleVelocity = 890 /0.0254
 
+SWEP.HeatPerShotMult = 1.1
 SWEP.RangeMin = 10
 SWEP.RangeMax = 1000 /0.0254
 
-SWEP.Penetration =      51 *2.54/100/0.0254
-SWEP.PenetrationDelta = 57/100
-SWEP.ArmorPiercing =    57/100
-SWEP.RicochetChance =   38/100
+SWEP.Penetration =      31 *2.54/100/0.0254
+SWEP.PenetrationDelta = 35/100
+SWEP.ArmorPiercing =    35/100
+SWEP.RicochetChance =   40/100
 
 SWEP.DamageLookupTable = {
     {   10/0.0254, 
-    40/2     },
+    48/2     },
 
     {   100 /0.0254, 
-    37.24/2     },
+    44.34/2     },
 
     {   200 /0.0254, 
-    34.44/2     },
+    41.2/2     },
 
     {   300 /0.0254, 
-    31.65/2     },
+    37.9/2     },
 
     {   400 /0.0254, 
-    29.37/2     },
+    34.8/2     },
 
     {   500 /0.0254, 
-    28.18/2     },
+    33.26/2     },
 
     {   600 /0.0254, 
-    27.45/2     },
+    32.35/2     },
 
     {   700 /0.0254, 
-    26.9/2     },
+    31.7/2     },
 
     {   800 /0.0254, 
-    26.4/2     },
+    31.16/2     },
 
     {   900 /0.0254, 
-    26/2     },
+    30.7/2     },
 
     {   1000 /0.0254, 
-    25.74/2     },
+    30.3/2     },
 }
 
 
@@ -176,7 +177,7 @@ SWEP.RecoilKickDamping = 10
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = false 
-SWEP.MalfunctionMeanShotsToFail = 450
+SWEP.MalfunctionMeanShotsToFail = 1.5 * 450
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.Overheat = true
 SWEP.HeatCapacity = 240
