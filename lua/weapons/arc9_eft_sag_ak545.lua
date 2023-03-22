@@ -364,6 +364,8 @@ SWEP.ToggleAttSound = "" -- we will have own in sound tables
 SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
 
 
 
@@ -385,14 +387,23 @@ SWEP.Hook_TranslateAnimation = ARC9EFT.AK_AnimsHook
 SWEP.Animations = ARC9EFT.AK_Anims
 
 
+
 SWEP.HookP_TranslateSound = function(self, data) -- sag bolt
     if data.sound == path .. "ak74_slider_down.wav" then
         data.sound = path .. "aksag_bolt_in.wav"
     elseif data.sound == path .. "ak74_slider_up.wav" then
         data.sound = path .. "aksag_bolt_out.wav"
     end
+
+    if data.name == "exitsights" or data.name == "entersights" then
+        data.volume = 0.75 * (100 - math.Clamp((self:GetValue("EFTErgo") or 0), 0, 100)) / 100 -- real tarball
+    end
+
     return data
 end
+
+-- SWEP.HookP_TranslateSound = ARC9EFT.ErgoAdsVolume
+
 
 ------------------------- [[[           Attachments            ]]] -------------------------
 
@@ -505,7 +516,7 @@ SWEP.Attachments = {
 SWEP.EFTErgo = 50
 if ARC9EFTBASE then
     SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
-    if ARC9EFT.ErgoBreathHook then -- ash quick fix
+    if ARC9EFT.ErgoBreathHook then
         SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook
     end
 else

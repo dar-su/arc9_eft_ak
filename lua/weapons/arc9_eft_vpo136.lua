@@ -365,6 +365,8 @@ SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
 
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
 
 
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
@@ -382,6 +384,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Hook_TranslateAnimation = ARC9EFT.AK_AnimsHook
 SWEP.Animations = ARC9EFT.AK_Anims
+
 
 
 
@@ -528,11 +531,11 @@ SWEP.Attachments = {
 
 SWEP.EFTErgo = 30
 if ARC9EFTBASE then
-SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
-    if ARC9EFT.ErgoBreathHook then -- ash quick fix
+    SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+    if ARC9EFT.ErgoBreathHook then
         SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook
     end
 else
-print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
+    print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
 SWEP.AimDownSightsTimeMultShooting = 4

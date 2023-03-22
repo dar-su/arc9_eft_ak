@@ -368,6 +368,8 @@ SWEP.ToggleAttSound = "" -- we will have own in sound tables
 SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
 
 
 
@@ -520,8 +522,9 @@ SWEP.Attachments = {
 SWEP.EFTErgo = 35
 if ARC9EFTBASE then
 SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
-    if ARC9EFT.ErgoBreathHook then -- ash quick fix
+    if ARC9EFT.ErgoBreathHook then
         SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook
+        SWEP.HookP_TranslateSound = ARC9EFT.ErgoAdsVolume
     end
 else
 print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
