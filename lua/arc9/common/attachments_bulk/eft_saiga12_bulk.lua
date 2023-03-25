@@ -38,12 +38,12 @@ ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_saiga12_handguard"}
-ATT.ActivateElements = {"nodovetail"}
+ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_bravo18_lhik.mdl"
 ATT.LHIK = true
 
-ATT.ActivateElements = {"nors"}
+-- ATT.ActivateElements = {"nors"}
 
 
 
@@ -226,7 +226,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.Category = {"eft_saiga12_handguard"}
-ATT.ActivateElements = {"nodovetail"}
+ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 
 ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
@@ -237,7 +237,7 @@ ATT.HeatCapacityMult = 1.036
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_utgpro_lhik.mdl"
 ATT.LHIK = true
 
-ATT.ActivateElements = {"nors"}
+-- ATT.ActivateElements = {"nors"}
 
 
 ATT.Attachments = {
@@ -303,12 +303,12 @@ ATT.HeatCapacityMult = 1.017
 ATT.HasHG = true 
 
 ATT.Category = {"eft_saiga12_handguard"}
-ATT.ActivateElements = {"nodovetail"}
+ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_utgpro_lhik.mdl"
 ATT.LHIK = true
 
-ATT.ActivateElements = {"nors"}
+-- ATT.ActivateElements = {"nors"}
 
 ATT.Attachments = {
     {

@@ -848,7 +848,7 @@ SWEP.Attachments = {
         Category = "eft_saiga12_rs",
         Bone = "mod_sight_rear",
         Installed = "eft_saiga12_rs_std",
-        ExcludeElements = {"nors"},
+        ExcludeElements = {"nolongrear"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
     },
