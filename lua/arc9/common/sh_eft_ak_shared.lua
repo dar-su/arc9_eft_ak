@@ -36,7 +36,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
         local rand = swep.EFTInspectnum
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
         if rand == 1 then
-            if class == "arc9_eft_rpk16" then
+            if class == "arc9_eft_rpk16" or class == "arc9_eft_ak12" or class == "arc9_eft_ak15" then
                 return "look_rpk"
             elseif class == "arc9_eft_akm" or class == "arc9_eft_akms" or class == "arc9_eft_vpo136" or class == "arc9_eft_vpo209" then
                 return "look_akm"
