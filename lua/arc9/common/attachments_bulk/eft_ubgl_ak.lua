@@ -113,7 +113,7 @@ ATT.UBGLFiremodeName = "GP-25"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 111
 
-ATT.SpreadUBGL = 0
+ATT.SpreadUBGL = 0.02
 
 ATT.FirstShootSoundUBGL = false
 ATT.ShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_close.wav"
