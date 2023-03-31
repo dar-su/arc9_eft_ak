@@ -31,22 +31,22 @@ ATT.Attachments = {
     {
         PrintName = "M-LOK B",
         Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
-        Pos = Vector(0, 3.1, 2.07),
-        Ang = Angle(180, 0, 0),
+        Pos = Vector(0, 3.4, 2.07),
+        Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "M-LOK R",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(0.87, 5.55, 1.275),
-        Ang = Angle(90, -0, 0),
+        Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, -0.2),
     },
     {
         PrintName = "M-LOK L",
-        Category = {"eft_mount_mlok"},
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(-0.87, 5.55, 1.275),
-        Ang = Angle(90, -0, 180),
+        Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -0.2),
     },
 }

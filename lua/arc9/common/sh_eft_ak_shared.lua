@@ -109,11 +109,6 @@ local rik_def = {
 }
 
 local rik_drop = {
-    -- { t = 0, lhik = 1 },
-    -- { t = 0.12, lhik = 1 },
-    -- { t = 0.25, lhik = 0 },
-    -- { t = 0.61, lhik = 0 },
-    -- { t = 0.75, lhik = 1 },
     { t = 0, lhik = 1 },
     { t = 0.1, lhik = 1 },
     { t = 0.25, lhik = 0 },
