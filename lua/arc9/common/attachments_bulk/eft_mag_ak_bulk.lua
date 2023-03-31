@@ -517,7 +517,7 @@ ATT.Category = {
 ATT.ActivateElements = {"762"}
 
 ATT.ChamberSize = 1
-ATT.ClipSize = 45
+ATT.ClipSize = 30
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == "weapons/darsu_eft/ak/ak74_magin_plastic.wav" then
