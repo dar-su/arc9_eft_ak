@@ -95,16 +95,16 @@ SWEP.SpreadAddMove = 0.015
 
 --          Recoil
 
-SWEP.Recoil = 0.13*5
+SWEP.Recoil = 1.6
 
 SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.RecoilUp = 3
+SWEP.RecoilUp = 4
 SWEP.RecoilSide = 0.7
-SWEP.RecoilRandomUp = 0.9
-SWEP.RecoilRandomSide = 0.8
+SWEP.RecoilRandomUp = 1.2
+SWEP.RecoilRandomSide = 0.96
 
 SWEP.ViewRecoil = false 
 -- SWEP.ViewRecoil = false 
@@ -118,47 +118,59 @@ SWEP.RecoilAutoControl = 10
 SWEP.RecoilResetTime = 0.03
 SWEP.RecoilFullResetTime = 0.15
 
+
+
 SWEP.UseVisualRecoil = true 
 SWEP.VisualRecoil = 0.4
 SWEP.VisualRecoilMultHipFire = 0.3
 SWEP.VisualRecoilMultSights = 0.3
+SWEP.VisualRecoilMultCrouch = 0.5
 
-SWEP.VisualRecoilCenter = Vector(2, 14, 2)
-SWEP.VisualRecoilUp = 75 -- Vertical tilt
-SWEP.VisualRecoilSide = 1 -- Horizontal tilt
+SWEP.VisualRecoilCenter = Vector(2, 18, 2)
+SWEP.VisualRecoilUp = 85 -- Vertical tilt
+SWEP.VisualRecoilSide = 3 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 25 -- Roll tilt
 
-SWEP.VisualRecoilPunch = 2 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilPunchMultHipFire = 3 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunchSights = -20 -- How far back visual recoil moves the gun
 
 
-SWEP.VisualRecoilSpringPunchDamping = 20 / 2.67
-SWEP.VisualRecoilDampingConst = 150 * 1.67
+SWEP.VisualRecoilSpringPunchDamping = 11
+SWEP.VisualRecoilDampingConst = 250
 SWEP.VisualRecoilSpringMagnitude = 2 / 1.67
-SWEP.VisualRecoilPositionBumpUp = -0.02
+SWEP.VisualRecoilPositionBumpUp = -0.065
+SWEP.VisualRecoilPositionBumpUpRTScope = -0.03
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 
 
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
-    if recamount > 3 then
-        recamount = math.Clamp((recamount - 3) / 33, 0, 1)
-        return springconstant * math.max(1, 10 * recamount), VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 0.8
+    if recamount > 1 then
+        recamount = math.Clamp((recamount - 1) / 10, 0, 1)
+        return springconstant * math.max(1, 10 * recamount) * 5, VisualRecoilSpringMagnitude * 1.4, PUNCH_DAMPING * 0.75
+    elseif recamount == 1 then
+        return springconstant * 0.8, VisualRecoilSpringMagnitude * 0.8, PUNCH_DAMPING * 0.8
     end
+
     return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
 end
 
 
 SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount)
     if recamount > 2 then
-        recamount = 1.65 - math.Clamp((recamount - 2) / 2, 0, 1)
+        recamount = 2 - math.Clamp((recamount - 2) / 5, 0, 1)
         
-        return up * recamount, side * 1.6, roll, punch * 0.9
+        local fakerandom = 1 + (((69+recamount%5*CurTime()%3)*2420)%10)/10 
+        
+        return up * recamount * fakerandom, side * 0.8, roll, punch * 0.5
+    elseif recamount == 1 then
+        return up * 2.5, side * 2, roll, punch
     end
+
     return up, side, roll, punch
 end
 
 
-SWEP.RecoilKick = 0.05
+SWEP.RecoilKick = 0
 SWEP.RecoilKickDamping = 10
 
 

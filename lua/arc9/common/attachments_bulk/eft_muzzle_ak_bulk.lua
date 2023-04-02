@@ -360,9 +360,9 @@ ATT.Attachments = {
     {
         PrintName = "Muzzle",
         Category = "eft_ar15_muzzle",
-        Pos = Vector(0, 3, 0),
+        Pos = Vector(-1.2, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 3, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }
 
