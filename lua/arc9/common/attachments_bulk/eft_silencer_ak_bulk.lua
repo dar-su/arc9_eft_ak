@@ -271,3 +271,36 @@ ATT.BarrelLengthAdd = 5
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ak_wafflemaker")
 
+
+///////////////////////////////////////      eft_silencer_ak_r43_762
+
+
+ATT = {}
+
+ATT.PrintName = "Rotor 43 7.62x39 muzzle brake-compensator"
+ATT.CompactName = "R43 7.62x39"
+ATT.Icon = Material("entities/eft_attachments/muzzles/rotor.png", "mips smooth")
+ATT.Description = [[Rotor 43 muzzle brake, is designed for installation on AK 7.62x39. Although positioned as muzzle brake, it also works as a sound supressor.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/muzzle/silencer_all_rotor_43_v2.mdl"
+
+ATT.EFTErgoAdd = -20
+ATT.CustomCons = { Ergonomics = "-20" }
+ATT.RecoilMult = 0.91
+ATT.VisualRecoilMult = 0.91
+ATT.SpreadMult = 1.02
+ATT.HeatCapacityMult = 1.14
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+ATT.Silencer = true
+ATT.MuzzleDevice = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+
+ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
+
+
+ARC9.LoadAttachment(ATT, "eft_silencer_ak_r43_762")
+
