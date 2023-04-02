@@ -216,7 +216,9 @@ ATT = {}
 ATT.PrintName = "AKMS shoulder piece"
 ATT.CompactName = "6P4 Sb.1-19"
 ATT.Icon = Material("entities/eft_ak_attachments/akms_stock.png", "mips smooth")
-ATT.Description = [[Izhmash-produced folding shoulder piece assembly for AKMS.]]
+ATT.Description = [[Izhmash-produced folding shoulder piece assembly for AKMS.
+
+note: toggled stats not showing, this thing have -30% recoil]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -224,12 +226,12 @@ ATT.Category = {"eft_akms_stock"}
 
 ATT.EFTErgoAdd = 9
 ATT.CustomPros = { Ergonomics = "+9" }
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
 
 ATT.ToggleStats = {
     {
         PrintName = "Unfolded",
+        RecoilMult = 0.7,
+        VisualRecoilMult = 0.7
     },
     {
         PrintName = "Folded",
@@ -250,7 +252,9 @@ ATT = {}
 ATT.PrintName = "AKMSN shoulder piece"
 ATT.CompactName = "6P4N Sb.1-19"
 ATT.Icon = Material("entities/eft_ak_attachments/akmsn_stock.png", "mips smooth")
-ATT.Description = [[Izhmash-produced folding shoulder piece assembly for AKMSN.]]
+ATT.Description = [[Izhmash-produced folding shoulder piece assembly for AKMSN.
+
+note: toggled stats not showing, this thing have -30% recoil]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -258,12 +262,12 @@ ATT.Category = {"eft_akms_stock"}
 
 ATT.EFTErgoAdd = 9
 ATT.CustomPros = { Ergonomics = "+9" }
-ATT.RecoilMult = 0.7
-ATT.VisualRecoilMult = 0.7
 
 ATT.ToggleStats = {
     {
         PrintName = "Unfolded",
+        RecoilMult = 0.7,
+        VisualRecoilMult = 0.7
     },
     {
         PrintName = "Folded",
