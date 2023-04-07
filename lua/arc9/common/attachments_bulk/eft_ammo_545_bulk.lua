@@ -1,7 +1,7 @@
 local ATT = {}
 
-local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
-local mult545 = GetConVar("arc9_eft_mult_carabine"):GetFloat() or 0.5
+local dmgrange = (GetConVar("arc9_eft_mindmgrange") and GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
+local mult545 = GetConVar("arc9_eft_mult_carabine") and GetConVar("arc9_eft_mult_carabine"):GetFloat() or 0.5
 
 ///////////////////////////////////////      eft_ammo_545_hp
 
