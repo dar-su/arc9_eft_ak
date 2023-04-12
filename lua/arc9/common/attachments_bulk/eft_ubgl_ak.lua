@@ -101,8 +101,8 @@ end
 -- ATT.Category = {"fas_ubgl", "grip", "eft_ak_gp34"}
 ATT.Category = {"eft_ak_gp34"}
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SprintToFireTimeMult = 1.1
 
 ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"

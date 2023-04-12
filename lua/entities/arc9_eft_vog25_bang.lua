@@ -1,15 +1,26 @@
 AddCSLuaFile()
 
+
+
+ENT.PrintName  = "VOG-25 Projectile"
+
+local modela   = "models/weapons/arc9/darsu_eft/vog25.mdl"
+local radius   = 2.5 * 2
+local damgae   = 199
+local fusetime = 0
+
+
+
+
 ENT.Type 				= "anim"
 ENT.Base 				= "base_entity"
-ENT.PrintName 			= "VOG-25 Projectile"
 ENT.Spawnable 			= false
 
 ENT.IsProjectile = true
 ENT.SmokeTrail = true
 ENT.SmokeTrailMat = "effects/fas_smoke_beam"
-ENT.SmokeTrailSize = 5
-ENT.SmokeTrailTime = 0.5
+ENT.SmokeTrailSize = 2
+ENT.SmokeTrailTime = 0.1
 
 if CLIENT then    
     function ENT:Draw()
@@ -17,7 +28,7 @@ if CLIENT then
     end
 else
     function ENT:Initialize()
-        self:SetModel("models/weapons/arc9/darsu_eft/vog25.mdl")
+        self:SetModel(modela)
 
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
@@ -32,10 +43,12 @@ else
             phys:SetDamping(-0.06, 10)
         end
 
-        self.radius = 512
-        self.damage = 200
+        self.radius = radius
+        self.damage = damgae
+        self.FuseTime = CurTime() + fusetime
 
         self.DestroyTime = CurTime() + 20
+        
 
         if self.SmokeTrail then
             util.SpriteTrail(self, 0, Color( 255 , 255 , 255 ), false, self.SmokeTrailSize, 0, self.SmokeTrailTime, 1 / self.SmokeTrailSize * 0.5, self.SmokeTrailMat)
@@ -53,12 +66,20 @@ else
     function ENT:PhysicsCollide(data, phys)
         timer.Simple(0,function()
             if IsValid(self) then
-                self:Explode()
+                if CurTime() > self.FuseTime then
+                    self:Explode()
+                else
+                    self:FireBullets({Attacker = self:GetOwner(), Damage = self.damage, Force = 16, HullSize = 16, Tracer = false, Dir = self:GetAngles():Forward(), Src = self:GetPos(), IgnoreEntity = self, AmmoType = 9})
+                    self:Remove()
+                    -- self.DUD = true 
+                end
             end
         end)
     end
 
     function ENT:Explode()
+        -- if self.DUD then return end
+        
         if !IsValid(self:GetOwner()) then
             self:Remove()
             return
@@ -67,7 +88,7 @@ else
         SafeRemoveEntityDelayed(self, self.SmokeTrailTime)
         
         util.ScreenShake(self:GetPos(), 10, 1, 2, 1000)
-        util.BlastDamage(self, self:GetOwner(), self:GetPos(), self.radius, self.damage)
+        util.BlastDamage(self, self:GetOwner(), self:GetPos(), self.radius/0.0254, self.damage)
 
         -- local effectdata = EffectData() -- hl2
         -- effectdata:SetOrigin(self:GetPos())

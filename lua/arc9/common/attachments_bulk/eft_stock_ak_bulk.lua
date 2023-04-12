@@ -420,7 +420,7 @@ ATT.Category = {"eft_akm_stock"}
 ATT.Attachments = {
     {
         PrintName = "Buffer Tube",
-        Category = "eft_ar15_buffertube",
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"},
         Pos = Vector(0.85, -3.15, -0.17),
         Ang = Angle(-3, -90, 0),
         Icon_Offset = Vector(-0.2, 0, 0.5),
