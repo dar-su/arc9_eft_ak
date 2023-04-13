@@ -303,7 +303,8 @@ ATT.HeatCapacityMult = 1.017
 ATT.HasHG = true 
 
 ATT.Category = {"eft_saiga12_handguard"}
-ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
+-- ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
+ATT.ActivateElements = {"nolongrear", "nogp34"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_utgpro_lhik.mdl"
 ATT.LHIK = true
