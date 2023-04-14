@@ -55,7 +55,7 @@ SWEP.Num = 8
 SWEP.Spread = 20.626 * ARC9.MOAToAcc
 SWEP.UseDispersion = true
 SWEP.DispersionSpread = 0.005
-SWEP.DispersionSpreadAddHipFire = 0.02
+SWEP.DispersionSpreadAddHipFire = 0.03
 SWEP.DispersionSpreadMultMove = 1.5
 SWEP.DispersionSpreadAddMove = 0.015
 
@@ -923,10 +923,10 @@ SWEP.Attachments = {
 
 SWEP.EFTErgo = 35
 if ARC9EFTBASE then
-    SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
-    if ARC9EFT.ErgoBreathHook then
-        SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook
-    end
+    SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook or nil
+    SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook or nil
+    SWEP.HookP_TranslateSound = ARC9EFT.ErgoAdsVolume or nil
+    SWEP.SpreadHook = ARC9EFT.SpreadBonus or nil
 else
     print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
