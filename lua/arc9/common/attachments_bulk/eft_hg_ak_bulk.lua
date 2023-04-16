@@ -641,7 +641,7 @@ ATT.Attachments = {
         Category = {"eft_tactical", "eft_tactical_top"},
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 9, 1.65),
-        Ang = Angle(0, -90, 0),
+        Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 1),
     },
 }
