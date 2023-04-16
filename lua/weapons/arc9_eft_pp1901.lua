@@ -101,14 +101,14 @@ SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.RecoilUp = 3
+SWEP.RecoilUp = 3 * 0.85 -- patch 0.13.0.4.22617
 SWEP.RecoilSide = 0.7
 SWEP.RecoilRandomUp = 1.2
 SWEP.RecoilRandomSide = 0.96
 
 SWEP.ViewRecoil = false 
 -- SWEP.ViewRecoil = false 
-SWEP.ViewRecoilUpMult = 3
+SWEP.ViewRecoilUpMult = 3 * 0.85 -- patch 0.13.0.4.22617
 SWEP.ViewRecoilUpMultMultHipFire = 2
 SWEP.ViewRecoilSideMult = -4
 SWEP.ViewRecoilSideMultMultHipFire = -2
@@ -317,9 +317,10 @@ SWEP.ShellCorrectAng = Angle(0, 180, 180)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.BulletBones = {
-    [0] = "shellport",
     [1] = "patron_in_weapon",
-    [2] = "patron_in_mag"
+    [2] = "patron_in_mag0",
+    [3] = "patron_in_mag1",
+    [4] = "patron_in_mag2"
 }
 
 -- SWEP.HideBones = { -- please do it later
@@ -529,3 +530,6 @@ else
 print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
 SWEP.AimDownSightsTimeMultShooting = 4
+
+SWEP.RicochetSounds = ARC9EFT.RicochetSounds
+SWEP.ShellSounds = ARC9EFT.Shells9mm

@@ -103,14 +103,14 @@ SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.RecoilUp = 4
+SWEP.RecoilUp = 4 * 0.85 -- patch 0.13.0.4.22617
 SWEP.RecoilSide = 0.7
 SWEP.RecoilRandomUp = 1.2
 SWEP.RecoilRandomSide = 0.96
 
 SWEP.ViewRecoil = false 
 -- SWEP.ViewRecoil = false 
-SWEP.ViewRecoilUpMult = 3
+SWEP.ViewRecoilUpMult = 3 * 0.85 -- patch 0.13.0.4.22617
 SWEP.ViewRecoilUpMultMultHipFire = 2
 SWEP.ViewRecoilSideMult = -4
 SWEP.ViewRecoilSideMultMultHipFire = -2
@@ -540,3 +540,6 @@ else
     print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
 end
 SWEP.AimDownSightsTimeMultShooting = 4
+
+SWEP.RicochetSounds = ARC9EFT.RicochetSounds
+SWEP.ShellSounds = ARC9EFT.Shells556
