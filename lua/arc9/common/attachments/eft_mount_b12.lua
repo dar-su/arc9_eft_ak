@@ -14,7 +14,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.Attachments = {
     {
         PrintName = "Optic",
-        Category = {"eft_optic_medium", "eft_optic_small"},
+        Category = {"eft_optic_medium", "eft_optic_small", "eft_tactical_top"},
         Pos = Vector(1, -2, 1.06),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(1, 0, 0),
