@@ -911,6 +911,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, -5),
         Ang = Angle(0, 0, 0),
         Installed = "eft_ammo_12x70_7mm",
+        Integral = "eft_ammo_12x70_7mm",
     },
     {
         PrintName = "Custom slot",
