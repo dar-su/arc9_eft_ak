@@ -3,17 +3,22 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Assault Rifles"
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
-SWEP.PrintName = "AKMS"
-SWEP.Class = "Assault Rifle"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_akms")
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.Trivia = {
-    Manufacturer1 = "Kalashnikov Concern",
-    Calibre2 = "7.62x39mm",
-    Action3 = "Gas",
-    Country4 = "Soviet Union",
-    Year5 = "1959"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x39mm",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ussr"),
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1959"
 }
 
 SWEP.Description = [[AKMS (Avtomát Kaláshnikova Modernizírovanny Skladnóy - "Kalashnikov's Automatic rifle Modernised with foldable stock") 7.62x39 assault rifle (GRAU Index — 6P4) is a variant of the AKM rifle with a folding shoulder piece (stock). Folds forward-down, under the handguard. Designed specifically for airborne troops.]]
@@ -384,9 +389,9 @@ SWEP.HookP_NameChange = function(self, name)
     local elements = self:GetElements()
 
     if elements["eft_akn"] then
-        return "AKMSN"
+        return ARC9:GetPhrase("eft_weapon_akmsn")
     else
-        return "AKMS"
+        return ARC9:GetPhrase("eft_weapon_akms")
     end
 end
 

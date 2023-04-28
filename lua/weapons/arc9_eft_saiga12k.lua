@@ -3,17 +3,22 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Shotguns"
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_sg")
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
-SWEP.PrintName = "Saiga 12ga ver.10"
-SWEP.Class = "Semi-automatic shotgun"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_saiga12k")
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_semisg")
 SWEP.Trivia = {
-    Manufacturer1 = "Kalashnikov Concern",
-    Calibre2 = "12x76 Gauge",
-    Action3 = "Gas",
-    Country4 = "Russia",
-    Year5 = "1997"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "12x76 Gauge",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1997"
 }
 
 SWEP.Description = [[A semi-automatic 12 gauge shotgun with a folding stock, equipped with a firing mechanism safety lock that only allows firing from extended stock position. Features a short 430mm barrel.]]

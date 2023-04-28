@@ -3,17 +3,22 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Assault Rifles"
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
-SWEP.PrintName = "AKM"
-SWEP.Class = "Assault Rifle"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_akm")
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.Trivia = {
-    Manufacturer1 = "Kalashnikov Concern",
-    Calibre2 = "7.62x39mm",
-    Action3 = "Gas",
-    Country4 = "Soviet Union",
-    Year5 = "1959"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x39mm",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ussr"),
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1959"
 }
 
 SWEP.Description = [[AKM 7.62x39mm - (Avtomát Kaláshnikova Modernizírovanny - Kalashnikovs Automatic Rifle Modernised) - was adopted in 1959 to replace AK as a standard service weapon of the Soviet Army. Main differences compared to AK: enhanced accuracy range, lower weight, new stock, trigger, hammer retarder, muzzle compensator and other design changes aimed at improving the efficiency of the rifle.]]
@@ -384,9 +389,9 @@ SWEP.HookP_NameChange = function(self, name)
     local elements = self:GetElements()
 
     if elements["eft_akn"] then
-        return "AKMN"
+        return ARC9:GetPhrase("eft_weapon_akmn")
     else
-        return "AKM"
+        return ARC9:GetPhrase("eft_weapon_akm")
     end
 end
 

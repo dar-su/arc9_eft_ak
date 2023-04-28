@@ -3,17 +3,22 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Assault Rifles"
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
-SWEP.PrintName = "AKS-74U"
-SWEP.Class = "Assault Rifle"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_aks74u")
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
 SWEP.Trivia = {
-    Manufacturer1 = "Kalashnikov Concern",
-    Calibre2 = "5.45x39mm",
-    Action3 = "Gas",
-    Country4 = "Russia",
-    Year5 = "1979"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.45x39mm",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1979"
 }
 
 SWEP.Description = [[AKS-74U (Avtomat Kalashnikova Skladnoy 74 Ukorochenny - "Kalashnikov's Shortened Automatic rifle 74 with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size.]]
@@ -389,11 +394,11 @@ SWEP.HookP_NameChange = function(self, name)
     local elements = self:GetElements()
 
     if elements["eft_silencer_ak_pbs4"] and elements["eft_akn"] then
-        return "AKS-74UB"
+        return ARC9:GetPhrase("eft_weapon_aks74ub")
     elseif elements["eft_akn"] then
-        return "AKS-74UN"
+        return ARC9:GetPhrase("eft_weapon_aks74un")
     else
-        return "AKS-74U"
+        return ARC9:GetPhrase("eft_weapon_aks74u")
     end
 end
 
