@@ -828,6 +828,7 @@ SWEP.AttachmentElements = {
 SWEP.missingpartsnotifsent = 0
 SWEP.HasGas = true
 function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
+function SWEP:Hook_RedPrintName() return ARC9EFT.AK_RedName(self) end
 
 
 SWEP.Attachments = {

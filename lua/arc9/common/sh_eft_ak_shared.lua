@@ -1173,3 +1173,12 @@ ARC9EFT.AK_MissingParts = function(swep)
             return true 
     end
 end
+
+ARC9EFT.AK_RedName = function(swep)
+    if  !swep:GetValue("HasGas") or 
+        !swep:GetValue("HasAmmoooooooo") or 
+        !swep:GetValue("HasGrip") or 
+        !swep:GetValue("HasHG") then
+            return true 
+    end
+end
