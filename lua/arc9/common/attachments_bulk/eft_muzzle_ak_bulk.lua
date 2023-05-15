@@ -475,10 +475,10 @@ ATT.Category = {"eft_akm_muzzle"}
 ATT.Attachments = {
     {
         PrintName = "Muzzle",
-        Category = "eft_308_muzzle",
+        Category = "eft_ar10_muzzle",
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(3, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }
 

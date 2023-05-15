@@ -1165,7 +1165,7 @@ ARC9EFT.AK_MissingParts = function(swep)
         !swep:GetValue("HasGrip") or 
         !swep:GetValue("HasHG") then
             
-            if swep.missingpartsnotifsent < CurTime() then
+            if SERVER and swep.missingpartsnotifsent < CurTime() then
                 swep.missingpartsnotifsent = CurTime() + 3
                 net.Start("arc9eftmissingparts")
                 net.Send(swep:GetOwner())
