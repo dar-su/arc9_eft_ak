@@ -149,42 +149,42 @@ local rik_magcheck = {
 }
 
 local path = "weapons/darsu_eft/ak/"
-local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.wav","arc9_eft_shared/weapon_generic_rifle_spin2.wav","arc9_eft_shared/weapon_generic_rifle_spin3.wav","arc9_eft_shared/weapon_generic_rifle_spin4.wav","arc9_eft_shared/weapon_generic_rifle_spin5.wav","arc9_eft_shared/weapon_generic_rifle_spin6.wav","arc9_eft_shared/weapon_generic_rifle_spin7.wav","arc9_eft_shared/weapon_generic_rifle_spin8.wav","arc9_eft_shared/weapon_generic_rifle_spin9.wav","arc9_eft_shared/weapon_generic_rifle_spin10.wav"}
-local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.wav","arc9_eft_shared/generic_mag_pouch_in2.wav","arc9_eft_shared/generic_mag_pouch_in3.wav","arc9_eft_shared/generic_mag_pouch_in4.wav","arc9_eft_shared/generic_mag_pouch_in5.wav","arc9_eft_shared/generic_mag_pouch_in6.wav","arc9_eft_shared/generic_mag_pouch_in7.wav"}
-local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.wav","arc9_eft_shared/generic_mag_pouch_out2.wav","arc9_eft_shared/generic_mag_pouch_out3.wav","arc9_eft_shared/generic_mag_pouch_out4.wav","arc9_eft_shared/generic_mag_pouch_out5.wav","arc9_eft_shared/generic_mag_pouch_out6.wav","arc9_eft_shared/generic_mag_pouch_out7.wav"}
+local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
+local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.ogg","arc9_eft_shared/generic_mag_pouch_in2.ogg","arc9_eft_shared/generic_mag_pouch_in3.ogg","arc9_eft_shared/generic_mag_pouch_in4.ogg","arc9_eft_shared/generic_mag_pouch_in5.ogg","arc9_eft_shared/generic_mag_pouch_in6.ogg","arc9_eft_shared/generic_mag_pouch_in7.ogg"}
+local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/generic_mag_pouch_out2.ogg","arc9_eft_shared/generic_mag_pouch_out3.ogg","arc9_eft_shared/generic_mag_pouch_out4.ogg","arc9_eft_shared/generic_mag_pouch_out5.ogg","arc9_eft_shared/generic_mag_pouch_out6.ogg","arc9_eft_shared/generic_mag_pouch_out7.ogg"}
 
 local rst_single = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_slider_up.wav", t = 14/26 },
-    { s = "arc9_eft_shared/weap_handoff.wav", t = 23/26 },
-    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 32/26 },
-    { s = path .. "ak74_round_in_chamber.wav", t = 46/26 },
-    { s = path .. "ak74_slider_down.wav", t = 63/26 },
-    { s = "arc9_eft_shared/weap_in.wav", t = 73/26 },
+    { s = path .. "ak74_slider_up.ogg", t = 14/26 },
+    { s = "arc9_eft_shared/weap_handoff.ogg", t = 23/26 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 32/26 },
+    { s = path .. "ak74_round_in_chamber.ogg", t = 46/26 },
+    { s = path .. "ak74_slider_down.ogg", t = 63/26 },
+    { s = "arc9_eft_shared/weap_in.ogg", t = 73/26 },
 }
 
 local rst_10 = {
     { s = randspin, t = 5/27 },
-    { s = path .. "ak74_magrelease_button.wav", t = 9/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 18/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 9/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 18/27 },
     { s = randspin, t = 32/27 },
     { s = pouchin, t = 33/27 },
     { s = pouchout, t = 44/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 60/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 69/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 60/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 69/27 },
     { s = randspin, t = 81/27 },
 }
 
 local rst_10e = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 },
     { s = pouchout, t = 28/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 44/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 53/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 44/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 53/27 },
     { s = randspin, t = 63/27 },
-    { s = path .. "ak74_slider_up.wav", t = 75/27 },
-    { s = path .. "ak74_slider_down.wav", t = 85/27 },
+    { s = path .. "ak74_slider_up.ogg", t = 75/27 },
+    { s = path .. "ak74_slider_down.ogg", t = 85/27 },
     { s = randspin, t = 91/27 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
@@ -193,26 +193,26 @@ local rst_10e = {
 
 local rst_545 = {
     { s = randspin, t = 5/27 },
-    { s = path .. "ak74_magrelease_button.wav", t = 11/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 18/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 11/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 18/27 },
     { s = randspin, t = 32/27 },
     { s = pouchin, t = 33/27 },
     { s = pouchout, t = 42/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 57/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 68/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 57/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 68/27 },
     { s = randspin, t = 81/27 },
 }
 
 local rst_545e = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 },
     { s = pouchout, t = 28/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 46/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 53/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 46/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 53/27 },
     { s = randspin, t = 63/27 },
-    { s = path .. "ak74_slider_up.wav", t = 83/27 },
-    { s = path .. "ak74_slider_down.wav", t = 90/27 },
+    { s = path .. "ak74_slider_up.ogg", t = 83/27 },
+    { s = path .. "ak74_slider_down.ogg", t = 90/27 },
     { s = randspin, t = 96/27 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
@@ -221,26 +221,26 @@ local rst_545e = {
 
 local rst_60 = {
     { s = randspin, t = 5/27 },
-    { s = path .. "ak74_magrelease_button.wav", t = 11/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 18/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 11/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 18/27 },
     { s = randspin, t = 32/27 },
     { s = pouchin, t = 40/27 },
     { s = pouchout, t = 46/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 64/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 70/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 64/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 70/27 },
     { s = randspin, t = 83/27 },
 }
 
 local rst_60e = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 },
     { s = pouchout, t = 29/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 47/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 53/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 47/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 53/27 },
     { s = randspin, t = 64/27 },
-    { s = path .. "ak74_slider_up.wav", t = 84/27 },
-    { s = path .. "ak74_slider_down.wav", t = 91/27 },
+    { s = path .. "ak74_slider_up.ogg", t = 84/27 },
+    { s = path .. "ak74_slider_down.ogg", t = 91/27 },
     { s = randspin, t = 97/27 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
@@ -249,26 +249,26 @@ local rst_60e = {
 
 local rst_drum = {
     { s = randspin, t = 5/27 },
-    { s = path .. "ak74_magrelease_button.wav", t = 13/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 18/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 13/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 18/27 },
     { s = randspin, t = 32/27 },
     { s = pouchin, t = 36/27 },
     { s = pouchout, t = 48/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 64/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 72/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 64/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 72/27 },
     { s = randspin, t = 85/27 },
 }
 
 local rst_drume = {
     { s = randspin, t = 0.05 },
-    { s = path .. "ak74_magrelease_button.wav", t = 6/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 8/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 6/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 8/27 },
     { s = pouchout, t = 32/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 49/27 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 56/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 49/27 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 56/27 },
     { s = randspin, t = 69/27 },
-    { s = path .. "ak74_slider_up.wav", t = 86/27 },
-    { s = path .. "ak74_slider_down.wav", t = 94/27 },
+    { s = path .. "ak74_slider_up.ogg", t = 86/27 },
+    { s = path .. "ak74_slider_down.ogg", t = 94/27 },
     { s = randspin, t = 100/27 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
@@ -277,12 +277,12 @@ local rst_drume = {
 
 local rst_magcheck = {
     { s = randspin, t = 5/27 },
-    { s = path .. "ak74_magrelease_button.wav", t = 17/27 },
-    { s = path .. "ak74_magout_plastic.wav", t = 24/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 17/27 },
+    { s = path .. "ak74_magout_plastic.ogg", t = 24/27 },
     { s = randspin, t = 36/27 },
     -- { s = randspin, t = 65/27 },
-    { s = path .. "ak74_magin_plastic.wav", t = 77/27 },
-    { s = path .. "ak74_magrelease_button.wav", t = 83/27 },
+    { s = path .. "ak74_magin_plastic.ogg", t = 77/27 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 83/27 },
     { s = randspin, t = 95/27 },
 }
 
@@ -307,37 +307,37 @@ ARC9EFT.AK_Anims = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "ak74_slider_up.wav", t = 12/24 },
-            { s = path .. "ak74_slider_down.wav", t = 18/24 },
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
+            { s = path .. "ak74_slider_up.ogg", t = 12/24 },
+            { s = path .. "ak74_slider_down.ogg", t = 18/24 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
         }
     },
 
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = "arc9_eft_shared/weap_out.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_out.ogg", t = 0 },
         }
     },
 
     ["fire"] = {
         Source = "fire",        
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0},
+            { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0},
         },
     },
 
     ["fire_dry"] = {
         Source = "fire_dry",    
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_empty.wav", t = 0},
+            { s = "arc9_eft_shared/weap_trigger_empty.ogg", t = 0},
         },
     },
 
@@ -572,8 +572,8 @@ ARC9EFT.AK_Anims = {
         FireASAP = true,
         EventTable = {
             { s = randspin, t = 9/27 },
-            { s = path.."akms_slider_up.wav", t = 21/27},
-            { s = path.."akms_slider_down.wav", t = 37/27},
+            { s = path.."akms_slider_up.ogg", t = 21/27},
+            { s = path.."akms_slider_down.ogg", t = 37/27},
             { s = randspin, t = 53/27 },
         },
     },
@@ -650,8 +650,8 @@ ARC9EFT.AK_Anims = {
         Source = "jam_misfire", -- misfire
         EventTable = {
             { s = randspin, t = 0.22 + 0.75 },            
-            { s = path.."ak74_slider_up.wav", t = 0.68 + 0.75 },
-            { s = path.."ak74_slider_down.wav", t = 0.88 + 0.75 },
+            { s = path.."ak74_slider_up.ogg", t = 0.68 + 0.75 },
+            { s = path.."ak74_slider_down.ogg", t = 0.88 + 0.75 },
             { s = randspin, t = 1.41 + 0.75 },        
         },
         EjectAt = 0.74 + 0.8
@@ -661,13 +661,13 @@ ARC9EFT.AK_Anims = {
         EventTable = {
             { s = randspin, t = 2/24 + 0.75 },
             { s = randspin, t = 12/24 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 16/24 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 22/24 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 36/24  + 0.75 },
-            { s = path .. "ak_jam_feedfault_roundaftercharge.wav", t = 40/24 + 0.75 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 46/24 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 16/24 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 22/24 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 36/24  + 0.75 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 40/24 + 0.75 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 46/24 + 0.75 },
             { s = randspin, t = 50/24  + 0.75 },
-            { s = path .. "ak74_slider_down.wav", t = 61/24  + 0.75 },
+            { s = path .. "ak74_slider_down.ogg", t = 61/24  + 0.75 },
             { s = randspin, t = 72/24  + 0.75 },
         },
     },
@@ -675,19 +675,19 @@ ARC9EFT.AK_Anims = {
         Source = "jam_hard_slide", -- jam hard
         EventTable = {
             { s = randspin, t = 0.2 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.89 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.99 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.5 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.89 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.99 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 1.5 + 0.75 },
             { s = randspin, t = 1.94  + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 2.25 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_out_hit2.wav", t = 2.62 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.ogg", t = 2.25 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_out_hit2.ogg", t = 2.62 + 0.75 },
             { s = randspin, t = 3.13  + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 3.35 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 3.66 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 3.97 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 4.3 + 0.75 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 4.45 + 0.75 },
-            { s = path .. "ak74_slider_down.wav", t = 4.54 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 3.35 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 3.66 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 3.97 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 4.3 + 0.75 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 4.45 + 0.75 },
+            { s = path .. "ak74_slider_down.ogg", t = 4.54 + 0.75 },
             { s = randspin, t = 4.85  + 0.75 },
         },
         EjectAt = 4.45 + 0.8
@@ -696,12 +696,12 @@ ARC9EFT.AK_Anims = {
         Source = "jam_soft_slide", -- jam soft
         EventTable = {
             { s = randspin, t = 0.14 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.65 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.95 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.62 + 0.75 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 1.89 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 2.14 + 0.75 },
-            { s = path .. "ak74_slider_down.wav", t = 2.38 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.65 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 0.95 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 1.62 + 0.75 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.89 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 2.14 + 0.75 },
+            { s = path .. "ak74_slider_down.ogg", t = 2.38 + 0.75 },
             { s = randspin, t = 2.9  + 0.75 },
         }
     },
@@ -709,9 +709,9 @@ ARC9EFT.AK_Anims = {
         Source = "jam_shell", -- jam shell
         EventTable = {
             { s = randspin, t = 0.07  + 0.75 },
-            { s = path .. "ak_jam_shell_grab.wav", t = 0.59 + 0.75 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 0.75  + 0.75 },
-            { s = path .. "ak_jam_shell_remove.wav", t = 0.91 + 0.75 },
+            { s = path .. "ak_jam_shell_grab.ogg", t = 0.59 + 0.75 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 0.75  + 0.75 },
+            { s = path .. "ak_jam_shell_remove.ogg", t = 0.91 + 0.75 },
             { s = randspin, t = 1.59 + 0.75 },
         },
     },
@@ -726,7 +726,7 @@ ARC9EFT.AK_Anims = {
         Source = "firemode_1",
         EventTable = { 
             -- {pp = "firemode", ppv = 0, t = 0 },
-            {s = path .. "ak74_fireselector_down.wav", t = 0.25 },
+            {s = path .. "ak74_fireselector_down.ogg", t = 0.25 },
             -- {pp = "firemode", ppv = 1, t = 0.5 },
         },        
         PoseParamChanges = {
@@ -737,7 +737,7 @@ ARC9EFT.AK_Anims = {
         Source = "firemode_0",
         EventTable = { 
             -- {pp = "firemode", ppv = 1, t = 0 },
-            {s = path .. "ak74_fireselector_up.wav", t = 0.25 },
+            {s = path .. "ak74_fireselector_up.ogg", t = 0.25 },
             -- {pp = "firemode", ppv = 0, t = 0.5 },
         },    
         -- PoseParamChanges = {
@@ -747,35 +747,35 @@ ARC9EFT.AK_Anims = {
 
     ["firemode_1_rpk"] = {
         Source = "firemode_1_rpk",
-        EventTable = { { s = path .. "ak74_fireselector_down.wav", t = 0.2 } }
+        EventTable = { { s = path .. "ak74_fireselector_down.ogg", t = 0.2 } }
     },
     ["firemode_2_rpk"] = {
         Source = "firemode_0_rpk",
-        EventTable = { { s = path .. "ak74_fireselector_up.wav", t = 0.2 } }
+        EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.2 } }
     },
 
     ["toggle"] = {
         Source = "mod_switch",
         EventTable = {
-            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+            { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 },
         }
     },
     ["switchsights"] = {
         Source = "mod_switch",
         EventTable = {
-            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+            { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 },
         }
     },
     ["fix"] = {
         Source = {"jam1"},
         EventTable = {
             { s = randspin, t = 0.05 },
-            { s = "arc9_eft_shared/weap_bolt_handle_out.wav", t = 0.4 },
+            { s = "arc9_eft_shared/weap_bolt_handle_out.ogg", t = 0.4 },
             { s = randspin, t = 0.95 },
-            { s = path .. "ak74_slider_jam.wav", t = 1.8 },
+            { s = path .. "ak74_slider_jam.ogg", t = 1.8 },
             { s = randspin, t = 2.4 },
-            { s = path .. "ak74_slider_up.wav", t = 2.7 },
-            { s = path .. "ak74_slider_down.wav", t = 2.9 },
+            { s = path .. "ak74_slider_up.ogg", t = 2.7 },
+            { s = path .. "ak74_slider_down.ogg", t = 2.9 },
             { s = randspin, t = 3.1 },
         }
     },
@@ -794,7 +794,7 @@ ARC9EFT.AK_Anims = {
         Source = "gp34_reload",        
         EventTable = {
             { s = randspin, t = 0.05 },
-            { s = path .. "gp34/gp34_grenade_in.wav", t = 1 },
+            { s = path .. "gp34/gp34_grenade_in.ogg", t = 1 },
             { s = randspin, t = 1.7 },
         }
     },
@@ -901,35 +901,35 @@ local rik_magcheck = {
 }
 local rst_single = {
     { s = randspin, t = 7/26 },
-    { s = path .. "ak74_slider_up.wav", t = 19/26 },
+    { s = path .. "ak74_slider_up.ogg", t = 19/26 },
     { s = randspin, t = 33/26 },
-    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 35/26 },
-    { s = path .. "ak74_round_in_chamber.wav", t = 53/26 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 35/26 },
+    { s = path .. "ak74_round_in_chamber.ogg", t = 53/26 },
     { s = randspin, t = 60/26 },
     { s = randspin, t = 68/26 },
-    { s = path .. "ak74_slider_down.wav", t = 73/26 },
+    { s = path .. "ak74_slider_down.ogg", t = 73/26 },
     { s = randspin, t = 83/26 },
 }
 
 local rst_def = {
     { s = randspin, t = 6/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
-    { s = path .. "mpx_weap_magout_plastic.wav", t = 11/28 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 8/28 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 11/28 },
     { s = pouchin, t = 22/28 },
     { s = pouchout, t = 30/28 },
-    { s = path .. "mpx_weap_magin_plastic.wav", t = 62/28 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 62/28 },
     { s = randspin, t = 75/28 }
 }
 
 local rst_empty = {
     { s = randspin, t = 6/28 },
-    { s = path .. "ak74_magrelease_button.wav", t = 8/28 },
-    { s = path .. "mpx_weap_magout_plastic.wav", t = 11/28 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 8/28 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 11/28 },
     { s = pouchout, t = 25/28 },
-    { s = path .. "mpx_weap_magin_plastic.wav", t = 52/28 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 52/28 },
     { s = randspin, t = 65/28 },
-    { s = path .. "ak74_slider_up.wav", t = 82/28 },
-    { s = path .. "ak74_slider_down.wav", t = 89/28 },
+    { s = path .. "ak74_slider_up.ogg", t = 82/28 },
+    { s = path .. "ak74_slider_down.ogg", t = 89/28 },
     { s = randspin, t = 97/28 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.57},
@@ -938,11 +938,11 @@ local rst_empty = {
 
 local rst_magcheck = {
     { s = randspin, t = 5/24 },
-    { s = path .. "ak74_magrelease_button.wav", t = 20/24 },
-    { s = path .. "mpx_weap_magout_plastic.wav", t = 24/24 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 20/24 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 24/24 },
     { s = randspin, t = 35/24 },
     { s = randspin, t = 55/24 },
-    { s = path .. "mpx_weap_magin_plastic.wav", t = 78/24 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 78/24 },
     { s = randspin, t = 90/24 },
 }
 
@@ -967,23 +967,23 @@ ARC9EFT.VITYAZ_Anims = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "ak74_slider_up.wav", t = 18/24 },
-            { s = path .. "ak74_slider_down.wav", t = 24/24 },
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
+            { s = path .. "ak74_slider_up.ogg", t = 18/24 },
+            { s = path .. "ak74_slider_down.ogg", t = 24/24 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
         }
     },
 
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = "arc9_eft_shared/weap_out.wav", t = 0 },
+            { s = "arc9_eft_shared/weap_out.ogg", t = 0 },
         }
     },
 
@@ -992,7 +992,7 @@ ARC9EFT.VITYAZ_Anims = {
     },
 
 
-    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",
@@ -1054,8 +1054,8 @@ ARC9EFT.VITYAZ_Anims = {
         },
         EventTable = {
             { s = randspin, t = 9/27 },
-            { s = path.."akms_slider_up.wav", t = 21/27},
-            { s = path.."akms_slider_down.wav", t = 37/27},
+            { s = path.."akms_slider_up.ogg", t = 21/27},
+            { s = path.."akms_slider_down.ogg", t = 37/27},
             { s = randspin, t = 53/27 },
         },
     },
@@ -1069,23 +1069,23 @@ ARC9EFT.VITYAZ_Anims = {
 
     ["firemode_1"] = {
         Source = "firemode_1",
-        EventTable = { { s = path .. "ak74_fireselector_down.wav", t = 0.25 } }
+        EventTable = { { s = path .. "ak74_fireselector_down.ogg", t = 0.25 } }
     },
     ["firemode_2"] = {
         Source = "firemode_0",
-        EventTable = { { s = path .. "ak74_fireselector_up.wav", t = 0.25 } }
+        EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.25 } }
     },
 
     ["toggle"] = {
         Source = "mod_switch",
         EventTable = {
-            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+            { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 },
         }
     },
     ["switchsights"] = {
         Source = "mod_switch",
         EventTable = {
-            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+            { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 },
         }
     },
 
@@ -1095,8 +1095,8 @@ ARC9EFT.VITYAZ_Anims = {
         Source = {"misfire_0", "misfire_1"}, -- misfire
         EventTable = {
             { s = randspin, t = 0.2 },            
-            { s = path.."ak74_slider_up.wav", t = 0.8},
-            { s = path.."ak74_slider_down.wav", t = 1.04},
+            { s = path.."ak74_slider_up.ogg", t = 0.8},
+            { s = path.."ak74_slider_down.ogg", t = 1.04},
             { s = randspin, t = 1.55 },        
         },
         EjectAt = 0.77
@@ -1105,12 +1105,12 @@ ARC9EFT.VITYAZ_Anims = {
         Source = "jam_feed", -- jam feed
         EventTable = {
             { s = randspin, t = 0.4 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.6 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.72 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 1.18 },
-            { s = path .. "ak_jam_feedfault_roundaftercharge.wav", t = 1.4 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.53 },
-            { s = path .. "ak74_slider_down.wav", t = 1.72 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.6 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.72 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 1.18 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 1.4 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.53 },
+            { s = path .. "ak74_slider_down.ogg", t = 1.72 },
             { s = randspin, t = 2.05 },
         },
         EjectAt = 1.4
@@ -1119,15 +1119,15 @@ ARC9EFT.VITYAZ_Anims = {
         Source = "jam_hard", -- jam hard
         EventTable = {
             { s = randspin, t = 0.25 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.42 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.51 },
-            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 0.96 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.42 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.51 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 0.96 },
             { s = randspin, t = 1.3 },
             { s = randspin, t = 1.79 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 2.14 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 2.67 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 2.86 },
-            { s = path .. "ak74_slider_down.wav", t = 2.97 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 2.14 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 2.67 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.86 },
+            { s = path .. "ak74_slider_down.ogg", t = 2.97 },
             { s = randspin, t = 3.48 },
         },
         EjectAt = 2.86
@@ -1136,11 +1136,11 @@ ARC9EFT.VITYAZ_Anims = {
         Source = "jam_soft", -- jam soft
         EventTable = {
             { s = randspin, t = 0.16 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.5 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.73 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.wav", t = 1.26 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.44 },
-            { s = path .. "ak74_slider_down.wav", t = 1.54 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.5 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 0.73 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 1.26 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.44 },
+            { s = path .. "ak74_slider_down.ogg", t = 1.54 },
             { s = randspin, t = 2 },
         },
         EjectAt = 1.44
@@ -1149,9 +1149,9 @@ ARC9EFT.VITYAZ_Anims = {
         Source = "jam_shell", -- jam shell
         EventTable = {
             { s = randspin, t = 0.3 },
-            { s = path .. "ak_jam_shell_grab.wav", t = 0.56 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.wav", t = 1.2 },
-            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 1.44 },
+            { s = path .. "ak_jam_shell_grab.ogg", t = 0.56 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.2 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.ogg", t = 1.44 },
             { s = randspin, t = 1.7 },
         },
     },

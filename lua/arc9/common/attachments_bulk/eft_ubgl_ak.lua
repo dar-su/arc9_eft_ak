@@ -31,7 +31,7 @@ ATT.MuzzleDeviceUBGL = true
 ATT.DropMagazineAmountUBGL = 0
 
 local path = "weapons/darsu_eft/ak/"
-local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.wav","arc9_eft_shared/weapon_generic_rifle_spin2.wav","arc9_eft_shared/weapon_generic_rifle_spin3.wav","arc9_eft_shared/weapon_generic_rifle_spin4.wav","arc9_eft_shared/weapon_generic_rifle_spin5.wav","arc9_eft_shared/weapon_generic_rifle_spin6.wav","arc9_eft_shared/weapon_generic_rifle_spin7.wav","arc9_eft_shared/weapon_generic_rifle_spin8.wav","arc9_eft_shared/weapon_generic_rifle_spin9.wav","arc9_eft_shared/weapon_generic_rifle_spin10.wav"}
+local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
 
 
 ATT.IKAnimationProxy = {
@@ -45,7 +45,7 @@ ATT.IKAnimationProxy = {
         Source = "reload",
         EventTable = {
             { s = randspin, t = 0.05 },
-            { s = path .. "gp34/gp_25_vog_in.wav", t = 0.4 },
+            { s = path .. "gp34/gp_25_vog_in.ogg", t = 0.4 },
             { s = randspin, t = 1.7 },
         }
     },
@@ -76,10 +76,10 @@ ATT.IKAnimationProxy = {
         Source = "check",
         EventTable = {
             { s = randspin, t = 0 },
-            { s = path .. "gp34/gp_25_vog_out.wav", t = 0 },
+            { s = path .. "gp34/gp_25_vog_out.ogg", t = 0 },
             { s = randspin, t = 21/24 },
             { s = randspin, t = 48/24 },
-            { s = path .. "gp34/gp_25_vog_in.wav", t = 60/24 },
+            { s = path .. "gp34/gp_25_vog_in.ogg", t = 60/24 },
             { s = randspin, t = 93/24 },
         }
     }
@@ -116,16 +116,16 @@ ATT.ShootVolumeUBGL = 111
 ATT.SpreadUBGL = 0.02
 
 ATT.FirstShootSoundUBGL = false
-ATT.ShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_close.wav"
-ATT.DistantShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_distant.wav"
-ATT.ShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_close.wav"
-ATT.DistantShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_distant.wav"
+ATT.ShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_close.ogg"
+ATT.DistantShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_distant.ogg"
+ATT.ShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_close.ogg"
+ATT.DistantShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_distant.ogg"
 ATT.HasSightsUBGL = true
 
 ATT.TriggerDelayUBGL = false
 
-ATT.EnterUBGLSound = "eft_shared/weapon_generic_rifle_spin2.wav"
-ATT.ExitUBGLSound = "eft_shared/weapon_generic_rifle_spin1.wav"
+ATT.EnterUBGLSound = "eft_shared/weapon_generic_rifle_spin2.ogg"
+ATT.ExitUBGLSound = "eft_shared/weapon_generic_rifle_spin1.ogg"
 
 ATT.ShootEntUBGL = "arc9_eft_vog25_bang"
 ATT.ShootEntForceUBGL = 20000
@@ -289,14 +289,14 @@ ATT.SpreadUBGL = -0.2
 ATT.RecoilUBGL = 0.5
 
 ATT.FirstShootSoundUBGL = false
-ATT.ShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_close.wav"
-ATT.DistantShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_distant.wav"
-ATT.ShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_close.wav"
-ATT.DistantShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_distant.wav"
+ATT.ShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_close.ogg"
+ATT.DistantShootSoundUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_outdoor_distant.ogg"
+ATT.ShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_close.ogg"
+ATT.DistantShootSoundIndoorUBGL = "weapons/darsu_eft/ak/gp34/gp_25_grenade_fire_indoor_distant.ogg"
 ATT.HasSightsUBGL = true
 
-ATT.EnterUBGLSound = "eft_shared/weapon_generic_rifle_spin2.wav"
-ATT.ExitUBGLSound = "eft_shared/weapon_generic_rifle_spin1.wav"
+ATT.EnterUBGLSound = "eft_shared/weapon_generic_rifle_spin2.ogg"
+ATT.ExitUBGLSound = "eft_shared/weapon_generic_rifle_spin1.ogg"
 
 ATT.ShootEntUBGL = "arc9_eft_vog25_bang"
 ATT.ShootEntForceUBGL = 5000

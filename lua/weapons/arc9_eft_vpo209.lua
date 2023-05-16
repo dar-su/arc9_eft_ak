@@ -222,7 +222,7 @@ SWEP.HoldBreathTime = 40
 SWEP.RestoreBreathTime = 30
 SWEP.BreathInSound = false 
 SWEP.BreathOutSound = false
-SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.wav"
+SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.ogg"
 
 
 --          Generic stats
@@ -348,16 +348,16 @@ SWEP.DistantShootVolumeActual = 0.05
 
  -- vpo 209
  
-SWEP.ShootSound = path .. "fire_new/vpo209_fire_close.wav"
-SWEP.ShootSoundSilenced = path .. "fire_new/vpo209_fire_close_silenced.wav"
+SWEP.ShootSound = path .. "fire_new/vpo209_fire_close.ogg"
+SWEP.ShootSoundSilenced = path .. "fire_new/vpo209_fire_close_silenced.ogg"
 
-SWEP.ShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_close.wav"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_close_silenced.wav"
+SWEP.ShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_close.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_close_silenced.ogg"
 
-SWEP.DistantShootSound = path .. "fire_new/vpo209_fire_distant.wav"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/vpo209_fire_distant_silenced.wav"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_distant.wav"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_distant_silenced.wav"
+SWEP.DistantShootSound = path .. "fire_new/vpo209_fire_distant.ogg"
+SWEP.DistantShootSoundSilenced = path .. "fire_new/vpo209_fire_distant_silenced.ogg"
+SWEP.DistantShootSoundIndoor = path .. "fire_new/vpo209_fire_indoor_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/vpo209_fire_indoor_distant_silenced.ogg"
 
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
@@ -365,8 +365,8 @@ SWEP.ToggleAttSound = "" -- we will have own in sound tables
 SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
-SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
-SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.ogg"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.ogg"
 
 
 

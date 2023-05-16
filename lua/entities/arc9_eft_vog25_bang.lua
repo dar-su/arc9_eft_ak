@@ -97,9 +97,9 @@ else
 
         ParticleEffect("explosion_m79", self:GetPos(), Angle(-90, 0, 0)) -- uc common
 
-        self:EmitSound("weapons/darsu_eft/ak/gp34/gren_expl2_close.wav", 70, nil, nil, nil, nil, 1)
-        self:EmitSound("weapons/darsu_eft/ak/gp34/gren_expl2_dist1.wav", 90, nil, nil, nil, nil, 1)
-        self:EmitSound("weapons/darsu_eft/ak/gp34/gren_expl2_dist2.wav", 999, nil, nil, nil, nil, 1)
+        self:EmitSound("weapons/darsu_eft/ak/gp34/gren_expl2_close.ogg", 70, nil, nil, nil, nil, 1)
+        self:EmitSound("weapons/darsu_eft/ak/gp34/gren_expl2_dist1.ogg", 90, nil, nil, nil, nil, 1)
+        self:EmitSound("weapons/darsu_eft/ak/gp34/gren_expl2_dist2.ogg", 999, nil, nil, nil, nil, 1)
         self:Remove()
     end
 

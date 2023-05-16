@@ -230,7 +230,7 @@ SWEP.HoldBreathTime = 40
 SWEP.RestoreBreathTime = 30
 SWEP.BreathInSound = false 
 SWEP.BreathOutSound = false
-SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.wav"
+SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.ogg"
 
 
 --          Generic stats
@@ -354,24 +354,24 @@ SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
-SWEP.ShootSound = path .. "fire_new/aksag_outdoor_close.wav"
-SWEP.ShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_close.wav"
+SWEP.ShootSound = path .. "fire_new/aksag_outdoor_close.ogg"
+SWEP.ShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_close.ogg"
 
-SWEP.ShootSoundIndoor = path .. "fire_new/aksag_indoor_close.wav"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_close.wav"
+SWEP.ShootSoundIndoor = path .. "fire_new/aksag_indoor_close.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_close.ogg"
 
-SWEP.DistantShootSound = path .. "fire_new/aksag_outdoor_distant.wav"
-SWEP.DistantShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_distant.wav"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/aksag_indoor_distant.wav"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_distant.wav"
+SWEP.DistantShootSound = path .. "fire_new/aksag_outdoor_distant.ogg"
+SWEP.DistantShootSoundSilenced = path .. "fire_new/aksag_outdoor_silenced_distant.ogg"
+SWEP.DistantShootSoundIndoor = path .. "fire_new/aksag_indoor_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/aksag_indoor_silenced_distant.ogg"
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = "" -- we will have own in sound tables
 SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
-SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
-SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.ogg"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.ogg"
 
 
 
@@ -394,10 +394,10 @@ SWEP.Animations = ARC9EFT.AK_Anims
 
 
 SWEP.HookP_TranslateSound = function(self, data) -- sag bolt
-    if data.sound == path .. "ak74_slider_down.wav" then
-        data.sound = path .. "aksag_bolt_in.wav"
-    elseif data.sound == path .. "ak74_slider_up.wav" then
-        data.sound = path .. "aksag_bolt_out.wav"
+    if data.sound == path .. "ak74_slider_down.ogg" then
+        data.sound = path .. "aksag_bolt_in.ogg"
+    elseif data.sound == path .. "ak74_slider_up.ogg" then
+        data.sound = path .. "aksag_bolt_out.ogg"
     end
         
     if data.name == "exitsights" or data.name == "entersights" then

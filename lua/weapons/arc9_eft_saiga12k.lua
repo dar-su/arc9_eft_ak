@@ -193,7 +193,7 @@ SWEP.HoldBreathTime = 40
 SWEP.RestoreBreathTime = 30
 SWEP.BreathInSound = false 
 SWEP.BreathOutSound = false
-SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.wav"
+SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.ogg"
 
 
 --          Generic stats
@@ -335,24 +335,24 @@ SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
 
-SWEP.ShootSound = { path .. "fire_new/saiga_outdoor_close1.wav", path .. "fire_new/saiga_outdoor_close2.wav" }
-SWEP.ShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_close.wav"
+SWEP.ShootSound = { path .. "fire_new/saiga_outdoor_close1.ogg", path .. "fire_new/saiga_outdoor_close2.ogg" }
+SWEP.ShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_close.ogg"
 
-SWEP.ShootSoundIndoor = path .. "fire_new/saiga_indoor_close1.wav"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_close.wav"
+SWEP.ShootSoundIndoor = path .. "fire_new/saiga_indoor_close1.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_close.ogg"
 
-SWEP.DistantShootSound = { path .. "fire_new/saiga_outdoor_distant1.wav", path .. "fire_new/saiga_outdoor_distant2.wav"}
-SWEP.DistantShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_distant.wav"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/saiga_outdoor_distant1.wav"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_distant.wav"
+SWEP.DistantShootSound = { path .. "fire_new/saiga_outdoor_distant1.ogg", path .. "fire_new/saiga_outdoor_distant2.ogg"}
+SWEP.DistantShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_distant.ogg"
+SWEP.DistantShootSoundIndoor = path .. "fire_new/saiga_outdoor_distant1.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_distant.ogg"
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = "" -- we will have own in sound tables
 SWEP.DryFireSound = "" -- we will have own in sound tables
 
 
-SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
-SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.ogg"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.ogg"
 ------------------------- [[[           Hooks & functions            ]]] -------------------------
 
 
@@ -448,37 +448,37 @@ local rik_magcheck = {
     { t = 1, lhik = 1 },
 }
 
-local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.wav","arc9_eft_shared/weapon_generic_rifle_spin2.wav","arc9_eft_shared/weapon_generic_rifle_spin3.wav","arc9_eft_shared/weapon_generic_rifle_spin4.wav","arc9_eft_shared/weapon_generic_rifle_spin5.wav","arc9_eft_shared/weapon_generic_rifle_spin6.wav","arc9_eft_shared/weapon_generic_rifle_spin7.wav","arc9_eft_shared/weapon_generic_rifle_spin8.wav","arc9_eft_shared/weapon_generic_rifle_spin9.wav","arc9_eft_shared/weapon_generic_rifle_spin10.wav"}
+local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
 
 local rst_single = {
     { s = randspin, t = 0.2 },
-    { s = path .. "saiga_slider_up.wav", t = 0.77 },
-    { s = "arc9_eft_shared/weap_handoff.wav", t = 0.7 },
-    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 0.9 },
-    { s = path .. "saiga_round_in_chamber.wav", t = 2 },
-    { s = path .. "saiga_slider_down.wav", t = 2.6 },
+    { s = path .. "saiga_slider_up.ogg", t = 0.77 },
+    { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.7 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 0.9 },
+    { s = path .. "saiga_round_in_chamber.ogg", t = 2 },
+    { s = path .. "saiga_slider_down.ogg", t = 2.6 },
     { s = randspin, t = 3.12 },
 }
 
 local rst_def = {
-    { s = path .. "saiga_magrelease_button.wav", t = 0.43 },
-    { s = path .. "saiga_magout_plastic.wav", t = 0.62 },
-    { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.11 },
-    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 1.66 },
-    { s = path .. "saiga_magin_plastic.wav", t = 2.2 },
-    -- { s = path .. "ak74_magrelease_button.wav", t = 2.52 },
+    { s = path .. "saiga_magrelease_button.ogg", t = 0.43 },
+    { s = path .. "saiga_magout_plastic.ogg", t = 0.62 },
+    { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 1.11 },
+    { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.66 },
+    { s = path .. "saiga_magin_plastic.ogg", t = 2.2 },
+    -- { s = path .. "ak74_magrelease_button.ogg", t = 2.52 },
     { s = randspin, t = 3 }
 }
 
 local rst_drop = {
     { s = randspin, t = 0.1 },
-    { s = path .. "saiga_magrelease_button.wav", t = 0.3 },
-    { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 0.9 },
-    { s = path .. "saiga_magin_plastic.wav", t = 1.66 },
-    -- { s = path .. "ak74_magrelease_button_hit.wav", t = 1.91 },
+    { s = path .. "saiga_magrelease_button.ogg", t = 0.3 },
+    { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.9 },
+    { s = path .. "saiga_magin_plastic.ogg", t = 1.66 },
+    -- { s = path .. "ak74_magrelease_button_hit.ogg", t = 1.91 },
     { s = randspin, t = 2.4 },
-    { s = path .. "saiga_slider_up.wav", t = 2.9 },
-    { s = path .. "saiga_slider_down.wav", t = 3.15 },
+    { s = path .. "saiga_slider_up.ogg", t = 2.9 },
+    { s = path .. "saiga_slider_down.ogg", t = 3.15 },
     { s = randspin, t = 3.6 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
@@ -487,11 +487,11 @@ local rst_drop = {
 
 local rst_magcheck = {
     { s = randspin, t = 5/24 },
-    { s = path .. "saiga_magrelease_button.wav", t = 21/24 },
-    { s = path .. "saiga_magout_plastic.wav", t = 25/24 },
+    { s = path .. "saiga_magrelease_button.ogg", t = 21/24 },
+    { s = path .. "saiga_magout_plastic.ogg", t = 25/24 },
     { s = randspin, t = 35/24 },
     { s = randspin, t = 55/24 },
-    { s = path .. "saiga_magin_plastic.wav", t = 82/24 },
+    { s = path .. "saiga_magin_plastic.ogg", t = 82/24 },
     { s = randspin, t = 90/24 },
 }
 
@@ -517,18 +517,18 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "saiga_slider_up.wav", t = 18/28 },
-            { s = path .. "saiga_slider_down.wav", t = 24/28 },
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
+            { s = path .. "saiga_slider_up.ogg", t = 18/28 },
+            { s = path .. "saiga_slider_down.ogg", t = 24/28 },
         },
     },
 
-    ["draw"] = { Source = "draw", EventTable = { { s = "arc9_eft_shared/weap_in.wav", t = 0 } } },
-    ["holster"] = { Source = "holster", EventTable = { { s = "arc9_eft_shared/weap_out.wav", t = 0 } } },
+    ["draw"] = { Source = "draw", EventTable = { { s = "arc9_eft_shared/weap_in.ogg", t = 0 } } },
+    ["holster"] = { Source = "holster", EventTable = { { s = "arc9_eft_shared/weap_out.ogg", t = 0 } } },
 
 
     ["fire"] = { Source = "fire" },
-    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",
@@ -614,11 +614,11 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = path .. "saiga_magrelease_button.wav", t = 0.48 },
-            { s = path .. "saiga_magout_plastic.wav", t = 0.67 },
-            { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.2 },
-            { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 1.8 },
-            { s = path .. "saiga_magin_plastic.wav", t = 2.48 },
+            { s = path .. "saiga_magrelease_button.ogg", t = 0.48 },
+            { s = path .. "saiga_magout_plastic.ogg", t = 0.67 },
+            { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 1.2 },
+            { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8 },
+            { s = path .. "saiga_magin_plastic.ogg", t = 2.48 },
             { s = randspin, t = 2.9 },
         },
     },
@@ -634,14 +634,14 @@ SWEP.Animations = {
             { t = 0.8, lhik = 1 },
         },
         EventTable = {
-            { s = path .. "saiga_magrelease_button.wav", t = 0.48 },
-            { s = path .. "saiga_magout_plastic.wav", t = 0.67 },
-            { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.2 },
-            { s = "arc9_eft_shared/weap_mag_pullout.wav", t = 1.8 },
-            { s = path .. "saiga_magin_plastic.wav", t = 2.48 },
+            { s = path .. "saiga_magrelease_button.ogg", t = 0.48 },
+            { s = path .. "saiga_magout_plastic.ogg", t = 0.67 },
+            { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 1.2 },
+            { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8 },
+            { s = path .. "saiga_magin_plastic.ogg", t = 2.48 },
             { s = randspin, t = 3.25 },
-            { s = path .. "saiga_slider_up.wav", t = 3.82 },
-            { s = path .. "saiga_slider_down.wav", t = 4.06 },
+            { s = path .. "saiga_slider_up.ogg", t = 3.82 },
+            { s = path .. "saiga_slider_down.ogg", t = 4.06 },
             { s = randspin, t = 4.3 }
         },
     },
@@ -672,8 +672,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = randspin, t = 9/28 },
-            { s = path.."saiga_slider_check.wav", t = 21/28},
-            { s = path.."saiga_slider_up.wav", t = 40/28},
+            { s = path.."saiga_slider_check.ogg", t = 21/28},
+            { s = path.."saiga_slider_up.ogg", t = 40/28},
             { s = randspin, t = 53/28 },
         },
     },
@@ -700,8 +700,8 @@ SWEP.Animations = {
         EventTable = rst_magcheck
     },
 
-    ["toggle"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
-    ["switchsights"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 } } },
+    ["toggle"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 } } },
+    ["switchsights"] = { Source = "mod_switch", EventTable = { { s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 } } },
 
 
 
@@ -710,8 +710,8 @@ SWEP.Animations = {
         Source = {"misfire_0", "misfire_1"}, -- misfire
         EventTable = {
             { s = randspin, t = 0.22 },            
-            { s = path.."saiga_slider_up.wav", t = 0.79},
-            { s = path.."saiga_slider_down.wav", t = 1.04},
+            { s = path.."saiga_slider_up.ogg", t = 0.79},
+            { s = path.."saiga_slider_down.ogg", t = 1.04},
             { s = randspin, t = 1.41 },        
         },
         EjectAt = 0.88
@@ -721,14 +721,14 @@ SWEP.Animations = {
         EventTable = {
             { s = randspin, t = 2/24 },
             { s = randspin, t = 12/24 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.44 },
-            { s = path .. "saiga_slider_jam.wav", t = 0.86 },
-            { s = path .. "saiga_slider_up.wav", t = 1.14 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.44 },
+            { s = path .. "saiga_slider_jam.ogg", t = 0.86 },
+            { s = path .. "saiga_slider_up.ogg", t = 1.14 },
             { s = randspin, t = 1.43 },
             { s = randspin, t = 1.66 },
-            { s = path .. "saiga_round_in_chamber.wav", t = 2.13 },
+            { s = path .. "saiga_round_in_chamber.ogg", t = 2.13 },
             { s = randspin, t = 2.55 },
-            { s = path .. "saiga_slider_down.wav", t = 2.96 },
+            { s = path .. "saiga_slider_down.ogg", t = 2.96 },
             { s = randspin, t = 3.5 },
         },
     },
@@ -736,18 +736,18 @@ SWEP.Animations = {
         Source = "jam_hardjam", -- jam hard
         EventTable = {
             { s = randspin, t = 0.16 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.48 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.48 },
             { s = randspin, t = 0.84 },
-            { s = path .. "ak_jam_stuckbolt_in1.wav", t = 0.85 },
-            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.35 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.85 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 1.35 },
             { s = randspin, t = 1.74 },
-            { s = path .. "ak_jam_stuckbolt_out_hit3.wav", t = 2.22 },
-            { s = path .. "ak_jam_stuckbolt_out_hit2.wav", t = 2.73 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.ogg", t = 2.22 },
+            { s = path .. "ak_jam_stuckbolt_out_hit2.ogg", t = 2.73 },
             { s = randspin, t = 3.13 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 3.27 },
-            { s = path .. "saiga_slider_up.wav", t = 4.09 },
-            { s = path .. "saiga_round_in_chamber.wav", t = 4.21 },
-            { s = path .. "saiga_slider_down.wav", t = 4.38 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 3.27 },
+            { s = path .. "saiga_slider_up.ogg", t = 4.09 },
+            { s = path .. "saiga_round_in_chamber.ogg", t = 4.21 },
+            { s = path .. "saiga_slider_down.ogg", t = 4.38 },
             { s = randspin, t = 4.84 },
         },
         EjectAt = 4.21
@@ -756,12 +756,12 @@ SWEP.Animations = {
         Source = "jam_softjam", -- jam soft
         EventTable = {
             { s = randspin, t = 0.18 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.53 },
-            { s = path .. "ak_jam_stuckbolt_in3.wav", t = 0.85 },
-            { s = path .. "ak_jam_stuckbolt_in2.wav", t = 1.23 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.53 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 0.85 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 1.23 },
             { s = randspin, t = 1.76 },
-            { s = path .. "saiga_slider_up.wav", t = 2.13 },
-            { s = path .. "saiga_slider_down.wav", t = 2.55 },
+            { s = path .. "saiga_slider_up.ogg", t = 2.13 },
+            { s = path .. "saiga_slider_down.ogg", t = 2.55 },
             { s = randspin, t = 2.8 },
         }
     },
@@ -769,13 +769,13 @@ SWEP.Animations = {
         Source = "jam_shell", -- jam shell
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.wav", t = 0.48 },
-            { s = path .. "saiga_slider_check.wav", t = 0.73 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.48 },
+            { s = path .. "saiga_slider_check.ogg", t = 0.73 },
             { s = randspin, t = 0.97 },
             { s = randspin, t = 1.2 },
             { s = randspin, t = 1.67 },
             { s = randspin, t = 1.59 },
-            { s = path .. "saiga_slider_down.wav", t = 1.96 },
+            { s = path .. "saiga_slider_down.ogg", t = 1.96 },
             { s = randspin, t = 2.35 },
         },
     },
