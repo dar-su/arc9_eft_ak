@@ -25,7 +25,7 @@ ATT.VisualRecoilMult = 0.97
 ATT.Attachments = {
     {
         PrintName = "AR Stock",
-        Category = "eft_ar_stock",
+        Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
         Pos = Vector(0.6, -3.5, 0.55),
         Ang = Angle(-5, -90, 0),
         Icon_Offset = Vector(-1, 0, 0.5),
@@ -331,7 +331,7 @@ ATT.Category = {"eft_akm_stock"}
 ATT.Attachments = {
     {
         PrintName = "AR Stock",
-        Category = "eft_ar_stock",
+        Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
         Pos = Vector(0.6, -3.8, 0.75),
         Ang = Angle(-3, -90, 0),
         Icon_Offset = Vector(-1, 0, 0.5),

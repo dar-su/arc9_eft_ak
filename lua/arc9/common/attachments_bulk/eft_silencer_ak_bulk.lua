@@ -19,6 +19,7 @@ ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -52,6 +53,7 @@ ATT.Category = {"eft_akm_muzzle"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -86,6 +88,7 @@ ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -122,6 +125,7 @@ ATT.Category = {"eft_ak103_muzzle", "eft_ak_ttak"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -164,6 +168,7 @@ ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -197,6 +202,7 @@ ATT.Category = {"eft_ak74_muzzle"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -231,6 +237,7 @@ ATT.Category = {"eft_ak74_muzzle", "eft_rpk16_muzzle"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 6
@@ -264,6 +271,7 @@ ATT.Category = {"eft_ak_wafflemaker"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
@@ -296,6 +304,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 

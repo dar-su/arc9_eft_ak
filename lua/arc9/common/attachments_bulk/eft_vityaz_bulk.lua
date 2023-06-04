@@ -297,6 +297,7 @@ ATT.Category = {"eft_pp1901_muzzle"}
 
 ATT.Silencer = true
 ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
