@@ -142,7 +142,7 @@ SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilPunchSights = -20 -- How far back visual recoil moves the gun
 
 
-SWEP.VisualRecoilSpringPunchDamping = 30
+SWEP.VisualRecoilSpringPunchDamping = 35
 SWEP.VisualRecoilDampingConst = 250
 SWEP.VisualRecoilSpringMagnitude = 2 / 1.67
 SWEP.VisualRecoilPositionBumpUp = -0.065
@@ -150,12 +150,13 @@ SWEP.VisualRecoilPositionBumpUpRTScope = -0.03
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 
 
+
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
-    if recamount > 1 then
-        recamount = math.Clamp((recamount - 1) / 10, 0, 1)
-        return springconstant * math.max(1, 1.1 * recamount) * 5, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 5
+    if recamount > 2 then
+        recamount = math.Clamp((recamount - 2) / 6, 0, 1)
+        return springconstant * math.max(1, 1.25 * recamount) * 1, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     elseif recamount == 1 then
-        return springconstant * 0.8, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 3
+        return springconstant * 1, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     end
 
     return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
