@@ -131,28 +131,27 @@ SWEP.VisualRecoilMultSights = 0.3
 SWEP.VisualRecoilMultCrouch = 0.5
 
 SWEP.VisualRecoilCenter = Vector(2, 22, 2)
-SWEP.VisualRecoilUp = 75 -- Vertical tilt
+SWEP.VisualRecoilUp = 75 * 0.5 -- Vertical tilt
 SWEP.VisualRecoilSide = 7 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 25 -- Roll tilt
 
 SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilPunchSights = -20 -- How far back visual recoil moves the gun
 
-
-SWEP.VisualRecoilSpringPunchDamping = 11
-SWEP.VisualRecoilDampingConst = 350
+SWEP.VisualRecoilSpringPunchDamping = 15
+SWEP.VisualRecoilDampingConst = 100
 SWEP.VisualRecoilSpringMagnitude = 2 / 1.67
-SWEP.VisualRecoilPositionBumpUp = -0.07
+SWEP.VisualRecoilPositionBumpUp = -0.065
 SWEP.VisualRecoilPositionBumpUpRTScope = -0.04
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 
 
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
     if recamount > 2 then
-        recamount = math.Clamp((recamount - 2) / 16, 0, 1)
-        return springconstant * math.max(1, 10 * recamount), VisualRecoilSpringMagnitude * 0.75, PUNCH_DAMPING * 0.75
+        recamount = math.Clamp((recamount - 2) / 6, 0, 1)
+        return springconstant * math.max(1, 1.15 * recamount) * 1.25, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     elseif recamount == 1 then
-        return springconstant * 50, VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 1
+        return springconstant * 0.75, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     end
 
     return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
@@ -161,13 +160,13 @@ end
 
 SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount)
     if recamount > 2 then
-        recamount = 1.65 - math.Clamp((recamount - 2) / 3.5, 0, 1)
+        recamount = 1.6 - math.Clamp((recamount - 2) / 3.5, 0, 1)
         
-        local fakerandom = 1 + (((69+recamount%5*CurTime()%3)*2420)%4)/10 
+        local fakerandom = 1 + (((69+recamount%5*CurTime()%3)*2420)%6)/10 
         
         return up * recamount * fakerandom, side * 0.8, roll, punch * 0.5
     elseif recamount == 1 then
-        return up * 2, side * 2, roll, punch
+        return up * 1.25, side * 2, roll, punch
     end
 
     return up, side, roll, punch
