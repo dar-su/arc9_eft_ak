@@ -132,7 +132,7 @@ SWEP.VisualRecoilSpringPunchDamping = 9
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringMagnitude = 1.2
 SWEP.VisualRecoilPositionBumpUp = -0.04
-SWEP.VisualRecoilPositionBumpUpRTScope = -0.04
+SWEP.VisualRecoilPositionBumpUpRTScope = 0.02
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 
 
