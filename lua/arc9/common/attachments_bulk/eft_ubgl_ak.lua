@@ -16,9 +16,9 @@ ATT.VisualRecoilMult = 0.92
 ATT.ReloadInSightsUBGL = false 
 
 ATT.VisualRecoilUBGL = 0.5
-ATT.VisualRecoilDampingConstUBGL = 125
+ATT.VisualRecoilDampingConstUBGL = 70
 ATT.VisualRecoilSpringMagnitudeUBGL = 2
-ATT.VisualRecoilUpUBGL = 120 -- Vertical tilt
+ATT.VisualRecoilUpUBGL = 60 -- Vertical tilt
 ATT.VisualRecoilSideUBGL = 0 -- Horizontal tilt
 ATT.VisualRecoilRollUBGL = 0 -- Roll tilt
 
@@ -247,7 +247,9 @@ ATT = {}
 ATT.PrintName = "GP-34 underbarrel grenade launcher"
 ATT.CompactName = "GP-34"
 ATT.Icon = Material("entities/eft_ak_attachments/gp34.png", "mips smooth")
-ATT.Description = [[!! Was removed from game when GP-25 was added (and UBGL system in tarkov). Was hidden in files since 2016
+ATT.Description = [[!! AWOOGA!! Do not use it!! Bad, might break gp25 if this one was used before!
+
+!! Was removed from game when GP-25 was added (and UBGL system in tarkov). Was hidden in files since 2016
 
 An underbarrel grenade launcher for 40mm VOG-25 grenades, installed on AK family of assault rifles.]]
 ATT.SortOrder = 0
@@ -261,9 +263,9 @@ ATT.VisualRecoilMult = 0.92
 
 ATT.ReloadInSightsUBGL = false 
 ATT.VisualRecoilUBGL = 0.5
-ATT.VisualRecoilDampingConstUBGL = 125
+ATT.VisualRecoilDampingConstUBGL = 70
 ATT.VisualRecoilSpringMagnitudeUBGL = 2
-ATT.VisualRecoilUpUBGL = 120 -- Vertical tilt
+ATT.VisualRecoilUpUBGL = 60 -- Vertical tilt
 ATT.VisualRecoilSideUBGL = 0 -- Horizontal tilt
 ATT.VisualRecoilRollUBGL = 0 -- Roll tilt
 
