@@ -390,16 +390,15 @@ ATT.ClipSize = 30
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_ak103_762_30")
 
-
-///////////////////////////////////////      eft_mag_ak_ak12_545_30
+///////////////////////////////////////      eft_mag_ak_ak12_545_30_old
 
 
 ATT = {}
 
-ATT.PrintName = "AK-12 5.45x39 30-round magazine"
-ATT.CompactName = "AK12"
+ATT.PrintName = "AK-12 5.45x39 early model 30-round magazine"
+ATT.CompactName = "AK-12 old"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/545ak12.png", "mips smooth")
-ATT.Description = [[A 30-round 5.45x39 windowed, polymer Izhmash magazine for the AK-12 and compatible systems.]]
+ATT.Description = [[An early model of 30-round polymer magazine with windows for ammunition control, for 5.45x39 cartridge for AK-12 and compatible rifles. Manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -421,7 +420,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
-ARC9.LoadAttachment(ATT, "eft_mag_ak_ak12_545_30")
+ARC9.LoadAttachment(ATT, "eft_mag_ak_ak12_545_30_old")
 
 
 ///////////////////////////////////////      eft_mag_ak_ak30fde_762_30
@@ -845,7 +844,7 @@ ARC9.LoadAttachment(ATT, "eft_mag_ak_slr106_556_30")
 ATT = {}
 
 ATT.PrintName = "AK-74 \"Saiga 545\" 5.45x39 10-round magazine"
-ATT.CompactName = "SAIGA"
+ATT.CompactName = "Saiga"
 ATT.Icon = Material("entities/eft_ak_attachments/mag/545saiga.png", "mips smooth")
 ATT.Description = [[A 10-round 5.45x39 Izhmash polymer magazine Saiga 545, for the AK-based civilian carbine of the same name.]]
 ATT.SortOrder = 0
@@ -934,3 +933,125 @@ ATT.ClipSize = 50
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_x47_762_50")
 
+
+
+-- 13.5
+
+///////////////////////////////////////      eft_mag_ak_ak12_545_30
+
+
+ATT = {}
+
+ATT.PrintName = "AK-12 5.45x39 30-round magazine"
+ATT.CompactName = "AK12"
+ATT.Icon = Material("entities/eft_ak_attachments/mag/545ak12.png", "mips smooth")
+ATT.Description = [[A 30-round 5.45x39 windowed, polymer Izhmash magazine for the AK-12 and compatible systems.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30_new.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_ak12_std_545x39_30_new.mdl"
+
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
+ATT.EFTErgoAdd = -2
+ATT.EFTImprovedMagCheck = true
+ATT.CustomCons = { Ergonomics = "-2" }
+
+ATT.Category = {
+    "eft_ak_545_mag",
+}
+
+ATT.ActivateElements = {"545"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_ak12_545_30")
+
+///////////////////////////////////////      eft_mag_ak_545_20
+
+
+ATT = {}
+
+ATT.PrintName = "AK-74 \"Saiga 545\" 5.45x39 20-round magazine"
+ATT.CompactName = "Saiga 20"
+ATT.Icon = Material("entities/eft_ak_attachments/mag/545saiga20.png", "mips smooth")
+ATT.Description = [[A 20-round 5.45x39 Delta-Tech polymer magazine Saiga 545, for the AK-based civilian carbine of the same name.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_saiga_545_std_545x39_20.mdl"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {
+    "eft_ak_545_mag",
+}
+
+ATT.ActivateElements = {"545"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 20
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
+
+///////////////////////////////////////      eft_mag_ak_545_20
+
+
+ATT = {}
+
+ATT.PrintName = "AK-74 \"Saiga 545\" 5.45x39 20-round magazine"
+ATT.CompactName = "Saiga 20"
+ATT.Icon = Material("entities/eft_ak_attachments/mag/545saiga20.png", "mips smooth")
+ATT.Description = [[A 20-round 5.45x39 Delta-Tech polymer magazine Saiga 545, for the AK-based civilian carbine of the same name.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_deltatech_saiga_mk_545_20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_deltatech_saiga_mk_545_20.mdl"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {
+    "eft_ak_545_mag",
+}
+
+ATT.ActivateElements = {"545"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 20
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_545_20")
+
+///////////////////////////////////////      eft_mag_ak_pmag_762_20
+
+
+ATT = {}
+
+ATT.PrintName = "AK 7.62x39 Magpul PMAG 20 GEN M3 20-round magazine"
+ATT.CompactName = "GEN M3 20"
+ATT.Icon = Material("entities/eft_ak_attachments/mag/pmag20.png", "mips smooth")
+ATT.Description = [[A 20-round polymer Magpul PMAG 20 AK/AKM GEN M3 magazine for 7.62x39 AK and compatible weapons. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_20_ak_akm_gen_m3_762x39.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_20_ak_akm_gen_m3_762x39.mdl"
+
+ATT.Category = {
+    "eft_ak_762_mag",
+}
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.ActivateElements = {"762"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 20
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_20")

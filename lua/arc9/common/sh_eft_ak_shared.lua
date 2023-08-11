@@ -59,7 +59,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
             ending = rand
         end
     elseif anim == "firemode_1" or anim == "firemode_2" then
-        if elements["eft_hg_rpk16_std"] then
+        if class == "arc9_eft_rpk16" or class == "arc9_eft_ak12" or class == "arc9_eft_ak15" then
             ending = "_rpk"
         end
     elseif anim == "inspect_ubgl" then -- gp25 lhik

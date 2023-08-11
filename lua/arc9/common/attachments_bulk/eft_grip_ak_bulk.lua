@@ -571,3 +571,29 @@ ATT.Category = {"eft_ak_grip"}
 
 ARC9.LoadAttachment(ATT, "eft_grip_ak_us_palm")
 
+
+
+-- 13.5
+
+///////////////////////////////////////      eft_grip_ak_mft
+
+
+ATT = {}
+
+ATT.PrintName = "AK Mission First Tactical ENGAGE AK47 pistol grip"
+ATT.CompactName = "MFT47"
+ATT.Icon = Material("entities/eft_ak_attachments/grip/mft.png", "mips smooth")
+ATT.Description = [[The ENGAGE AK47 pistol grip for AK-family automatic rifles and compatibles, manufactured by Mission First Tactical.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+
+ATT.HasGrip = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_mft_engage_ak47.mdl"
+ATT.ModelOffset = Vector(0, 0, 0.06)
+ATT.Category = {"eft_ak_grip"}
+
+
+ARC9.LoadAttachment(ATT, "eft_grip_ak_mft")
