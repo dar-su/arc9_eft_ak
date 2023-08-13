@@ -86,7 +86,7 @@ ATT = {}
 
 ATT.PrintName = "AK-12 5.45x39 muzzle brake"
 ATT.CompactName = "AK-12 MB"
-ATT.Icon = Material("entities/eft_ak_attachments/ak12/muzzle.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/ak12/mb.png", "mips smooth")
 ATT.Description = [[A standard-issue muzzle brake for AK-12 automatic rifles. Manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -111,7 +111,7 @@ ATT = {}
 
 ATT.PrintName = "AK-12 5.45x39 sound suppressor"
 ATT.CompactName = "AK-12"
-ATT.Icon = Material("entities/eft_ak_attachments/ak12/sil.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/ak12/s.png", "mips smooth")
 ATT.Description = [[An Izhmash standard-issue sound suppressor for AK-12 automatic rifles.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -206,7 +206,7 @@ ATT = {}
 
 ATT.PrintName = "AK-12 rear sight base"
 ATT.CompactName = "AK-12 RSB"
-ATT.Icon = Material("entities/eft_ak_attachments/ak12/rsbase.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/ak12/rsb.png", "mips smooth")
 ATT.Description = [[A detachable base for rear sights, installed on AK-12 automatic rifles. Manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -234,7 +234,7 @@ ATT = {}
 
 ATT.PrintName = "AK-12 buffer tube"
 ATT.CompactName = "AK-12 BT"
-ATT.Icon = Material("entities/eft_ak_attachments/ak12/tube.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/ak12/bt.png", "mips smooth")
 ATT.Description = [[A standard-issue buffer tube for AK-12 automatic rifles, manufactured by Izhmash.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

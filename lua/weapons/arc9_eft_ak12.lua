@@ -131,7 +131,7 @@ SWEP.VisualRecoilPunchSights = 100 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilSpringPunchDamping = 9
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringMagnitude = 1.2
-SWEP.VisualRecoilPositionBumpUp = -0.04
+SWEP.VisualRecoilPositionBumpUp = -0.06
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.02
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 
@@ -139,7 +139,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
     if recamount > 2 then
         recamount = math.Clamp((recamount - 2) / 6, 0, 1)
-        return springconstant * math.max(1, 1.15 * recamount) * 1.25, VisualRecoilSpringMagnitude, PUNCH_DAMPING
+        return springconstant * math.max(1, 1.15 * recamount) * 1.025, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     elseif recamount == 1 then
         return springconstant * 0.75, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     end
@@ -249,8 +249,8 @@ SWEP.TracerColor = Color(255, 225, 200)
 --          Positions and offsets
 
 SWEP.IronSights = {
-    Pos = Vector(-4.28, -5, 1.3),
-    Ang = Angle(0, -0.25, 0),
+    Pos = Vector(-4.28, -5, 1.27),
+    Ang = Angle(0, -0.09, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
     ViewModelFOV = 54

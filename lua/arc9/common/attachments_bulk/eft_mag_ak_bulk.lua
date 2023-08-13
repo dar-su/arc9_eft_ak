@@ -1005,7 +1005,7 @@ ATT = {}
 
 ATT.PrintName = "AK-74 \"Saiga 545\" 5.45x39 20-round magazine"
 ATT.CompactName = "Saiga 20"
-ATT.Icon = Material("entities/eft_ak_attachments/mag/545saiga20.png", "mips smooth")
+ATT.Icon = Material("entities/eft_ak_attachments/mag/saiga20.png", "mips smooth")
 ATT.Description = [[A 20-round 5.45x39 Delta-Tech polymer magazine Saiga 545, for the AK-based civilian carbine of the same name.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
