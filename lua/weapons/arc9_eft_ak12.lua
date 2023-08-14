@@ -21,7 +21,9 @@ SWEP.Trivia = {
     [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2018"
 }
 
-SWEP.Description = [[The Kalashnikov AK-12 5.45 automatic rifle is the primary model of individual small arms for personnel of motorized and other units of the Russian Armed Forces. The AK-12 is a part of the Ratnik equipment system.]]
+SWEP.Description = [[The Kalashnikov AK-12 5.45 automatic rifle is the primary model of individual small arms for personnel of motorized and other units of the Russian Armed Forces. The AK-12 is a part of the Ratnik equipment system.
+
+Note from me: 2-burst mode not works here because i'm not going to redo shared ak model just to allow selector go below 2 modes. not worth it, bursts are completely UNUSABLE with this kind of recoil]]
 
 SWEP.BarrelLength = 40
 SWEP.Slot = 2
@@ -98,13 +100,13 @@ SWEP.SpreadAddMove = 0.015
 
 --          Recoil
 
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0.6
 
 SWEP.RecoilMultHipFire = 1.1
 SWEP.RecoilMultCrouch = 0.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.RecoilUp = 3 * 0.85 -- patch 0.13.0.4.22617
+SWEP.RecoilUp = 3 * 0.85
 SWEP.RecoilSide = 0.7
 SWEP.RecoilRandomUp = 0.9
 SWEP.RecoilRandomSide = 0.3
@@ -121,8 +123,8 @@ SWEP.VisualRecoilMultSights = 0.3
 SWEP.VisualRecoilMultCrouch = 0.5
 
 SWEP.VisualRecoilCenter = Vector(2, 12, 2)
-SWEP.VisualRecoilUp = 30 -- Vertical tilt
-SWEP.VisualRecoilSide = 12 -- Horizontal tilt
+SWEP.VisualRecoilUp = 27 -- Vertical tilt
+SWEP.VisualRecoilSide = 5 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 25 -- Roll tilt
 
 SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
@@ -139,7 +141,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0.001
 SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
     if recamount > 2 then
         recamount = math.Clamp((recamount - 2) / 6, 0, 1)
-        return springconstant * math.max(1, 1.15 * recamount) * 1.025, VisualRecoilSpringMagnitude, PUNCH_DAMPING
+        return springconstant * math.max(1, 1.15 * recamount) * 1.6, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     elseif recamount == 1 then
         return springconstant * 0.75, VisualRecoilSpringMagnitude, PUNCH_DAMPING
     end
