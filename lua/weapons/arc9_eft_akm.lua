@@ -135,7 +135,7 @@ SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you prob
 SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
 local EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 0.85 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 0.75 -- camera roll each shot + makes camera go more up when fullautoing
 
 -- dont touch this i guess
 
