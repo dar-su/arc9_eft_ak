@@ -19,26 +19,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm HP"
 
-ATT.DamageMax = 74 * mult545
+ATT.DamageMax = 76 * mult545
 ATT.DamageMin = 47 * mult545
 ATT.PhysBulletMuzzleVelocity = 884 /0.0254
 -- ATT.TracerNum = 1
 -- ATT.TracerColor = Color(255, 16, 16)
 -- ATT.SpreadMult = 1.04
-ATT.RecoilMult = 1.05
-ATT.VisualRecoilMult = 1.05
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.SpreadMult = 0.97
 
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      12 *2.54/100/0.0254
-ATT.PenetrationDelta = 20/100
-ATT.ArmorPiercing =    20/100
+ATT.Penetration =      9 *2.54/100/0.0254
+ATT.PenetrationDelta = 15/100
+ATT.ArmorPiercing =    15/100
 ATT.RicochetChance =   20/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    74 * mult545     },
+    76 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     68.6 * mult545     },
@@ -97,26 +98,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm SP"
 
-ATT.DamageMax = 68 * mult545
+ATT.DamageMax = 65 * mult545
 ATT.DamageMin = 43.3 * mult545
 ATT.PhysBulletMuzzleVelocity = 873 /0.0254
 -- ATT.TracerNum = 1
 -- ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 0.9
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
+ATT.SpreadMult = 0.95
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
 
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      13 *2.54/100/0.0254
-ATT.PenetrationDelta = 34/100
-ATT.ArmorPiercing =    34/100
+ATT.Penetration =      15 *2.54/100/0.0254
+ATT.PenetrationDelta = 31/100
+ATT.ArmorPiercing =    31/100
 ATT.RicochetChance =   15/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    68 * mult545     },
+    65 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     63.06 * mult545     },
@@ -176,27 +177,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm US"
 
-ATT.DamageMax = 65 * mult545
+ATT.DamageMax = 63 * mult545
 ATT.DamageMin = 47 * mult545
 ATT.PhysBulletMuzzleVelocity = 303 /0.0254
 -- ATT.TracerNum = 1
 -- ATT.TracerColor = Color(255, 16, 16)
 -- ATT.SpreadMult = 1.04
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.75
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 ATT.HeatPerShotMult = 0.8
 
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      15 *2.54/100/0.0254
-ATT.PenetrationDelta = 34/100
-ATT.ArmorPiercing =    34/100
+ATT.Penetration =      17 *2.54/100/0.0254
+ATT.PenetrationDelta = 33/100
+ATT.ArmorPiercing =    33/100
 ATT.RicochetChance =   40/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    65 * mult545     },
+    63 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     68.6 * mult545     },
@@ -255,7 +256,7 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm PRS gs"
 
-ATT.DamageMax = 60 * mult545
+ATT.DamageMax = 70 * mult545
 ATT.DamageMin = 38.6 * mult545
 ATT.PhysBulletMuzzleVelocity = 866 /0.0254
 -- ATT.TracerNum = 1
@@ -268,14 +269,14 @@ ATT.HeatPerShotMult = 1.14
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      12 *2.54/100/0.0254
-ATT.PenetrationDelta = 28/100
-ATT.ArmorPiercing =    28/100
+ATT.Penetration =      13 *2.54/100/0.0254
+ATT.PenetrationDelta = 24/100
+ATT.ArmorPiercing =    24/100
 ATT.RicochetChance =   4/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    60 * mult545     },
+    70 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     55.95 * mult545     },
@@ -340,17 +341,15 @@ ATT.DamageMin = 35.8 * mult545
 ATT.PhysBulletMuzzleVelocity = 883 /0.0254
 ATT.TracerNum = 1
 ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 1.05
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
+ATT.SpreadMult = 1.03
 ATT.HeatPerShotMult = 1.14
 
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
 ATT.Penetration =      20 *2.54/100/0.0254
-ATT.PenetrationDelta = 38/100
-ATT.ArmorPiercing =    38/100
+ATT.PenetrationDelta = 36/100
+ATT.ArmorPiercing =    36/100
 ATT.RicochetChance =   40/100
 
 ATT.DamageLookupTable = {
@@ -414,7 +413,7 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm FMJ"
 
-ATT.DamageMax = 56 * mult545
+ATT.DamageMax = 55 * mult545
 ATT.DamageMin = 36 * mult545
 ATT.PhysBulletMuzzleVelocity = 884 /0.0254
 -- ATT.TracerNum = 1
@@ -423,14 +422,14 @@ ATT.PhysBulletMuzzleVelocity = 884 /0.0254
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      21 *2.54/100/0.0254
-ATT.PenetrationDelta = 30/100
-ATT.ArmorPiercing =    30/100
+ATT.Penetration =      24 *2.54/100/0.0254
+ATT.PenetrationDelta = 38/100
+ATT.ArmorPiercing =    38/100
 ATT.RicochetChance =   26/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    56 * mult545     },
+    55 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     52.2 * mult545     },
@@ -495,16 +494,16 @@ ATT.PhysBulletMuzzleVelocity = 915 /0.0254
 -- ATT.TracerNum = 1
 -- ATT.TracerColor = Color(255, 16, 16)
 ATT.SpreadMult = 0.5
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.HeatPerShotMult = 1.35
 
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      44 *2.54/100/0.0254
-ATT.PenetrationDelta = 50/100
-ATT.ArmorPiercing =    50/100
+ATT.Penetration =      42 *2.54/100/0.0254
+ATT.PenetrationDelta = 45/100
+ATT.ArmorPiercing =    45/100
 ATT.RicochetChance =   30/100
 
 ATT.DamageLookupTable = {
@@ -568,7 +567,7 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm PS gs"
 
-ATT.DamageMax = 48 * mult545
+ATT.DamageMax = 53 * mult545
 ATT.DamageMin = 30.3 * mult545
 ATT.PhysBulletMuzzleVelocity = 890 /0.0254
 -- ATT.TracerNum = 1
@@ -579,14 +578,14 @@ ATT.HeatPerShotMult = 1.1
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 
-ATT.Penetration =      31 *2.54/100/0.0254
-ATT.PenetrationDelta = 35/100
-ATT.ArmorPiercing =    35/100
+ATT.Penetration =      28 *2.54/100/0.0254
+ATT.PenetrationDelta = 40/100
+ATT.ArmorPiercing =    40/100
 ATT.RicochetChance =   40/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    48 * mult545     },
+    53 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     44.34 * mult545     },
@@ -645,7 +644,7 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm BP gs"
 
-ATT.DamageMax = 45 * mult545
+ATT.DamageMax = 46 * mult545
 ATT.DamageMin = 28.7 * mult545
 ATT.PhysBulletMuzzleVelocity = 890 /0.0254
 -- ATT.TracerNum = 1
@@ -654,15 +653,18 @@ ATT.PhysBulletMuzzleVelocity = 890 /0.0254
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 ATT.HeatPerShotMult = 1.35
+ATT.SpreadMult = 1.03
+ATT.RecoilMult = 1.07
+ATT.VisualRecoilMult = 1.07
 
-ATT.Penetration =      37 *2.54/100/0.0254
-ATT.PenetrationDelta = 41/100
-ATT.ArmorPiercing =    41/100
+ATT.Penetration =      45 *2.54/100/0.0254
+ATT.PenetrationDelta = 46/100
+ATT.ArmorPiercing =    46/100
 ATT.RicochetChance =   36/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    45 * mult545     },
+    46 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     41.77 * mult545     },
@@ -722,7 +724,7 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm PP gs"
 
-ATT.DamageMax = 44 * mult545
+ATT.DamageMax = 50 * mult545
 ATT.DamageMin = 28 * mult545
 ATT.PhysBulletMuzzleVelocity = 886 /0.0254
 -- ATT.TracerNum = 1
@@ -732,14 +734,14 @@ ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 ATT.HeatPerShotMult = 1.2
 
-ATT.Penetration =      36 *2.54/100/0.0254
-ATT.PenetrationDelta = 38/100
-ATT.ArmorPiercing =    38/100
+ATT.Penetration =      34 *2.54/100/0.0254
+ATT.PenetrationDelta = 42/100
+ATT.ArmorPiercing =    42/100
 ATT.RicochetChance =   38/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    44 * mult545     },
+    50 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     40.9 * mult545     },
@@ -799,26 +801,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm BT gs"
 
-ATT.DamageMax = 42 * mult545
+ATT.DamageMax = 48 * mult545
 ATT.DamageMin = 26.17 * mult545
 ATT.PhysBulletMuzzleVelocity = 880 /0.0254
 ATT.TracerNum = 1
 ATT.TracerColor = Color(255, 16, 16)
-ATT.SpreadMult = 1.02
-ATT.RecoilMult = 1.03
-ATT.VisualRecoilMult = 1.03
+ATT.SpreadMult = 1.04
+ATT.RecoilMult = 1.05
+ATT.VisualRecoilMult = 1.05
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 ATT.HeatPerShotMult = 1.5
 
-ATT.Penetration =      40 *2.54/100/0.0254
-ATT.PenetrationDelta = 35/100
-ATT.ArmorPiercing =    35/100
+ATT.Penetration =      37 *2.54/100/0.0254
+ATT.PenetrationDelta = 44/100
+ATT.ArmorPiercing =    44/100
 ATT.RicochetChance =   37/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    42 * mult545     },
+    48 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     38.46 * mult545     },
@@ -877,24 +879,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = "5.45x39mm BS gs"
 
-ATT.DamageMax = 40 * mult545
+ATT.DamageMax = 43 * mult545
 ATT.DamageMin = 25.74 * mult545
 ATT.PhysBulletMuzzleVelocity = 830 /0.0254
-ATT.SpreadMult = 1.03
+ATT.SpreadMult = 1.04
 ATT.RecoilMult = 1.1
 ATT.VisualRecoilMult = 1.1
 ATT.RangeMin = 10
 ATT.RangeMax = 1000 /0.0254 * dmgrange
 ATT.HeatPerShotMult = 1.45
 
-ATT.Penetration =      51 *2.54/100/0.0254
+ATT.Penetration =      54 *2.54/100/0.0254
 ATT.PenetrationDelta = 57/100
 ATT.ArmorPiercing =    57/100
 ATT.RicochetChance =   38/100
 
 ATT.DamageLookupTable = {
     {   10/0.0254 * dmgrange, 
-    40 * mult545     },
+    43 * mult545     },
 
     {   100 /0.0254 * dmgrange, 
     37.24 * mult545     },
@@ -959,7 +961,7 @@ ATT.DamageMin = 23.9 * mult545
 ATT.PhysBulletMuzzleVelocity = 905 /0.0254
 -- ATT.TracerNum = 1
 -- ATT.TracerColor = Color(255, 16, 16)
--- ATT.SpreadMult = 1.04
+ATT.SpreadMult = 1.05
 ATT.RecoilMult = 1.15
 ATT.VisualRecoilMult = 1.15
 ATT.RangeMin = 10
@@ -967,8 +969,8 @@ ATT.RangeMax = 1000 /0.0254 * dmgrange
 ATT.HeatPerShotMult = 1.7
 
 ATT.Penetration =      62 *2.54/100/0.0254
-ATT.PenetrationDelta = 55/100
-ATT.ArmorPiercing =    55/100
+ATT.PenetrationDelta = 59/100
+ATT.ArmorPiercing =    59/100
 ATT.RicochetChance =   38/100
 
 ATT.DamageLookupTable = {
