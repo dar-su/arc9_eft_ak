@@ -58,7 +58,7 @@ ARC9EFT.AK_AnimsHook = function(swep, anim)
             if nomag then ending = math.max(rand, 2) end
             ending = rand
         end
-    elseif anim == "firemode_1" or anim == "firemode_2" then
+    elseif anim == "firemode_1" or anim == "firemode_2" or anim == "firemode_3" then
         if class == "arc9_eft_rpk16" or class == "arc9_eft_ak12" or class == "arc9_eft_ak15" then
             ending = "_rpk"
         end
@@ -744,12 +744,27 @@ ARC9EFT.AK_Anims = {
         --     ["firemode"] = 1 
         -- },
     },
+    ["firemode_3"] = {
+        Source = "firemode_0",
+        EventTable = { 
+            -- {pp = "firemode", ppv = 1, t = 0 },
+            {s = path .. "ak74_fireselector_up.ogg", t = 0.25 },
+            -- {pp = "firemode", ppv = 0, t = 0.5 },
+        },    
+        -- PoseParamChanges = {
+        --     ["firemode"] = 1 
+        -- },
+    },
 
     ["firemode_1_rpk"] = {
         Source = "firemode_1_rpk",
         EventTable = { { s = path .. "ak74_fireselector_down.ogg", t = 0.2 } }
     },
     ["firemode_2_rpk"] = {
+        Source = "firemode_0_rpk",
+        EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.2 } }
+    },
+    ["firemode_3_rpk"] = {
         Source = "firemode_0_rpk",
         EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.2 } }
     },
@@ -1072,6 +1087,10 @@ ARC9EFT.VITYAZ_Anims = {
         EventTable = { { s = path .. "ak74_fireselector_down.ogg", t = 0.25 } }
     },
     ["firemode_2"] = {
+        Source = "firemode_0",
+        EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.25 } }
+    },
+    ["firemode_3"] = {
         Source = "firemode_0",
         EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.25 } }
     },

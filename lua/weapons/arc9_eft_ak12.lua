@@ -23,7 +23,7 @@ SWEP.Trivia = {
 
 SWEP.Description = [[The Kalashnikov AK-12 5.45 automatic rifle is the primary model of individual small arms for personnel of motorized and other units of the Russian Armed Forces. The AK-12 is a part of the Ratnik equipment system.
 
-Note from me: 2-burst mode not works here because i'm not going to redo shared ak model just to allow selector go below 2 modes. not worth it, bursts are completely UNUSABLE with this kind of recoil]]
+Note from me: fireselector acts a little incorrectly here cuz ak12 uses same animation set as any other ak  so implementing third firemode on shared model would be big pain in ass. it working though so why not, just dont look at right side of gun :-)]]
 
 SWEP.BarrelLength = 40
 SWEP.Slot = 2
@@ -198,6 +198,7 @@ SWEP.RPM = 700
 -- SWEP.Firemodes = { { Mode = -1 }, { Mode = 1 } } -- auto, semi
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 2},
+    { Mode = 2, PoseParam = 1 },
     { Mode = 1, PoseParam = 1 }
 }
 
