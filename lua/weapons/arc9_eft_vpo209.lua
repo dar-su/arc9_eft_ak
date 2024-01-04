@@ -163,6 +163,8 @@ SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount, self)
     if recamount < 2 then
         if self:GetSightAmount() < 0.2 then up = 1 end -- only for visual when hipfiring
     end
+    
+    if self:GetUBGL() then up = 4 end -- ubgl!
 
     return up, side, roll, punch
 end
