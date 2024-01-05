@@ -835,14 +835,14 @@ ATT.Attachments = {
     },
     {
         PrintName = "R Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(1.15, 8, 0.52),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "L Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(-1.15, 8, 0.52),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
@@ -856,7 +856,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B Tactical",
-        Category = {"eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(0, 8.1, 1.7),
         Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
@@ -1955,3 +1955,208 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_hg_ak_zhu_plm")
 
+--0.14
+
+///////////////////////////////////////      eft_hg_ak_dominat
+
+
+ATT = {}
+
+ATT.PrintName = "AK AKdemia Dominator handguard"
+ATT.CompactName = "Dominator"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/dom.png", "mips smooth")
+ATT.Description = [[The AKdemia Dominator handguard optimizes weapon grip and improves weapon control. The Picattiny rail integrated into the handguard allows for additional weapon tuning.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_dominator.mdl"
+ATT.LHIK = true
+
+ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
+
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.RecoilMult = 0.985
+ATT.VisualRecoilMult = 0.985
+ATT.HeatCapacityMult = 1.032
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 4, -1.37),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, 4.5, 1.6),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_hg_ak_dominat")
+
+///////////////////////////////////////      eft_hg_ak_aspid
+
+
+ATT = {}
+
+ATT.PrintName = "AK Alfa Arms ASPID handguard"
+ATT.CompactName = "Aspid"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/aspid.png", "mips smooth")
+ATT.Description = [[The ASPID handguard is made of B95T aluminum alloy with a DuraCoat finish, it is intended for installing on the AK assault rifles replacing the standard handguard. Manufactured by Alfa Arms.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.Folder = "ZENIT"
+
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+ATT.RecoilMult = 0.975
+ATT.VisualRecoilMult = 0.975
+ATT.HeatCapacityMult = 0.906
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_aspid.mdl"
+ATT.ModelBodygroups = "0"
+ATT.LHIK = true
+ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
+ATT.ExcludeElements = {"eft_vityaz_gas_std"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(0, 4, -1.32),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, 4, 1.7),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = "R Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(1.15, 9, 0.6),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+    {
+        PrintName = "L Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(-1.15, 9, 0.6),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(0, 9, 1.7),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_hg_ak_aspid")
+
+///////////////////////////////////////      eft_hg_ak_hartman
+
+
+ATT = {}
+
+ATT.PrintName = "Saiga-9 Hartman Gyurza handguard"
+ATT.CompactName = "Gyurza-9"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/hartman.png", "mips smooth")
+ATT.Description = [[A tubular handguard for the Saiga-9 carbine. Manufactured by Hartman.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.Folder = "HEXAGON"
+
+ATT.EFTErgoAdd = 15
+ATT.CustomPros = { Ergonomics = "+15" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 0.952
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/vityaz_hatman_hg.mdl"
+ATT.LHIK = true
+ATT.RequireElements = {"gasblock"}
+ATT.ActivateElements = {"nogp34"}
+
+ATT.ExcludeElements = {"short_barrel", "eft_vityaz_silencer_std", "eft_silencer_osprey9", "eft_silencer_r43_9x19"}
+
+ATT.Category = {"eft_vityaz_handguard"}
+ATT.Attachments = {
+    {
+        PrintName = "B Hex. mount",
+        Category = {"eft_mount_lenok"},
+        Pos = Vector(0, 11.77, 1.45),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = "L Hex. mount",
+        Category = {"eft_mount_lenok"},
+        Pos = Vector(-0.8, 11.77, 0.7),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+    {
+        PrintName = "R Hex. mount",
+        Category = {"eft_mount_lenok"},
+        Pos = Vector(0.8, 11.77, 0.7),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0.2, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_hg_ak_hartman")
+
+///////////////////////////////////////      eft_mount_lenok_70
+
+
+ATT = {}
+
+ATT.PrintName = "Hartman Lenok 70mm rail"
+ATT.CompactName = "Lenok"
+ATT.Icon = Material("entities/eft_attachments/mount/lenokrail.png", "mips smooth")
+ATT.Description = [[The "Lenok" Weaver rail allows installation of additional equipment on Hartman tubular handguards.]]
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/hartman_lenok_mount.mdl"
+
+ATT.Category = {"eft_mount_lenok"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = "eft_tactical",
+        Pos = Vector(-0.2, -0.37, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_lenok_70")

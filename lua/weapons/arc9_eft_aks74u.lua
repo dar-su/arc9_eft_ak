@@ -435,6 +435,7 @@ SWEP.AttachmentElements = {
     ["eft_aksu_gas_ak"] = { Bodygroups = { {2, 1} } },
     ["eft_aksu_rec_ak_std"] = { Bodygroups = { {3, 1} } },
     ["eft_aksu_rec_ak_b"] = { Bodygroups = { {3, 2} } },
+    ["eft_aksu_rec_piligrim"] = { Bodygroups = { {3, 3} } },
     ["eft_aksu_mount_b18"] = { Bodygroups = { {5, 1} } },
 }
 
@@ -442,7 +443,14 @@ SWEP.missingpartsnotifsent = 0
 function SWEP:HookP_BlockFire() return ARC9EFT.AK_MissingParts(self) end
 function SWEP:Hook_RedPrintName() return ARC9EFT.AK_RedName(self) end
 
-
+local sposoffset, sangoffset = Vector(0.02, 0, -0.2), Angle(0, 0.37, 0)
+function SWEP:GetSightPositions()
+    local s = self:GetSight()
+    if !self:GetValue("FoldSights") and self:GetElements()["eft_aksu_rec_piligrim"] then
+        return s.Pos + sposoffset, s.Ang + sangoffset
+    end
+    return s.Pos, s.Ang
+end
 
 SWEP.Attachments = {
     {

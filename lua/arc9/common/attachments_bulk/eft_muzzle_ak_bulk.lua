@@ -653,3 +653,31 @@ ATT.Category = {"eft_akm_muzzle"}
 
 ARC9.LoadAttachment(ATT, "eft_muzzle_ak_vpo209")
 
+
+///////////////////////////////////////      eft_muzzle_ak_vr05
+
+
+ATT = {}
+
+ATT.PrintName = "AK Vector VR-05T 7.62x39 muzzle brake"
+ATT.CompactName = "VR-05T"
+ATT.Icon = Material("entities/eft_ak_attachments/muzzle/vr.png", "mips smooth")
+ATT.Description = [[A muzzle brake for AK 7.62x39 assault rifles and compatibles. Manufactured by Vector 7.62.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_vector_vr_05t_762x39.mdl"
+
+ATT.Category = {"eft_akm_muzzle", "eft_ak103_muzzle"}
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.RecoilMult = 0.86
+ATT.VisualRecoilMult = 0.86
+ATT.HeatCapacityMult = 0.98
+
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_ak_vr05")
+
+
+///////////////////////////////////////      eft_muzzle_ak_kibaarms_308

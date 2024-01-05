@@ -597,3 +597,60 @@ ATT.Category = {"eft_ak_grip"}
 
 
 ARC9.LoadAttachment(ATT, "eft_grip_ak_mft")
+
+-- 0.14
+
+///////////////////////////////////////      eft_grip_ak_puf
+
+
+ATT = {}
+
+ATT.PrintName = "AK PUFGUN SG-M2 pistol grip"
+ATT.CompactName = "SG-M2"
+ATT.Icon = Material("entities/eft_ak_attachments/grip/puf.png", "mips smooth")
+ATT.Description = [[The SG-M2 pistol grip for AK and compatible rifles. Manufactured by PUFGUN.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 11.5
+ATT.CustomPros = { Ergonomics = "+11.5" }
+
+ATT.HasGrip = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_pufgun_sg_m2.mdl"
+ATT.ModelOffset = Vector(0, 0.05, -0.06)
+ATT.Category = {"eft_ak_grip"}
+
+ARC9.LoadAttachment(ATT, "eft_grip_ak_puf")
+
+///////////////////////////////////////      eft_grip_ak_cg101
+
+
+ATT = {}
+
+ATT.PrintName = "AK CG101 AR-type pistol grip adapter"
+ATT.CompactName = "CG101"
+ATT.Icon = Material("entities/eft_ak_attachments/grip/ak2m4.png", "mips smooth")
+ATT.Description = [[An adapter that allows AR-type pistol grips installation on the AK rifles.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.HasGrip = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_cg101_adapter.mdl"
+ATT.ModelOffset = Vector(0, 0.05, -0.06)
+ATT.Category = {"eft_ak_grip"}
+
+ATT.Attachments = {
+    {
+        PrintName = "AR Grip",
+        -- Category = "eft_ar15_pgrip_flat",
+        Category = "eft_ar15_pgrip",
+        Pos = Vector(0, -0.54, 0.34),
+        Ang = Angle(1.25, -90, 0),
+        Icon_Offset = Vector(-0.5, 0, -0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_grip_ak_cg101")
