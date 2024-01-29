@@ -637,7 +637,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 
-ATT.HasGrip = true
+-- ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ak_cg101_adapter.mdl"
 ATT.ModelOffset = Vector(0, 0.05, -0.06)
 ATT.Category = {"eft_ak_grip"}
