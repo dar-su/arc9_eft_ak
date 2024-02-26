@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_lmg")
 SWEP.Credits = { 
     [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
     [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
