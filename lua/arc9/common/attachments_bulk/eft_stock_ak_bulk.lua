@@ -775,3 +775,71 @@ ATT.Category = {"eft_stock_zenit_lock"}
 
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt3")
 
+
+
+
+///////////////////////////////////////      eft_stock_ak100_skelet
+
+
+ATT = {}
+
+ATT.PrintName = "AK 100-series metal skeletonized stock"
+ATT.CompactName = "AK 100"
+ATT.Icon = Material("entities/eft_ak_attachments/stock/aks.png", "mips smooth")
+ATT.Description = [[A metal triangle stock for the 100-series AKs, manufactured by Izhmash. ]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.79
+ATT.VisualRecoilMult = 0.79
+
+ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Recoil pad",
+        Category = {"eft_stock_ak_pad"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -9.7, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_stock_ak100_skelet")
+
+///////////////////////////////////////      eft_stock_ak_skelet_cust
+
+
+ATT = {}
+
+ATT.PrintName = "AK skeletonized stock (Customized)"
+ATT.CompactName = "Med Stock"
+ATT.Icon = Material("entities/eft_ak_attachments/stock/aksc.png", "mips smooth")
+ATT.Description = [[A metal skeleton stock equipped with a bandage and Esmarch tourniquet, the use of which, when carried this way, has been the subject of much debate and is still in question. A true old school.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_customized.mdl"
+
+ATT.EFTErgoAdd = 11.5
+ATT.CustomPros = { Ergonomics = "+11.5" }
+ATT.RecoilMult = 0.79
+ATT.VisualRecoilMult = 0.79
+
+ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Recoil pad",
+        Category = {"eft_stock_ak_pad"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -9.7, -1),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_stock_ak_skelet_cust")
