@@ -824,7 +824,31 @@ ARC9EFT.AK_Anims = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
+
+    ["enter_bipod"] = {
+        Source = "action",
+        EventTable = {
+            { s = { "weapons/darsu_eft/bipod/bipod_atlas_unfold_1.ogg", "weapons/darsu_eft/bipod/bipod_atlas_unfold_2.ogg", "weapons/darsu_eft/bipod/bipod_atlas_unfold_3.ogg" }, t = 0.0 },
+            { s = { "weapons/darsu_eft/bipod/bipod_stand_on_1.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_2.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_3.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_4.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_5.ogg" }, t = 0.2 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["exit_bipod"] = {
+        Source = "action",
+        EventTable = {
+            { s = { "weapons/darsu_eft/bipod/bipod_atlas_fold_1.ogg", "weapons/darsu_eft/bipod/bipod_atlas_fold_2.ogg", "weapons/darsu_eft/bipod/bipod_atlas_fold_3.ogg" }, t = 0.0 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
 }
 
 
@@ -1172,6 +1196,31 @@ ARC9EFT.VITYAZ_Anims = {
             { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.2 },
             { s = path .. "ak_jam_stuckbolt_out_hit3.ogg", t = 1.44 },
             { s = randspin, t = 1.7 },
+        },
+    },   
+    
+    
+    ["enter_bipod"] = {
+        Source = "action",
+        EventTable = {
+            { s = { "weapons/darsu_eft/bipod/bipod_atlas_unfold_1.ogg", "weapons/darsu_eft/bipod/bipod_atlas_unfold_2.ogg", "weapons/darsu_eft/bipod/bipod_atlas_unfold_3.ogg" }, t = 0.0 },
+            { s = { "weapons/darsu_eft/bipod/bipod_stand_on_1.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_2.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_3.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_4.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_5.ogg" }, t = 0.2 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["exit_bipod"] = {
+        Source = "action",
+        EventTable = {
+            { s = { "weapons/darsu_eft/bipod/bipod_atlas_fold_1.ogg", "weapons/darsu_eft/bipod/bipod_atlas_fold_2.ogg", "weapons/darsu_eft/bipod/bipod_atlas_fold_3.ogg" }, t = 0.0 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 1, lhik = 1 },
         },
     },
 }

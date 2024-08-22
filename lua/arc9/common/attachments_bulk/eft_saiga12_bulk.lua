@@ -97,6 +97,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 180-45-90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_bipod"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(0, 7.6, 1.65),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 1),
+    },
 }
 
 

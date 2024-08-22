@@ -638,7 +638,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B Tactical",
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 9, 1.65),
         Ang = Angle(0, -90, 180),
@@ -856,7 +856,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B Tactical",
-        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big", "eft_bipod"},
         Pos = Vector(0, 8.1, 1.7),
         Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
@@ -1464,6 +1464,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(-7, -0.35, 0),
+        Ang = Angle(0, 0, 270),
+        Icon_Offset = Vector(0, 0, 1),
+    },
 }
 
 
@@ -2067,7 +2075,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B Tactical",
-        Category = {"eft_tactical", "eft_tactical_top"},
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 9, 1.7),
         Ang = Angle(0, -90, 180),
