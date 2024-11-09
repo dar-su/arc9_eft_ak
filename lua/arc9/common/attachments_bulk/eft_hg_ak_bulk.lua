@@ -682,7 +682,7 @@ ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 ATT.Attachments = {
     {
         PrintName = "B2 Keymod",
-        Category = {"eft_mount_keymod"},
+        Category = {"eft_mount_keymod", "eft_mount_keymod_bipod"},
         Pos = Vector(0, 10.7, 1.6),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
@@ -1525,7 +1525,7 @@ ATT.Attachments = {
     },
     {
         PrintName = "B2 Keymod",
-        Category = {"eft_mount_keymod"},
+        Category = {"eft_mount_keymod", "eft_mount_keymod_bipod"},
         Pos = Vector(0, 9.5, 1.7),
         Ang = Angle(0, -90, -90),   
         Icon_Offset = Vector(0, 0.1, 0),
