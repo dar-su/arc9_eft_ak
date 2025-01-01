@@ -3,9 +3,9 @@
 
 "VertexLitGeneric"
 {
-	"$basetexture" "models/weapons/arc9/darsu_eft/ak/barrel_ak_aklys_defense_velociraptor_suppressor_762x35_LOD0_diff"
-	"$bumpmap" "models/weapons/arc9/darsu_eft/ak/barrel_ak_aklys_defense_velociraptor_suppressor_762x35_LOD0_nrm"
-	"$phongexponenttexture" "models/weapons/arc9/darsu_eft/ak/barrel_ak_aklys_defense_velociraptor_suppressor_762x35_LOD0_gloss"
+	"$basetexture" "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_mag_223_556x45_45_LOD0_diff"
+	"$bumpmap" "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_mag_223_556x45_45_LOD0_nrm"
+	"$phongexponenttexture" "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_mag_223_556x45_45_LOD0_gloss"
 	"$phong"		"1"
 	"$phongboost"	"6"
 	"$blendtintbybasealpha"	"1"

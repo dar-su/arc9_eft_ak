@@ -843,3 +843,26 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_stock_ak_skelet_cust")
+
+///////////////////////////////////////      eft_stock_ak_evo
+
+
+ATT = {}
+
+ATT.PrintName = "AK AK-EVO stock"
+ATT.CompactName = "AK-EVO"
+ATT.Icon = Material("entities/eft_ak_attachments/stock/evo.png", "mips smooth")
+ATT.Description = [[A new polymer buttstock for the modern AK platform folding weapons. Manufactured by Kalashnikov Concern.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_evo.mdl"
+
+ATT.EFTErgoAdd = 15
+ATT.CustomPros = { Ergonomics = "+15" }
+ATT.RecoilMult = 0.78
+ATT.VisualRecoilMult = 0.78
+
+ATT.Category = {"eft_ak74m_stock", "eft_aks_stock", "eft_rpk16_stock"}
+
+ARC9.LoadAttachment(ATT, "eft_stock_ak_evo")

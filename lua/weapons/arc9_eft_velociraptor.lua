@@ -1,5 +1,5 @@
 -- uhh :33
-SWEP.Spawnable = file.Exists("lua/weapons/arc9_eft_mcx.lua", "LUA")
+SWEP.Spawnable = file.Exists("weapons/arc9_eft_mcx.lua", "LUA")
 -- 300 blk content is in mcx pack
 
 AddCSLuaFile()
@@ -25,7 +25,7 @@ SWEP.Trivia = {
     [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2019"
 }
 
-SWEP.Description = [[Aklys Defense Velociraptor copy desc and check ergo and moa later too]]
+SWEP.Description = [[A special modification based on the AK assault rifle chambered in .300 Blackout caliber, manufactured by Aklys Defense. It replaces the standard barrel assembly with a modified integrally suppressed barrel, which allowed to achieve a significantly reduced sound signature.]]
 
 SWEP.BarrelLength = 45
 SWEP.Slot = 2
@@ -91,7 +91,7 @@ SWEP.DamageLookupTable = {
 
 
 --          Spread
-SWEP.Spread = 2.131 * ARC9.MOAToAcc
+SWEP.Spread = 2.235 * ARC9.MOAToAcc
 SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadMultMove = 1.5
 SWEP.SpreadAddMove = 0.015
@@ -118,8 +118,8 @@ local EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
 SWEP.VisualRecoilSide                 = 0.1   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 2 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 15 -- same but in sights only
+SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 3 -- same but in sights only
 
 SWEP.VisualRecoilDampingConst = 100  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
@@ -129,10 +129,15 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by th
 SWEP.VisualRecoilPositionBumpUp = 0.05 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
-SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
+-- SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
 local EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
 SWEP.RecoilKick = 0.65 -- camera roll each shot + makes camera go more up when fullautoing
+
+SWEP.VisualRecoilCenter = Vector(4.28, 19, -2)
+SWEP.SubtleVisualRecoil = 1.75
+SWEP.SubtleVisualRecoilDirection = 3.5
+SWEP.SubtleVisualRecoilSpeed = 1
 
 -- dont touch this i guess
 
@@ -180,11 +185,11 @@ SWEP.RecoilKickDamping = 10
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = false 
-SWEP.MalfunctionMeanShotsToFail = 1.5 * 450
-SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
+SWEP.MalfunctionMeanShotsToFail = 300
+SWEP.MalfunctionMeanShotsToFailMultHot = 0
 SWEP.Overheat = true
-SWEP.HeatCapacity = 210
-SWEP.HeatDissipation = 2.5
+SWEP.HeatCapacity = 78 * 1.5
+SWEP.HeatDissipation = 2.0
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 
@@ -431,26 +436,33 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, -5.5, -0.25),
         ExcludeElements = nil,
         RequireElements = nil,
-        Installed = "eft_rec_ak_rd704"
+        Installed = "eft_rec_ak_rd704",
+        RejectAttachments = {
+            ["eft_rec_ak_bastion"] = true,
+            ["eft_rec_ak_fab_pdc"] = true,
+            ["eft_rec_ak_dogleg"] = true,
+            ["eft_rec_ak_b33"] = true,
+        },
     },
     {
         PrintName = "Stock",
         Category = "eft_akm_stock",
         Bone = "mod_stock",
-        Installed = "eft_stock_ak_aktom4",
+        -- Installed = "eft_stock_ak_aktom4",
+        Installed = "eft_stock_akm_zhu_s",
         ExcludeElements = {"nostock"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 3),   
-        SubAttachments = {
-            {
-                Installed = "eft_ar_buffertube_std",
-                SubAttachments = {
-                    {
-                        Installed = "eft_ar_stock_sba3",
-                    }
-                }
-            }
-        }
+        -- SubAttachments = {
+        --     {
+        --         Installed = "eft_ar_buffertube_std",
+        --         SubAttachments = {
+        --             {
+        --                 Installed = "eft_ar_stock_sba3",
+        --             }
+        --         }
+        --     }
+        -- }
     },
     {
         PrintName = "Dovetail",
@@ -467,7 +479,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1, -0.5),
-        Installed = "eft_grip_ak_tangodown",
+        Installed = "eft_grip_ak_mft",
     },
     {
         PrintName = "Ammunition",
@@ -488,17 +500,17 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_6l29_556_30"
         -- Installed = "eft_mag_ak_55_762_30"
     },    
-    -- {
-    --     PrintName = "Gas tube",
-    --     Category = "eft_rd704_gasblock",
-    --     Bone = "mod_gas_block",
-    --     Pos = Vector(0, 0, 0),
-    --     Ang = Angle(0, 0, 0),
-    --     Icon_Offset = Vector(0, 2.5, 0.25),
-    --     ExcludeElements = nil,
-    --     RequireElements = nil,
-    --     Installed = "eft_gas_rd704_ionlite",
-    -- }, 
+    {
+        PrintName = "Handguard",
+        Category = "eft_velociraptor_handguard",
+        Bone = "mod_gas_block",
+        Pos = Vector(0, 1.65, -2.15),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 2.5, 0.25),
+        ExcludeElements = nil,
+        RequireElements = nil,
+        Installed = "eft_hg_velociraptor_std",
+    }, 
     -- {
     --     PrintName = "Rear sight",
     --     Category = "eft_ak74_rearsight",
@@ -513,9 +525,27 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Bone = "weapon",
         Category = {"eft_optic_medium", "eft_optic_small"},
-        Pos = Vector(0, 19, 1.6),
+        RejectAttachments = {
+            ["eft_optic_553"] = true,
+            ["eft_optic_boss"] = true,
+            ["eft_optic_romeo8t"] = true,
+            ["eft_optic_krechet"] = true,
+            ["eft_optic_kobra"] = true,
+            ["eft_optic_pk120"] = true,
+            ["eft_optic_okp7"] = true,
+            ["eft_optic_okp7_sigma"] = true,
+        },
+        ExcludeElements = {"railedcover", "nolongrear"},
+        Pos = Vector(0, 18.7, 1.82),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),   
+        ExtraSightDistance = 4,
+        Installed = "eft_mount_rm33",
+        SubAttachments = {
+            {
+                Installed = "eft_optic_rmr",
+            }
+        }
     },
     {
         PrintName = "Charge",
@@ -534,7 +564,7 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.EFTErgo = 41
+SWEP.EFTErgo = 35
 if ARC9EFTBASE then
     SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook or nil
     SWEP.HoldBreathTimeHook = ARC9EFT.ErgoBreathHook or nil

@@ -86,7 +86,7 @@ SWEP.VisualRecoilSide                 = 0.04   --   when fullautoing
 SWEP.VisualRecoilRoll = 5 -- roll tilt, a visual thing
 
 SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 15 -- same but in sights only
+SWEP.VisualRecoilPunchSights = 3 -- same but in sights only
 
 SWEP.VisualRecoilDampingConst = 130  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
@@ -97,9 +97,16 @@ SWEP.VisualRecoilPositionBumpUp = 0.05 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
 SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
+SWEP.VisualRecoilCenter = Vector(4.28, 19, -2) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
+
 local EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
 SWEP.RecoilKick = 1.25 -- camera roll each shot + makes camera go more up when fullautoing
+
+SWEP.VisualRecoilCenter = Vector(4.28, 19, -2)
+SWEP.SubtleVisualRecoil = 3
+SWEP.SubtleVisualRecoilDirection = 3.25
+SWEP.SubtleVisualRecoilSpeed = 0.4
 
 -- dont touch this i guess
 

@@ -1055,3 +1055,34 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
 ARC9.LoadAttachment(ATT, "eft_mag_ak_pmag_762_20")
+
+
+///////////////////////////////////////      eft_mag_ak_molot_556_45
+
+
+ATT = {}
+
+ATT.PrintName = "AK 5.56x45 Molot Arms 45-round magazine"
+ATT.CompactName = "Molot 45"
+ATT.Icon = Material("entities/eft_ak_attachments/mag/55645.png", "mips smooth")
+ATT.Description = [[A 45-round 5.56x45 polymer magazine for AK. Manufactured by Molot Arms.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45.mdl"
+
+ATT.EFTErgoAdd = -8
+ATT.CustomCons = { Ergonomics = "-8" }
+
+ATT.Category = {
+    "eft_ak_556_mag",
+}
+
+ATT.ActivateElements = {"long545"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 45
+
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_molot_556_45")

@@ -2168,3 +2168,30 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_mount_lenok_70")
+
+
+
+///////////////////////////////////////      eft_hg_velociraptor_std
+
+
+ATT = {}
+
+ATT.PrintName = "Velociraptor polymer handguard"
+ATT.CompactName = "Velociraptor"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/veloc.png", "mips smooth")
+ATT.Description = [[A polymer handguard for the Velociraptor assault rifle. A modified version of the Tapco AK handguard based on the Galil AR handguard, designed to be installed over the suppressor shroud, preventing possible injury to the shooters hands during firing.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.HeatCapacityMult = 1.045
+
+ATT.HasGas = true
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ak_velociraptor_lhik.mdl"
+ATT.LHIK = true
+
+ATT.Category = {"eft_velociraptor_handguard"}
+
+ARC9.LoadAttachment(ATT, "eft_hg_velociraptor_std")
