@@ -778,14 +778,6 @@ ATT.Attachments = {
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
-    {
-        PrintName = "Top Tactical",
-        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
-        Pos = Vector(0, 7.5, -1.65),
-        Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, 0, 1),
-        ExtraSightDistance = 8
-    },
 }
 
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cncguns")

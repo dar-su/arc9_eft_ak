@@ -300,7 +300,7 @@ ATT.Attachments = {
     {
         PrintName = "AR Stock",
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
-        Pos = Vector(0.6, -3.5, 0.75),
+        Pos = Vector(0.66, -3.5, 0.75),
         Ang = Angle(-3, -90, 0),
         Icon_Offset = Vector(-1, 0, 0.5),
     },
