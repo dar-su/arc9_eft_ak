@@ -23,7 +23,8 @@ SWEP.EFTErgo = 53
 
 SWEP.Spread = 1.65 * ARC9.MOAToAcc
 
-SWEP.RecoilKick = 0.35 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilSide = 1.3 -- sideways recoil
+SWEP.RecoilRandomSide = 1.3   -- random left/right
 
 
 SWEP.DefaultElements = {"short_barrel"}

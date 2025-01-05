@@ -22,6 +22,8 @@ SWEP.EFTErgo = 53
 
 SWEP.Spread = 2.406 * ARC9.MOAToAcc
 
+SWEP.Recoil = 0.43
+
 SWEP.RPM = 450
 SWEP.Firemodes = { { Mode = 1 } } -- semi only
 local semionly = { { Mode = 1 } }

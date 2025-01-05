@@ -9,6 +9,7 @@ SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rpk16")
 SWEP.Description = [[RPK-16 (Ruchnoy Pulemyot Kalashnikova 16 - "Kalashnikov's Hand-held machine gun 16) is the newest Russian light machine gun chambered in 5.45x39mm rounds. Some key features of this new weapon are the quickly detachable barrels, enhanced ergonomics, and weaver rails on the handguard and dust cover.]]
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_lmg")
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_lmg")
 
 SWEP.Trivia = {
     [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_molot"),
@@ -56,7 +57,7 @@ SWEP.BarrelLength = 40
 SWEP.Ammo = "smg1"
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 2},
-    { Mode = 1, PoseParam = 1 }
+    { Mode = 1, RPM = 450, PoseParam = 1 }
 }
 
 SWEP.Slot = 2
@@ -66,40 +67,40 @@ SWEP.Slot = 2
 SWEP.Recoil = 1 -- general multiplier of main recoil
 
 SWEP.RecoilUp   = 3   -- up recoil
-SWEP.RecoilSide = 1.25 -- sideways recoil
-SWEP.RecoilRandomUp   = 1.5 -- random up/down
+SWEP.RecoilSide = 1.1 -- sideways recoil
+SWEP.RecoilRandomUp   = 0.75 -- random up/down
 SWEP.RecoilRandomSide = 0.75   -- random left/right
 
-SWEP.RecoilAutoControl = 3.2 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 4 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
-SWEP.VisualRecoil = 1 -- general multiplier for it
+SWEP.VisualRecoil = 0.72 -- general multiplier for it
 
 SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 0.1   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 0.6   --   when fullautoing
+SWEP.VisualRecoilUp                   = 0.4   --   when fullautoing
 SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.08   --   when fullautoing
+SWEP.VisualRecoilSide                 = 0.05   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 2 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 15 -- same but in sights only
+SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 3 -- same but in sights only
 
 SWEP.VisualRecoilDampingConst = 100  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
 SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
 
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = -0.15 -- same but in sights
+SWEP.VisualRecoilPositionBumpUp = -0.2 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
 -- SWEP.VisualRecoilCenter = Vector(2, 14, 0) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
 SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 3 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 0.45 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 0.6 -- camera roll each shot + makes camera go more up when fullautoing
 
-SWEP.VisualRecoilCenter = Vector(4.28, 19, -2)
-SWEP.SubtleVisualRecoil = 1
-SWEP.SubtleVisualRecoilDirection = 5.5
+SWEP.VisualRecoilCenter = Vector(4.28, 16, -2)
+SWEP.SubtleVisualRecoil = 0.75
+SWEP.SubtleVisualRecoilDirection = 4
 SWEP.SubtleVisualRecoilSpeed = 1
 
 ------------------------- |||           Damage            ||| -------------------------
