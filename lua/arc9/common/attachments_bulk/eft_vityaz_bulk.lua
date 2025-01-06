@@ -327,6 +327,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vityaz.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_vityaz_stock"}
 
 ATT.EFTErgoAdd = 6

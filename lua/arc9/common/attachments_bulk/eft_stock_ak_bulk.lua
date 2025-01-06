@@ -15,6 +15,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_caa_akts_ak74.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
 
 ATT.EFTErgoAdd = -1
@@ -49,6 +51,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74m_std.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
@@ -117,6 +121,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_plastic.mdl"
 
+ATT.HasStock = true
+
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.68
@@ -157,6 +163,8 @@ ATT.VisualRecoilMult = 0.68
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_plum.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
@@ -191,6 +199,8 @@ ATT.RecoilMult = 0.67
 ATT.VisualRecoilMult = 0.67
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_ak74_std_wood.mdl"
+
+ATT.HasStock = true
 
 ATT.Category = {"eft_akm_stock"}
 
@@ -231,7 +241,8 @@ ATT.ToggleStats = {
     {
         PrintName = "Unfolded",
         RecoilMult = 0.7,
-        VisualRecoilMult = 0.7
+        VisualRecoilMult = 0.7,
+        HasStock = true
     },
     {
         PrintName = "Folded",
@@ -267,7 +278,8 @@ ATT.ToggleStats = {
     {
         PrintName = "Unfolded",
         RecoilMult = 0.7,
-        VisualRecoilMult = 0.7
+        VisualRecoilMult = 0.7,
+        HasStock = true
     },
     {
         PrintName = "Folded",
@@ -294,6 +306,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_opfor_aa47.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_akm_stock"}
 
 
@@ -319,6 +333,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_caa_akts.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
@@ -356,6 +372,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_uas_ak_p.mdl"
 
+ATT.HasStock = true
+
 ATT.EFTErgoAdd = 16
 ATT.CustomPros = { Ergonomics = "+16" }
 ATT.RecoilMult = 0.62
@@ -384,6 +402,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_hexagon_kocherga.mdl"
 
+ATT.HasStock = true
+
 ATT.EFTErgoAdd = 12
 ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.66
@@ -408,6 +428,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_utg_sfs.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
@@ -476,6 +498,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_akm_std_wood.mdl"
 
+ATT.HasStock = true
+
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.67
@@ -511,6 +535,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_zhukov_s.mdl"
 
+ATT.HasStock = true
+
 ATT.EFTErgoAdd = 15
 ATT.CustomPros = { Ergonomics = "+15" }
 ATT.RecoilMult = 0.6
@@ -536,6 +562,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
@@ -670,6 +698,8 @@ ATT.VisualRecoilMult = 0.67
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_136.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
@@ -699,6 +729,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_vpo_209.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
@@ -742,6 +774,8 @@ ATT.VisualRecoilMult = 0.63
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt1.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_stock_zenit_lock"}
 
 
@@ -770,6 +804,8 @@ ATT.VisualRecoilMult = 0.62
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt3.mdl"
 
+ATT.HasStock = true
+
 ATT.Category = {"eft_stock_zenit_lock"}
 
 
@@ -791,6 +827,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_std.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
@@ -825,6 +863,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_aks74_customized.mdl"
 
+ATT.HasStock = true
+
 ATT.EFTErgoAdd = 11.5
 ATT.CustomPros = { Ergonomics = "+11.5" }
 ATT.RecoilMult = 0.79
@@ -857,6 +897,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_stock_evo.mdl"
+
+ATT.HasStock = true
 
 ATT.EFTErgoAdd = 15
 ATT.CustomPros = { Ergonomics = "+15" }
