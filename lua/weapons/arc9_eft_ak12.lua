@@ -58,7 +58,7 @@ SWEP.BarrelLength = 38
 SWEP.Ammo = "smg1"
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 2},
-    { Mode = 2, PoseParam = 1 },
+    { Mode = 2, PoseParam = 1, RunawayBurst = true },
     { Mode = 1, RPM = 450, PoseParam = 1 }
 }
 
