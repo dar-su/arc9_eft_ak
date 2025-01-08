@@ -53,6 +53,8 @@ SWEP.AttachmentElements = {
     ["eft_stock_akmsn"] = { Bodygroups = { {4, 2}, {5, 1} } },
     ["eft_stock_akms_f"] = { Bodygroups = { {4, 3}, {5, 1} } },
     ["eft_stock_akmsn_f"] = { Bodygroups = { {4, 4}, {5, 1} } },
+
+    ["eft_stock_akms_fab"] = { Bodygroups = { {4, 5}, {5, 0} } },
 }
 
 

@@ -383,6 +383,10 @@ ATT.EFTImprovedMagCheck = true
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drum.mdl"
+
+ATT.ActivateElements = {"magdrum"}
 
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_powermag")
 
@@ -410,6 +414,7 @@ ATT.ClipSize = 10
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_sai02.mdl"
 
+ATT.ActivateElements = {"mag10"}
 
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_promag")
 
@@ -437,6 +442,7 @@ ATT.ClipSize = 5
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_std.mdl"
 
+ATT.ActivateElements = {"mag5"}
 
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_std")
 
@@ -597,3 +603,237 @@ ATT.Category = {"eft_ammo_12x70_saiga12only"}
 
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_mixed_50bmg_p3")
 
+
+-- 0.16
+
+///////////////////////////////////////      eft_saiga12_handguard_titan
+
+
+ATT = {}
+
+ATT.PrintName = "SOK-12 Chaos Titan Quad Rail handguard"
+ATT.CompactName = "Titan Quad"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/chaos.png", "mips smooth")
+ATT.Description = [[A lightweight handguard from the Titan Quad Rail System for Saiga shotguns. Manufactured by Chaos.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 1.017
+
+ATT.HasHG = true 
+
+ATT.Category = {"eft_saiga12_handguard"}
+-- ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_utgpro_lhik.mdl"
+ATT.LHIK = true
+
+-- ATT.ActivateElements = {"nors"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Mount",
+        Category = "eft_saiga12_titan_topmount",
+        Pos = Vector(0, 5.5, -0.75),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, 3, 1.85),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = "Bipod",
+        Category = "eft_bipod",
+        Pos = Vector(0, 8, 1.85),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "R Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(1.2, 7, 0.43),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.2),
+    },
+    {
+        PrintName = "L Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-1.2, 7, 0.43),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.2),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titan")
+
+///////////////////////////////////////      eft_saiga12_handguard_titantop
+
+
+ATT = {}
+
+ATT.PrintName = "SOK-12 Chaos Titan Quad Rail handguard top cover"
+ATT.CompactName = "Titan"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/chaostop.png", "mips smooth")
+ATT.Description = [[A handguard top rail for the Titan Quad Rail System, manufactured by Chaos.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_saiga12_titan_topmount"}
+ATT.ActivateElements = {"nolongrear", "nogp34"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Mount",
+        Category = "eft_saiga12_titan_backmount",
+        Pos = Vector(0, -6, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Front Sight",
+        Category = {"eft_frontsight", "eft_chaos_fs"},
+        Pos = Vector(0, 3.0, -0.73),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top"},
+        Pos = Vector(0, -1.0, -0.73),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, -4.5, -0.73),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titantop")
+
+///////////////////////////////////////      eft_saiga12_handguard_titanrecuver
+
+
+ATT = {}
+
+ATT.PrintName = "SOK-12 Chaos Titan receiver top rail"
+ATT.CompactName = "Titan"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/chaosback.png", "mips smooth")
+ATT.Description = [[A receiver top rail for the Titan Quad Rail System, manufactured by Chaos.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.ActivateElements = {"nodovetail"}
+ATT.Category = {"eft_saiga12_titan_backmount"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear Sight",
+        Category = {"eft_rearsight", "eft_chaos_rs"},
+        Pos = Vector(0, -7.5, -0.73),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, -4.5, -0.73),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titanrecuver")
+
+///////////////////////////////////////      eft_saiga12_fs_chaos
+
+ATT = {}
+
+ATT.PrintName = "Chaos HK Style front sight"
+ATT.CompactName = "Chaos FS"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/chaosfs.png", "mips smooth")
+ATT.Description = [[A front sight modeled after the popular Heckler & Koch iron sights, manufactured by Chaos.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 0.5
+ATT.CustomPros = { Ergonomics = "+0.5" }
+
+ATT.Category = {"eft_chaos_fs"}
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_fs_chaos")
+
+///////////////////////////////////////      eft_saiga12_rs_chaos
+
+ATT = {}
+
+ATT.PrintName = "Chaos HK Style rear sight"
+ATT.CompactName = "Chaos RS"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/chaosrs.png", "mips smooth")
+ATT.Description = [[A rear sight modeled after the popular Heckler & Koch iron sights, manufactured by Chaos.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 0.5
+ATT.CustomPros = { Ergonomics = "+0.5" }
+
+ATT.Category = {"eft_chaos_rs"}
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 6.5, -0.73),
+        Ang = Angle(0, -0.67, 0),
+        Magnification = 1.1,
+        IsIronSight = true,
+        ViewModelFOV = 54
+    }
+}
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_rs_chaos")
+
+
+///////////////////////////////////////      eft_saiga12_magazine_md20
+
+
+ATT = {}
+
+ATT.PrintName = "SOK-12 12ga MD Arms 20-round drum magazine"
+ATT.CompactName = "MD Arms"
+ATT.Icon = Material("entities/eft_ak_attachments/saiga12/md20.png", "mips smooth")
+ATT.Description = [[The MD Arms 20-shell drum magazine for SOK-12 and compatible weapons, intended for use with 12/76 or 12/70 shells.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_saiga12_mag"}
+
+ATT.EFTErgoAdd = -24
+ATT.CustomCons = { Ergonomics = "-24" }
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
+ATT.EFTImprovedMagCheck = true
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 20
+
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drummd20.mdl"
+
+ATT.ActivateElements = {"magdrum2"}
+
+ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_md20")

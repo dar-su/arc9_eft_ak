@@ -99,7 +99,7 @@ ATT.ActivePosHook = function(wep, vec)
 end
 
 -- ATT.Category = {"fas_ubgl", "grip", "eft_ak_gp34"}
-ATT.Category = {"eft_ak_gp34"}
+ATT.Category = {"eft_ak_gp34", "eft_ak_gp25"}
 
 -- ATT.AimDownSightsTimeMult = 1.1
 -- ATT.SprintToFireTimeMult = 1.1
@@ -132,7 +132,7 @@ ATT.ShootEntForceUBGL = 20000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
-ATT.ModelOffset = Vector(-5, 0, -1)
+ATT.ModelOffset = Vector(-4.5, 0, -0.8)
 ATT.ModelAngleOffset = Angle(0, 180, 0)
 
 ATT.AimDownSightsTimeUBGL = 0.4

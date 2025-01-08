@@ -186,7 +186,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_rifle_dynamics.mdl"
 ATT.EFTErgoAdd = 1
 ATT.CustomPros = { Ergonomics = "+1" }
 
-ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight"}
+ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight", "eft_rpk16_rearsight"}
 
 
 
@@ -255,3 +255,21 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_rs_ak_vpo209")
 
+///////////////////////////////////////      eft_fs_ak_akmp
+
+
+ATT = {}
+
+ATT.PrintName = "AKMP system front sight device"
+ATT.CompactName = "AKMP FS"
+ATT.Icon = Material("entities/eft_ak_attachments/fs_akmp.png", "mips smooth")
+ATT.Description = [[A device intended for firing AK and AKM family assault rifles in poor visibility conditions.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_front_akmp.mdl"
+
+ATT.Category = {"eft_ak_akmp_fs"}
+
+
+ARC9.LoadAttachment(ATT, "eft_fs_ak_akmp")

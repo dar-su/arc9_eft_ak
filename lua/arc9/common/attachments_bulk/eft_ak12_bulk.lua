@@ -29,9 +29,9 @@ ATT.Category = {"eft_ak12_handguard"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
-        Category = {"eft_tactical_top"},
-        Pos = Vector(0, 4, -2.5),
+        PrintName = "Optic",
+        Category = {"eft_tactical_top", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 3.75, -2.5),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0.5),
         ExtraSightDistance = 8
@@ -42,6 +42,7 @@ ATT.Attachments = {
         Pos = Vector(0, 4.5, 0.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "R Rail",

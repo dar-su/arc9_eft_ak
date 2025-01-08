@@ -72,9 +72,9 @@ SWEP.Slot = 3
 SWEP.Recoil = 1.5 -- general multiplier of main recoil
 
 SWEP.RecoilUp   = 5   -- up recoil
-SWEP.RecoilSide = 1.1 -- sideways recoil
+SWEP.RecoilSide = 1.7 -- sideways recoil
 SWEP.RecoilRandomUp   = 0.5 -- random up/down
-SWEP.RecoilRandomSide = 1   -- random left/right
+SWEP.RecoilRandomSide = 1.4   -- random left/right
 
 SWEP.RecoilAutoControl = 2.6 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
@@ -100,12 +100,12 @@ SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you prob
 
 SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
 
-SWEP.RecoilKick = 1.25 -- camera roll each shot + makes camera go more up when fullautoing
+SWEP.RecoilKick = 1.5 -- camera roll each shot + makes camera go more up when fullautoing
 
 SWEP.VisualRecoilCenter = Vector(4.28, 19, -1)
 SWEP.SubtleVisualRecoil = 3
 SWEP.SubtleVisualRecoilDirection = 3.25
-SWEP.SubtleVisualRecoilSpeed = 0.7
+SWEP.SubtleVisualRecoilSpeed = 0.8
 
 ------------------------- |||           Damage            ||| -------------------------
 -- default 7mm
@@ -126,9 +126,9 @@ SWEP.Num = 8
 ------------------------- |||           Malfunctions            ||| -------------------------
 
 SWEP.MalfunctionMeanShotsToFail = 240
-SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
-SWEP.HeatCapacity = 50
-SWEP.HeatDissipation = 1.75
+SWEP.MalfunctionMeanShotsToFailMultHot = 0.3
+SWEP.HeatCapacity = 40
+SWEP.HeatDissipation = 1.2
 
 ------------------------- |||           Minor stuff            ||| -------------------------
 
@@ -139,23 +139,43 @@ SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_12x70_shell.mdl"
 SWEP.ShellScale = 1.5
 SWEP.ShellSounds = ARC9EFT.Shells12cal
 
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    ent:SetPoseParameter("newdrum", swep:HasElement("eft_saiga12_magazine_md20") and 1 or 0)
+end
+
 ------------------------- |||           Sounds            ||| -------------------------
 
 local path = "weapons/darsu_eft/ak/"
 
-SWEP.ShootSound = { path .. "fire_new/akm_close_loop_1.ogg", path .. "fire_new/akm_close_loop_2.ogg", path .. "fire_new/akm_close_loop_3.ogg", path .. "fire_new/akm_close_loop_4.ogg" }
-SWEP.LayerSound = path .. "fire_new/akm_close_loop_tail.ogg"
+-- SWEP.ShootSound = { path .. "fire_new/saiga_outdoor_close1.ogg", path .. "fire_new/saiga_outdoor_close2.ogg" }
+-- SWEP.ShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_close.ogg"
 
-SWEP.ShootSound = { path .. "fire_new/saiga_outdoor_close1.ogg", path .. "fire_new/saiga_outdoor_close2.ogg" }
-SWEP.ShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_close.ogg"
+-- SWEP.ShootSoundIndoor = path .. "fire_new/saiga_indoor_close1.ogg"
+-- SWEP.ShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_close.ogg"
 
-SWEP.ShootSoundIndoor = path .. "fire_new/saiga_indoor_close1.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_close.ogg"
+-- SWEP.DistantShootSound = { path .. "fire_new/saiga_outdoor_distant1.ogg", path .. "fire_new/saiga_outdoor_distant2.ogg"}
+-- SWEP.DistantShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_distant.ogg"
+-- SWEP.DistantShootSoundIndoor = path .. "fire_new/saiga_outdoor_distant1.ogg"
+-- SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_distant.ogg"
 
-SWEP.DistantShootSound = { path .. "fire_new/saiga_outdoor_distant1.ogg", path .. "fire_new/saiga_outdoor_distant2.ogg"}
-SWEP.DistantShootSoundSilenced = path .. "fire_new/saiga_fire_silenced_distant.ogg"
-SWEP.DistantShootSoundIndoor = path .. "fire_new/saiga_outdoor_distant1.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fire_new/saiga_fire_silenced_indoor_distant.ogg"
+
+SWEP.ShootSound = { path .. "fire_new/saiga12fa_outdoor_close_loop1.ogg", path .. "fire_new/saiga12fa_outdoor_close_loop2.ogg", path .. "fire_new/saiga12fa_outdoor_close_loop3.ogg", path .. "fire_new/saiga12fa_outdoor_close_loop4.ogg" }
+SWEP.LayerSound = path .. "fire_new/saiga12fa_outdoor_close_tail.ogg"
+
+SWEP.ShootSoundSilenced = { path .. "fire_new/saiga12fa_outdoor_close_silenced_loop1.ogg", path .. "fire_new/saiga12fa_outdoor_close_silenced_loop2.ogg", path .. "fire_new/saiga12fa_outdoor_close_silenced_loop3.ogg", path .. "fire_new/saiga12fa_outdoor_close_silenced_loop4.ogg" }
+SWEP.LayerSoundSilenced = path .. "fire_new/saiga12fa_outdoor_close_silenced_tail.ogg"
+
+SWEP.ShootSoundIndoor = { path .. "fire_new/saiga12fa_indoor_close_loop1.ogg", path .. "fire_new/saiga12fa_indoor_close_loop2.ogg", path .. "fire_new/saiga12fa_indoor_close_loop3.ogg", path .. "fire_new/saiga12fa_indoor_close_loop4.ogg" }
+SWEP.LayerSoundIndoor = path .. "fire_new/saiga12fa_indoor_close_tail.ogg"
+
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/saiga12fa_indoor_close_silenced_loop1.ogg", path .. "fire_new/saiga12fa_indoor_close_silenced_loop2.ogg", path .. "fire_new/saiga12fa_indoor_close_silenced_loop3.ogg", path .. "fire_new/saiga12fa_indoor_close_silenced_loop4.ogg" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/saiga12fa_indoor_close_silenced_tail.ogg"
+
+SWEP.DistantShootSound = { path .. "fire_new/saiga12fa_outdoor_distant_loop1.ogg", path .. "fire_new/saiga12fa_outdoor_distant_loop2.ogg" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/saiga12fa_outdoor_distant_silenced_loop1.ogg", path .. "fire_new/saiga12fa_outdoor_distant_silenced_loop2.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/saiga12fa_indoor_distant_loop1.ogg", path .. "fire_new/saiga12fa_indoor_distant_loop2.ogg" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/saiga12fa_indoor_distant_silenced_loop1.ogg", path .. "fire_new/saiga12fa_indoor_distant_silenced_loop2.ogg" }
+
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -211,9 +231,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local nomag = false
 
 
-    if elements["eft_saiga12_magazine_std"] then ending = "0"
-    elseif elements["eft_saiga12_magazine_promag"] then ending = "1"
-    elseif elements["eft_saiga12_magazine_powermag"] then ending = "2"
+    if elements["mag5"] then ending = "0"
+    elseif elements["mag10"] then ending = "1"
+    elseif elements["magdrum"] then ending = "2"
+    elseif elements["magdrum2"] then ending = "4"
     else nomag = true end
     
     if anim == "inspect" then
@@ -449,16 +470,16 @@ SWEP.Animations = {
             { s = randspin, t = 2.9 },
         },
     },
-    ["reload_empty2"] = {
-        Source = "reload2_empty",
-        MinProgress = 0.9,
+    ["reload4"] = {
+        Source = "reload4",
+        MinProgress = 0.85,
         FireASAP = true,
         MagSwapTime = 1.8,
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.07, lhik = 0 },
-            { t = 0.67, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.87, lhik = 0 },
+            { t = 1, lhik = 1 },
         },
         EventTable = {
             { s = path .. "saiga_magrelease_button.ogg", t = 0.48 },
@@ -466,10 +487,65 @@ SWEP.Animations = {
             { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 1.2 },
             { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8 },
             { s = path .. "saiga_magin_plastic.ogg", t = 2.48 },
-            { s = randspin, t = 3.25 },
-            { s = path .. "saiga_slider_up.ogg", t = 3.82 },
-            { s = path .. "saiga_slider_down.ogg", t = 4.06 },
-            { s = randspin, t = 4.3 }
+            { s = randspin, t = 2.9 },
+        },
+    },
+    ["reload_empty2"] = {
+        Source = "reload2_empty",
+        MinProgress = 0.9,
+        FireASAP = true,
+        MagSwapTime = 1.4,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.09, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.75, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "saiga_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.99+0.3 },
+
+            -- { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8-0.45 },
+            { s = path .. "saiga_magin_plastic.ogg", t = 2.48-0.45 },
+            { s = randspin, t = 3.25-0.45 },
+            { s = path .. "saiga_slider_up.ogg", t = 3.82-0.45 },
+            { s = path .. "saiga_slider_down.ogg", t = 4.06-0.45 },
+            { s = randspin, t = 4.3-0.45 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7},
+            {hide = 0, t = 1.02}
+        },
+    },
+    ["reload_empty4"] = {
+        Source = "reload4_empty",
+        MinProgress = 0.9,
+        FireASAP = true,
+        MagSwapTime = 1.4,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.09, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.75, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "saiga_magrelease_button.ogg", t = 0.3 },
+            { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.9+0.3 },
+            
+            -- { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8-0.45 },
+            { s = path .. "saiga_magin_plastic.ogg", t = 2.48-0.45 },
+            { s = randspin, t = 3.25-0.45 },
+            { s = path .. "saiga_slider_up.ogg", t = 3.82-0.45 },
+            { s = path .. "saiga_slider_down.ogg", t = 4.06-0.45 },
+            { s = randspin, t = 4.3-0.45 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7},
+            {hide = 0, t = 1.02}
         },
     },
 
@@ -521,6 +597,13 @@ SWEP.Animations = {
     },
     ["inspect_mag_2"] = {
         Source = "checkmag2",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck
+    },
+    ["inspect_mag_4"] = {
+        Source = "checkmag4",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
@@ -607,6 +690,14 @@ SWEP.Animations = {
         },
     },
 
+    ["firemode_1"] = {
+        Source = "firemode0",
+        EventTable = { { s = path .. "ak74_fireselector_down.ogg", t = 0.25 } }
+    },
+    ["firemode_2"] = {
+        Source = "firemode1",
+        EventTable = { { s = path .. "ak74_fireselector_up.ogg", t = 0.25 } }
+    },
 
     ["enter_bipod"] = {
         Source = "action",
@@ -674,11 +765,20 @@ SWEP.AttachmentElements = {
     ["eft_ammo_12x70_superformance"] = { Bodygroups = { {7, 12} } },
     ["eft_ammo_12x70_slug"] = { Bodygroups = { {7, 13} } },
     ["eft_ammo_12x70_mixed_50bmg_p3"] = { Bodygroups = { {7, 14} } },
+
+
+
+    ["eft_saiga12_magazine_md20"] = { Bodygroups = { {4, 4} } },
+    ["eft_saiga12_handguard_titan"] = { Bodygroups = { {2, 6} } },
+    ["eft_saiga12_handguard_titantop"] = { Bodygroups = { {5, 3} } },
+    ["eft_saiga12_handguard_titanrecuver"] = { Bodygroups = { {9, 1} } },
+    ["eft_saiga12_rs_chaos"] = { Bodygroups = { {10, 1} } },
+    ["eft_saiga12_fs_chaos"] = { Bodygroups = { {11, 1} } },
 }
 
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
-    if data.elements["eft_saiga12_magazine_powermag"] then
+    if data.elements["eft_saiga12_magazine_powermag"] or data.elements["eft_saiga12_magazine_md20"] then
         data.model:SetBodygroup(8, data.model:GetBodygroup(7))
     end
 end

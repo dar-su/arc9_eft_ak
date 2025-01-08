@@ -209,6 +209,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l26_545x39_45.mdl"
+ATT.ModelOffset = Vector(0, 0, -0.1)
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6l26_545x39_45.mdl"
 
 ATT.Category = {
@@ -441,6 +442,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
+ATT.ModelOffset = Vector(0, 0, 0.45)
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 ATT.DropMagazineSkin = 1
 ATT.ModelSkin = 1
@@ -476,6 +478,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
+ATT.ModelOffset = Vector(0, 0, 0.45)
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_us_palm_ak30_762x39_30.mdl"
 
 ATT.Category = {
@@ -1069,8 +1072,9 @@ ATT.Description = [[A 45-round 5.56x45 polymer magazine for AK. Manufactured by 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_556x45_45.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_molot_556x45_45.mdl"
+ATT.ModelOffset = Vector(0, 0.05, 0.2)
 
 ATT.EFTErgoAdd = -8
 ATT.CustomCons = { Ergonomics = "-8" }
@@ -1079,7 +1083,7 @@ ATT.Category = {
     "eft_ak_556_mag",
 }
 
-ATT.ActivateElements = {"long545"}
+ATT.ActivateElements = {"556"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 45

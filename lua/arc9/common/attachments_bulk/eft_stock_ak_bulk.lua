@@ -442,7 +442,7 @@ ATT.Category = {"eft_akm_stock"}
 ATT.Attachments = {
     {
         PrintName = "Buffer Tube",
-        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube"},
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(0.85, -3.15, -0.17),
         Ang = Angle(-3, -90, 0),
         Icon_Offset = Vector(-0.2, 0, 0.5),
@@ -473,7 +473,7 @@ ATT.Category = {"eft_akm_stock"}
 ATT.Attachments = {
     {
         PrintName = "PT Lock",
-        Category = "eft_stock_zenit_lock",
+        Category = "eft_stock_zenit_lock_pt1only",
         Pos = Vector(0, -0.57, 0.48),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -1.5, 0.2),
@@ -575,7 +575,7 @@ ATT.Category = {"eft_aks_stock"}
 ATT.Attachments = {
     {
         PrintName = "Recoil pad",
-        Category = {"eft_stock_ak_pad"},
+        Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -9.7, -1),
@@ -642,7 +642,7 @@ ATT.Category = {"eft_akm_stock"}
 ATT.Attachments = {
     {
         PrintName = "Buffer Tube",
-        Category = "eft_ar15_buffertube",
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(0.65, -0.83, -0.47),
         Ang = Angle(-3, -90, 0),
         Icon_Offset = Vector(-0.2, 0, 0.5),
@@ -670,8 +670,8 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_izhmash_6g15u_butt_pad.
 
 ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
 
 ATT.Category = {"eft_stock_ak_pad"}
 
@@ -776,7 +776,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_zenit_pt1.mdl"
 
 ATT.HasStock = true
 
-ATT.Category = {"eft_stock_zenit_lock"}
+ATT.Category = {"eft_stock_zenit_lock", "eft_stock_zenit_lock_pt1only"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Recoil pad",
+        Category = {"eft_stock_ak_pad"},
+        Pos = Vector(0.15, 1.6, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -9.7, -1),
+    },
+}
 
 
 ARC9.LoadAttachment(ATT, "eft_stock_zenit_pt1")
@@ -840,7 +850,7 @@ ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
 ATT.Attachments = {
     {
         PrintName = "Recoil pad",
-        Category = {"eft_stock_ak_pad"},
+        Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -9.7, -1),
@@ -875,7 +885,7 @@ ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
 ATT.Attachments = {
     {
         PrintName = "Recoil pad",
-        Category = {"eft_stock_ak_pad"},
+        Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -9.7, -1),
@@ -908,3 +918,59 @@ ATT.VisualRecoilMult = 0.78
 ATT.Category = {"eft_ak74m_stock", "eft_aks_stock", "eft_rpk16_stock"}
 
 ARC9.LoadAttachment(ATT, "eft_stock_ak_evo")
+
+///////////////////////////////////////      eft_stock_akms_fab
+
+
+ATT = {}
+
+ATT.PrintName = "AKMS FAB Defense M4-AKMS P stock adapter"
+ATT.CompactName = "FAB AKMS"
+ATT.Icon = Material("entities/eft_ak_attachments/akmstube.png", "mips smooth")
+ATT.Description = [[A buttstock adapter for the AKMS automatic rifle. Allows to install Com-Spec and Mil-Spec buttstocks on the weapon. Made of durable anodized aluminum. Manufactured by FAB Defense.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_akms_stock"}
+
+ATT.HasStock = true
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.Attachments = {
+    {
+        PrintName = "AR Stock",
+        Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
+        Pos = Vector(0.6, -6.5, 0.67),
+        Ang = Angle(-5, -90, 0),
+        Icon_Offset = Vector(-1, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_stock_akms_fab")
+
+///////////////////////////////////////      eft_stock_ak_pad_stef
+
+
+ATT = {}
+
+ATT.PrintName = "AK Custom Arms ST-EF 74 skeleton stock extension"
+ATT.CompactName = "ST-EF"
+ATT.Icon = Material("entities/eft_ak_attachments/stef.png", "mips smooth")
+ATT.Description = [[A buttpad that extends the length of the standard metal frame folding buttstock of the AK-platform weapons. The advantage of this extension is that the width of the pad is equal to the width of the AK-100 series plastic pad. The buttpad adds comfort when shooting and reduces the recoil effect. Manufactured by Custom Arms.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ak_custom_arms_st_ef74.mdl"
+
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+
+ATT.Category = {"eft_stock_ak_pad_skelet"}
+
+
+ARC9.LoadAttachment(ATT, "eft_stock_ak_pad_stef")

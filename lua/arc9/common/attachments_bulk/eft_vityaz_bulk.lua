@@ -339,7 +339,7 @@ ATT.VisualRecoilMult = 0.66
 ATT.Attachments = {
     {
         PrintName = "Recoil pad",
-        Category = {"eft_stock_ak_pad"},
+        Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, -0.1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -9.7, -1),

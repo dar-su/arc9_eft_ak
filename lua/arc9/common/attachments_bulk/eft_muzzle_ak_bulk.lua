@@ -354,7 +354,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_ak_cnc_warrior_ar15_thread_adapter.mdl"
 
-ATT.Category = {"eft_ak101_muzzle"}
+ATT.Category = {"eft_ak101_muzzle", "eft_ak74_muzzle"}
 
 ATT.Attachments = {
     {

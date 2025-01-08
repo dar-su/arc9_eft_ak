@@ -276,7 +276,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Category = "eft_rpk16_stock",
+        Category = "eft_ak74m_stock",
         Bone = "weapon_stock_lock_16",
         Installed = "eft_rpk16_stock_tube",
         Pos = Vector(0.06, -0.03, 0.12),

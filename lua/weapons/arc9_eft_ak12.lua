@@ -278,7 +278,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Category = "eft_rpk16_stock",
+        Category = "eft_ak74m_stock",
         Bone = "weapon_stock_lock_16",
         Installed = "eft_ak12_stock_tube",
         Pos = Vector(0.06, -0.03, 0.12),
@@ -309,10 +309,10 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Mag",
+        PrintName = "Magazine",
         Category = "eft_ak_545_mag",
         Bone = "mod_magazine",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0, -0.20),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.5, -1),
         Installed = "eft_mag_ak_ak12_545_30"
@@ -340,5 +340,14 @@ SWEP.Attachments = {
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -8, -5),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "UBGL",
+        Category = "eft_ak_gp25",
+        ExcludeElements = {"nogp34"},
+        Bone = "weapon",
+        Pos = Vector(0, 23, -1),
+        Ang = Angle(0, 90, 0),
+        Icon_Offset = Vector(-5, 0, -1),
     },
 }

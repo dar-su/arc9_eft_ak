@@ -211,7 +211,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_ak100_rail_plastic.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 ATT.Attachments = {
@@ -221,6 +221,7 @@ ATT.Attachments = {
         Pos = Vector(0, 3.5, 1.7),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "Tactical",
@@ -260,7 +261,7 @@ ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 ATT.Attachments = {
     {
@@ -269,6 +270,7 @@ ATT.Attachments = {
         Pos = Vector(0, 3, 1.6),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "M-LOK R",
@@ -317,7 +319,7 @@ ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.986
 
 ATT.RequireElements = {"gasblock"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 ATT.Attachments = {
     {
@@ -326,6 +328,7 @@ ATT.Attachments = {
         Pos = Vector(0, 3, 1.6),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "M-LOK R",
@@ -374,7 +377,7 @@ ATT.ModelSkin = "2"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 ATT.Attachments = {
     {
@@ -383,6 +386,7 @@ ATT.Attachments = {
         Pos = Vector(0, 3, 1.6),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "M-LOK R",
@@ -431,7 +435,7 @@ ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.023
 
 ATT.RequireElements = {"gasblock"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 ATT.Attachments = {
     {
@@ -440,6 +444,7 @@ ATT.Attachments = {
         Pos = Vector(0, 3.5, 1.6),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "Tactical",
@@ -480,7 +485,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_b10mb19.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom", "eft_vityaz_handguard"}
 ATT.Attachments = {
     {
@@ -498,6 +503,7 @@ ATT.Attachments = {
         Pos = Vector(0, 4, 1.75),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "R Tactical",
@@ -738,7 +744,7 @@ ATT.HeatCapacityMult = 0.966
 
 ATT.RequireElements = {"gasblock"}
 ATT.ExcludeElements = {"railedcover", "eft_vityaz_gas_std"}
-ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
+ATT.ActivateElements = {"nolongrear", "nodovetail"}
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
 ATT.Attachments = {
     {
@@ -753,6 +759,7 @@ ATT.Attachments = {
         Category = {"eft_grip_keymod"},
         Pos = Vector(0, 4, 1.7),
         Ang = Angle(0, -90, -90),   
+        ExcludeElements = {"eft_ak_gp34"}
     },
     {
         PrintName = "Tactical",
@@ -1333,7 +1340,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_strike_industries_trax_1.m
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0.1, 0)
 ATT.RequireElements = {"gasblock", "gasblock_vdmcs"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 
 ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom", "eft_vityaz_handguard"}
 
@@ -1365,6 +1372,7 @@ ATT.Attachments = {
         Category = {"eft_mount_trax1", "eft_mount_keymod6", "eft_grip_keymod"},
         Pos = Vector(0, 3.2, 1.5),
         Ang = Angle(0, -90, -90),
+        ExcludeElements = {"eft_ak_gp34"}
         -- Icon_Offset = Vector(0, 3, -1.5),
     },
 }
@@ -1974,7 +1982,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_dominator.mdl"
 ATT.LHIK = true
 
 ATT.RequireElements = {"gasblock"}
-ATT.ActivateElements = {"nogp34"}
+-- ATT.ActivateElements = {"nogp34"}
 ATT.Category = {"eft_ak_handguard", "eft_vityaz_handguard"}
 
 ATT.EFTErgoAdd = 8
@@ -1998,6 +2006,7 @@ ATT.Attachments = {
         Pos = Vector(0, 4.5, 1.6),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
+        ExcludeElements = {"eft_ak_gp34"}
     },
 }
 
@@ -2187,3 +2196,178 @@ ATT.LHIK = true
 ATT.Category = {"eft_velociraptor_handguard"}
 
 ARC9.LoadAttachment(ATT, "eft_hg_velociraptor_std")
+
+
+
+///////////////////////////////////////      eft_mount_b12
+
+
+ATT = {}
+
+ATT.PrintName = "AK Zenit B-12 Mount"
+ATT.CompactName = "B-12"
+ATT.Description = [[The B-12 gas tube overhanging rail mount is installed on the side rail of the B-11 or B-10 handguards and provides a weapon with means of installing a complex of sights and tactical devices by forming rail mounts over the weapons gas tube and on the side of the handguard. Manufactured by Zenit.]]
+
+ATT.Icon = Material("entities/eft_ak_attachments/b12.png", "mips smooth")
+
+ATT.Category = {"eft_b12"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_b12.mdl"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium", "eft_optic_small", "eft_tactical_top"},
+        Pos = Vector(1, -2, 1.06),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(1, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical"},
+        Pos = Vector(0, -0.4, -0.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_mount_b12")
+
+
+///////////////////////////////////////      eft_mount_hexagon_m
+
+
+ATT = {}
+
+ATT.PrintName = "Hexagon medium length rail"
+ATT.CompactName = "HEX M"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/hexrailm.png", "mips smooth")
+ATT.Description = [[A medium length rail for the Hexagon handguard, allows installation of additional tactical equipment.]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/hexagon.mdl"
+ATT.ModelBodygroups = "1"
+
+ATT.Category = {"eft_mount_hexagon_m"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, -0.45, 0),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_hexagon_m")
+
+
+///////////////////////////////////////      eft_mount_hexagon_m_ar
+
+
+ATT = {}
+
+ATT.PrintName = "Hexagon medium length rail (Anodized Red)"
+ATT.CompactName = "HEX M (AR)"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/hexrailmr.png", "mips smooth")
+ATT.Description = [[A medium length rail for the Hexagon handguard, allows installation of additional tactical equipment.
+
+Anodized Red version.]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/hexagon.mdl"
+ATT.ModelBodygroups = "1"
+ATT.ModelSkin = "1"
+
+ATT.Category = {"eft_mount_hexagon_m"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, -0.45, 0),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_hexagon_m_ar")
+
+
+///////////////////////////////////////      eft_mount_hexagon_s
+
+
+ATT = {}
+
+ATT.PrintName = "Hexagon short length rail"
+ATT.CompactName = "HEX S"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/hexrail.png", "mips smooth")
+ATT.Description = [[A short length rail for the Hexagon handguard, allows installation of additional tactical equipment.]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/hexagon.mdl"
+ATT.ModelBodygroups = "0"
+
+ATT.Category = {"eft_mount_hexagon"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical_top", "eft_tactical"},
+        Pos = Vector(-0.45, -0.45, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_hexagon_s")
+
+
+///////////////////////////////////////      eft_mount_hexagon_s_ar
+
+
+ATT = {}
+
+ATT.PrintName = "Hexagon short length rail (Anodized Red)"
+ATT.CompactName = "HEX S (AR)"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/hexrailr.png", "mips smooth")
+ATT.Description = [[A short length rail for the Hexagon handguard, allows installation of additional tactical equipment.
+
+Anodized Red version.]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/hexagon.mdl"
+ATT.ModelBodygroups = "0"
+ATT.ModelSkin = "1"
+
+ATT.Category = {"eft_mount_hexagon"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical_top", "eft_tactical"},
+        Pos = Vector(-0.45, -0.45, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_mount_hexagon_s_ar")
+

@@ -290,10 +290,10 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Mag",
+        PrintName = "Magazine",
         Category = "eft_ak_762_mag",
         Bone = "mod_magazine",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0, -0.25),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, -0.5, -1),
         Installed = "eft_mag_ak_ultimag_762_30"
