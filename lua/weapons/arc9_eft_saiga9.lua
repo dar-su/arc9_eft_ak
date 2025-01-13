@@ -11,12 +11,14 @@ SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_smg")
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_saiga9")
 SWEP.Description = [[The Saiga-9 carbine was developed as a semi-automatic variant of the PP-19-01 Vityaz SMG for civilian market and designed for purposes of shooting sports and plinking.]]
 
+SWEP.SaveBase = "arc9_eft_saiga9_2"
 
 SWEP.StandardPresets = false 
 
 SWEP.DefaultBodygroups = "01000010000000"
 
 SWEP.BarrelLength = 32
+SWEP.MuzzleEffectQCA = 5
 
 SWEP.EFTErgo = 53
 
