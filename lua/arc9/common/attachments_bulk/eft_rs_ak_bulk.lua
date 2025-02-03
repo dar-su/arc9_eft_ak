@@ -211,7 +211,7 @@ ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.ExcludeElements = {"railedcover", "nolongrear"}
-ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight"}
+ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight", "eft_tt01_rearsight"}
 ATT.Attachments = {
     {
         PrintName = "Optic",
