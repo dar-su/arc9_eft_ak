@@ -128,7 +128,7 @@ ATT.EnterUBGLSound = "eft_shared/weapon_generic_rifle_spin2.ogg"
 ATT.ExitUBGLSound = "eft_shared/weapon_generic_rifle_spin1.ogg"
 
 ATT.ShootEntUBGL = "arc9_eft_vog25_bang"
-ATT.ShootEntForceUBGL = 20000
+ATT.ShootEntForceUBGL = 4000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
@@ -301,7 +301,7 @@ ATT.EnterUBGLSound = "eft_shared/weapon_generic_rifle_spin2.ogg"
 ATT.ExitUBGLSound = "eft_shared/weapon_generic_rifle_spin1.ogg"
 
 ATT.ShootEntUBGL = "arc9_eft_vog25_bang"
-ATT.ShootEntForceUBGL = 5000
+ATT.ShootEntForceUBGL = 4000
 
 ATT.AimDownSightsTimeUBGL = 0.4
 ATT.DropMagazineAmountUBGL = 0
