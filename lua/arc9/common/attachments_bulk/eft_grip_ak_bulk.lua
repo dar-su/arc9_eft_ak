@@ -142,6 +142,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ags74_pro.mdl"
 
 ATT.Category = {"eft_ak_grip"}
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ags74")
 
@@ -166,6 +167,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_ak12_std.mdl"
 
 ATT.Category = {"eft_ak_grip"}
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_grip_ak_ak12")
 
@@ -395,6 +397,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_magpul_moe.mdl"
 
 ATT.Category = {"eft_ak_grip"}
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_grip_ak_moe")
 
@@ -444,6 +447,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_zenit_rk3.mdl"
 
 ATT.Category = {"eft_ak_grip"}
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_grip_ak_rk3")
 

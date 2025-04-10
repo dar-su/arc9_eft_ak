@@ -60,6 +60,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_ak12_hg_std")
 
@@ -136,6 +137,7 @@ ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.135
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_ak12_silencer_std")
 
@@ -176,6 +178,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 ARC9.LoadAttachment(ATT, "eft_ak12_rec")
 
@@ -258,6 +261,8 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+ATT.AdvancedCamoSupport = true
 
 
 ARC9.LoadAttachment(ATT, "eft_ak12_stock_tube")

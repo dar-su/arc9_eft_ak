@@ -3,9 +3,9 @@
 
 "VertexLitGeneric"
 {
-    "$basetexture"      "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45_LOD0_diff"
-    "$bumpmap"          "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45_LOD0_nrm"
-    "$phongexponenttexture" "models/weapons/arc9/darsu_eft/mods/mag_ak74_izhmash_6L26_545x39_45_LOD0_gloss"
+    "$basetexture"      "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30_LOD0_diff_fde"
+    "$bumpmap"          "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30_LOD0_nrm"
+    "$phongexponenttexture" "models/weapons/arc9/darsu_eft/mods/mag_ak_magpul_pmag_30_ak_akm_gen_m3_762x39_30_LOD0_gloss"
     "$phong"            "1"
     "$phongboost"       "6"
     "$blendtintbybasealpha" "1"
@@ -35,7 +35,7 @@
         {
             "camoTexture" $detail
             "phonk" $phongboost
-            "attName" "eft_mag_ak_6l26_545_45"
+            "attName" "eft_mag_ak_pmag_762_30_fde"
             "color" "[0.99 0.99 0.99]"
         }
 
