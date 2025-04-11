@@ -20,8 +20,12 @@
     "$color2"           "[0.88 0.88 0.88]"
     
     "$detailblendmode" "4"
-    "$detailblendfactor" "1"
+    "$detailblendfactor" "0.5"
+    "$detailscale" "1.0"
 
+    "$detailangle" 90.0
+    "$attname" eft_ak12_stock_tube
+    
     "Proxies"
     {
         "Arc9EnvMapTint"
@@ -34,9 +38,18 @@
         "Arc9CustomCamoAdvanced" 
         {
             "camoTexture" $detail
-            "attName" "eft_ak12_stock_tube"
+            "camoScale" $detailscale
+            "camoAngle" $detailangle
+            "camoBlendMode" $detailblendmode
+            "camoBlendFactor" $detailblendfactor
+            "phonk" $phongboost
             "color" "[0.99 0.99 0.99]"
         }
 
+        "TextureTransform"
+        {
+            "rotateVar" "$detailangle"
+            "resultVar" "$detailtexturetransform"
+        }
     }
 }
