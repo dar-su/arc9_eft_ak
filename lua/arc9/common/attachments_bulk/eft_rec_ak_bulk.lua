@@ -110,6 +110,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_zenit_b33.mdl"
+ATT.ModelOffset = Vector(0,-0.05,-0.1)
 
 ATT.EFTErgoAdd = 7
 ATT.CustomPros = { Ergonomics = "+7" }
