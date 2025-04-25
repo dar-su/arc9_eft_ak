@@ -45,9 +45,16 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(18.75, 27, 4)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
+SWEP.CustomizePos = Vector(18.75, 50, 4)
+SWEP.CustomizeSnapshotFOV = 50
+SWEP.CustomizeRotateAnchor = Vector(18.75, -4.28, -5.23)
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+
+SWEP.PeekMaxFOV = 60
+SWEP.PeekPos = Vector(0, 3, -7)
+SWEP.PeekAng = Angle(0, 0.4, -60)
+SWEP.PeekPosReloading = Vector(1, 0, -2)
+SWEP.PeekAngReloading = Angle(0, 0, -10)
 
 ------------------------- |||           Stats            ||| -------------------------
 
@@ -307,6 +314,7 @@ SWEP.Attachments = {
         Installed = "eft_ammo_545_ps",
         Pos = Vector(0, 0, -4),
         Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, -0.75, 2),
     },
     {
         PrintName = "Magazine",
@@ -314,7 +322,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -0.20),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -0.5, -1),
+        Icon_Offset = Vector(0, -1, -0.25),
         Installed = "eft_mag_ak_ak12_545_30"
     },
     {
@@ -341,6 +349,7 @@ SWEP.Attachments = {
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -8, -5),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 4, 3),
     },
     {
         PrintName = "UBGL",
