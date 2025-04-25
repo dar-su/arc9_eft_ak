@@ -103,7 +103,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Integral = true,
         Installed = "eft_ammo_76239_ps",
-        Pos = Vector(0, 0, -4),
+        Pos = Vector(0, -0.5, -2.45),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -112,7 +112,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -0.5, -1),
+        Icon_Offset = Vector(0, -1, -0.25),
         Installed = "eft_mag_ak_55_762_30"
     },    
     {
@@ -170,14 +170,14 @@ SWEP.Attachments = {
         PrintName = "Custom slot",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_vpo136"},
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -8, -5),
+        Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "fuck this",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_vpo136"},
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -8, -5),
+        Pos = Vector(0, -7, -2),
         Ang = Angle(0, 0, 0),
         RequireElements = {"impossibleonthisgun"},
     },

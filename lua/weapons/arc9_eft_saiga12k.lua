@@ -46,9 +46,16 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(19, 30, 4)
-SWEP.CustomizeSnapshotFOV = 95
+SWEP.CustomizePos = Vector(19, 50, 4)
+SWEP.CustomizeSnapshotFOV = 50
 SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+
+SWEP.PeekMaxFOV = 60
+SWEP.PeekPos = Vector(0, 3, -7)
+SWEP.PeekAng = Angle(0, 0.4, -60)
+SWEP.PeekPosReloading = Vector(1, 0, -2)
+SWEP.PeekAngReloading = Angle(0, 0, -10)
 
 ------------------------- |||           Stats            ||| -------------------------
 
@@ -389,7 +396,9 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload_single",
-        MinProgress = 0.85,
+        RefillProgress = 0.825,
+        PeekProgress = 0.975,
+        MinProgress = 0.95,
         FireASAP = true,
         MagSwapTime = 1.5,
         IKTimeLine = rik_single,
@@ -397,7 +406,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_single",
-        MinProgress = 0.85,
+        RefillProgress = 0.825,
+        PeekProgress = 0.975,
+        MinProgress = 0.95,
         FireASAP = true,
         MagSwapTime = 1.5,
         IKTimeLine = rik_single,
@@ -407,7 +418,9 @@ SWEP.Animations = {
 
     ["reload0"] = {
         Source = "reload0",
-        MinProgress = 0.85,
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
         FireASAP = true,
         MagSwapTime = 1.5,
         IKTimeLine = {
@@ -420,7 +433,9 @@ SWEP.Animations = {
     },
     ["reload_empty0"] = {
         Source = "reload0_empty",
-        MinProgress = 0.9,
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
         FireASAP = true,
         MagSwapTime = 1.5,
         IKTimeLine = {
@@ -434,7 +449,9 @@ SWEP.Animations = {
     },
     ["reload1"] = {
         Source = "reload1",
-        MinProgress = 0.85,
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
         FireASAP = true,
         MagSwapTime = 1.5,
         IKTimeLine = {
@@ -447,7 +464,9 @@ SWEP.Animations = {
     },
     ["reload_empty1"] = {
         Source = "reload1_empty",
-        MinProgress = 0.9,
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
         FireASAP = true,
         MagSwapTime = 1.5,
         IKTimeLine = {
@@ -461,7 +480,9 @@ SWEP.Animations = {
     },
     ["reload2"] = {
         Source = "reload2",
-        MinProgress = 0.85,
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
         FireASAP = true,
         MagSwapTime = 1.8,
         IKTimeLine = {
@@ -481,7 +502,9 @@ SWEP.Animations = {
     },
     ["reload4"] = {
         Source = "reload4",
-        MinProgress = 0.85,
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
         FireASAP = true,
         MagSwapTime = 1.8,
         IKTimeLine = {
@@ -501,7 +524,9 @@ SWEP.Animations = {
     },
     ["reload_empty2"] = {
         Source = "reload2_empty",
-        MinProgress = 0.9,
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
         FireASAP = true,
         MagSwapTime = 1.4,
         IKTimeLine = {
@@ -530,7 +555,9 @@ SWEP.Animations = {
     },
     ["reload_empty4"] = {
         Source = "reload4_empty",
-        MinProgress = 0.9,
+        RefillProgress = 0.875,
+        PeekProgress = 0.95,
+        MinProgress = 0.99,
         FireASAP = true,
         MagSwapTime = 1.4,
         IKTimeLine = {
@@ -852,7 +879,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -0.5, -1),
+        Icon_Offset = Vector(0, -1, -0.25),
         Installed = "eft_saiga12_magazine_std"
     },    
     {
@@ -877,7 +904,7 @@ SWEP.Attachments = {
         PrintName = "Ammo type",
         Category = {"eft_ammo_12x70", "eft_ammo_12x70_saiga12only"},
         Bone = "mod_magazine",
-        Pos = Vector(0, 0, -5),
+        Pos = Vector(0, -0.5, -2.45),
         Ang = Angle(0, 0, 0),
         Installed = "eft_ammo_12x70_7mm",
         Integral = "eft_ammo_12x70_7mm",
@@ -886,7 +913,7 @@ SWEP.Attachments = {
         PrintName = "Custom slot",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_saiga12k"},
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -8, -5),
+        Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
     },
 }

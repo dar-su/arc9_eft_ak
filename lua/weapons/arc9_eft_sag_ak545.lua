@@ -48,8 +48,15 @@ SWEP.IronSights = {
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
 SWEP.CustomizePos = Vector(19, 30, 4)
-SWEP.CustomizeSnapshotFOV = 95
+SWEP.CustomizeSnapshotFOV = 50
 SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+
+SWEP.PeekMaxFOV = 60
+SWEP.PeekPos = Vector(0, 3, -7)
+SWEP.PeekAng = Angle(0, 0.4, -60)
+SWEP.PeekPosReloading = Vector(1, 0, -2)
+SWEP.PeekAngReloading = Angle(0, 0, -10)
 
 ------------------------- |||           Stats            ||| -------------------------
 
@@ -273,7 +280,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Integral = true,
         Installed = "eft_ammo_545_ps",
-        Pos = Vector(0, 0, -4),
+        Pos = Vector(0, -0.5, -2.45),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -282,7 +289,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -0.15),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -0.5, -1),
+        Icon_Offset = Vector(0, -1, -0.25),
         Installed = "eft_mag_ak_6l23_545_30"
     },    
     {
@@ -322,7 +329,7 @@ SWEP.Attachments = {
         PrintName = "Custom slot",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_sag545"},
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -8, -5),
+        Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
     },
 }
