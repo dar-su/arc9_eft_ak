@@ -17,6 +17,10 @@ SWEP.StandardPresets = false
 
 SWEP.DefaultBodygroups = "01000000000000"
 
+SWEP.CustomizePos = Vector(16.5, 50, 4)
+SWEP.CustomizeSnapshotFOV = 50
+SWEP.CustomizeRotateAnchor = Vector(16.5, -4.28, -5.23)
+
 SWEP.BarrelLength = 27
 
 SWEP.EFTErgo = 53

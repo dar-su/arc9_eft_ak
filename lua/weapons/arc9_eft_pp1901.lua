@@ -1111,7 +1111,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Integral = true,
         Installed = "eft_ammo_9x19_pst_gzh",
-        Pos = Vector(0, 0, -4),
+        Pos = Vector(0, 0, -3),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -1120,7 +1120,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
-        Icon_Offset = Vector(0, -0.5, -1),
+        Icon_Offset = Vector(-0.4, 0, -1),
         Installed = "eft_vityaz_mag_std"
     },    
     {
@@ -1161,7 +1161,7 @@ SWEP.Attachments = {
         PrintName = "Custom slot",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_pp1901"},
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -8, -5),
+        Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
     },
 }

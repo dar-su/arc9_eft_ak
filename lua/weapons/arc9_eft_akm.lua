@@ -50,9 +50,9 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(19, 50, 4)
+SWEP.CustomizePos = Vector(18, 50, 4)
 SWEP.CustomizeSnapshotFOV = 50
-SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
+SWEP.CustomizeRotateAnchor = Vector(18, -4.28, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
 
 SWEP.PeekMaxFOV = 60
@@ -384,7 +384,7 @@ SWEP.Attachments = {
         PrintName = "Conversion",
         Category = "eft_ak74_conv",
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
+        Pos = Vector(0, 1, 1),
         Ang = Angle(0, 0, 0),
     },
     {

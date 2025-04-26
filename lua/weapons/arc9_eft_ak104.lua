@@ -21,6 +21,9 @@ SWEP.StandardPresets = {
 
 SWEP.DefaultBodygroups = "01000020000000"
 
+SWEP.CustomizePos = Vector(17, 50, 4)
+SWEP.CustomizeRotateAnchor = Vector(17, -4.28, -5.23)
+
 SWEP.BarrelLength = 26
 
 SWEP.EFTErgo = 38
