@@ -50,6 +50,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
 
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
 ATT.DropMagazineAmount = 1
 
@@ -81,7 +82,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_20.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
@@ -112,7 +114,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_30.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
@@ -140,7 +143,8 @@ ATT.Description = [[A standard 30-round capacity 9x19 magazine for PP-19-01 Vity
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_std.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_30.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_30.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
@@ -349,3 +353,150 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_vityaz_stock_std")
 
+
+///////////////////////////////////////      eft_vityaz_gas_sagmk1
+
+
+ATT = {}
+
+ATT.PrintName = "PP-19-01 Vityaz SAG MK1 M-LOK handguard with gas tube"
+ATT.CompactName = "SAG MK1"
+ATT.Icon = Material("entities/eft_ak_attachments/vityaz/mk1.png", "mips smooth")
+ATT.Description = [[A combined kit consisting of a handguard and a milled gas tube designed to improve the performance of the PP-19-01 Vityaz and the Saiga-9 civilian carbine. The handguard is equipped with an M-LOK interface for installing additional equipment, and the gas tube has a picatinny rail for mounting sights and tactical units. Manufactured by Sureshot Armament Group. ]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HeatCapacityMult = 0.985
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+
+ATT.HasGas = true
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_vityaz_mk1.mdl"
+ATT.LHIK = true
+
+ATT.Category = {"eft_vityaz_gasblock"}
+ATT.ActivateElements = {"gasblock"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 2.3, -0.45),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 1),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 2.0, 1.9),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(0.9, 2.7, 0.95),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, -0.2),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-0.9, 2.7, 0.95),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -0.2),
+    },
+
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_vityaz_gas_sagmk1")
+
+///////////////////////////////////////      eft_vityaz_gas_vrlps
+
+
+ATT = {}
+
+ATT.PrintName = "PP-19-01 Vityaz Vector VR-LPS left-side charging handle"
+ATT.CompactName = "VR-LPS"
+ATT.Icon = Material("entities/eft_ak_attachments/vityaz/vr.png", "mips smooth")
+ATT.Description = [[VR-LPS is a device that allows for reloading the weapon with the support hand. Installed in place of the gas tube and enables quick and efficient reloading. Manufactured by Vector 7.62.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HeatCapacityMult = 0.985
+ATT.EFTErgoAdd = 12
+ATT.CustomPros = { Ergonomics = "+12" }
+ATT.RecoilMult = 0.975
+ATT.VisualRecoilMult = 0.975
+
+ATT.HasGas = true
+ATT.HasHG = true
+
+ATT.Category = {"eft_vityaz_gasblock"}
+ATT.ActivateElements = {"gasblock"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 2.3, -0.85),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 1),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, 2.0, 2.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+        ExcludeElements = {"eft_ak_gp34"}
+    },
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(1.05, 3.5, 0.95),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_vityaz_gas_vrlps")
+
+///////////////////////////////////////      eft_vityaz_mag_50
+
+
+ATT = {}
+
+ATT.PrintName = "PP-19-01 9x19 F5 MFG 50-round drum magazine"
+ATT.CompactName = "PP19 F5 50"
+ATT.Icon = Material("entities/eft_ak_attachments/vityaz/50.png", "mips smooth")
+ATT.Description = [[A PP-19-01 Vityaz 9x19 drum magazine with a 50-round capacity. Manufactured by F5 MFG. ]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_drum_50.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_drum_50.mdl"
+ATT.DropMagazineAmount = 1
+
+ATT.Category = {
+    "eft_vityaz_mag",
+}
+
+ATT.ActivateElements = {"drum"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 50
+
+
+ARC9.LoadAttachment(ATT, "eft_vityaz_mag_50")

@@ -15,7 +15,7 @@ SWEP.SaveBase = "arc9_eft_saiga9_2"
 
 SWEP.StandardPresets = false 
 
-SWEP.DefaultBodygroups = "01000010000000"
+SWEP.DefaultBodygroups = "01000000000000"
 
 SWEP.BarrelLength = 32
 SWEP.MuzzleEffectQCA = 5

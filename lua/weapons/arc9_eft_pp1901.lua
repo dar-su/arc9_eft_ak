@@ -25,7 +25,7 @@ SWEP.StandardPresets = {
 }
 
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
-SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_pp1901.mdl"
+SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_pp1901_2.mdl"
 SWEP.DefaultBodygroups = "00000000000000"
 
 ------------------------- |||           Offsets            ||| -------------------------
@@ -208,6 +208,8 @@ SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/vityaz_indoor_distant
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
+SWEP.ShouldDropMag = false
+SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineTime = 0.57
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, -3.5, 0.95)
@@ -231,12 +233,16 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
     local nomag = false
+    local boltthing = false
 
     -- 0 - look
     -- 1 - chamber
     -- 2 - mag
 
+    if elements["eft_vityaz_gas_vrlps"] then boltthing = true end
+
     if elements["9mmmag"] then ending = "9mmmag"
+    elseif elements["drum"] then ending = "drum"
     else nomag = true end
     
     if anim == "inspect" then
@@ -257,11 +263,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         else
             if nomag then ending = math.max(rand, 1) end
             ending = rand
+            if rand == 0 and boltthing then ending = ending .. "_bolt" end
         end
-    end
-
-    if anim == "fix" then
-        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
+    elseif anim == "fix" then
+        rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
 
         if SERVER and ARC9EFTBASE then
             net.Start("arc9eftjam")
@@ -269,9 +274,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             net.Send(swep:GetOwner())
         end
 
-        return "jam" .. rand
-    end
+        if boltthing then rand = rand .. "_bolt" end
 
+        return "jam" .. rand
+    elseif boltthing and (anim == "reload_empty" or (anim == "reload" and nomag)) then
+        ending = ending .. "_bolt"
+    elseif boltthing and anim == "ready" then
+        return "ready_bolt"
+    end
+    
     return anim .. ending
     -- return anim .. 3
 end
@@ -287,106 +298,188 @@ SWEP.ReloadHideBoneTables = {
 
 local rik_single = {
     { t = 0, lhik = 1 },
-    { t = 0.3, lhik = 1 },
-    { t = 0.5, lhik = 0 },
+    { t = 0.15, lhik = 1 },
+    { t = 0.26, lhik = 0 },
     { t = 0.6, lhik = 0 },
-    { t = 0.9, lhik = 1 },
+    { t = 0.7, lhik = 1 },
+    { t = 1, lhik = 1 },
+}
+local rik_single_bolt = {
+    { t = 0, lhik = 1 },
+    { t = 0.08, lhik = 0 },
+    { t = 0.87, lhik = 0 },
+    { t = 0.96, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
 local rik_def = {
     { t = 0, lhik = 1 },
-    { t = 0.2, lhik = 0 },
-    { t = 0.91, lhik = 0 },
+    { t = 0.15, lhik = 0 },
+    { t = 0.87, lhik = 0 },
+    { t = 0.97, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
 local rik_empty = {
     { t = 0, lhik = 1 },
-    { t = 0.15, lhik = 0 },
-    { t = 0.85, lhik = 0 },
+    { t = 0.1, lhik = 0 },
+    { t = 0.55, lhik = 0 },
+    { t = 0.67, lhik = 1 },
+    { t = 1, lhik = 1 },
+}
+local rik_empty2 = {
+    { t = 0, lhik = 1 },
+    { t = 0.1, lhik = 0 },
+    { t = 0.83, lhik = 0 },
+    { t = 0.95, lhik = 1 },
+    { t = 1, lhik = 1 },
+}
+local rik_empty_bolt = {
+    { t = 0, lhik = 1 },
+    { t = 0.08, lhik = 0 },
+    { t = 0.86, lhik = 0 },
+    { t = 0.96, lhik = 1 },
     { t = 1, lhik = 1 },
 }
 
 local rik_magcheck = {
     { t = 0, lhik = 1 },
-    { t = 0.05, lhik = 1 },
-    { t = 0.22, lhik = 0 },
-    { t = 0.81, lhik = 0 },
+    { t = 0.1, lhik = 0 },
+    { t = 0.86, lhik = 0 },
     { t = 0.95, lhik = 1 },
     { t = 1, lhik = 1 },
 }
-local rst_single = {
-    { s = randspin, t = 7/26 },
-    { s = path .. "ak74_slider_up.ogg", t = 19/26 },
-    { s = randspin, t = 33/26 },
-    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 35/26 },
-    { s = path .. "ak74_round_in_chamber.ogg", t = 53/26 },
-    { s = randspin, t = 60/26 },
-    { s = randspin, t = 68/26 },
-    { s = path .. "ak74_slider_down.ogg", t = 73/26 },
-    { s = randspin, t = 83/26 },
-}
 
-local rst_def = {
-    { s = randspin, t = 6/28 },
-    { s = path .. "ak74_magrelease_button.ogg", t = 8/28 },
-    { s = path .. "mpx_weap_magout_plastic.ogg", t = 11/28 },
-    { s = pouchin, t = 22/28 },
-    { s = pouchout, t = 30/28 },
-    { s = path .. "mpx_weap_magin_plastic.ogg", t = 62/28 },
-    { s = randspin, t = 75/28 }
+local rst_single = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "saiga_slider_up.ogg", t = 0.4 },
+    { s = randspin, t = 0.8 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 1 },
+    { s = path .. "ak74_round_in_chamber.ogg", t = 1.82 },
+    { s = randspin, t = 2.45 },
+    { s = path .. "saiga_slider_down.ogg", t = 2.83 - 0.05 },
+    { s = randspin, t = 3.18 },
+}
+local rst_single_bolt = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "saiga_slider_up.ogg", t = 0.4 },
+    { s = path .. "saiga_slider_check.ogg", t = 0.56, v = 0.3 },
+    { s = randspin, t = 0.85 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 1.3 },
+    { s = path .. "ak74_round_in_chamber.ogg", t = 2.38 },
+    { s = randspin, t = 3 },
+    { s = path .. "saiga_slider_down.ogg", t = 3.74 - 0.05 },
+    { s = randspin, t = 4.08 },
 }
 
 local rst_empty = {
-    { s = randspin, t = 6/28 },
-    { s = path .. "ak74_magrelease_button.ogg", t = 8/28 },
-    { s = path .. "mpx_weap_magout_plastic.ogg", t = 11/28 },
-    { s = pouchout, t = 25/28 },
-    { s = path .. "mpx_weap_magin_plastic.ogg", t = 52/28 },
-    { s = randspin, t = 65/28 },
-    { s = path .. "ak74_slider_up.ogg", t = 82/28 },
-    { s = path .. "ak74_slider_down.ogg", t = 89/28 },
-    { s = randspin, t = 97/28 },
+    { s = randspin, t = 0.1 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 0.35 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.41 },
+    { s = randspin, t = 0.7 },
+    { s = pouchout, t = 0.89 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 0.35 },
+    { s = randspin, t = 2.12 },
+    { s = path .. "saiga_slider_up.ogg", t = 2.84 },
+    { s = path .. "saiga_slider_down.ogg", t = 3.04 - 0.05 },
+    { s = randspin, t = 3.44 },
     {hide = 0, t = 0},
-    {hide = 1, t = 0.57},
-    {hide = 0, t = 1.02}
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1}
+}
+
+
+
+local rst_drum_empty = {
+    { s = randspin, t = 0.1 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 0.35 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.41 },
+    { s = randspin, t = 0.7 },
+    { s = pouchout, t = 0.89 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 0.35 + 5/26 },
+    { s = randspin, t = 2.12 + 5/26 },
+    { s = path .. "saiga_slider_up.ogg", t = 2.84 + 5/26 },
+    { s = path .. "saiga_slider_down.ogg", t = 3.04 - 0.05 + 5/26 },
+    { s = randspin, t = 3.44 + 5/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1}
 }
 
 local rst_magcheck = {
     { s = randspin, t = 5/24 },
-    { s = path .. "ak74_magrelease_button.ogg", t = 20/24 },
-    { s = path .. "mpx_weap_magout_plastic.ogg", t = 24/24 },
-    { s = randspin, t = 35/24 },
-    { s = randspin, t = 55/24 },
-    { s = path .. "mpx_weap_magin_plastic.ogg", t = 78/24 },
-    { s = randspin, t = 90/24 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 0.55 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.76 },
+    { s = randspin, t = 1.1 },
+    { s = randspin, t = 1.8, v = 0.3 },
+    { s = randspin, t = 2.58 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 3.12 - 0.35 },
+    { s = randspin, t = 3.49 },
+}
+local rst_magcheck2 = {
+    { s = randspin, t = 5/24 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 0.55 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.76 },
+    { s = randspin, t = 1.1 },
+    { s = randspin, t = 1.85, v = 0.3 },
+    { s = path .. "g36_mag_rattle2.ogg", t = 2.48 },
+    { s = path .. "g36_mag_rattle2.ogg", t = 2.9 },
+    -- { s = randspin, t = 2.58 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 3.95 - 0.35 },
+    { s = randspin, t = 4.25 },
 }
 
 local rst_look = {
-    { s = randspin, t = 9/24 },
-    { s = randspin, t = 38/24 },
-    { s = randspin, t = 73/24 },
+    { s = randspin, t = 0.1 },
+    { s = randspin, t = 1.52 },
+    { s = randspin, t = 2.78 },
 }
 
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        RareSource = {"tooidle0", "tooidle1", "tooidle2"},
-        RareSourceChance = 0.0001,
     },
 
     ["ready"] = {
-        Source = {"ready0", "ready1", "ready2"},
+        Source = {"ready0", "ready1"},
         IKTimeLine = {
             { t = 0, lhik = 0 },
-            { t = 0.6, lhik = 0 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.3, lhik = 1 },
             { t = 1, lhik = 1 },
         },
         EventTable = {
             { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
-            { s = path .. "ak74_slider_up.ogg", t = 18/24 },
-            { s = path .. "ak74_slider_down.ogg", t = 24/24 },
+            { s = path .. "saiga_slider_up.ogg", t = 0.8 },
+            { s = path .. "saiga_slider_down.ogg", t = 1 },
+        },
+    },
+    ["1_ready"] = {
+        Source = "ready2",
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
+            { s = path .. "saiga_slider_up.ogg", t = 0.8 },
+            { s = path .. "saiga_slider_down.ogg", t = 1 },
+        },
+    },
+    ["ready_bolt"] = {
+        Source = {"ready0_bolt", "ready1_bolt", "ready2_bolt"},
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
+            { s = path .. "saiga_slider_up.ogg", t = 0.61 },
+            { s = path .. "saiga_slider_down.ogg", t = 0.85 },
         },
     },
 
@@ -425,6 +518,20 @@ SWEP.Animations = {
         IKTimeLine = rik_single,
         EventTable = rst_single
     },
+    ["reload_bolt"] = {
+        Source = "reload_single_bolt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_single_bolt,
+        EventTable = rst_single_bolt
+    },
+    ["reload_empty_bolt"] = {
+        Source = "reload_single_bolt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_single_bolt,
+        EventTable = rst_single_bolt
+    },
 
 
     ["reload9mmmag"] = {
@@ -432,14 +539,158 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_def,
-        EventTable = rst_def,
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "ak74_magrelease_button.ogg", t = 0.53 },
+            { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.72 },
+            { s = pouchin, t = 1.05 },
+            { s = pouchout, t = 1.3 },
+            { s = path .. "mpx_weap_magin_plastic.ogg", t = 2.23 - 0.35 },
+            { s = randspin, t = 2.66 }
+        },
     },
     ["reload_empty9mmmag"] = {
-        Source = "reload0_empty",
+        Source = {"reload0_empty0", "reload0_empty1"},
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = rik_empty,
         EventTable = rst_empty,
+        DropMagAt = 0.6,
+    },
+    ["1_reload_empty9mmmag"] = {
+        Source = "reload0_empty2",
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty2,
+        EventTable = rst_empty,
+        DropMagAt = 0.6,
+    },
+    ["reload_empty9mmmag_bolt"] = {
+        Source = {"reload0_empty0_bolt", "reload0_empty1_bolt", "reload0_empty2_bolt"},
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty2,
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "ak74_magrelease_button.ogg", t = 0.35 },
+            { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.41 },
+            { s = randspin, t = 0.7 },
+            { s = pouchout, t = 0.89 },
+            { s = path .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 0.35 },
+            { s = randspin, t = 2.12 },
+            { s = path .. "saiga_slider_up.ogg", t = 2.4 },
+            { s = path .. "saiga_slider_down.ogg", t = 2.65 - 0.05 },
+            { s = randspin, t = 3.02 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1}
+        },
+        DropMagAt = 0.6,
+    },
+    ["1_reload_empty9mmmag_bolt"] = {
+        Source = {"reload0_empty0_bolt_alt", "reload0_empty1_bolt_alt", "reload0_empty2_bolt_alt"},
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty_bolt,
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "saiga_slider_up.ogg", t = 0.25 },
+            { s = path .. "saiga_slider_check.ogg", t = 0.46, v = 0.3 },
+            { s = randspin, t = 0.84 },
+        
+            { s = path .. "ak74_magrelease_button.ogg", t = 1.0 },
+            { s = path .. "mpx_weap_magout_plastic.ogg", t = 1.09 },
+            { s = randspin, t = 1.41 },
+            { s = pouchout, t = 1.6 },
+            { s = path .. "mpx_weap_magin_plastic.ogg", t = 2.38 - 0.35 },
+            -- { s = randspin, t = 2.12 },
+            { s = path .. "saiga_slider_down.ogg", t = 3.07 - 0.05 },
+            { s = randspin, t = 3.42 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 1.27},
+            {hide = 0, t = 1.6}
+        },
+        DropMagAt = 1.27,
+    },
+
+    ["reloaddrum"] = {
+        Source = "reload1",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_def,
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "ak74_magrelease_button.ogg", t = 0.53 },
+            { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.72 },
+            { s = pouchin, t = 1.05 },
+            { s = pouchout, t = 1.3 + 5/26 },
+            { s = path .. "mpx_weap_magin_plastic.ogg", t = 2.23 - 0.35 + 10/26 },
+            { s = randspin, t = 2.66 + 10/26 }
+        },
+        DropMagAt = 0.6,
+    },
+    ["reload_emptydrum"] = {
+        Source = {"reload1_empty0", "reload1_empty1"},
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty,
+        EventTable = rst_drum_empty,
+        DropMagAt = 0.6,
+    },
+    ["1_reload_emptydrum"] = {
+        Source = "reload1_empty2",
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty2,
+        EventTable = rst_drum_empty,
+        DropMagAt = 0.6,
+    },
+    ["reload_emptydrum_bolt"] = {
+        Source = {"reload1_empty0_bolt", "reload1_empty1_bolt", "reload1_empty2_bolt"},
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty2,
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "ak74_magrelease_button.ogg", t = 0.35 },
+            { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.41 },
+            { s = randspin, t = 0.7 },
+            { s = pouchout, t = 0.89 + 2/26 },
+            { s = path .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 0.35 + 5/26 },
+            { s = randspin, t = 2.12 + 5/26 },
+            { s = path .. "saiga_slider_up.ogg", t = 2.4 + 5/26 },
+            { s = path .. "saiga_slider_down.ogg", t = 2.65 - 0.05 + 5/26 },
+            { s = randspin, t = 3.02 + 5/26 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 1}
+        },
+        DropMagAt = 0.6,
+    },
+    ["1_reload_emptydrum_bolt"] = {
+        Source = {"reload1_empty0_bolt_alt", "reload1_empty1_bolt_alt", "reload1_empty2_bolt_alt"},
+        MinProgress = 0.9,
+        FireASAP = true,
+        IKTimeLine = rik_empty_bolt,
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "saiga_slider_up.ogg", t = 0.25 },
+            { s = path .. "saiga_slider_check.ogg", t = 0.46, v = 0.3 },
+            { s = randspin, t = 0.84 },
+        
+            { s = path .. "ak74_magrelease_button.ogg", t = 1.0 },
+            { s = path .. "mpx_weap_magout_plastic.ogg", t = 1.09 },
+            { s = randspin, t = 1.41 },
+            { s = pouchout, t = 1.6 + 5/26 },
+            { s = path .. "mpx_weap_magin_plastic.ogg", t = 2.38 - 0.35 + 10/26 },
+            -- { s = randspin, t = 2.12 },
+            { s = path .. "saiga_slider_down.ogg", t = 3.07 - 0.05 + 10/26 },
+            { s = randspin, t = 3.42 + 10/26 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 1.45},
+            {hide = 0, t = 1.6}
+        },
+        DropMagAt = 1.45,
     },
 
     ["inspect"] = { -- shutup arc9 we have inspect
@@ -448,12 +699,12 @@ SWEP.Animations = {
     },
 
     ["inspect1"] = {
-        Source = "look0",
+        Source = "look1",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.4, lhik = 1 },
+            { t = 0.41, lhik = 1 },
             { t = 0.6, lhik = 0 },
             { t = 0.8, lhik = 0 },
             { t = 0.95, lhik = 1 },
@@ -461,8 +712,21 @@ SWEP.Animations = {
         },
         EventTable = rst_look
     },
+    ["1_inspect1"] = {
+        Source = "look2",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.87, lhik = 0 },
+            { t = 0.97, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = rst_look
+    },
     ["inspect0"] = {
-        Source = "look1",
+        Source = "checkchamber",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = {
@@ -470,14 +734,53 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
         EventTable = {
-            { s = randspin, t = 9/27 },
-            { s = path.."akms_slider_up.ogg", t = 21/27},
-            { s = path.."akms_slider_down.ogg", t = 37/27},
-            { s = randspin, t = 53/27 },
+            { s = randspin, t = 0.15 },
+            { s = path.."saiga_slider_up.ogg", t = 0.65},
+            { s = path.."saiga_slider_check.ogg", t = 1.37 - 0.05},
+            { s = randspin, t = 1.8 },
+        },
+    },
+    ["inspect0_bolt"] = {
+        Source = "checkchamber_bolt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.16, lhik = 0 },
+            { t = 0.67, lhik = 0 },
+            { t = 0.82, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = randspin, t = 0.15 },
+            { s = path.."saiga_slider_up.ogg", t = 0.65},
+            { s = path.."saiga_slider_check.ogg", t = 1.4 - 0.05},
+            { s = randspin, t = 1.8 },
         },
     },
     ["inspect_mag_9mmmag"] = {
-        Source = "look2",
+        Source = "magcheck1",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck
+    },
+    ["1_inspect_mag_9mmmag"] = {
+        Source = "magcheck2",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck2
+    },
+    ["2_inspect_mag_9mmmag"] = {
+        Source = "magcheck2",
+        MinProgress = 0.85,
+        FireASAP = true,
+        IKTimeLine = rik_magcheck,
+        EventTable = rst_magcheck2
+    },
+    ["inspect_mag_drum"] = {
+        Source = "magcheckdrum",
         MinProgress = 0.85,
         FireASAP = true,
         IKTimeLine = rik_magcheck,
@@ -511,69 +814,177 @@ SWEP.Animations = {
     },
 
 
-
-    ["jam0"] = {
-        Source = {"misfire_0", "misfire_1"}, -- misfire
-        EventTable = {
-            { s = randspin, t = 0.2 },            
-            { s = path.."ak74_slider_up.ogg", t = 0.8},
-            { s = path.."ak74_slider_down.ogg", t = 1.04},
-            { s = randspin, t = 1.55 },        
-        },
-        EjectAt = 0.77
-    },
     ["jam2"] = {
         Source = "jam_feed", -- jam feed
         EventTable = {
-            { s = randspin, t = 0.4 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.6 },
-            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.72 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 1.18 },
-            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 1.4 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.53 },
-            { s = path .. "ak74_slider_down.ogg", t = 1.72 },
-            { s = randspin, t = 2.05 },
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            { s = path .. "saiga_slider_up.ogg", t = 2.04 },
+            { s = randspin, t = 2.54 },
+            { s = randspin, t = 2.76 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.8 },
+            { s = randspin, t = 3.6 },
+            { s = path.."saiga_slider_down.ogg", t = 4 - 0.05},
+            { s = randspin, t = 4.53 },
+            { s = ARC9EFT.Shells9mm, t = 4.2 },
         },
-        EjectAt = 1.4
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.23, lhik = 1 },
+            { t = 0.34, lhik = 0 },
+            { t = 0.82, lhik = 0 },
+            { t = 0.96, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["jam3"] = {
         Source = "jam_hard", -- jam hard
         EventTable = {
-            { s = randspin, t = 0.25 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.42 },
-            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.51 },
-            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 0.96 },
-            { s = randspin, t = 1.3 },
-            { s = randspin, t = 1.79 },
-            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 2.14 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 2.67 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.86 },
-            { s = path .. "ak74_slider_down.ogg", t = 2.97 },
-            { s = randspin, t = 3.48 },
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            -- { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 1.79 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.79 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.22 },
+            { s = randspin, t = 2.46 },
+            { s = randspin, t = 2.99 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 3.37 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 3.91 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 4.05 },
+            { s = path .. "saiga_slider_down.ogg", t = 4.2 - 0.05 },
+            { s = randspin, t = 4.58 },
         },
-        EjectAt = 2.86
+        EjectAt = 4.06
     },
     ["jam4"] = {
         Source = "jam_soft", -- jam soft
         EventTable = {
-            { s = randspin, t = 0.16 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 0.5 },
-            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 0.73 },
-            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 1.26 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.44 },
-            { s = path .. "ak74_slider_down.ogg", t = 1.54 },
-            { s = randspin, t = 2 },
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            -- { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 1.79 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 0.65 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 1.21 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.32 },
+            { s = path .. "saiga_slider_down.ogg", t = 1.5 - 0.05 },
+            { s = randspin, t = 1.86 },
         },
-        EjectAt = 1.44
+        EjectAt = 1.32
     },
     ["jam1"] = {
-        Source = "jam_shell", -- jam shell
+        Source = "jam_shell2", -- jam shell
         EventTable = {
-            { s = randspin, t = 0.3 },
-            { s = path .. "ak_jam_shell_grab.ogg", t = 0.56 },
-            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 1.2 },
-            { s = path .. "ak_jam_stuckbolt_out_hit3.ogg", t = 1.44 },
-            { s = randspin, t = 1.7 },
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 1.9 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.36 },
+            { s = path .. "saiga_slider_check.ogg", t = 2.62 },
+            { s = randspin, t = 2.92 },
+            { s = ARC9EFT.Shells9mm, t = 3.05 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+
+    ["jam2_bolt"] = {
+        Source = "jam_feed_bolt", -- jam feed
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            { s = path .. "saiga_slider_up.ogg", t = 1.54 },
+            { s = path .. "saiga_slider_check.ogg", t = 1.75, v = 0.3 },
+            { s = randspin, t = 2.48 },
+            { s = randspin, t = 2.76 },
+            { s = randspin, t = 3.06 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 3.05 },
+            { s = path .. "saiga_slider_down.ogg", t = 4 - 0.05 },
+            { s = randspin, t = 4.32 },
+            { s = ARC9EFT.Shells9mm, t = 4.05 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.23, lhik = 1 },
+            { t = 0.33, lhik = 0 },
+            { t = 0.88, lhik = 0 },
+            { t = 0.96, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        -- EjectAt = 1.4
+    },
+    ["jam3_bolt"] = {
+        Source = "jam_hard_bolt", -- jam hard
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            -- { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 1.79 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.86 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.28 },
+            { s = randspin, t = 2.67 },
+            { s = randspin, t = 3.3 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 3.83 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 4.24 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 4.33 },
+            { s = path .. "saiga_slider_down.ogg", t = 4.46 - 0.05 },
+            { s = randspin, t = 4.86 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.22, lhik = 1 },
+            { t = 0.34, lhik = 0 },
+            { t = 0.88, lhik = 0 },
+            { t = 0.96, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EjectAt = 4.33
+    },
+    ["jam4_bolt"] = {
+        Source = "jam_soft_bolt", -- jam soft
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = randspin, t = 0.75 },
+            { s = randspin, t = 1.28 },
+
+            -- { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 1.79 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.7 },
+            { s = path .. "ak_jam_stuckbolt_in_moving.ogg", t = 2.12 },
+            { s = path .. "ak_jam_feedfault_extraction_nohand.ogg", t = 2.22 },
+            { s = path .. "saiga_slider_down.ogg", t = 2.37 - 0.05 },
+            { s = randspin, t = 2.75 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.35, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.82, lhik = 0 },
+            { t = 0.93, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EjectAt = 2.22
+    },
+    ["jam1_bolt"] = {
+        Source = "jam_shell1", -- jam shell
+        EventTable = {
+            { s = randspin, t = 0.1 },  
+
+            { s = path .. "ak_jam_shell_grab.ogg", t = 1.22 },
+            { s = path .. "ak_jam_stuckbolt_out_hit3.ogg", t = 1.59 },
+            { s = randspin, t = 1.6 },
+            { s = randspin, t = 2.38 },
+            { s = ARC9EFT.Shells9mm, t = 2.5 },
         },
     },   
     
@@ -609,13 +1020,12 @@ SWEP.Animations = {
 SWEP.EFTRequiredAtts = { "HasGas", "HasGrip", "HasHG", "HasAmmoooooooo" }
 
 SWEP.AttachmentElements = {
-    ["eft_vityaz_rs_std"] = { Bodygroups = { {4, 1} } },
+    ["eft_vityaz_rs_std"] = { Bodygroups = { {3, 1} } },
     ["eft_vityaz_rec_std"] = { Bodygroups = { {2, 1} } },
     ["eft_vityaz_rec_sn"] = { Bodygroups = { {2, 2} } },
-    ["eft_vityaz_mag_sb7"] = { Bodygroups = { {3, 2} } },
-    ["eft_vityaz_mag_sg919_30"] = { Bodygroups = { {3, 4} } },
-    ["eft_vityaz_mag_std"] = { Bodygroups = { {3, 1} } },
-    ["eft_vityaz_mag_sg919_20"] = { Bodygroups = { {3, 3} } },
+
+    ["eft_vityaz_gas_vrlps"] = { Bodygroups = { {4, 1} } },
+    ["eft_vityaz_mag_drum_50"] = { Bodygroups = { {6, 1} } },
 }
 
 
@@ -681,7 +1091,7 @@ SWEP.Attachments = {
         Category = "eft_vityaz_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),
+        Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, -0.5, -1),
         Installed = "eft_vityaz_mag_std"
     },    
