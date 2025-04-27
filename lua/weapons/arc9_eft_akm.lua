@@ -50,10 +50,10 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(18, 50, 4)
+SWEP.CustomizePos = Vector(22.5, 45, 4)
 SWEP.CustomizeSnapshotFOV = 50
-SWEP.CustomizeRotateAnchor = Vector(18, -4.28, -5.23)
-SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeRotateAnchor = Vector(22.5, -4.28, -5.23)
+SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
 
 SWEP.PeekMaxFOV = 60
 -- SWEP.PeekPos = Vector(0, 3, -7)
@@ -395,3 +395,123 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+------------------------- |||           CustomizePos            ||| -------------------------
+
+SWEP.CustomizePosHook = function(wep, vec)
+-- Stocks
+	if wep:HasElement("eft_stock_akm_std") or wep:HasElement("eft_stock_ak74_std")
+	or wep:HasElement("eft_stock_ak74_polymer_plum") or wep:HasElement("eft_stock_ak74_polymer") 
+	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_akm_aa47") 
+	or wep:HasElement("eft_stock_akm_fabd_uas") or wep:HasElement("eft_stock_vpo136") 
+	or wep:HasElement("eft_stock_vpo209") or wep:HasElement("eft_stock_akm_zhu_s") 
+	or wep:HasElement("eft_stock_akm_kocherga") or wep:HasElement("eft_rpk16_stock_tube") 
+	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_zenit_pt1")
+	or wep:HasElement("eft_ar_buffertube_adar") or wep:HasElement("eft_ar_buffertube_rtm") 
+	or wep:HasElement("eft_ar_buffertube_siadv") or wep:HasElement("eft_ar_buffertube_siadvred") 
+	or wep:HasElement("eft_ar_buffertube_baskak") or wep:HasElement("eft_ar_buffertube_a2") 
+	or wep:HasElement("eft_ar_buffertube_std") or wep:HasElement("eft_ar_buffertube_hkenh") 
+	or wep:HasElement("eft_ar_buffertube_f93pro") or wep:HasElement("eft_ar_buffertube_socom") 
+	or wep:HasElement("eft_ar_buffertube_m7a1") or wep:HasElement("eft_ar_buffertube_m7a1f") 
+	or wep:HasElement("eft_ar_buffertube_ubrgen2") or wep:HasElement("eft_ar_buffertube_ubrgen2f") 
+	or wep:HasElement("eft_ar_buffertube_viperpdw")	
+	or wep:HasElement("eft_stock_akms") or wep:HasElement("eft_stock_akmsn") 
+	or wep:HasElement("eft_stock_akms_fab")	
+	then vec = vec + Vector(-4, 6, 0)
+	
+	elseif wep:HasElement("eft_ar_buffertube_arfx") then vec = vec + Vector(-5, 6, 0)
+	
+	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
+	
+	if wep:HasElement("eft_ar_stock_prsgen2f") or wep:HasElement("eft_ar_stock_prsgen3")
+	or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
+
+-- Suppressors	
+	if wep:HasElement("eft_silencer_dthybrid") 
+		or wep:HasElement("eft_silencer_ak_r43_762") 
+		or wep:HasElement("eft_silencer_ultra5") 
+		or wep:HasElement("eft_silencer_ar15_m4sdk") 
+		or wep:HasElement("eft_silencer_ar15_sakerasr")
+		or wep:HasElement("eft_silencer_ar15_socommini") 
+		or wep:HasElement("eft_silencer_ar15_socommonster") 
+		or wep:HasElement("eft_silencer_ar15_socomrc2") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
+		or wep:HasElement("eft_silencer_ak_akm_hexagon") 
+		or wep:HasElement("eft_silencer_ak_wafflemaker") 
+		or wep:HasElement("eft_silencer_ak_tgpa") 
+		or wep:HasElement("eft_silencer_ak_pbs1") 
+		then vec = vec + Vector(2, 3, 0)
+
+		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 6, 0)
+		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 6, 0)
+		elseif wep:HasElement("eft_silencer_waveqd") or wep:HasElement("eft_silencer_gemtechone") then vec = vec + Vector(3, 5, 0)
+		
+		-- elseif wep:HasElement("eft_silencer_ak_pbs1") then vec = vec + Vector(4, 7, 0)
+	end
+	
+
+-- Magazines
+	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 3, 1.5) end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+-- Stocks
+	if wep:HasElement("eft_stock_akm_std") or wep:HasElement("eft_stock_ak74_std")
+	or wep:HasElement("eft_stock_ak74_polymer_plum") or wep:HasElement("eft_stock_ak74_polymer") 
+	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_akm_aa47") 
+	or wep:HasElement("eft_stock_akm_fabd_uas") or wep:HasElement("eft_stock_vpo136") 
+	or wep:HasElement("eft_stock_vpo209") or wep:HasElement("eft_stock_akm_zhu_s") 
+	or wep:HasElement("eft_stock_akm_kocherga") or wep:HasElement("eft_rpk16_stock_tube") 
+	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_zenit_pt1")
+	or wep:HasElement("eft_ar_buffertube_adar") or wep:HasElement("eft_ar_buffertube_rtm") 
+	or wep:HasElement("eft_ar_buffertube_siadv") or wep:HasElement("eft_ar_buffertube_siadvred") 
+	or wep:HasElement("eft_ar_buffertube_baskak") or wep:HasElement("eft_ar_buffertube_a2") 
+	or wep:HasElement("eft_ar_buffertube_std") or wep:HasElement("eft_ar_buffertube_hkenh") 
+	or wep:HasElement("eft_ar_buffertube_f93pro") or wep:HasElement("eft_ar_buffertube_socom") 
+	or wep:HasElement("eft_ar_buffertube_m7a1") or wep:HasElement("eft_ar_buffertube_m7a1f") 
+	or wep:HasElement("eft_ar_buffertube_ubrgen2") or wep:HasElement("eft_ar_buffertube_ubrgen2f") 
+	or wep:HasElement("eft_ar_buffertube_viperpdw")	
+	or wep:HasElement("eft_stock_akms") or wep:HasElement("eft_stock_akmsn") 
+	or wep:HasElement("eft_stock_akms_fab")	
+	then vec = vec + Vector(-4, 0, 0)
+	
+	elseif wep:HasElement("eft_ar_buffertube_arfx") then vec = vec + Vector(-5, 0, 0)
+	
+	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 0, 0) end
+	
+	if wep:HasElement("eft_ar_stock_prsgen2f") or wep:HasElement("eft_ar_stock_prsgen3")
+	or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
+
+-- Suppressors	
+	if wep:HasElement("eft_silencer_dthybrid") 
+		or wep:HasElement("eft_silencer_r43_556") 
+		or wep:HasElement("eft_silencer_ultra5") 
+		or wep:HasElement("eft_silencer_ar15_m4sdk") 
+		or wep:HasElement("eft_silencer_ar15_sakerasr")
+		or wep:HasElement("eft_silencer_ar15_socommini") 
+		or wep:HasElement("eft_silencer_ar15_socommonster") 
+		or wep:HasElement("eft_silencer_ar15_socomrc2") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
+		or wep:HasElement("eft_silencer_ak_ak74_hexagon") 
+		or wep:HasElement("eft_silencer_ak_wafflemaker") 
+		or wep:HasElement("eft_silencer_ak_tgpa") 
+		then vec = vec + Vector(2, 0, 0)
+
+		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 0, 0)
+		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 0, 0)
+		elseif wep:HasElement("eft_silencer_waveqd") or wep:HasElement("eft_silencer_gemtechone") then vec = vec + Vector(3, 0, 0)
+		
+		elseif wep:HasElement("eft_silencer_ak_pbs4") then vec = vec + Vector(4, 0, 0)
+	end
+	
+
+-- Magazines
+	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 0, 1.5) end
+
+	return vec
+end

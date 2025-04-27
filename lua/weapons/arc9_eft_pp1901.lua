@@ -47,9 +47,9 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(15, 50, 4)
+SWEP.CustomizePos = Vector(18.5, 42.5, 4)
 SWEP.CustomizeSnapshotFOV = 50
-SWEP.CustomizeRotateAnchor = Vector(15, -4.28, -5.23)
+SWEP.CustomizeRotateAnchor = Vector(18.5, -4.28, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
 
 SWEP.PeekMaxFOV = 60
@@ -1165,3 +1165,63 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+------------------------- |||           CustomizePos            ||| -------------------------
+
+SWEP.CustomizePosHook = function(wep, vec)
+-- Stocks
+	if wep:HasElement("eft_vityaz_stock_std") or wep:HasElement("eft_stock_ak74m_caa_akts") then vec = vec + Vector(-4, 6, 0)
+	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 4.5, 0) end
+	
+	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
+
+-- Suppressors	
+	if wep:HasElement("eft_silencer_dthybrid") 
+		or wep:HasElement("eft_silencer_r43_9x19") 
+		or wep:HasElement("eft_silencer_ultra5") 
+		or wep:HasElement("eft_silencer_ar15_m4sdk") 
+		or wep:HasElement("eft_silencer_ar15_sakerasr")
+		or wep:HasElement("eft_silencer_ar15_socommini") 
+		or wep:HasElement("eft_silencer_ar15_socommonster") 
+		or wep:HasElement("eft_silencer_ar15_socomrc2") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
+		then vec = vec + Vector(2, 3, 0)
+
+		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 6, 0)
+		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 6, 0)
+		elseif wep:HasElement("eft_silencer_srd9") or wep:HasElement("eft_vityaz_silencer_std") or wep:HasElement("eft_silencer_osprey9") then vec = vec + Vector(3, 5, 0)
+	end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+-- Stocks
+	if wep:HasElement("eft_vityaz_stock_std") or wep:HasElement("eft_stock_ak74m_caa_akts") then vec = vec + Vector(-4, 0, 0)
+	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 0, 0) end
+	
+	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
+
+-- Suppressors	
+	if wep:HasElement("eft_silencer_dthybrid") 
+		or wep:HasElement("eft_silencer_osprey9") 
+		or wep:HasElement("eft_silencer_r43_9x19") 
+		or wep:HasElement("eft_silencer_ultra5") 
+		or wep:HasElement("eft_silencer_ar15_m4sdk") 
+		or wep:HasElement("eft_silencer_ar15_sakerasr")
+		or wep:HasElement("eft_silencer_ar15_socommini") 
+		or wep:HasElement("eft_silencer_ar15_socommonster") 
+		or wep:HasElement("eft_silencer_ar15_socomrc2") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
+		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
+		then vec = vec + Vector(2, 0, 0)
+
+		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 0, 0)
+		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 0, 0)
+		elseif wep:HasElement("eft_silencer_srd9") or wep:HasElement("eft_vityaz_silencer_std") then vec = vec + Vector(3, 5, 0)
+	end
+
+	return vec
+end

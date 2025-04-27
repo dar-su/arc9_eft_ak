@@ -41,8 +41,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasGas = true
 ATT.MuzzleEffectQCA = 3
-ATT.CustomizePos = Vector(23, 32, 4)
-ATT.CustomizeSnapshotFOV = 97
+-- ATT.CustomizePos = Vector(23, 32, 4)
+-- ATT.CustomizeSnapshotFOV = 97
 
 ATT.MuzzleEffectQCA = 5
 ATT.BarrelLengthAdd = 7

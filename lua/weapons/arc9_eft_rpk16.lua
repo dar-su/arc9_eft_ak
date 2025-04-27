@@ -44,9 +44,9 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(18.75, 50, 4)
+SWEP.CustomizePos = Vector(22.5, 45, 4)
 SWEP.CustomizeSnapshotFOV = 50
-SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
+SWEP.CustomizeRotateAnchor = Vector(22.5, -4.28, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
 
 SWEP.PeekMaxFOV = 60
@@ -369,3 +369,50 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+------------------------- |||           CustomizePos            ||| -------------------------
+
+SWEP.CustomizePosHook = function(wep, vec)
+-- Barrels
+	if wep:HasElement("eft_rpk16_barrel_550") then vec = vec + Vector(4, 6, 0) end
+	
+-- Stocks
+	if wep:HasElement("eft_stock_ak74m_std") or wep:HasElement("eft_stock_ak100_skelet")
+	or wep:HasElement("eft_ak12_stock_tube") or wep:HasElement("eft_stock_ak74m_caa_akts") 
+	or wep:HasElement("eft_stock_ak_skelet_cust") or wep:HasElement("eft_rpk16_stock_tube") then vec = vec + Vector(-4, 6, 0)
+	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 4.5, 0)
+	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
+	
+	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
+
+-- Suppressors	
+	if wep:HasElement("eft_silencer_ak_ak74_hexagon") or wep:HasElement("eft_silencer_ak_tgpa") then vec = vec + Vector(2, 3, 0) end
+
+-- Magazines
+	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 3, 1.5) end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+-- Barrels
+	if wep:HasElement("eft_rpk16_barrel_550") then vec = vec + Vector(4, 0, 0) end
+	
+-- Stocks
+	if wep:HasElement("eft_stock_ak74m_std") or wep:HasElement("eft_stock_ak100_skelet")
+	or wep:HasElement("eft_ak12_stock_tube") or wep:HasElement("eft_stock_ak74m_caa_akts") 
+	or wep:HasElement("eft_stock_ak_skelet_cust") or wep:HasElement("eft_rpk16_stock_tube") then vec = vec + Vector(-4, 0, 0)
+	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 0, 0)
+	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
+	
+	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
+
+-- Suppressors	
+	if wep:HasElement("eft_silencer_ak_ak74_hexagon") or wep:HasElement("eft_silencer_ak_tgpa") then vec = vec + Vector(2, 0, 0) end
+
+-- Magazines
+	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 0, 1.5) end
+
+	return vec
+end
