@@ -103,7 +103,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Integral = true,
         Installed = "eft_ammo_76239_ps",
-        Pos = Vector(0, -0.5, -2.45),
+        Pos = Vector(0, -1.25, -0.7),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -112,7 +112,7 @@ SWEP.Attachments = {
         Bone = "mod_magazine",
         Pos = Vector(0, -0.05, -0.25),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -1, -0.25),
+        Icon_Offset = Vector(0, 0, -0.5),
         Installed = "eft_mag_ak_ak103_762_30"
     },    
     {

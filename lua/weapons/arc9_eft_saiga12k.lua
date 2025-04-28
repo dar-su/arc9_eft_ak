@@ -870,16 +870,16 @@ SWEP.Attachments = {
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -1, -0.5),
+        Icon_Offset = Vector(0, -1, -0.6),
         Installed = "eft_grip_ak_6p1sb8",
     },
     {
-        PrintName = "Mag",
+        PrintName = "Magazine",
         Category = "eft_saiga12_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, -1, -0.25),
+        Icon_Offset = Vector(0, 0, -0.75),
         Installed = "eft_saiga12_magazine_std"
     },    
     {
@@ -904,7 +904,7 @@ SWEP.Attachments = {
         PrintName = "Ammo type",
         Category = {"eft_ammo_12x70", "eft_ammo_12x70_saiga12only"},
         Bone = "mod_magazine",
-        Pos = Vector(0, -0.5, -2.45),
+        Pos = Vector(0, -1.25, -0.75),
         Ang = Angle(0, 0, 0),
         Installed = "eft_ammo_12x70_7mm",
         Integral = "eft_ammo_12x70_7mm",
