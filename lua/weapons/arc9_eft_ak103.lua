@@ -45,6 +45,81 @@ SWEP.HookP_NameChange = false
 
 SWEP.HookP_DescriptionChange = false 
 
+SWEP.CustomizePosHook = function(wep, vec)
+	local eles = wep:GetElements()
+	
+	-- Stocks
+	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
+	or eles["eft_ak12_stock_tube"] or eles["eft_stock_ak74m_caa_akts"] 
+	or eles["eft_stock_ak_skelet_cust"] or eles["eft_rpk16_stock_tube"] then vec = vec + Vector(-4, 6, 0)
+	elseif eles["eft_stock_zenit_pt1"] or eles["eft_stock_zenit_pt3"] then vec = vec + Vector(-3, 4.5, 0)
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 6, 0) end
+	
+	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 3, 0) end
+
+	-- Suppressors	
+	if eles["eft_silencer_dthybrid"] 
+		or eles["eft_silencer_ak_r43_762"] 
+		or eles["eft_silencer_ultra5"] 
+		or eles["eft_silencer_ar15_m4sdk"] 
+		or eles["eft_silencer_ar15_sakerasr"]
+		or eles["eft_silencer_ar15_socommini"] 
+		or eles["eft_silencer_ar15_socommonster"] 
+		or eles["eft_silencer_ar15_socomrc2"] 
+		or eles["eft_silencer_ar15_kacqdssnt4"] 
+		or eles["eft_silencer_ar15_kacqdssnt4_f"] 
+		or eles["eft_silencer_ak_akm_hexagon"] 
+		or eles["eft_silencer_ak_wafflemaker"] 
+		or eles["eft_silencer_ak_tgpa"] 
+		or eles["eft_silencer_ak_pbs1"] 
+		or eles["eft_silencer_ak_hexagon_dtkp"] 
+		or eles["eft_silencer_ak_dtk4m"] 
+		then vec = vec + Vector(2, 3, 0)
+
+		elseif eles["eft_silencer_sdn6"] then vec = vec + Vector(4, 6, 0)
+		elseif eles["eft_silencer_thorpsr"] then vec = vec + Vector(4, 6, 0)
+		elseif eles["eft_silencer_waveqd"] or eles["eft_silencer_gemtechone"] then vec = vec + Vector(3, 5, 0)
+		
+		-- elseif eles["eft_silencer_ak_pbs1"] then vec = vec + Vector(4, 7, 0)
+	end
+	
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local eles = wep:GetElements()
+	
+	-- Stocks
+	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
+	or eles["eft_ak12_stock_tube"] or eles["eft_stock_ak74m_caa_akts"] 
+	or eles["eft_stock_ak_skelet_cust"] or eles["eft_rpk16_stock_tube"] then vec = vec + Vector(-4, 0, 0)
+	elseif eles["eft_stock_zenit_pt1"] or eles["eft_stock_zenit_pt3"] then vec = vec + Vector(-3, 0, 0)
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 0, 0) end
+	
+	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 0, 0) end
+
+	-- Suppressors	
+	if eles["eft_silencer_dthybrid"] 
+		or eles["eft_silencer_r43_556"] 
+		or eles["eft_silencer_ultra5"] 
+		or eles["eft_silencer_ar15_m4sdk"] 
+		or eles["eft_silencer_ar15_sakerasr"]
+		or eles["eft_silencer_ar15_socommini"] 
+		or eles["eft_silencer_ar15_socommonster"] 
+		or eles["eft_silencer_ar15_socomrc2"] 
+		or eles["eft_silencer_ar15_kacqdssnt4"] 
+		or eles["eft_silencer_ar15_kacqdssnt4_f"] 
+		then vec = vec + Vector(2, 0, 0)
+
+		elseif eles["eft_silencer_sdn6"] then vec = vec + Vector(4, 0, 0)
+		elseif eles["eft_silencer_thorpsr"] then vec = vec + Vector(4, 0, 0)
+		elseif eles["eft_silencer_waveqd"] or eles["eft_silencer_gemtechone"] then vec = vec + Vector(3, 0, 0)
+	end
+
+	return vec
+end
+
 SWEP.AttachmentElements = {
     ["nmount"] = { Bodygroups = { {3, 1} } },
     ["eft_gp34"] = { Bodygroups = { {7, 1} } },
@@ -172,77 +247,3 @@ SWEP.Attachments = {
         RequireElements = {"impossibleonthisgun"},
     },
 }
-
-
-------------------------- |||           CustomizePos            ||| -------------------------
-
-SWEP.CustomizePosHook = function(wep, vec)
--- Stocks
-	if wep:HasElement("eft_stock_ak74m_std") or wep:HasElement("eft_stock_ak100_skelet")
-	or wep:HasElement("eft_ak12_stock_tube") or wep:HasElement("eft_stock_ak74m_caa_akts") 
-	or wep:HasElement("eft_stock_ak_skelet_cust") or wep:HasElement("eft_rpk16_stock_tube") then vec = vec + Vector(-4, 6, 0)
-	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 4.5, 0)
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
-
--- Suppressors	
-	if wep:HasElement("eft_silencer_dthybrid") 
-		or wep:HasElement("eft_silencer_ak_r43_762") 
-		or wep:HasElement("eft_silencer_ultra5") 
-		or wep:HasElement("eft_silencer_ar15_m4sdk") 
-		or wep:HasElement("eft_silencer_ar15_sakerasr")
-		or wep:HasElement("eft_silencer_ar15_socommini") 
-		or wep:HasElement("eft_silencer_ar15_socommonster") 
-		or wep:HasElement("eft_silencer_ar15_socomrc2") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
-		or wep:HasElement("eft_silencer_ak_akm_hexagon") 
-		or wep:HasElement("eft_silencer_ak_wafflemaker") 
-		or wep:HasElement("eft_silencer_ak_tgpa") 
-		or wep:HasElement("eft_silencer_ak_pbs1") 
-		or wep:HasElement("eft_silencer_ak_hexagon_dtkp") 
-		or wep:HasElement("eft_silencer_ak_dtk4m") 
-		then vec = vec + Vector(2, 3, 0)
-
-		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 6, 0)
-		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 6, 0)
-		elseif wep:HasElement("eft_silencer_waveqd") or wep:HasElement("eft_silencer_gemtechone") then vec = vec + Vector(3, 5, 0)
-		
-		-- elseif wep:HasElement("eft_silencer_ak_pbs1") then vec = vec + Vector(4, 7, 0)
-	end
-	
-
-	return vec
-end
-
-SWEP.CustomizeRotateAnchorHook = function(wep, vec)
--- Stocks
-	if wep:HasElement("eft_stock_ak74m_std") or wep:HasElement("eft_stock_ak100_skelet")
-	or wep:HasElement("eft_ak12_stock_tube") or wep:HasElement("eft_stock_ak74m_caa_akts") 
-	or wep:HasElement("eft_stock_ak_skelet_cust") or wep:HasElement("eft_rpk16_stock_tube") then vec = vec + Vector(-4, 0, 0)
-	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 0, 0)
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 0, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
-
--- Suppressors	
-	if wep:HasElement("eft_silencer_dthybrid") 
-		or wep:HasElement("eft_silencer_r43_556") 
-		or wep:HasElement("eft_silencer_ultra5") 
-		or wep:HasElement("eft_silencer_ar15_m4sdk") 
-		or wep:HasElement("eft_silencer_ar15_sakerasr")
-		or wep:HasElement("eft_silencer_ar15_socommini") 
-		or wep:HasElement("eft_silencer_ar15_socommonster") 
-		or wep:HasElement("eft_silencer_ar15_socomrc2") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
-		then vec = vec + Vector(2, 0, 0)
-
-		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 0, 0)
-		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 0, 0)
-		elseif wep:HasElement("eft_silencer_waveqd") or wep:HasElement("eft_silencer_gemtechone") then vec = vec + Vector(3, 0, 0)
-	end
-
-	return vec
-end

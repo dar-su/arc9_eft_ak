@@ -180,6 +180,74 @@ SWEP.NoFlash = true
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/300blk.mdl"
 SWEP.ShellSounds = ARC9EFT.Shells556
 
+SWEP.CustomizePosHook = function(wep, vec)
+	local eles = wep:GetElements()
+	
+	-- Stocks
+	if eles["eft_stock_akm_std"] or eles["eft_stock_ak74_std"]
+	or eles["eft_stock_ak74_polymer_plum"] or eles["eft_stock_ak74_polymer"] 
+	or eles["eft_stock_akm_akts"] or eles["eft_stock_akm_aa47"] 
+	or eles["eft_stock_akm_fabd_uas"] or eles["eft_stock_vpo136"] 
+	or eles["eft_stock_vpo209"] or eles["eft_stock_akm_zhu_s"] 
+	or eles["eft_stock_akm_kocherga"] or eles["eft_rpk16_stock_tube"] 
+	or eles["eft_stock_akm_akts"] or eles["eft_stock_zenit_pt1"]
+	or eles["eft_ar_buffertube_adar"] or eles["eft_ar_buffertube_rtm"] 
+	or eles["eft_ar_buffertube_siadv"] or eles["eft_ar_buffertube_siadvred"] 
+	or eles["eft_ar_buffertube_baskak"] or eles["eft_ar_buffertube_a2"] 
+	or eles["eft_ar_buffertube_std"] or eles["eft_ar_buffertube_hkenh"] 
+	or eles["eft_ar_buffertube_f93pro"] or eles["eft_ar_buffertube_socom"] 
+	or eles["eft_ar_buffertube_m7a1"] or eles["eft_ar_buffertube_m7a1f"] 
+	or eles["eft_ar_buffertube_ubrgen2"] or eles["eft_ar_buffertube_ubrgen2f"] 
+	or eles["eft_ar_buffertube_viperpdw"]	
+	then vec = vec + Vector(-4, 6, 0)
+	
+	elseif eles["eft_ar_buffertube_arfx"] then vec = vec + Vector(-5, 6, 0)
+	
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 6, 0) end
+	
+	if eles["eft_ar_stock_prsgen2f"] or eles["eft_ar_stock_prsgen3"]
+	or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 3, 0) end
+
+	-- Magazines
+	if eles["eft_mag_ak_6l18_545_45"] or eles["eft_mag_ak_6l26_545_45"] then vec = vec + Vector(0, 3, 1.5) end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local eles = wep:GetElements()
+	
+	-- Stocks
+	if eles["eft_stock_akm_std"] or eles["eft_stock_ak74_std"]
+	or eles["eft_stock_ak74_polymer_plum"] or eles["eft_stock_ak74_polymer"] 
+	or eles["eft_stock_akm_akts"] or eles["eft_stock_akm_aa47"] 
+	or eles["eft_stock_akm_fabd_uas"] or eles["eft_stock_vpo136"] 
+	or eles["eft_stock_vpo209"] or eles["eft_stock_akm_zhu_s"] 
+	or eles["eft_stock_akm_kocherga"] or eles["eft_rpk16_stock_tube"] 
+	or eles["eft_stock_akm_akts"] or eles["eft_stock_zenit_pt1"]
+	or eles["eft_ar_buffertube_adar"] or eles["eft_ar_buffertube_rtm"] 
+	or eles["eft_ar_buffertube_siadv"] or eles["eft_ar_buffertube_siadvred"] 
+	or eles["eft_ar_buffertube_baskak"] or eles["eft_ar_buffertube_a2"] 
+	or eles["eft_ar_buffertube_std"] or eles["eft_ar_buffertube_hkenh"] 
+	or eles["eft_ar_buffertube_f93pro"] or eles["eft_ar_buffertube_socom"] 
+	or eles["eft_ar_buffertube_m7a1"] or eles["eft_ar_buffertube_m7a1f"] 
+	or eles["eft_ar_buffertube_ubrgen2"] or eles["eft_ar_buffertube_ubrgen2f"] 
+	or eles["eft_ar_buffertube_viperpdw"]	
+	then vec = vec + Vector(-4, 0, 0)
+	
+	elseif eles["eft_ar_buffertube_arfx"] then vec = vec + Vector(-5, 0, 0)
+	
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 0, 0) end
+	
+	if eles["eft_ar_stock_prsgen2f"] or eles["eft_ar_stock_prsgen3"]
+	or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 0, 0) end
+
+	-- Magazines
+	if eles["eft_mag_ak_6l18_545_45"] or eles["eft_mag_ak_6l26_545_45"] then vec = vec + Vector(0, 0, 1.5) end
+
+	return vec
+end
+
 ------------------------- |||           Sounds            ||| -------------------------
 
 local path = "weapons/darsu_eft/ak/"
@@ -391,70 +459,3 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
-
-
-------------------------- |||           CustomizePos            ||| -------------------------
-
-SWEP.CustomizePosHook = function(wep, vec)
--- Stocks
-	if wep:HasElement("eft_stock_akm_std") or wep:HasElement("eft_stock_ak74_std")
-	or wep:HasElement("eft_stock_ak74_polymer_plum") or wep:HasElement("eft_stock_ak74_polymer") 
-	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_akm_aa47") 
-	or wep:HasElement("eft_stock_akm_fabd_uas") or wep:HasElement("eft_stock_vpo136") 
-	or wep:HasElement("eft_stock_vpo209") or wep:HasElement("eft_stock_akm_zhu_s") 
-	or wep:HasElement("eft_stock_akm_kocherga") or wep:HasElement("eft_rpk16_stock_tube") 
-	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_zenit_pt1")
-	or wep:HasElement("eft_ar_buffertube_adar") or wep:HasElement("eft_ar_buffertube_rtm") 
-	or wep:HasElement("eft_ar_buffertube_siadv") or wep:HasElement("eft_ar_buffertube_siadvred") 
-	or wep:HasElement("eft_ar_buffertube_baskak") or wep:HasElement("eft_ar_buffertube_a2") 
-	or wep:HasElement("eft_ar_buffertube_std") or wep:HasElement("eft_ar_buffertube_hkenh") 
-	or wep:HasElement("eft_ar_buffertube_f93pro") or wep:HasElement("eft_ar_buffertube_socom") 
-	or wep:HasElement("eft_ar_buffertube_m7a1") or wep:HasElement("eft_ar_buffertube_m7a1f") 
-	or wep:HasElement("eft_ar_buffertube_ubrgen2") or wep:HasElement("eft_ar_buffertube_ubrgen2f") 
-	or wep:HasElement("eft_ar_buffertube_viperpdw")	
-	then vec = vec + Vector(-4, 6, 0)
-	
-	elseif wep:HasElement("eft_ar_buffertube_arfx") then vec = vec + Vector(-5, 6, 0)
-	
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen2f") or wep:HasElement("eft_ar_stock_prsgen3")
-	or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
-
--- Magazines
-	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 3, 1.5) end
-
-	return vec
-end
-
-SWEP.CustomizeRotateAnchorHook = function(wep, vec)
--- Stocks
-	if wep:HasElement("eft_stock_akm_std") or wep:HasElement("eft_stock_ak74_std")
-	or wep:HasElement("eft_stock_ak74_polymer_plum") or wep:HasElement("eft_stock_ak74_polymer") 
-	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_akm_aa47") 
-	or wep:HasElement("eft_stock_akm_fabd_uas") or wep:HasElement("eft_stock_vpo136") 
-	or wep:HasElement("eft_stock_vpo209") or wep:HasElement("eft_stock_akm_zhu_s") 
-	or wep:HasElement("eft_stock_akm_kocherga") or wep:HasElement("eft_rpk16_stock_tube") 
-	or wep:HasElement("eft_stock_akm_akts") or wep:HasElement("eft_stock_zenit_pt1")
-	or wep:HasElement("eft_ar_buffertube_adar") or wep:HasElement("eft_ar_buffertube_rtm") 
-	or wep:HasElement("eft_ar_buffertube_siadv") or wep:HasElement("eft_ar_buffertube_siadvred") 
-	or wep:HasElement("eft_ar_buffertube_baskak") or wep:HasElement("eft_ar_buffertube_a2") 
-	or wep:HasElement("eft_ar_buffertube_std") or wep:HasElement("eft_ar_buffertube_hkenh") 
-	or wep:HasElement("eft_ar_buffertube_f93pro") or wep:HasElement("eft_ar_buffertube_socom") 
-	or wep:HasElement("eft_ar_buffertube_m7a1") or wep:HasElement("eft_ar_buffertube_m7a1f") 
-	or wep:HasElement("eft_ar_buffertube_ubrgen2") or wep:HasElement("eft_ar_buffertube_ubrgen2f") 
-	or wep:HasElement("eft_ar_buffertube_viperpdw")	
-	then vec = vec + Vector(-4, 0, 0)
-	
-	elseif wep:HasElement("eft_ar_buffertube_arfx") then vec = vec + Vector(-5, 0, 0)
-	
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 0, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen2f") or wep:HasElement("eft_ar_stock_prsgen3")
-	or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
-
--- Magazines
-	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 0, 1.5) end
-
-	return vec
-end

@@ -159,6 +159,56 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     ent:SetPoseParameter("newdrum", swep:HasElement("eft_saiga12_magazine_md20") and 1 or 0)
 end
 
+SWEP.CustomizePosHook = function(wep, vec)
+	local eles = wep:GetElements()
+
+	-- Stocks
+	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
+	or eles["eft_ak12_stock_tube"] or eles["eft_stock_ak74m_caa_akts"] 
+	or eles["eft_stock_ak_skelet_cust"] or eles["eft_rpk16_stock_tube"] 
+	or eles["eft_saiga12_stock_std"] then vec = vec + Vector(-4, 6, 0)
+	elseif eles["eft_stock_zenit_pt1"] or eles["eft_stock_zenit_pt3"] then vec = vec + Vector(-3, 4.5, 0)
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 6, 0) end
+	
+	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 3, 0) end
+
+	-- Suppressors	
+		if eles["eft_muzzle_12g_salvo"] then vec = vec + Vector(5, 8, 0)
+		elseif eles["eft_muzzle_12g_hexasup"] then vec = vec + Vector(5, 6, 0)
+		elseif eles["eft_muzzle_12g_gk02"] or eles["eft_muzzle_12g_claw"] then vec = vec + Vector(2, 2, 0)
+	end
+	
+	-- Magazines
+	if eles["eft_saiga12_magazine_promag"] then vec = vec + Vector(0, 3, 1.5) end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local eles = wep:GetElements()
+
+	-- Stocks
+	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
+	or eles["eft_ak12_stock_tube"] or eles["eft_stock_ak74m_caa_akts"] 
+	or eles["eft_stock_ak_skelet_cust"] or eles["eft_rpk16_stock_tube"] 
+	or eles["eft_saiga12_stock_std"] then vec = vec + Vector(-4, 0, 0)
+	elseif eles["eft_stock_zenit_pt1"] or eles["eft_stock_zenit_pt3"] then vec = vec + Vector(-3, 0, 0)
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 0, 0) end
+	
+	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 0, 0) end
+
+	-- Suppressors	
+		if eles["eft_muzzle_12g_salvo"] then vec = vec + Vector(5, 0, 0)
+		elseif eles["eft_muzzle_12g_hexasup"] then vec = vec + Vector(5, 0, 0)
+		elseif eles["eft_muzzle_12g_gk02"] or eles["eft_muzzle_12g_claw"] then vec = vec + Vector(2, 0, 0)
+	end
+	
+	-- Magazines
+	if eles["eft_saiga12_magazine_promag"] then vec = vec + Vector(0, 0, 1.5) end
+
+	return vec
+end
+
 ------------------------- |||           Sounds            ||| -------------------------
 
 local path = "weapons/darsu_eft/ak/"
@@ -917,55 +967,3 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
-
-
-------------------------- |||           CustomizePos            ||| -------------------------
-
-SWEP.CustomizePosHook = function(wep, vec)
--- Barrels
-	if wep:HasElement("eft_rpk16_barrel_550") then vec = vec + Vector(4, 6, 0) end
-	
--- Stocks
-	if wep:HasElement("eft_stock_ak74m_std") or wep:HasElement("eft_stock_ak100_skelet")
-	or wep:HasElement("eft_ak12_stock_tube") or wep:HasElement("eft_stock_ak74m_caa_akts") 
-	or wep:HasElement("eft_stock_ak_skelet_cust") or wep:HasElement("eft_rpk16_stock_tube") 
-	or wep:HasElement("eft_saiga12_stock_std") then vec = vec + Vector(-4, 6, 0)
-	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 4.5, 0)
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
-
--- Suppressors	
-		if wep:HasElement("eft_muzzle_12g_salvo") then vec = vec + Vector(5, 8, 0)
-		elseif wep:HasElement("eft_muzzle_12g_hexasup") then vec = vec + Vector(5, 6, 0)
-		elseif wep:HasElement("eft_muzzle_12g_gk02") or wep:HasElement("eft_muzzle_12g_claw") then vec = vec + Vector(2, 2, 0)
-	end
-	
--- Magazines
-	if wep:HasElement("eft_saiga12_magazine_promag") then vec = vec + Vector(0, 3, 1.5) end
-
-	return vec
-end
-
-SWEP.CustomizeRotateAnchorHook = function(wep, vec)
--- Barrels
-	if wep:HasElement("eft_rpk16_barrel_550") then vec = vec + Vector(4, 0, 0) end
-	
--- Stocks
-	if wep:HasElement("eft_stock_ak74m_std") or wep:HasElement("eft_stock_ak100_skelet")
-	or wep:HasElement("eft_ak12_stock_tube") or wep:HasElement("eft_stock_ak74m_caa_akts") 
-	or wep:HasElement("eft_stock_ak_skelet_cust") or wep:HasElement("eft_rpk16_stock_tube")
-	or wep:HasElement("eft_saiga12_stock_std") then vec = vec + Vector(-4, 0, 0)
-	elseif wep:HasElement("eft_stock_zenit_pt1") or wep:HasElement("eft_stock_zenit_pt3") then vec = vec + Vector(-3, 0, 0)
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 6, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen3") or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
-
--- Suppressors	
-	if wep:HasElement("eft_silencer_ak_ak74_hexagon") or wep:HasElement("eft_silencer_ak_tgpa") then vec = vec + Vector(2, 0, 0) end
-
--- Magazines
-	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 0, 1.5) end
-
-	return vec
-end

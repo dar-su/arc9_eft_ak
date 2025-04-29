@@ -288,7 +288,7 @@ SWEP.Attachments = {
         PrintName = "Conversion",
         Category = "eft_ak74_conv",
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
+        Pos = Vector(0, 1, 1),
         Ang = Angle(0, 0, 0),
         RequireElements = {"impossibleonthisgun"},
     },

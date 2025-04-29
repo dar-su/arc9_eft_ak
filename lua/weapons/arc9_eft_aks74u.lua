@@ -180,25 +180,25 @@ SWEP.ShellSounds = ARC9EFT.Shells556
 SWEP.HookP_NameChange = function(self, name)
     local elements = self:GetElements()
 
-    if elements["eft_silencer_ak_pbs4"] and elements["eft_akn"] then
-        return ARC9:GetPhrase("eft_weapon_aks74ub")
-    elseif elements["eft_akn"] then
-        return ARC9:GetPhrase("eft_weapon_aks74un")
-    else
-        return ARC9:GetPhrase("eft_weapon_aks74u")
+    if elements["eft_akn"] then
+		if elements["eft_silencer_ak_pbs4"] then
+			return ARC9:GetPhrase("eft_weapon_aks74ub")
+		else
+			return ARC9:GetPhrase("eft_weapon_aks74un")
+		end
     end
 end
 
 SWEP.HookP_DescriptionChange = function(self, desc)
     local elements = self:GetElements()
-
-    if elements["eft_silencer_ak_pbs4"] and elements["eft_akn"] then
-        return [[A special version of the AKS-74U assault rifle, modification B (Besshumny - "Silenced") is issued with a dovetail scope mount, a sound suppressor device, and special sights designed for firing subsonic ammunition.]]
-    elseif elements["eft_akn"] then
-        return [[AKS-74UN (Avtomat Kalashnikova Skladnoy 74 Ukorochenny Nochnoy - "Kalashnikov's Shortened Automatic rifle 74 Night with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size. The N (Nochnoy - "Night") version is equipped with a dovetail mount for the installation of night vision scopes.]]
-    else
-        return [[AKS-74U (Avtomat Kalashnikova Skladnoy 74 Ukorochenny - "Kalashnikov's Shortened Automatic rifle 74 with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size.]]
-    end
+	
+    if elements["eft_akn"] then 
+		if elements["eft_silencer_ak_pbs4"] then
+			return "A special version of the AKS-74U assault rifle, modification B (Besshumny - \"Silenced\") is issued with a dovetail scope mount, a sound suppressor device, and special sights designed for firing subsonic ammunition."
+		else
+			return "AKS-74UN (Avtomat Kalashnikova Skladnoy 74 Ukorochenny Nochnoy - \"Kalashnikov's Shortened Automatic rifle 74 Night with a foldable stock\") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size. The N (Nochnoy - \"Night\") version is equipped with a dovetail mount for the installation of night vision scopes."
+		end
+	end
 end
 
 local sposoffset, sangoffset = Vector(0.02, 0, -0.2), Angle(0, 0.37, 0)
@@ -208,6 +208,114 @@ function SWEP:GetSightPositions()
         return s.Pos + sposoffset, s.Ang + sangoffset
     end
     return s.Pos, s.Ang
+end
+
+SWEP.CustomizePosHook = function(wep, vec)
+	local eles = wep:GetElements()
+
+	-- Stocks
+	if eles["eft_stock_aks74_std"] or eles["eft_aksu_stock_std"]
+	or eles["eft_stock_ak100_skelet"] or eles["eft_stock_ak_skelet_cust"] 
+	or eles["eft_stock_zenit_pt3"] or eles["eft_stock_zenit_pt1"]
+	or eles["eft_ar_buffertube_adar"] or eles["eft_ar_buffertube_rtm"] 
+	or eles["eft_ar_buffertube_siadv"] or eles["eft_ar_buffertube_siadvred"] 
+	or eles["eft_ar_buffertube_baskak"] or eles["eft_ar_buffertube_a2"] 
+	or eles["eft_ar_buffertube_std"] or eles["eft_ar_buffertube_hkenh"] 
+	or eles["eft_ar_buffertube_f93pro"] or eles["eft_ar_buffertube_socom"] 
+	or eles["eft_ar_buffertube_m7a1"] or eles["eft_ar_buffertube_m7a1f"] 
+	or eles["eft_ar_buffertube_ubrgen2"] or eles["eft_ar_buffertube_ubrgen2f"] 
+	or eles["eft_ar_buffertube_viperpdw"]	
+	then vec = vec + Vector(-4, 6, 0)
+	
+	elseif eles["eft_ar_buffertube_arfx"] then vec = vec + Vector(-5, 6, 0)
+	
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-2, 6, 0) end
+	
+	if eles["eft_ar_stock_prsgen2f"] or eles["eft_ar_stock_prsgen3"]
+	or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 3, 0) end
+
+	-- Suppressors	
+	if eles["eft_silencer_dthybrid"] 
+		or eles["eft_silencer_r43_556"] 
+		or eles["eft_silencer_ultra5"] 
+		or eles["eft_silencer_ar15_m4sdk"] 
+		or eles["eft_silencer_ar15_sakerasr"]
+		or eles["eft_silencer_ar15_socommini"] 
+		or eles["eft_silencer_ar15_socommonster"] 
+		or eles["eft_silencer_ar15_socomrc2"] 
+		or eles["eft_silencer_ar15_kacqdssnt4"] 
+		or eles["eft_silencer_ar15_kacqdssnt4_f"] 
+		or eles["eft_silencer_ak_ak74_hexagon"] 
+		or eles["eft_silencer_ak_wafflemaker"] 
+		or eles["eft_silencer_ak_tgpa"] 
+		then vec = vec + Vector(2, 3, 0)
+
+		elseif eles["eft_silencer_sdn6"] then vec = vec + Vector(4, 6, 0)
+		elseif eles["eft_silencer_thorpsr"] then vec = vec + Vector(4, 6, 0)
+		elseif eles["eft_silencer_waveqd"] or eles["eft_silencer_gemtechone"] then vec = vec + Vector(3, 5, 0)
+		
+		elseif eles["eft_silencer_ak_pbs4"] then vec = vec + Vector(4, 7, 0)
+	end
+	
+
+	-- Magazines
+	if eles["eft_mag_ak_6l18_545_45"] or eles["eft_mag_ak_6l26_545_45"] then vec = vec + Vector(0, 3, 1.5) end
+
+	return vec
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local eles = wep:GetElements()
+
+	-- Stocks
+	if eles["eft_stock_aks74_std"] or eles["eft_aksu_stock_std"]
+	or eles["eft_stock_ak100_skelet"] or eles["eft_stock_ak_skelet_cust"] 
+	or eles["eft_stock_zenit_pt3"] or eles["eft_stock_zenit_pt1"]
+	or eles["eft_ar_buffertube_adar"] or eles["eft_ar_buffertube_rtm"] 
+	or eles["eft_ar_buffertube_siadv"] or eles["eft_ar_buffertube_siadvred"] 
+	or eles["eft_ar_buffertube_baskak"] or eles["eft_ar_buffertube_a2"] 
+	or eles["eft_ar_buffertube_std"] or eles["eft_ar_buffertube_hkenh"] 
+	or eles["eft_ar_buffertube_f93pro"] or eles["eft_ar_buffertube_socom"] 
+	or eles["eft_ar_buffertube_m7a1"] or eles["eft_ar_buffertube_m7a1f"] 
+	or eles["eft_ar_buffertube_ubrgen2"] or eles["eft_ar_buffertube_ubrgen2f"] 
+	or eles["eft_ar_buffertube_viperpdw"]	
+	then vec = vec + Vector(-4, 0, 0)
+	
+	elseif eles["eft_ar_buffertube_arfx"] then vec = vec + Vector(-5, 0, 0)
+	
+	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 0, 0) end
+	
+	if eles["eft_ar_stock_prsgen2f"] or eles["eft_ar_stock_prsgen3"]
+	or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 0, 0) end
+
+	-- Suppressors	
+	if eles["eft_silencer_dthybrid"] 
+		or eles["eft_silencer_r43_556"] 
+		or eles["eft_silencer_ultra5"] 
+		or eles["eft_silencer_ar15_m4sdk"] 
+		or eles["eft_silencer_ar15_sakerasr"]
+		or eles["eft_silencer_ar15_socommini"] 
+		or eles["eft_silencer_ar15_socommonster"] 
+		or eles["eft_silencer_ar15_socomrc2"] 
+		or eles["eft_silencer_ar15_kacqdssnt4"] 
+		or eles["eft_silencer_ar15_kacqdssnt4_f"] 
+		or eles["eft_silencer_ak_ak74_hexagon"] 
+		or eles["eft_silencer_ak_wafflemaker"] 
+		or eles["eft_silencer_ak_tgpa"] 
+		then vec = vec + Vector(2, 0, 0)
+
+		elseif eles["eft_silencer_sdn6"] then vec = vec + Vector(4, 0, 0)
+		elseif eles["eft_silencer_thorpsr"] then vec = vec + Vector(4, 0, 0)
+		elseif eles["eft_silencer_waveqd"] or eles["eft_silencer_gemtechone"] then vec = vec + Vector(3, 0, 0)
+		
+		elseif eles["eft_silencer_ak_pbs4"] then vec = vec + Vector(4, 0, 0)
+	end
+	
+
+	-- Magazines
+	if eles["eft_mag_ak_6l18_545_45"] or eles["eft_mag_ak_6l26_545_45"] then vec = vec + Vector(0, 0, 1.5) end
+
+	return vec
 end
 
 ------------------------- |||           Sounds            ||| -------------------------
@@ -369,7 +477,7 @@ SWEP.Attachments = {
         PrintName = "Conversion",
         Category = "eft_ak74_conv",
         Bone = "mod_pistol_grip",
-        Pos = Vector(0, -5, -5),
+        Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -380,110 +488,3 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
-
-
-------------------------- |||           CustomizePos            ||| -------------------------
-
-SWEP.CustomizePosHook = function(wep, vec)
--- Stocks
-	if wep:HasElement("eft_stock_aks74_std") or wep:HasElement("eft_aksu_stock_std")
-	or wep:HasElement("eft_stock_ak100_skelet") or wep:HasElement("eft_stock_ak_skelet_cust") 
-	or wep:HasElement("eft_stock_zenit_pt3") or wep:HasElement("eft_stock_zenit_pt1")
-	or wep:HasElement("eft_ar_buffertube_adar") or wep:HasElement("eft_ar_buffertube_rtm") 
-	or wep:HasElement("eft_ar_buffertube_siadv") or wep:HasElement("eft_ar_buffertube_siadvred") 
-	or wep:HasElement("eft_ar_buffertube_baskak") or wep:HasElement("eft_ar_buffertube_a2") 
-	or wep:HasElement("eft_ar_buffertube_std") or wep:HasElement("eft_ar_buffertube_hkenh") 
-	or wep:HasElement("eft_ar_buffertube_f93pro") or wep:HasElement("eft_ar_buffertube_socom") 
-	or wep:HasElement("eft_ar_buffertube_m7a1") or wep:HasElement("eft_ar_buffertube_m7a1f") 
-	or wep:HasElement("eft_ar_buffertube_ubrgen2") or wep:HasElement("eft_ar_buffertube_ubrgen2f") 
-	or wep:HasElement("eft_ar_buffertube_viperpdw")	
-	then vec = vec + Vector(-4, 6, 0)
-	
-	elseif wep:HasElement("eft_ar_buffertube_arfx") then vec = vec + Vector(-5, 6, 0)
-	
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-2, 6, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen2f") or wep:HasElement("eft_ar_stock_prsgen3")
-	or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 3, 0) end
-
--- Suppressors	
-	if wep:HasElement("eft_silencer_dthybrid") 
-		or wep:HasElement("eft_silencer_r43_556") 
-		or wep:HasElement("eft_silencer_ultra5") 
-		or wep:HasElement("eft_silencer_ar15_m4sdk") 
-		or wep:HasElement("eft_silencer_ar15_sakerasr")
-		or wep:HasElement("eft_silencer_ar15_socommini") 
-		or wep:HasElement("eft_silencer_ar15_socommonster") 
-		or wep:HasElement("eft_silencer_ar15_socomrc2") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
-		or wep:HasElement("eft_silencer_ak_ak74_hexagon") 
-		or wep:HasElement("eft_silencer_ak_wafflemaker") 
-		or wep:HasElement("eft_silencer_ak_tgpa") 
-		then vec = vec + Vector(2, 3, 0)
-
-		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 6, 0)
-		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 6, 0)
-		elseif wep:HasElement("eft_silencer_waveqd") or wep:HasElement("eft_silencer_gemtechone") then vec = vec + Vector(3, 5, 0)
-		
-		elseif wep:HasElement("eft_silencer_ak_pbs4") then vec = vec + Vector(4, 7, 0)
-	end
-	
-
--- Magazines
-	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 3, 1.5) end
-
-	return vec
-end
-
-SWEP.CustomizeRotateAnchorHook = function(wep, vec)
--- Stocks
-	if wep:HasElement("eft_stock_aks74_std") or wep:HasElement("eft_aksu_stock_std")
-	or wep:HasElement("eft_stock_ak100_skelet") or wep:HasElement("eft_stock_ak_skelet_cust") 
-	or wep:HasElement("eft_stock_zenit_pt3") or wep:HasElement("eft_stock_zenit_pt1")
-	or wep:HasElement("eft_ar_buffertube_adar") or wep:HasElement("eft_ar_buffertube_rtm") 
-	or wep:HasElement("eft_ar_buffertube_siadv") or wep:HasElement("eft_ar_buffertube_siadvred") 
-	or wep:HasElement("eft_ar_buffertube_baskak") or wep:HasElement("eft_ar_buffertube_a2") 
-	or wep:HasElement("eft_ar_buffertube_std") or wep:HasElement("eft_ar_buffertube_hkenh") 
-	or wep:HasElement("eft_ar_buffertube_f93pro") or wep:HasElement("eft_ar_buffertube_socom") 
-	or wep:HasElement("eft_ar_buffertube_m7a1") or wep:HasElement("eft_ar_buffertube_m7a1f") 
-	or wep:HasElement("eft_ar_buffertube_ubrgen2") or wep:HasElement("eft_ar_buffertube_ubrgen2f") 
-	or wep:HasElement("eft_ar_buffertube_viperpdw")	
-	then vec = vec + Vector(-4, 0, 0)
-	
-	elseif wep:HasElement("eft_ar_buffertube_arfx") then vec = vec + Vector(-5, 0, 0)
-	
-	elseif wep:HasElement("eft_stock_ak_evo") then vec = vec + Vector(-3, 0, 0) end
-	
-	if wep:HasElement("eft_ar_stock_prsgen2f") or wep:HasElement("eft_ar_stock_prsgen3")
-	or wep:HasElement("eft_ar_stock_prsgen3g") then vec = vec + Vector(-1.75, 0, 0) end
-
--- Suppressors	
-	if wep:HasElement("eft_silencer_dthybrid") 
-		or wep:HasElement("eft_silencer_r43_556") 
-		or wep:HasElement("eft_silencer_ultra5") 
-		or wep:HasElement("eft_silencer_ar15_m4sdk") 
-		or wep:HasElement("eft_silencer_ar15_sakerasr")
-		or wep:HasElement("eft_silencer_ar15_socommini") 
-		or wep:HasElement("eft_silencer_ar15_socommonster") 
-		or wep:HasElement("eft_silencer_ar15_socomrc2") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4") 
-		or wep:HasElement("eft_silencer_ar15_kacqdssnt4_f") 
-		or wep:HasElement("eft_silencer_ak_ak74_hexagon") 
-		or wep:HasElement("eft_silencer_ak_wafflemaker") 
-		or wep:HasElement("eft_silencer_ak_tgpa") 
-		then vec = vec + Vector(2, 0, 0)
-
-		elseif wep:HasElement("eft_silencer_sdn6") then vec = vec + Vector(4, 0, 0)
-		elseif wep:HasElement("eft_silencer_thorpsr") then vec = vec + Vector(4, 0, 0)
-		elseif wep:HasElement("eft_silencer_waveqd") or wep:HasElement("eft_silencer_gemtechone") then vec = vec + Vector(3, 0, 0)
-		
-		elseif wep:HasElement("eft_silencer_ak_pbs4") then vec = vec + Vector(4, 0, 0)
-	end
-	
-
--- Magazines
-	if wep:HasElement("eft_mag_ak_6l18_545_45") or wep:HasElement("eft_mag_ak_6l26_545_45") then vec = vec + Vector(0, 0, 1.5) end
-
-	return vec
-end
