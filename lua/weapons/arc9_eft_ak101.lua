@@ -172,6 +172,8 @@ SWEP.MuzzleParticle = "muzzleflash_ak74"
 SWEP.ShellModel = "models/weapons/arc9_eft_shared/shells/eft_shell_556_m855.mdl"
 SWEP.ShellSounds = ARC9EFT.Shells556
 
+SWEP.CustomizePosHook = function(wep, vec)
+	local eles = wep:GetElements()
 
 	-- Stocks
 	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
