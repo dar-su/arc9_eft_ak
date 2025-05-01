@@ -98,7 +98,7 @@ ATT.ActivePosHook = function(wep, vec)
     return vec + Vector(0, 0, 0)
 end
 
--- ATT.Category = {"fas_ubgl", "grip", "eft_ak_gp34"}
+-- ATT.Category = {"fas_ubgl", "eft_cat_foregrip", "eft_ak_gp34"}
 ATT.Category = {"eft_ak_gp34", "eft_ak_gp25"}
 
 -- ATT.AimDownSightsTimeMult = 1.1
@@ -109,7 +109,7 @@ ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "GP-25"
+ATT.UBGLFiremodeName = "eft_gp25.compactname"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 111
 
@@ -283,7 +283,7 @@ ATT.MuzzleEffectQCAUBGL = 1
 ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "GP-34"
+ATT.UBGLFiremodeName = "eft_gp34.compactname"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 

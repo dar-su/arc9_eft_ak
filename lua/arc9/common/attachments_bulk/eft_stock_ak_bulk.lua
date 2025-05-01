@@ -26,7 +26,7 @@ ATT.VisualRecoilMult = 0.97
 
 ATT.Attachments = {
     {
-        PrintName = "AR Stock",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
         Pos = Vector(0.6, -3.5, 0.55),
         Ang = Angle(-5, -90, 0),
@@ -63,7 +63,7 @@ ATT.Category = {"eft_ak74m_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, -0.15),
         Ang = Angle(0, 0, 0),
@@ -95,7 +95,7 @@ ATT.Category = {"eft_ak74m_stock", "eft_vityaz_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "PT Lock",
+        PrintName = "eft_cat_stock",
         Category = "eft_stock_zenit_lock",
         Pos = Vector(0, 0.03, 0.01),
         Ang = Angle(0, 0, 0),
@@ -132,7 +132,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -169,7 +169,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -206,7 +206,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -239,14 +239,14 @@ ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.7,
         VisualRecoilMult = 0.7,
         HasStock = true
     },
     {
-        PrintName = "Folded",
-        CustomizePos = Vector(23, 23, 4),
+        PrintName = "eft_toggle_folded",
+        -- CustomizePos = Vector(23, 23, 4),
         ActivateElements = {"eft_stock_akms_f"}
     },
 }
@@ -276,14 +276,14 @@ ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.7,
         VisualRecoilMult = 0.7,
         HasStock = true
     },
     {
-        PrintName = "Folded",
-        CustomizePos = Vector(23, 23, 4),
+        PrintName = "eft_toggle_folded",
+        -- CustomizePos = Vector(23, 23, 4),
         ActivateElements = {"eft_stock_akmsn_f"}
     },
 }
@@ -346,7 +346,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "AR Stock",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
         Pos = Vector(0.6, -3.8, 0.75),
         Ang = Angle(-3, -90, 0),
@@ -441,7 +441,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Buffer Tube",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(0.85, -3.15, -0.17),
         Ang = Angle(-3, -90, 0),
@@ -472,7 +472,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "PT Lock",
+        PrintName = "eft_cat_stock",
         Category = "eft_stock_zenit_lock_pt1only",
         Pos = Vector(0, -0.57, 0.48),
         Ang = Angle(0, 0, 0),
@@ -509,7 +509,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -574,7 +574,7 @@ ATT.Category = {"eft_aks_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -606,7 +606,7 @@ ATT.Category = {"eft_aks_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "PT Lock",
+        PrintName = "eft_cat_stock",
         Category = "eft_stock_zenit_lock",
         Pos = Vector(0, 0.03, 0.01),
         Ang = Angle(0, 0, 0),
@@ -641,7 +641,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Buffer Tube",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(0.65, -0.83, -0.47),
         Ang = Angle(-3, -90, 0),
@@ -704,7 +704,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -741,7 +741,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -780,7 +780,7 @@ ATT.Category = {"eft_stock_zenit_lock", "eft_stock_zenit_lock_pt1only"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0.15, 1.6, -1),
         Ang = Angle(0, 0, 0),
@@ -849,7 +849,7 @@ ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -884,7 +884,7 @@ ATT.Category = {"eft_ak74m_stock", "eft_aks_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -941,7 +941,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
-        PrintName = "AR Stock",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
         Pos = Vector(0.6, -6.5, 0.67),
         Ang = Angle(-5, -90, 0),

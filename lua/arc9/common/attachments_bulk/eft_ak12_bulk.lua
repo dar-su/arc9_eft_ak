@@ -29,7 +29,7 @@ ATT.Category = {"eft_ak12_handguard"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_tactical_top", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 3.75, -2.5),
         Ang = Angle(0, -90, 0),
@@ -37,7 +37,7 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_foregrip",
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, 4.5, 0.15),
         Ang = Angle(0, -90, 0),
@@ -45,14 +45,14 @@ ATT.Attachments = {
         ExcludeElements = {"eft_ak_gp34"}
     },
     {
-        PrintName = "R Rail",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_rpk16_mount"},
         Pos = Vector(0.95, 5.6, -1.7),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "L Rail",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_rpk16_mount"},
         Pos = Vector(-0.95, 5.6, -1.7),
         Ang = Angle(0, -90, 0),
@@ -161,7 +161,7 @@ ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Attachments = {
     {
-        PrintName = "RS Base",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_ak12_rsbase"},
         Pos = Vector(0, -7.4, -0.5),
         Ang = Angle(0, -90, 0),
@@ -169,7 +169,7 @@ ATT.Attachments = {
         -- ExtraSightDistance = 8
     },
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small", "eft_optic_large"},
         Pos = Vector(0, -3.5, -0.2),
         Ang = Angle(0, -90, 0),
@@ -219,7 +219,7 @@ ATT.Category = {"eft_ak12_rsbase"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear Sight",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_rpk16_rearsight"},
         Pos = Vector(-1.27, 0, 0.1),
         Ang = Angle(0, 90, 0),
@@ -254,7 +254,7 @@ ATT.VisualRecoilMult = 0.96
 
 ATT.Attachments = {
     {
-        PrintName = "AR Stock",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
         Pos = Vector(0.67, -3.5, 0.75),
         Ang = Angle(-3, -90, 0),

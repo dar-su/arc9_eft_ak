@@ -18,7 +18,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_ak105_std.mdl"
 ATT.Category = {"eft_ak74_rearsight", "eft_rpk16_rearsight"}
 ATT.Attachments = {
     {
-        PrintName = "Device",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_ak_akmp_rs"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -48,7 +48,7 @@ ATT.Category = {"eft_ak74_rearsight", "eft_rpk16_rearsight"}
 
 ATT.Attachments = {
     {
-        PrintName = "Device",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_ak_akmp_rs"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -77,7 +77,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_ak74m_std.mdl"
 ATT.Category = {"eft_ak74_rearsight", "eft_rpk16_rearsight"}
 ATT.Attachments = {
     {
-        PrintName = "Device",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_ak_akmp_rs"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -106,7 +106,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_akm_std.mdl"
 ATT.Category = {"eft_akm_rearsight"}
 ATT.Attachments = {
     {
-        PrintName = "Device",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_ak_akmp_rs"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -214,7 +214,7 @@ ATT.ExcludeElements = {"railedcover", "nolongrear"}
 ATT.Category = {"eft_ak74_rearsight", "eft_akm_rearsight", "eft_tt01_rearsight"}
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, -3, -0.1),
         Ang = Angle(0, -90, 0),
@@ -244,7 +244,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_rs_vpo_209.mdl"
 ATT.Category = {"eft_vpo209_rearsight"}
 ATT.Attachments = {
     {
-        PrintName = "Device",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_ak_akmp_rs"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),

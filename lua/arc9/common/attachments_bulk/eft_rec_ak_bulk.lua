@@ -124,7 +124,7 @@ ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, -4.5, -0.32),
         Ang = Angle(0, -90, 0),
@@ -164,7 +164,7 @@ ATT.VisualRecoilMult = 0.99
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, -4.5, -0.39),
         Ang = Angle(0, -90, 0),
@@ -200,7 +200,7 @@ ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, -4.5, -0.25),
         Ang = Angle(0, -90, 0),
@@ -237,7 +237,7 @@ ATT.Category = {"eft_ak_dustcover", "eft_ak74_dustcover"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, -4.5, -0.29),
         Ang = Angle(0, -90, 0),

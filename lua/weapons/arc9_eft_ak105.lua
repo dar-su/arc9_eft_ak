@@ -6,10 +6,10 @@ SWEP.Base = "arc9_eft_ak74m"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+SWEP.SubCategory = "eft_subcat_ar"
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak105")
-SWEP.Description = [[The AK-105 5.45x39mm assault rifle is a further modernized version of AK-74M base. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
+SWEP.Description = "eft_weapon_ak105_desc"
 
 SWEP.StandardPresets = false 
 
@@ -55,7 +55,7 @@ SWEP.DefaultElements = {"short_barrel"}
 
 SWEP.Attachments = {
     { -- 5.45 short
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak74_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, -4.1, 0),

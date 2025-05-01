@@ -6,12 +6,10 @@ SWEP.Base = "arc9_eft_sag_ak545"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
+SWEP.SubCategory = "eft_subcat_carb"
 
-SWEP.PrintName = "SAG AK-545 Short"
-SWEP.Description = [[A shortened version of the Sureshot Armament Group AK-545 carbine based on modern AK platforms.
-
-note: prototype weapon, not exist irl]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sagakshort")
+SWEP.Description = "eft_weapon_sagakshort_desc"
 
 SWEP.StandardPresets = false 
 
@@ -35,7 +33,7 @@ SWEP.DefaultElements = {"short_barrel"}
 
 SWEP.Attachments = {
     { -- 5.45 short
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak74_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, -4.1, 0),

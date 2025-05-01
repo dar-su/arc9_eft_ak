@@ -23,7 +23,7 @@ ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = {"eft_vityaz_handguard"},
         Pos = Vector(0, -1.8, 0.5),
         Ang = Angle(0, 0, 0),
@@ -232,7 +232,7 @@ ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, -3, -0.16),
         Ang = Angle(0, -90, 0),
@@ -342,7 +342,7 @@ ATT.VisualRecoilMult = 0.66
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad", "eft_stock_ak_pad_skelet"},
         Pos = Vector(0, 0, -0.1),
         Ang = Angle(0, 0, 0),
@@ -383,7 +383,7 @@ ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.3, -0.45),
         Ang = Angle(0, -90, 0),
@@ -391,21 +391,21 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "M-LOK B",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
         Pos = Vector(0, 2.0, 1.9),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "M-LOK R",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(0.9, 2.7, 0.95),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, -0.2),
     },
     {
-        PrintName = "M-LOK L",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(-0.9, 2.7, 0.95),
         Ang = Angle(0, -90, 0),
@@ -444,7 +444,7 @@ ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.3, -0.85),
         Ang = Angle(0, -90, 0),
@@ -452,7 +452,7 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_foregrip",
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, 2.0, 2.1),
         Ang = Angle(0, -90, 0),
@@ -460,7 +460,7 @@ ATT.Attachments = {
         ExcludeElements = {"eft_ak_gp34"}
     },
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(1.05, 3.5, 0.95),

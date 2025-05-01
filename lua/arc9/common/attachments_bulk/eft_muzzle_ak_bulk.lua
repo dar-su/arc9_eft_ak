@@ -358,7 +358,7 @@ ATT.Category = {"eft_ak101_muzzle", "eft_ak74_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ar15_muzzle",
         Pos = Vector(-1.2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -474,7 +474,7 @@ ATT.Category = {"eft_akm_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ar10_muzzle",
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -511,7 +511,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Attachments = {
     {
-        PrintName = "Suppressor",
+        PrintName = "eft_cat_suppressor",
         Category = "eft_ak_wafflemaker",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -595,7 +595,7 @@ ATT.Category = {"eft_akm_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak_ttak",
         Pos = Vector(-0.5, 0, 0),
         Ang = Angle(0, 0, 0),

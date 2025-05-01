@@ -20,7 +20,7 @@ ATT.Category = {"eft_sag545_coverr"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
         Pos = Vector(0, 0.5, -0.75),
         Ang = Angle(0, -90, 0),
@@ -28,7 +28,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = "eft_cat_rearsight",
         Category = "eft_sag545_rss",
         Pos = Vector(0, -3, -0.5),
         Ang = Angle(0, 0, 0),
@@ -60,7 +60,7 @@ ATT.HeatCapacityMult = 0.95
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = "eft_sag545_handguard",
         Pos = Vector(0, 2.88, 0.467),
         Ang = Angle(0, 0, 0),
@@ -99,7 +99,7 @@ ATT.Category = {"eft_sag545_handguard"}
 
 ATT.Attachments = {
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_sag545_coverr",
         Pos = Vector(0, -11.3, -0.5),
         Ang = Angle(0, 0, 0),
@@ -107,7 +107,7 @@ ATT.Attachments = {
     },
     
     {
-        PrintName = "Top Tactical",
+        PrintName = "eft_cat_tactical_u",
         Category = {"eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(0, 1.5, -1.24),
         Ang = Angle(0, -90, 0),
@@ -115,7 +115,7 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Backup",
+        PrintName = "eft_cat_backup",
         Category = {"eft_backupmount"},
         Pos = Vector(0, -4.5, -1.24),
         Ang = Angle(0, -90, 0),
@@ -123,21 +123,21 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "M-LOK B",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
         Pos = Vector(0, -2.6, 1.25),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "M-LOK R",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(0.72, 1.4, 0.15),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, -0.2),
     },
     {
-        PrintName = "M-LOK L",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(-0.72, 1.4, 0.15),
         Ang = Angle(0, -90, 0),
@@ -190,7 +190,7 @@ ATT.VisualRecoilMult = 0.98
 
 ATT.Attachments = {
     {
-        PrintName = "AR Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_ar_stock",
         Pos = Vector(0.6, -4.1, 0.25),
         Ang = Angle(-5, -90, 0),

@@ -23,7 +23,7 @@ ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = "eft_ak_handguard",
         Pos = Vector(0, -1.8, 0.5),
         Ang = Angle(0, 0, 0),
@@ -57,7 +57,7 @@ ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = "eft_ak_handguard",
         Pos = Vector(0, -1.8, 0.5),
         Ang = Angle(0, 0, 0),
@@ -96,7 +96,7 @@ ATT.HeatCapacityMult = 1.03
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.7, -0.52),
         Ang = Angle(0, -90, 0),
@@ -104,7 +104,7 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = {"eft_tactical_top"},
         Pos = Vector(0, 6.8, -0.52),
         Ang = Angle(0, -90, 0),
@@ -138,7 +138,7 @@ ATT.ActivateElements = {"gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = "eft_ak_handguard",
         Pos = Vector(0, -1.8, 0.5),
         Ang = Angle(0, 0, 0),
@@ -184,7 +184,7 @@ ATT.HeatCapacityMult = 0.93
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.8, -0.54),
         Ang = Angle(0, -90, 0),
@@ -192,7 +192,7 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = {"eft_tactical_top"},
         Pos = Vector(0, 10.3, -0.25),
         Ang = Angle(0, -90, 0),
@@ -200,21 +200,21 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "QARS B",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_mount_qars4"},
         Pos = Vector(0, 1.5, 2.1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "QARS L",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_mount_qars"},
         Pos = Vector(-1.05, 10.7, 1.15),
         Ang = Angle(90, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "QARS R",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_mount_qars"},
         Pos = Vector(1.05, 10.7, 1.15),
         Ang = Angle(90, 0, 180),
@@ -250,7 +250,7 @@ ATT.ExcludeElements = {"short_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = "eft_ak_handguard_custom",
         Pos = Vector(0, -1.8, 0.5),
         Ang = Angle(0, 0, 0),
@@ -294,7 +294,7 @@ ATT.HeatCapacityMult = 0.956
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.8, -0.5),
         Ang = Angle(0, -90, 0),
@@ -302,28 +302,28 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Top Keymod",
+        PrintName = "eft_cat_mount_u",
         Category = {"eft_mount_keymod2"},
         Pos = Vector(0, 9.7, 0.3),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "L Keymod",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_mount_keymod"},
         Pos = Vector(-0.9, 9, 1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "R Keymod",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.9, 9, 1.15),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "B Keymod",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_mount_keymod6"},
         Pos = Vector(0, 1.5, 2.1),
         Ang = Angle(0, -90, -90),
@@ -368,7 +368,7 @@ ATT.HeatCapacityMult = 0.956
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 2.8, -0.5),
         Ang = Angle(0, -90, 0),
@@ -376,28 +376,28 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "Top Keymod",
+        PrintName = "eft_cat_mount_u",
         Category = {"eft_mount_keymod2"},
         Pos = Vector(0, 9.7, 0.3),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "L Keymod",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_mount_keymod"},
         Pos = Vector(-0.9, 9, 1.15),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "R Keymod",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_mount_keymod"},
         Pos = Vector(0.9, 9, 1.15),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "B Keymod",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_mount_keymod6"},
         Pos = Vector(0, 1.5, 2.1),
         Ang = Angle(0, -90, -90),
@@ -435,7 +435,7 @@ ATT.Category = {"eft_rd704_gasblock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = {"eft_optic_medium", "eft_optic_small", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(0, 3.5, -0.47),
         Ang = Angle(0, -90, 0),
@@ -443,21 +443,21 @@ ATT.Attachments = {
         ExtraSightDistance = 8
     },
     {
-        PrintName = "M-LOK B",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
         Pos = Vector(0, 3.4, 2.07),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "M-LOK R",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(0.87, 5.55, 1.275),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, -0.2),
     },
     {
-        PrintName = "M-LOK L",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
         Pos = Vector(-0.87, 5.55, 1.275),
         Ang = Angle(0, -90, 0),

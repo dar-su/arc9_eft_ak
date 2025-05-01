@@ -49,56 +49,56 @@ ATT.LHIK = true
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, -2, -1.5),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Top Tactical",
+        PrintName = "eft_cat_tactical_u",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(0, 7, -1.5),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_foregrip",
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, 4.5, 1.65),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
     {
-        PrintName = "R Tactical",
+        PrintName = "eft_cat_tactical_r",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(1.05, 7, 0.6),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "L Tactical",
+        PrintName = "eft_cat_tactical_l",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.05, 7, 0.6),
         Ang = Angle(0, -90, -90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "L2 Tactical",
+        PrintName = "eft_cat_tactical_l",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.1, 7.05, -0.7),
         Ang = Angle(0, -90, 45-90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "R2 Tactical",
+        PrintName = "eft_cat_tactical_r",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(1.1, 7.05, -0.7),
         Ang = Angle(0, -90, 180-45-90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "B Tactical",
+        PrintName = "eft_cat_tactical_b",
         Category = {"eft_tactical", "eft_bipod"},
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(0, 7.6, 1.65),
@@ -137,21 +137,21 @@ ATT.LHIK = true
 
 ATT.Attachments = {
     {
-        PrintName = "R Rail",
+        PrintName = "eft_cat_mount_r",
         Category = {"eft_cg340_mount"},
         Pos = Vector(1.05, 12.95, 0.5),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "L Rail",
+        PrintName = "eft_cat_mount_l",
         Category = {"eft_cg340_mount"},
         Pos = Vector(-1.05, 12.95, 0.5),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "B Rail",
+        PrintName = "eft_cat_mount_b",
         Category = {"eft_cg340_mount"},
         Pos = Vector(0, 12.95, 1.6),
         Ang = Angle(0, -90, -90),
@@ -182,7 +182,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = "eft_cat_tactical",
         Category = "eft_tactical",
         Pos = Vector(-1.3, -0.3, 0),
         Ang = Angle(0, 0, -90),
@@ -250,35 +250,35 @@ ATT.LHIK = true
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, -5, -1.55),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Top Tactical",
+        PrintName = "eft_cat_tactical_u",
         Category = {"eft_tactical_top"},
         Pos = Vector(0, 5.5, -1.55),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_foregrip",
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, 3, 1.7),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
     {
-        PrintName = "R Tactical",
+        PrintName = "eft_cat_tactical_r",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(1.15, 7, 0.5),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "L Tactical",
+        PrintName = "eft_cat_tactical_l",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.15, 7, 0.5),
         Ang = Angle(0, -90, -90),
@@ -321,35 +321,35 @@ ATT.LHIK = true
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, -1, -1.55),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Top Tactical",
+        PrintName = "eft_cat_tactical_u",
         Category = {"eft_tactical_top"},
         Pos = Vector(0, 5.5, -1.55),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_foregrip",
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, 3, 1.7),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
     {
-        PrintName = "R Tactical",
+        PrintName = "eft_cat_tactical_r",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(1.15, 7, 0.5),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "L Tactical",
+        PrintName = "eft_cat_tactical_l",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.15, 7, 0.5),
         Ang = Angle(0, -90, -90),
@@ -485,7 +485,7 @@ ATT.ExcludeElements = {"nolongrear"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 1.2, -0.5),
         Ang = Angle(0, -90, 0),
@@ -536,7 +536,7 @@ ATT.Category = {"eft_saiga12_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Recoil pad",
+        PrintName = "eft_cat_stock",
         Category = {"eft_stock_ak_pad"},
         Pos = Vector(0, 0, -0.35),
         Ang = Angle(0, 0, 0),
@@ -636,35 +636,35 @@ ATT.LHIK = true
 
 ATT.Attachments = {
     {
-        PrintName = "Mount",
+        PrintName = "eft_cat_mount",
         Category = "eft_saiga12_titan_topmount",
         Pos = Vector(0, 5.5, -0.75),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_foregrip",
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, 3, 1.85),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
     {
-        PrintName = "Bipod",
+        PrintName = "eft_cat_bipod",
         Category = "eft_bipod",
         Pos = Vector(0, 8, 1.85),
         Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "R Tactical",
+        PrintName = "eft_cat_tactical_r",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(1.2, 7, 0.43),
         Ang = Angle(0, -90, 90),
         Icon_Offset = Vector(0, 0, 0.2),
     },
     {
-        PrintName = "L Tactical",
+        PrintName = "eft_cat_tactical_l",
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.2, 7, 0.43),
         Ang = Angle(0, -90, -90),
@@ -692,28 +692,28 @@ ATT.ActivateElements = {"nolongrear", "nogp34"}
 
 ATT.Attachments = {
     {
-        PrintName = "Mount",
+        PrintName = "eft_cat_mount",
         Category = "eft_saiga12_titan_backmount",
         Pos = Vector(0, -6, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Front Sight",
+        PrintName = "eft_cat_frontsight",
         Category = {"eft_frontsight", "eft_chaos_fs"},
         Pos = Vector(0, 3.0, -0.73),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Top Tactical",
+        PrintName = "eft_cat_tactical_u",
         Category = {"eft_tactical_top"},
         Pos = Vector(0, -1.0, -0.73),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Backup",
+        PrintName = "eft_cat_backup",
         Category = {"eft_backupmount"},
         Pos = Vector(0, -4.5, -0.73),
         Ang = Angle(0, -90, 0),
@@ -744,14 +744,14 @@ ATT.Category = {"eft_saiga12_titan_backmount"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear Sight",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_rearsight", "eft_chaos_rs"},
         Pos = Vector(0, -7.5, -0.73),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Optic",
+        PrintName = "eft_cat_scope",
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, -4.5, -0.73),
         Ang = Angle(0, -90, 0),

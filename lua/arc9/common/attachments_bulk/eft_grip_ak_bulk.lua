@@ -648,7 +648,7 @@ ATT.Category = {"eft_ak_grip"}
 
 ATT.Attachments = {
     {
-        PrintName = "AR Grip",
+        PrintName = "eft_cat_pgrip",
         -- Category = "eft_ar15_pgrip_flat",
         Category = "eft_ar15_pgrip",
         Pos = Vector(0, -0.54, 0.34),

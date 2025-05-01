@@ -6,18 +6,16 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak12")
-SWEP.Description = [[The Kalashnikov AK-12 5.45 automatic rifle is the primary model of individual small arms for personnel of motorized and other units of the Russian Armed Forces. The AK-12 is a part of the Ratnik equipment system.
-
-Note from me: fireselector acts a little incorrectly here cuz ak12 uses same animation set as any other ak  so implementing third firemode on shared model would be big pain in ass. it working though so why not, just dont look at right side of gun :-)]]
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.Description = "eft_weapon_ak12_desc"
+SWEP.SubCategory = "eft_subcat_ar"
+SWEP.Class = "eft_class_weapon_ar"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.45x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2018"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_kalash",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_545x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "2018"
 }
 
 SWEP.StandardPresets = false
@@ -284,7 +282,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak12_muzzle",
         Bone = "weapon",
         Pos = Vector(0, 19.2+14.15, -0.8+0.6),
@@ -293,7 +291,7 @@ SWEP.Attachments = {
         Installed = "eft_ak12_muzzle_std",
     },
     {
-        PrintName = "Gas Tube",
+        PrintName = "eft_cat_gasblock",
         Category = "eft_ak12_gas",
         Bone = "weapon",
         Pos = Vector(0, 19.2+4, -0.8+1.6),
@@ -302,7 +300,7 @@ SWEP.Attachments = {
         Installed = "eft_ak12_gas_std",
     },
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_ak12_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -324,7 +322,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_ak74m_stock",
         Bone = "weapon_stock_lock_16",
         Installed = "eft_ak12_stock_tube",
@@ -338,7 +336,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = "eft_ak_grip",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
@@ -347,7 +345,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_ak12",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = "eft_cat_ammo",
         Category = "eft_ammo_545",
         Bone = "mod_magazine",
         Integral = true,
@@ -356,7 +354,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = "eft_cat_magazine",
         Category = "eft_ak_545_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -0.20),
@@ -365,7 +363,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_ak12_545_30"
     },
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -373,7 +371,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0.25),
     },
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = {"eft_ak12_handguard"},
         Bone = "weapon",
         Pos = Vector(0, 19.2, -0.8),
@@ -382,7 +380,7 @@ SWEP.Attachments = {
         Installed = "eft_ak12_hg_std",
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_ak12"},
         RejectAttachments = {["eft_extras_camos"] = true}, -- we have real camo support
         Bone = "mod_pistol_grip",
@@ -390,7 +388,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "UBGL",
+        PrintName = "eft_cat_launcher",
         Category = "eft_ak_gp25",
         ExcludeElements = {"nogp34"},
         Bone = "weapon",
@@ -400,7 +398,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Camouflage 1",
+        PrintName = "eft_cat_camo1",
         Category = {"universal_camo"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 3, 0),
@@ -408,7 +406,7 @@ SWEP.Attachments = {
         IsAdvancedCamo1 = true,
     },
     {
-        PrintName = "Camouflage 2",
+        PrintName = "eft_cat_camo2",
         Category = {"universal_camo"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 1.5, 0),
@@ -416,7 +414,7 @@ SWEP.Attachments = {
         IsAdvancedCamo2 = true,
     },
     {
-        PrintName = "Camouflage 3",
+        PrintName = "eft_cat_camo3",
         Category = {"universal_camo"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),

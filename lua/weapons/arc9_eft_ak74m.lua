@@ -6,17 +6,17 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak74m")
-SWEP.Description = [[The AK-74M (Avtomat Kalashnikova 74 Modernizirovanny - "Kalashnikov's Automatic rifle 74 Modernized") 5.45x39mm assault rifle is a full-scale produced modernized version of the AK-74 that offers more versatility compared with its predecessor. Apart from several minor improvements, such as a lightened bolt and carrier assembly to reduce the impulse of the gas piston and bolt carrier during firing, the rifle features a new glass-filled polyamide stock that retains the shape of the original AK-74 fixed laminated wood stock, but side-folds to the left like the skeletonised AKS-74 buttstock, and also a dovetail side mount for installing various scopes. The AK-74M is a main service rifle of the Russian Federation.]]
+SWEP.Description = "eft_weapon_ak74m_desc"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.SubCategory = "eft_subcat_ar"
+SWEP.Class = "eft_class_weapon_ar"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.45x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ussr"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1991"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_kalash",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_545x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_ussr",
+    ["eft_trivia_year5"] = "1991"
 }
 
 SWEP.StandardPresets = {
@@ -322,7 +322,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     { -- 5.45 long
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak74_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
@@ -331,7 +331,7 @@ SWEP.Attachments = {
         Installed = "eft_muzzle_ak_ak74m_std",
     },
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_ak74_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -340,7 +340,7 @@ SWEP.Attachments = {
         Installed = "eft_rec_ak_ak74m"
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_ak74m_stock",
         Bone = "mod_stock",
         Pos = Vector(0, 0, 0),
@@ -348,7 +348,7 @@ SWEP.Attachments = {
         Installed = "eft_stock_ak74m_std"
     },
     {
-        PrintName = "Dovetail",
+        PrintName = "eft_cat_dovetail",
         Category = "eft_mount_dovetail",
         Bone = "mod_mount_000",
         Pos = Vector(0.05, 1.05, 0.49),
@@ -356,7 +356,7 @@ SWEP.Attachments = {
         ExcludeElements = {"railedcover", "nodovetail"},
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = "eft_ak_grip",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, -0.05),
@@ -365,7 +365,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_6p1sb8",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = "eft_cat_ammo",
         Category = "eft_ammo_545",
         Bone = "mod_magazine",
         Integral = true,
@@ -374,7 +374,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = "eft_cat_magazine",
         Category = {"eft_ak_545_mag"},
         Bone = "mod_magazine",
         Pos = Vector(0, 0.07, -0.20),
@@ -383,7 +383,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_6l23_545_30"
     },    
     {
-        PrintName = "Gas tube",
+        PrintName = "eft_cat_gasblock",
         Category = "eft_ak_gasblock",
         Bone = "mod_gas_block",
         Pos = Vector(0, 0, 0),
@@ -397,7 +397,7 @@ SWEP.Attachments = {
         }
     }, 
     {
-        PrintName = "Rear sight",
+        PrintName = "eft_cat_rearsight",
         Category = "eft_ak74_rearsight",
         Bone = "mod_sight_rear",
         Pos = Vector(0, 0, 0),
@@ -407,7 +407,7 @@ SWEP.Attachments = {
         Installed = "eft_rs_ak_ak74m"
     },
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -416,7 +416,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "UBGL",
+        PrintName = "eft_cat_launcher",
         Category = "eft_ak_gp34",
         ExcludeElements = {"nogp34"},
         Bone = "weapon",
@@ -425,7 +425,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(-5, 0, -1),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_ak74m"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),

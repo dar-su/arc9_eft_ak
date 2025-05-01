@@ -6,17 +6,17 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak74")
-SWEP.Description = [[The AK-74 (Avtomat Kalashnikova 74 - "Kalashnikov's Automatic rifle 74") 5.45x39mm assault rifle, developed in 1970 by M. T. Kalashnikov, became a further evolution of the AKM due to adoption of the new 5.45x39 ammunition by the military. The AK-74 was equipped with a new buttstock, handguard (which retained the AKM-type finger swells), and gas cylinder. The stock has a shoulder pad different from that on the AKM, which is rubber and serrated for improved seating against the shooter. In addition, there are lightening cuts on each side of the buttstock. The buttstock, lower handguard, and upper heatguard were first manufactured from laminated wood, this later changed to a synthetic, plum or dark brown colored fiberglass.]]
+SWEP.Description = "eft_weapon_ak74_desc"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.SubCategory = "eft_subcat_ar"
+SWEP.Class = "eft_class_weapon_ar"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.45x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ussr"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1974"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_kalash",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_545x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_ussr",
+    ["eft_trivia_year5"] = "1974"
 }
 
 SWEP.StandardPresets = {
@@ -185,7 +185,7 @@ end
 SWEP.HookP_DescriptionChange = function(self, desc)
     local elements = self:GetElements()
 
-    if elements["eft_akn"] then return "AK-74N (Avtomat Kalashnikova 74 Nochnoy - \"Kalashnikov's Automatic rifle 74 Night\") was developed in 1970 by M. T. Kalashnikov, became a further evolution of AKM due to adoption of the new 5.45x39 ammunition by the military. The key design difference from the standard AK-74 is a side mount for optical and night scopes." end
+    if elements["eft_akn"] then return "eft_weapon_ak74n_desc" end
 end
 
 SWEP.CustomizePosHook = function(wep, vec)
@@ -370,7 +370,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak74_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
@@ -379,7 +379,7 @@ SWEP.Attachments = {
         Installed = "eft_muzzle_ak_ak74_std"
     },
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_ak74_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -388,7 +388,7 @@ SWEP.Attachments = {
         Installed = "eft_rec_ak_ak74"
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_akm_stock",
         Bone = "mod_stock",
         Installed = "eft_stock_ak74_std",
@@ -397,7 +397,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 3),
     },
     {
-        PrintName = "Dovetail",
+        PrintName = "eft_cat_dovetail",
         Category = "eft_mount_dovetail",
         Bone = "mod_mount_000",
         Pos = Vector(0.05, 1.05, 0.49),
@@ -406,7 +406,7 @@ SWEP.Attachments = {
         RequireElements = {"nmount"},
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = {"eft_ak_grip", "eft_ak_cqrgrip"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
@@ -415,7 +415,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_6p1sb8v",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = "eft_cat_ammo",
         Category = "eft_ammo_545",
         Bone = "mod_magazine",
         Integral = true,
@@ -424,7 +424,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = "eft_cat_magazine",
         Category = "eft_ak_545_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0.07, -0.20),
@@ -433,7 +433,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_6l23_545_30"
     },    
     {
-        PrintName = "Gas tube",
+        PrintName = "eft_cat_gasblock",
         Category = "eft_ak_gasblock",
         Bone = "mod_gas_block",
         Pos = Vector(0, 0, 0),
@@ -447,7 +447,7 @@ SWEP.Attachments = {
         }
     }, 
     {
-        PrintName = "Rear sight",
+        PrintName = "eft_cat_rearsight",
         Category = "eft_ak74_rearsight",
         Bone = "mod_sight_rear",
         Pos = Vector(0, 0, 0),
@@ -457,7 +457,7 @@ SWEP.Attachments = {
         Installed = "eft_rs_ak_ak74"
     },
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -465,7 +465,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0.25),
     },
     {
-        PrintName = "UBGL",
+        PrintName = "eft_cat_launcher",
         Category = "eft_ak_gp34",
         ExcludeElements = {"nogp34"},
         Bone = "weapon",
@@ -476,14 +476,14 @@ SWEP.Attachments = {
 
     
     {
-        PrintName = "Conversion",
+        PrintName = "eft_cat_dovetail",
         Category = "eft_ak74_conv",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 1, 1),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_ak74"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),

@@ -6,17 +6,17 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rpk16")
-SWEP.Description = [[RPK-16 (Ruchnoy Pulemyot Kalashnikova 16 - "Kalashnikov's Hand-held machine gun 16) is the newest Russian light machine gun chambered in 5.45x39mm rounds. Some key features of this new weapon are the quickly detachable barrels, enhanced ergonomics, and weaver rails on the handguard and dust cover.]]
+SWEP.Description = "eft_weapon_rpk16_desc"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_lmg")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_lmg")
+SWEP.SubCategory = "eft_subcat_lmg"
+SWEP.Class = "eft_class_weapon_lmg"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_molot"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.45x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2017"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_molot",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_545x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "2017"
 }
 
 SWEP.StandardPresets = false
@@ -288,7 +288,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     { -- short
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_rpk16_muzzle",
         Bone = "mod_barrel",
         Pos = Vector(0, 14.15, 0),
@@ -298,7 +298,7 @@ SWEP.Attachments = {
         RequireElements = {"eft_rpk16_barrel_370"},
     },
     { -- long
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_rpk16_muzzle",
         Bone = "mod_barrel",
         Pos = Vector(0, 22.65, 0),
@@ -308,7 +308,7 @@ SWEP.Attachments = {
         RequireElements = {"eft_rpk16_barrel_550"},
     },
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_rpk16_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -330,7 +330,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_ak74m_stock",
         Bone = "weapon_stock_lock_16",
         Installed = "eft_rpk16_stock_tube",
@@ -344,7 +344,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = "eft_ak_grip",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
@@ -353,7 +353,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_ak12",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = "eft_cat_ammo",
         Category = "eft_ammo_545",
         Bone = "mod_magazine",
         Integral = true,
@@ -362,7 +362,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Mag",
+        PrintName = "eft_cat_magazine",
         Category = "eft_ak_545_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -371,7 +371,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_rpk16_545_95"
     },
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -379,7 +379,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0.25),
     },
     {
-        PrintName = "Barrel",
+        PrintName = "eft_cat_barrel",
         Category = {"eft_rpk16_barrel"},
         Bone = "mod_barrel",
         Pos = Vector(0, 0, 0),
@@ -389,7 +389,7 @@ SWEP.Attachments = {
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
     },
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = {"eft_rpk16_handguard"},
         Bone = "mod_handguard",
         Pos = Vector(0, 0, 0),
@@ -410,7 +410,7 @@ SWEP.Attachments = {
         -- RequireElements = {"gasblock" or "gasblock_vdmcs" and "gasblock"},
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_rpk16"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),

@@ -6,17 +6,17 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_aks74u")
-SWEP.Description = [[AKS-74U (Avtomat Kalashnikova Skladnoy 74 Ukorochenny - "Kalashnikov's Shortened Automatic rifle 74 with a foldable stock") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size.]]
+SWEP.Description = "eft_weapon_aks74u_desc"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.SubCategory = "eft_subcat_ar"
+SWEP.Class = "eft_class_weapon_ar"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "5.45x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1979"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_kalash",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_545x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "1979"
 }
 
 SWEP.StandardPresets = {
@@ -194,9 +194,9 @@ SWEP.HookP_DescriptionChange = function(self, desc)
 	
     if elements["eft_akn"] then 
 		if elements["eft_silencer_ak_pbs4"] then
-			return "A special version of the AKS-74U assault rifle, modification B (Besshumny - \"Silenced\") is issued with a dovetail scope mount, a sound suppressor device, and special sights designed for firing subsonic ammunition."
+			return "eft_weapon_aks74ub_desc"
 		else
-			return "AKS-74UN (Avtomat Kalashnikova Skladnoy 74 Ukorochenny Nochnoy - \"Kalashnikov's Shortened Automatic rifle 74 Night with a foldable stock\") is a shortened version of the AKS-74 assault rifle, developed in the early 80s for combat vehicle crews and airborne troops, also became very popular with law enforcement and special forces for its compact size. The N (Nochnoy - \"Night\") version is equipped with a dovetail mount for the installation of night vision scopes."
+			return "eft_weapon_aks74un_desc"
 		end
 	end
 end
@@ -386,7 +386,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak74_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
@@ -395,7 +395,7 @@ SWEP.Attachments = {
         Installed = "eft_aksu_muzzle_ak_std"
     },
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_aksu_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -406,7 +406,7 @@ SWEP.Attachments = {
         Installed = "eft_aksu_rec_ak_std"
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_aks_stock",
         Bone = "mod_stock",
         Installed = "eft_aksu_stock_std",
@@ -414,7 +414,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 3),
     },
     {
-        PrintName = "Dovetail",
+        PrintName = "eft_cat_dovetail",
         Category = {"eft_mount_dovetail"},
         Bone = "mod_mount_000",
         Pos = Vector(0.05, 0.4, 0.49),
@@ -423,7 +423,7 @@ SWEP.Attachments = {
         RequireElements = {"nmount"},
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = "eft_ak_grip",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
@@ -432,7 +432,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_6p4sb9",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = "eft_cat_ammo",
         Category = "eft_ammo_545",
         Bone = "mod_magazine",
         Integral = true,
@@ -441,7 +441,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = "eft_cat_magazine",
         Category = "eft_ak_545_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, -0.20),
@@ -450,7 +450,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_6l20_545_30"
     },    
     {
-        PrintName = "Gas tube",
+        PrintName = "eft_cat_gasblock",
         Category = "eft_aksu_gasblock",
         Bone = "mod_gas_block",
         Pos = Vector(0, 0, 0),
@@ -466,7 +466,7 @@ SWEP.Attachments = {
         }
     }, 
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -474,14 +474,14 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0.25),
     },
     {
-        PrintName = "Conversion",
+        PrintName = "eft_cat_dovetail",
         Category = "eft_ak74_conv",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_aks74u"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),

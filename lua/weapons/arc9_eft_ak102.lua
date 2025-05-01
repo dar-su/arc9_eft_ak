@@ -6,10 +6,10 @@ SWEP.Base = "arc9_eft_ak101"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
+SWEP.SubCategory = "eft_subcat_ar"
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak102")
-SWEP.Description = [[The AK-102 5.56x45mm assault rifle is a further modernized version of AK-74M base, more precisely a shortened version of AK-101. A short compact version equipped with a side-folding shoulder stock and a side mount for optical and night scopes. The AK-102 is chambered to fire 5.56x45mm NATO ammunition, and is designed entirely for export purposes. The 100-series AKs are produced by the Izhmash factories in Izhevsk, Russia.]]
+SWEP.Description = "eft_weapon_ak102_desc"
 
 SWEP.StandardPresets = false 
 
@@ -55,7 +55,7 @@ SWEP.DefaultElements = {"short_barrel"}
 
 SWEP.Attachments = {
     { -- 5.56 short
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_ak101_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, -4.1, 0),

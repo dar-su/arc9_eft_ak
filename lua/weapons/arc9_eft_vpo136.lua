@@ -6,19 +6,19 @@ SWEP.Base = "arc9_eft_akm"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
+SWEP.SubCategory = "eft_subcat_carb"
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vpo136")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_carb")
+SWEP.Class = "eft_class_weapon_carb"
 
-SWEP.Description = [[The Molot Vepr-KM/VPO-136 carbine is based on the well-known Kalashnikov AKM and has an almost identical appearance, weight, and overall dimensions. Designed for hunting of medium and big game, as well as for sporting use.]]
+SWEP.Description = "eft_weapon_vpo136_desc"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_molot"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1960-1980"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_molot",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_762x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "1960-1980"
 }
 
 SWEP.StandardPresets = false
@@ -51,7 +51,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_akm_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0.1, 0),
@@ -60,7 +60,7 @@ SWEP.Attachments = {
         Installed = "eft_muzzle_ak_vpo136_std"
     },
     {
-        PrintName = "Cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_ak_dustcover",
         Bone = "mod_reciever",
         Pos = Vector(0, 0, 0),
@@ -71,7 +71,7 @@ SWEP.Attachments = {
         Installed = "eft_rec_ak_akm_molot"
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = "eft_akm_stock",
         Bone = "mod_stock",
         Installed = "eft_stock_vpo136",
@@ -80,7 +80,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 3),
     },
     {
-        PrintName = "Dovetail",
+        PrintName = "eft_cat_dovetail",
         Category = "eft_mount_dovetail",
         Bone = "mod_mount_000",
         Pos = Vector(0.05, 1.05, 0.49),
@@ -89,7 +89,7 @@ SWEP.Attachments = {
         RequireElements = {"nmount"},
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = {"eft_ak_grip", "eft_ak_cqrgrip"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
@@ -98,7 +98,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_6p1sb8v",
     },
     {
-        PrintName = "Ammunition",
+        PrintName = "eft_cat_ammo",
         Category = "eft_ammo_76239",
         Bone = "mod_magazine",
         Integral = true,
@@ -107,7 +107,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Mag",
+        PrintName = "eft_cat_magazine",
         Category = "eft_ak_762_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -116,7 +116,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_ak_55_762_30"
     },    
     {
-        PrintName = "Gas tube",
+        PrintName = "eft_cat_gasblock",
         Category = "eft_ak_gasblock",
         Bone = "mod_gas_block",
         Pos = Vector(0, 0, 0),
@@ -132,7 +132,7 @@ SWEP.Attachments = {
         }
     }, 
     {
-        PrintName = "Rear sight",
+        PrintName = "eft_cat_rearsight",
         Category = {"eft_vpo209_rearsight", "eft_akm_rearsight"},
         Bone = "mod_sight_rear",
         Pos = Vector(0, 0, 0),
@@ -142,7 +142,7 @@ SWEP.Attachments = {
         Installed = "eft_rs_ak_akm"
     },
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -158,7 +158,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "UBGL",
+        PrintName = "eft_cat_launcher",
         Category = "eft_ak_gp34",
         ExcludeElements = {"nogp34"},
         Bone = "weapon",
@@ -167,7 +167,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(-5, 0, -1),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_vpo136"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),

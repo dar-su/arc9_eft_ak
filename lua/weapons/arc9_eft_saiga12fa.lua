@@ -6,15 +6,10 @@ SWEP.Base = "arc9_eft_saiga12k"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_sg")
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_saiga12kfa")
+SWEP.Description = "eft_weapon_saiga12kfa_desc"
 
-ARC9:AddPhrase("eft_weapon_saiga12fa", "Saiga-12K FA", "en")
-ARC9:AddPhrase("eft_weapon_saiga12fa", "Сайга-12К FA", "ru")
-ARC9:AddPhrase("eft_weapon_saiga12fa", "Saigawa-12k FullAutism", "uwu")
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_saiga12fa")
-SWEP.Description = [[A modification of the Saiga-12K smoothbore shotgun, enabling fully automatic fire. Hell of a beast.]]
-
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_autosg")
+SWEP.Class = "eft_class_weapon_autosg"
 
 SWEP.StandardPresets = {
     "[Barter]XQAAAQDkAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YvUlHW7kQ7VsP9i/C/OiMQXUo+i6UFtQYRYbr9alCm8L7vvRaUdPJngCZ/MFDZ6DPK3IHYUjMo0CreDMgwkNAXnmkkfYCngxgwTaeqO3O9YtlFTgL7xIIkwVFSZAgjQ7rriYwdtpyAazhws7ZVraxPFXTUYYWLzHiBtapYcn0yP4UiYr81tYH7scyJgWqWvus7VpyOmgl09VFUY56pGWtUkxrT6Ij3zSx+O4Ib90J1Ae/qsINIG2CR/2wsw4gKBrkgGo+8UCzkhl0LVY4Gs3nmtG3qqjDmCLcReSVl9C+qgJcZqPgGFlO79U6963KjF7zz60bntTqNizLVr4+zwuYIYI1aUg3VoG1BHG",

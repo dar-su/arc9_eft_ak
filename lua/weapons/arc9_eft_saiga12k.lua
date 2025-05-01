@@ -6,17 +6,17 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_saiga12k")
-SWEP.Description = [[A semi-automatic 12 gauge shotgun with a folding stock, equipped with a firing mechanism safety lock that only allows firing from extended stock position. Features a short 430mm barrel.]]
+SWEP.Description = "eft_weapon_saiga12k_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_semisg")
-SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_sg")
+SWEP.Class = "eft_class_weapon_semisg"
+SWEP.SubCategory = "eft_subcat_sg"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_kalash"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "12x76 Gauge",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_rus"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1997"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_kalash",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_12g",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_rus",
+    ["eft_trivia_year5"] = "1997"
 }
 
 SWEP.StandardPresets = {
@@ -871,7 +871,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = "eft_cat_muzzle",
         Category = "eft_saiga12_muzzle",
         Bone = "mod_muzzle",
         Pos = Vector(0, 0, 0),
@@ -880,7 +880,7 @@ SWEP.Attachments = {
         Installed = "eft_saiga12_muzzle_std",
     },
     {
-        PrintName = "Stock",
+        PrintName = "eft_cat_stock",
         Category = {"eft_ak74m_stock", "eft_saiga12_stock"},
         Bone = "mod_stock",
         Installed = "eft_saiga12_stock_std",
@@ -890,7 +890,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 3),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = "eft_cat_rearsight",
         Category = "eft_saiga12_rs",
         Bone = "mod_sight_rear",
         Installed = "eft_saiga12_rs_std",
@@ -899,7 +899,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Dust cover",
+        PrintName = "eft_cat_receiver",
         Category = "eft_saiga12_dustcover",
         Bone = "mod_reciever",
         Installed = "eft_saiga12_dustcover_std",
@@ -907,7 +907,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Dovetail",
+        PrintName = "eft_cat_dovetail",
         Category = "eft_mount_dovetail",
         Bone = "mod_mount_000",
         Pos = Vector(0.05, 1.05, 0.49),
@@ -915,7 +915,7 @@ SWEP.Attachments = {
         ExcludeElements = {"railedcover", "nodovetail"},
     },
     {
-        PrintName = "Grip",
+        PrintName = "eft_cat_pgrip",
         Category = "eft_ak_grip",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 0, 0),
@@ -924,7 +924,7 @@ SWEP.Attachments = {
         Installed = "eft_grip_ak_6p1sb8",
     },
     {
-        PrintName = "Magazine",
+        PrintName = "eft_cat_magazine",
         Category = "eft_saiga12_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -933,7 +933,7 @@ SWEP.Attachments = {
         Installed = "eft_saiga12_magazine_std"
     },    
     {
-        PrintName = "Handguard",
+        PrintName = "eft_cat_handguard",
         Category = "eft_saiga12_handguard",
         Bone = "mod_handguard",
         Pos = Vector(0, 0, 0),
@@ -942,7 +942,7 @@ SWEP.Attachments = {
         Installed = "eft_saiga12_handguard_std",
     },
     {
-        PrintName = "Charge",
+        PrintName = "eft_cat_charge",
         Category = "eft_ak_charge",
         Bone = "mod_charge",
         Pos = Vector(0, 0, 0),
@@ -951,7 +951,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = "Ammo type",
+        PrintName = "eft_cat_ammo",
         Category = {"eft_ammo_12x70", "eft_ammo_12x70_saiga12only"},
         Bone = "mod_magazine",
         Pos = Vector(0, -1.25, -0.75),
@@ -960,7 +960,7 @@ SWEP.Attachments = {
         Integral = "eft_ammo_12x70_7mm",
     },
     {
-        PrintName = "Custom slot",
+        PrintName = "eft_cat_custom",
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_saiga12k"},
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),
