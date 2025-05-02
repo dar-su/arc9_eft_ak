@@ -8,7 +8,7 @@ SWEP.Spawnable = true
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_rpk16")
 SWEP.Description = "eft_weapon_rpk16_desc"
 
-SWEP.SubCategory = "eft_subcat_lmg"
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_lmg")
 SWEP.Class = "eft_class_weapon_lmg"
 
 SWEP.Trivia = {

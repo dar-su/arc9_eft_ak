@@ -6,7 +6,7 @@ SWEP.Base = "arc9_eft_akm"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SubCategory = "eft_subcat_ar"
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ak103")
 SWEP.Class = "eft_class_weapon_ar"
