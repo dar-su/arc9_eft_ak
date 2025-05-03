@@ -344,7 +344,7 @@ SWEP.Animations = ARC9EFT.AK_Anims
 
 SWEP.EFTRequiredAtts = { "HasGas", "HasGrip", "HasHG", "HasAmmoooooooo" }
 
- = {
+SWEP.Attachments = {
     {
         PrintName = "eft_cat_muzzle",
         Category = {"eft_akm_muzzle", "eft_ar10_muzzle"}, -- should be only ar10 but im too lazy, maybe in future
