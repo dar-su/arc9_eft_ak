@@ -441,7 +441,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = "eft_cat_buffertube",
         Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(0.85, -3.15, -0.17),
         Ang = Angle(-3, -90, 0),
@@ -641,7 +641,7 @@ ATT.Category = {"eft_akm_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "eft_cat_stock",
+        PrintName = "eft_cat_buffertube",
         Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
         Pos = Vector(0.65, -0.83, -0.47),
         Ang = Angle(-3, -90, 0),
