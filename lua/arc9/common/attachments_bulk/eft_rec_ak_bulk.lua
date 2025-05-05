@@ -110,7 +110,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_dc_zenit_b33.mdl"
-ATT.ModelOffset = Vector(0,-0.05,-0.1)
+ATT.ModelOffset = Vector(0, -0.05, -0.1)
 
 ATT.EFTErgoAdd = 7
 ATT.CustomPros = { Ergonomics = "+7" }
@@ -126,7 +126,7 @@ ATT.Attachments = {
     {
         PrintName = "eft_cat_scope",
         Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
-        Pos = Vector(0, -4.5, -0.32),
+        Pos = Vector(0, -4.5, -0.32) - Vector(0, -0.05, -0.1),
         Ang = Angle(0, -90, 0),
         Bone = "weapon",
         Icon_Offset = Vector(-1, 0, 0.5),
