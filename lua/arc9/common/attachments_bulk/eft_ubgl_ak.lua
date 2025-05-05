@@ -89,8 +89,9 @@ ATT.IKGunMotionQCA = 2
 ATT.IKGunMotionMult = 0.5
 ATT.IKGunMotionAngleMult = 0.5
 
-ATT.IKCameraMotionQCA = 3
-ATT.IKCameraMotionOffsetAngle = Angle(0, 90, 2.5)
+ATT.IKCameraMotionQCA = 2
+ATT.IKCameraMotionQCA_Mult = -0.03
+ATT.IKCameraMotionOffsetAngle = Angle(0+0, 90, 90)
 
 ATT.CamCoolViewUBGL = false
 
